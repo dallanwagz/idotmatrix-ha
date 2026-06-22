@@ -1,0 +1,36 @@
+======================================================================
+FIELD          PLAY STORE                   E-TOYS.CN                   
+======================================================================
+package        com.tech.idotmatrix          com.tech.idotmatrix         
+versionName    2.1.1                        2.1.1                       
+versionCode    211                          211                         
+minSdk         26                           26                          
+targetSdk      35                           35                          
+
+--- SIGNING CERTS (sha256 of DER) ---
+  PlayStore:
+    v2: bb538ede27d289cdd73a3fde03825e8c38d9b5bfa5f2265c99e9071597e52785
+    v3: bb538ede27d289cdd73a3fde03825e8c38d9b5bfa5f2265c99e9071597e52785
+  E-toys:
+    v2: 1d162e9d55fccb570d99c0e04252d2f9a0b510f467e41d732faf9b7ff85a2bf2
+    v3: 1d162e9d55fccb570d99c0e04252d2f9a0b510f467e41d732faf9b7ff85a2bf2
+  SAME signer?  NO OVERLAP
+
+--- PERMS  (PS=18 ET=22) ---
+  ONLY in E-TOYS (4):
+    + android.permission.GET_TASKS
+    + android.permission.READ_PHONE_STATE
+    + android.permission.RECEIVE_BOOT_COMPLETED
+    + android.permission.REQUEST_INSTALL_PACKAGES
+
+--- ACTIVITIES  (PS=31 ET=31) ---
+  identical
+
+--- SERVICES  (PS=2 ET=2) ---
+  identical
+
+--- RECEIVERS  (PS=1 ET=1) ---
+  identical
+
+--- PROVIDERS  (PS=3 ET=3) ---
+  identical

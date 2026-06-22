@@ -1,0 +1,36 @@
+rules:
+  # Bronze
+  action-setup:
+    status: done
+    comment: The send_command service is registered in services.py via async_setup_services.
+  appropriate-polling:
+    status: exempt
+    comment: Push/optimistic device with no readable state; no polling.
+  brands:
+    status: todo
+    comment: Requires a PR to home-assistant/brands before Core submission.
+  common-modules: done
+  config-flow: done
+  config-flow-test-coverage: done
+  dependency-transparency: done
+  docs-actions:
+    status: todo
+    comment: Documented in repo README; home-assistant.io page pending for Core.
+  docs-high-level-description:
+    status: todo
+    comment: In repo README; home-assistant.io page pending for Core.
+  docs-installation-instructions:
+    status: todo
+    comment: In repo README (HACS); home-assistant.io page pending for Core.
+  docs-removal-instructions:
+    status: todo
+    comment: Standard Bluetooth device removal; page pending for Core.
+  entity-event-setup: done
+  entity-unique-id: done
+  has-entity-name: done
+  runtime-data: done
+  test-before-configure:
+    status: done
+    comment: Connection established in async_setup_entry; raises for retry on failure.
+  test-before-setup: done
+  unique-config-entry: done

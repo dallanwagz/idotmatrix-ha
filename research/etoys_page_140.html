@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Language" content="zh-cn" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="e-toys.cn" />
+	<meta name="Copyright" content="e-toys.cn" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="Description" content="e启玩" />
+	<meta name="Keywords" content="e启玩" />
+	<title>iDotMatrix</title>
+	<link href="/resources/css/mobile.css" rel="stylesheet"/>
+	<script type="text/javascript" src="/resources/plugins/jQuery/jquery-1.11.3.min.js"></script>
+    <script>
+        function setCookie(name,value)
+        {
+            var Days = 30;
+            var exp = new Date();
+            exp.setTime(exp.getTime() + Days*24*60*60*1000);
+            document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+        }
+
+        //读取cookies
+        function getCookie(name)
+        {
+            var arr,reg=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+
+            if(arr=document.cookie.match(reg))
+
+                return unescape(arr[2]);
+            else
+                return null;
+        }
+
+    </script>
+</head>
+<body class="main-body scroller row-flex"
+      style="background: #1a1a3c">
+<style type="text/css">
+    .container
+    {
+        height: 100%;
+        background-size: cover;
+    }
+
+    .d-top, .d-main, .d-text, .d-buttons
+    {
+        text-align: center;
+    }
+
+    .d-top img
+    {
+        max-width: 33%;
+        margin: 3% auto auto;
+    }
+
+    .d-main img
+    {
+        max-width: 70%;
+        margin: 3% auto auto;
+    }
+
+    .d-text img
+    {
+        max-width: 50%;
+        margin: 3% auto auto;
+    }
+
+    .d-buttons {
+        margin-top:10%;
+    }
+
+    .d-buttons .img-buttons
+    {
+        max-width: 100%;
+        margin: 3% auto 10%;
+    }
+    .ios-button {
+        background: url(/resources/image/download_app.png) no-repeat center center;
+        background-size: auto 48px;
+        margin-left:0 !important;
+    }
+    .google-button {
+        background: url(/resources/image/download_google.png) no-repeat center center;
+        background-size: auto 48px;
+        width:170px;
+        height:48px;
+        line-height: 40px;
+        display: inline-block;
+        margin-left:12px;
+    }
+    .heaton-button {
+        background: url(/resources/image/download_heaton.png) no-repeat center center;
+        background-size: auto 48px;
+    }
+    .d-button
+    {
+        width:170px;
+        height:48px;
+        line-height: 40px;
+        display: inline-block;
+        margin-left:12px;
+    }
+
+    .lqc{width:100%;height:100%;background:#666;position: fixed;top:0;left:0;FILTER: alpha(opacity=80);opacity: 0.8;text-align: center;}
+    .lqc img{width:85%;height: auto;margin: 0 auto;border-radius: 6px;}
+
+    @media (max-width: 600px) {
+        .d-button,.google-button {
+            display: block;
+            background-size: auto 38px;
+            margin-top: 4px;
+            margin-left:0;
+        }
+        .tipsBtns {
+            margin:20px 0px;
+        }
+        .tip_button {
+            background: #0075f8;
+            color:#fff;
+            padding:6px 14px;
+            outline: none;
+            border:none;
+            border-radius: 5px;
+        }
+        .tip_button .zn{
+            display: block;
+        }
+        #heatonTipsWrap {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            width: 100%;
+            padding-top:10px;
+            height: 100%;
+            display: none;
+            z-index: 20;
+            text-align: center;
+            background:#f2f2f2;
+            overflow-y:auto
+        }
+        #heatonTipsWrap img {
+            max-width: 72%;
+        }
+        #heatonTipsWrap p {
+            margin-left:14%;
+            margin-bottom:5px;
+            margin-top:5px;
+            text-align: left;
+            max-width: 72%;
+            color:#6e6e6e;
+        }
+        .img-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .continueBtn {
+            margin-left:10px;
+        }
+        .backBtn {
+            margin-right:10px;
+        }
+    }
+</style>
+<div class="viewport main-body scroller container">
+    <div>
+        <!--app图片-->
+        <div class="d-main">
+            <img src="http://api.e-toys.cn/resources/upload/app/20230724/f298d5ad580402791e86f2d6126094a7.jpg"/>
+        </div>
+        <!--app下载地址-->
+        <div class="d-buttons">
+            <div class="img-buttons">
+                <a href="javascript:" data-id="1" class="d-button ios-button">
+                </a>
+                <a href="javascript:" data-id="2"  class="d-button google-button">
+                </a>
+                <a href="javascript:"  data-id="3" class="d-button heaton-button">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="heatonTipsWrap" style="display: none;">
+        <p>如果出现以下提示：</p>
+        <img src="/resources/image/tips1.png" />
+        <p>请按提示操作，允许未知来源应用程序：</p>
+        <img src="/resources/image/tips2.png" alt="">
+        <p>If the following prompt appears:</p>
+        <img src="/resources/image/tips3.png" alt="">
+        <p>Follow the prompts to allow applications from unknown sources:</p>
+        <img src="/resources/image/tips4.png" alt="">
+        <div class="tipsBtns">
+            <button class="tip_button backBtn">
+                <span class="zn">返回</span>
+                <span>Back</span>
+            </button>
+            <button class="tip_button continueBtn">
+                <span class="zn" >继续下载</span>
+                <span>Continue</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<iframe id="downloader" name="downloader" style="display: none;"></iframe>
+<script>
+    var loadAppOptions = {
+        loadBtn: $(".d-button"),
+        ios: {
+            appUrl: "etoys:\/\/",
+            loadUrl: "/page/jumpDownload/?url=https%3A%2F%2Fapps.apple.com%2Fcn%2Fapp%2Fidotmatrix%2Fid1662746768&app_id=140&platform=IOS&fwh_id=0"
+        },
+        googleLoadUrl:"https://play.google.com/store/apps/details?id=com.tech.idotmatrix",
+        heaton: {
+            appUrl: "etoys:\/\/",
+            loadUrl: "/page/jumpDownload/?url=https%3A%2F%2Fapi.e-toys.cn%2Fresources%2Fupload%2Ffiles%2F20260603%2F761294e26fe1e95faec64cec0ec5d1ed.apk%3Fn%3DiDotMatrix%26v%3D2.1.1&app_id=140&platform=Android&fwh_id=0"
+        }
+    };
+    var appUrl = '';
+    var loadUrl = '';
+
+    // 判断ios链接是否存在
+    if (loadAppOptions.ios.loadUrl.indexOf('apple') == -1) {
+        $('.ios-button').css({"opacity":0.4,"cursor":"not-allowed"})
+    }
+    // 判断谷歌链接
+    if ( loadAppOptions.googleLoadUrl.indexOf('google') == -1 ) {
+        $('.google-button').css({"opacity":0.4,"cursor":"not-allowed"})
+    }
+    // 判断希顿 链接 是否有
+    if (loadAppOptions.heaton.loadUrl.indexOf('.apk') == -1) {
+        $('.heaton-button').css({"opacity":0.4,"cursor":"not-allowed"})
+    }
+
+
+    function loadApp(options) {
+        var browerUserAgent = navigator.userAgent;
+        var browerVersions = {
+            trident: browerUserAgent.indexOf('Trident') > -1, //IE内核
+            presto: browerUserAgent.indexOf('Presto') > -1, //opera内核
+            webKit: browerUserAgent.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+            gecko: browerUserAgent.indexOf('Gecko') > -1 && browerUserAgent.indexOf('KHTML') == -1, //火狐内核
+            mobile: !!browerUserAgent.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+            ios: !!browerUserAgent.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+            android: browerUserAgent.indexOf('Android') > -1 || browerUserAgent.indexOf('Linux') > -1, //android终端或uc浏览器
+            iPhone: browerUserAgent.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+            iPad: browerUserAgent.indexOf('iPad') > -1, //是否iPad
+            webApp: browerUserAgent.indexOf('Safari') == -1, //是否web应该程序，没有头部与底部
+            weixin: browerUserAgent.indexOf('MicroMessenger') > -1
+        };
+
+        loadAppOptions.loadBtn.on("click", function () {
+            var id = $(this).attr('data-id')
+            // 若地址不正确，阻止onlick事件 return false
+            if ( (id == 1) && (loadAppOptions.ios.loadUrl.indexOf('apple') == -1) ) {
+                return false
+            }
+            if ( (id == 2) && (loadAppOptions.googleLoadUrl.indexOf('google') == -1) ) {
+                return false
+            }
+
+            if ( (id == 3) && (loadAppOptions.heaton.loadUrl.indexOf('.apk') == -1) ) {
+                return false
+            }
+            loadAppStart(id);
+        });
+
+
+        function loadAppStart(id) {
+            if (id == 1) {
+                loadUrl = options.ios.loadUrl;
+            } else if (id == 2){
+                loadUrl = options.googleLoadUrl;
+            } else if (id == 3) {
+                appUrl = options.heaton.appUrl;
+                loadUrl = options.heaton.loadUrl;
+            }
+
+            // 微信提示
+            if(browerVersions.weixin){
+                // 谷歌按钮 和 heaton 下载按钮 提示用其他浏览器打开
+                if(id == 2 || id ==3) {
+                    $("body").append('<div class="lqc" onclick="$(this).hide();"><img src="/resources/image/lqandroid.png"></div>');
+                    return;
+                }
+                // ios 按钮可跳转
+                if (id == 1) {
+                    window.location.href = loadUrl;
+                }
+            }
+
+            if (browerVersions.mobile && ($(document).width()<600) ) {
+                if  (id == 3) {
+                    $('#heatonTipsWrap').show()
+                } else {
+                    window.location.href = loadUrl;
+                }
+            } else {
+                window.location.href = loadUrl;
+            }
+        }
+    }
+
+    loadApp(loadAppOptions);
+
+    // 返回
+    $('.backBtn').on('click',function() {
+        $('#heatonTipsWrap').hide()
+    })
+    // 继续下载
+    $('.continueBtn').on('click',function() {
+        var oldTime = Date.now();
+        var createIframe = $("<iframe></iframe>").attr({ src: appUrl }).css({
+            position: "absolute",
+            top: "-1000px",
+            left: "-1000px",
+            width: "1px",
+            height: "1px",
+            "-webkit-transition": "all 2s"
+        });
+        $("body").append(createIframe);
+        setTimeout(function () {
+            createIframe.on("webkitTransitionEnd", function () {
+                createIframe.remove();
+                if (3E3 > Date.now() - oldTime) {
+                    location.href = loadUrl;
+                    $('#heatonTipsWrap').hide()
+                }
+            });
+            createIframe.css({ left: "-10px" })
+        }, 0)
+    })
+
+</script>
+</body>
+</html>

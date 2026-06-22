@@ -1,0 +1,15 @@
+# Python
+venv/
+venv-ha/
+__pycache__/
+*.pyc
+.DS_Store
+
+# RE working material — large and/or reproducible; kept locally, not committed.
+# APKs: re-download per docs/SECURITY-APK-COMPARISON.md (Play Store via adb pull; e-toys URL documented).
+apks/
+# Decompiled tree: regenerate with `jadx --no-debug-info -d decompiled/playstore apks/playstore/playstore-base.apk`
+decompiled/
+# Captures: bugreports/btsnoop contain device + personal data — never commit.
+captures/
+scratch/

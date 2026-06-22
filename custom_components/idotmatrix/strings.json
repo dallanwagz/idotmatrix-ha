@@ -1,0 +1,66 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "bluetooth_confirm": {
+        "description": "Do you want to set up {name}?"
+      },
+      "user": {
+        "description": "Select the iDotMatrix panel to set up.",
+        "data": {
+          "address": "Bluetooth device"
+        }
+      }
+    },
+    "abort": {
+      "no_devices_found": "No unconfigured iDotMatrix panels found. Make sure the panel is powered on, in range, and not connected to the vendor app.",
+      "already_configured": "[%key:common::config_flow::abort::already_configured_device%]"
+    }
+  },
+  "entity": {
+    "switch": {
+      "flip": {
+        "name": "Flip 180°"
+      }
+    },
+    "button": {
+      "sync_time": {
+        "name": "Sync time"
+      },
+      "reset": {
+        "name": "Reset"
+      }
+    },
+    "select": {
+      "clock_face": {
+        "name": "Clock face",
+        "state": {
+          "rwatch": "R-watch",
+          "christmas": "Christmas",
+          "racing": "Racing",
+          "inverted_full": "Inverted full",
+          "analog_like": "Analog",
+          "small": "Small",
+          "square": "Square",
+          "large": "Large"
+        }
+      }
+    }
+  },
+  "services": {
+    "send_command": {
+      "name": "Send command",
+      "description": "Sends a raw iDotMatrix protocol command to the panel.",
+      "fields": {
+        "command": {
+          "name": "Command",
+          "description": "The protocol command to build and send."
+        },
+        "params": {
+          "name": "Parameters",
+          "description": "Ordered list of integer arguments for the command (e.g. [1, 5, 0] for set_countdown mode/minutes/seconds)."
+        }
+      }
+    }
+  }
+}

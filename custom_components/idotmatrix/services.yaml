@@ -1,0 +1,32 @@
+send_command:
+  target:
+    device:
+      integration: idotmatrix
+  fields:
+    command:
+      required: true
+      example: set_countdown
+      selector:
+        select:
+          options:
+            - set_time
+            - set_brightness
+            - set_fullscreen_color
+            - set_clock
+            - set_countdown
+            - set_chronograph
+            - set_scoreboard
+            - set_flip
+            - set_text_speed
+            - set_screen
+            - set_time_indicator
+            - set_eco
+            - set_screen_light_time
+            - enter_diy
+            - draw_pixel
+            - reset_device
+    params:
+      required: false
+      example: "[1, 5, 0]"
+      selector:
+        object:
