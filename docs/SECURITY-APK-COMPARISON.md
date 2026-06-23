@@ -11,10 +11,19 @@
 invasive *and* deliberately opaque, so there is no good reason to prefer it.**
 The differences are consistent with a typical Chinese "direct-download" build —
 hardened against piracy, self-updating, and analytics-heavier — rather than a
-targeted trojan. But because the e-toys build is **DEX-packed (encrypted)**, static
-analysis *cannot fully clear it.* **Recommendation: use the Play Store build.** It is
-strictly less-privileged, unpacked/auditable, Google-scanned, and functionally
-identical (same version, package, components, and native libraries).
+targeted trojan. But because the e-toys build is **DEX-packed (encrypted) with active
+anti-tamper**, static analysis cannot fully clear it and a runtime DEX dump was blocked.
+**Recommendation: use the Play Store build.** It is strictly less-privileged,
+unpacked/auditable, Google-scanned, and functionally identical.
+
+**The one concrete risk** (see "What the 4 extra permissions actually do" below): the
+e-toys build ships an **unverified self-updater** — at startup it fetches a server-chosen
+`app_url` from `api.e-toys.cn` and installs that APK with **no signature/checksum/TLS-pin
+check**. A MITM or compromised vendor server could push an arbitrary APK. This is why it
+requests `REQUEST_INSTALL_PACKAGES`; the other 3 extra permissions trace to the
+packer/Bugly, not app logic. (The Play build delegates updates to Google Play and is the
+safe choice — though note *both* builds send the same telemetry to e-toys.cn / heaton.com.cn
+/ ip138 / Bugly.)
 
 ## How they were obtained
 
@@ -92,8 +101,56 @@ statically (no *additional* domain was observed in its analyzable parts).
 - **Use the Play Store build.** Identical version/function, strictly fewer permissions,
   unpacked and Google-scanned, and it cannot silently self-update outside Play.
 
-## Residual gap (how to fully close it, if ever needed)
-The only way to *fully* verify the packed e-toys build is **dynamic**: install it on an
-isolated/monitored device and watch its traffic (mitmproxy + a DNS sink), or dump the
-decrypted DEX from memory (Frida/`baiduprotect` unpacker) and re-diff. Not done here —
-the user asked for static analysis only, and the recommendation above makes it moot.
+## What the 4 extra permissions actually do
+
+The e-toys build is packed, so its own bytecode can't be read directly. But both builds
+are the **same version (2.1.1)** and the same code — they differ only by a build *channel*
+(`HEATON_CHANNEL`: `google` for Play, `server` for e-toys). So the unpacked Play build is
+the e-toys app's twin, and tracing it answers what each permission is for:
+
+### `REQUEST_INSTALL_PACKAGES` — an **unverified self-updater** (the real risk) — DEFINITIVE
+On the `server` channel, **at `MainActivity` startup**, the app runs
+`UpdateManager.versionUpdate()` (`com/heaton/baselib/manager/UpdateManager.java`):
+1. POSTs `app_id`/`platform` to **`https://api.e-toys.cn/api/app/lastUpdate`**.
+2. Reads a **server-controlled `app_url`** from the JSON response.
+3. Downloads that APK over plain `HttpURLConnection` to external storage.
+4. Installs it via `ACTION_VIEW` + `application/vnd.android.package-archive` through the
+   `com.tech.idotmatrix.android7.fileprovider` provider.
+
+There is **no signature pinning, no checksum/hash check, and no TLS pinning** on this path.
+A network MITM or a compromised `api.e-toys.cn` can return an arbitrary `app_url` and the
+app will prompt the user to install it. This is exactly why the e-toys build needs
+`REQUEST_INSTALL_PACKAGES`; the Play build delegates updates to Google Play and never does.
+
+### `READ_PHONE_STATE`, `GET_TASKS`, `RECEIVE_BOOT_COMPLETED` — packer/Bugly, not app logic
+In the e-toys manifest these three are appended **after `</application>`** (outside the app
+element) — the signature of a **manifest-merge injection by the Baidu-Protect packer / the
+native Tencent Bugly SDK** (`libBugly_Native.so`, shipped in e-toys). In the unpacked twin:
+- **No live app-code consumer** of `READ_PHONE_STATE` (all IMEI/device-id readers in
+  `blankj` utils / `AppUtils` are dead code with zero callers). The live reader is **Bugly**,
+  pulling network-operator/network-type for crash-report context — not IMEI harvesting.
+- **`GET_TASKS`** uses are own-process foreground checks (Bugly + utils) — no app enumeration.
+- **No app-code `BOOT_COMPLETED` receiver** exists; it's the packer/Bugly keep-alive layer.
+- **No Chinese push/ad SDKs** anywhere (no Umeng/Getui/JPush/Pangle/GDT). Only tracker = Bugly.
+
+### Both builds are equally chatty (not just e-toys)
+The telemetry is **not** channel-gated — even the Play build talks to `api.e-toys.cn`
+(`/api/app/count`, `/App/add_app_status_info`, `/app/bluetoothFilter`, …),
+`manage.heaton.com.cn` (firmware/cloud), `api.ip138.com` (public-IP geolocation), and
+Tencent **Bugly** (appId `ab35efd421`). Only the **updater** differs between the two builds.
+
+## Dynamic-unpack attempt (to confirm the packed-only items) — BLOCKED by anti-tamper
+To confirm the packer-attributed items (exact boot-receiver class, native phone-state/task
+readers, any hidden branches in the `server` DEX), the packed DEX must be dumped at runtime.
+Attempted on the available hardware:
+- The rooted Amlogic TV box is **Android 7.1 (API 25)** — below the app's `minSdk 26`, can't install.
+- The Anbernic RG556 is **Android 13** but **not actually rooted** (inert AOSP `su`).
+- **BlackDex** (non-root unpacker) on the RG556 got to "Unpacking classes.dex (1/1)…" then
+  **failed with an environment-detection error** — Baidu Protect's **anti-debug/anti-tamper
+  defeated the dump**. (The genuine Play app was restored afterward from the saved splits.)
+
+This is itself a finding: the vendor enabled **active runtime anti-analysis** on the e-toys
+build. Fully closing the gap would need a **rooted Android 8–12 device + Frida-DEXDump with
+an anti-anti-debug hook**, or a custom unpacking ROM (FART/Youpk) — beyond the hardware on
+hand. The static-twin analysis above already establishes the one finding that matters (the
+unverified self-updater), so the recommendation — **use the Play Store build** — stands.

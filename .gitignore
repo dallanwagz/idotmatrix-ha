@@ -1,9 +1,11 @@
 # Python
-venv/
-venv-ha/
+venv*/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Downloaded tool/APK binaries (reproducible)
+research/*.apk
 
 # RE working material — large and/or reproducible; kept locally, not committed.
 # APKs: re-download per docs/SECURITY-APK-COMPARISON.md (Play Store via adb pull; e-toys URL documented).
