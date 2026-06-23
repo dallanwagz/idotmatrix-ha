@@ -61,10 +61,14 @@ draw_pixel = lambda r, g, b, x, y: frame(5, 1, 0, r, g, b, x, y)   # DIY mode fi
 ```
 
 ## Honest gaps / traps
-- **Bulk bitmap upload (dataType {2,0}, BGR, CRC32) is decoded but did not render from a
-  bare bleak client** (no ACK) — appears **gated on the JieLi-RCSP session** the app
-  establishes on connect. Use the DIY pixel path for images until that handshake is RE'd.
-- **Two pixel-colour orders:** DIY draw path is **RGB**; bulk image path is **BGR**.
+- **Bulk image upload works fully** (dataType {2,0}, RGB raster, CRC32) — no session
+  handshake needed. The gotcha that made it look "gated": the panel's fa02 receiver
+  **silently drops GATT writes > ~256 B** despite a 512 MTU. Android fragments large
+  writes transparently; macOS/other stacks don't — so **cap inner writes at ≤256 B**.
+  Confirmed rendering on hardware (quadrants + red-X).
+- **Pixel colour order is RGB** for both the DIY draw path and the bulk image path. (The
+  app's `bitmap2BGR` is misleadingly named — it actually emits RGB after reversing
+  Android's little-endian BGRA buffer.)
 - **Scoreboard is little-endian** on the wire (contradicts OSS docs) — verified on screen.
 - Panel **reverts to idle animation on disconnect** → HA must hold a persistent link and
   re-assert state.

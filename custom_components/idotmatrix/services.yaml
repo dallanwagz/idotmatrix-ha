@@ -30,3 +30,14 @@ send_command:
       example: "[1, 5, 0]"
       selector:
         object:
+
+set_image:
+  target:
+    device:
+      integration: idotmatrix
+  fields:
+    path:
+      required: true
+      example: /config/www/pixel.png
+      selector:
+        text:

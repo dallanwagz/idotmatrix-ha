@@ -77,6 +77,8 @@ class IDotMatrixCoordinator(DataUpdateCoordinator[None]):
         self._client: BleakClient | None = None
         self._lock = asyncio.Lock()
         self._connect_lock = asyncio.Lock()
+        self._upload_ack: asyncio.Event | None = None
+        self._upload_error = False
         self._expected_disconnect = False
         self._reconnect_task: asyncio.Task[None] | None = None
         self._closing = False
@@ -161,9 +163,16 @@ class IDotMatrixCoordinator(DataUpdateCoordinator[None]):
 
     @callback
     def _on_notify(self, _char: BleakGATTCharacteristic, data: bytearray) -> None:
-        """Log inbound ACK frames from fa03 (status only; nothing to read back)."""
+        """Handle inbound ACK frames from fa03 (status only; nothing to read back)."""
         status = protocol.parse_status(bytes(data))
         LOGGER.debug("iDotMatrix %s notify %s -> %s", self.address, data.hex(), status.ack.name)
+        if self._upload_ack is not None and status.ack in (
+            protocol.Ack.NEXT,
+            protocol.Ack.DONE,
+            protocol.Ack.NO_SPACE,
+        ):
+            self._upload_error = status.ack is protocol.Ack.NO_SPACE
+            self._upload_ack.set()
 
     async def _async_reassert(self) -> None:
         """Re-apply assumed state after a (re)connect."""
@@ -180,6 +189,36 @@ class IDotMatrixCoordinator(DataUpdateCoordinator[None]):
         if not self.connected:
             await self._async_connect()
         await self._write(frame)
+
+    async def async_send_image(self, rgb: bytes) -> None:
+        """Upload a full RGB raster to the panel (chunked, CRC32, ACK-gated).
+
+        ``rgb`` must be row-major RGB bytes sized to the panel (3072 B for 32x32).
+        """
+        upload = protocol.image_rgb(rgb)
+        if not self.connected:
+            await self._async_connect()
+        async with self._lock:
+            client = self._client
+            if client is None or not client.is_connected:
+                raise HomeAssistantError(f"iDotMatrix {self.address} is not connected")
+            for packet in upload.outer_packets():
+                self._upload_ack = asyncio.Event()
+                self._upload_error = False
+                try:
+                    for chunk in protocol.inner_writes(packet):
+                        await client.write_gatt_char(protocol.WRITE_UUID, chunk, response=False)
+                        await asyncio.sleep(0.02)
+                    await asyncio.wait_for(self._upload_ack.wait(), timeout=8.0)
+                except (BleakError, TimeoutError) as err:
+                    raise HomeAssistantError(
+                        f"Image upload to iDotMatrix {self.address} failed: {err}"
+                    ) from err
+                finally:
+                    self._upload_ack = None
+                if self._upload_error:
+                    raise HomeAssistantError("iDotMatrix reported no space for the image")
+            self.state.color_active = False
 
     async def _write(self, frame: bytes) -> None:
         """Serialise a write to the command characteristic."""

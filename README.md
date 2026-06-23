@@ -40,9 +40,10 @@ the HA integration holds a persistent connection.
 ## What works (validated on hardware)
 
 Power on/off, brightness, fullscreen RGB, clock (date + 24h flags), countdown,
-stopwatch, scoreboard, 180° flip, screen on/off, live DIY pixel drawing. See the
-[command catalog](docs/PROTOCOL.md#command-catalog). Bulk bitmap upload is decoded but
-appears gated on a vendor session handshake — use the DIY pixel path for images for now.
+stopwatch, scoreboard, 180° flip, screen on/off, live DIY pixel drawing, and **full
+32×32 image upload** (RGB raster, chunked + CRC32). See the
+[command catalog](docs/PROTOCOL.md#command-catalog). The HA `idotmatrix.set_image`
+service uploads any image file (auto-resized to 32×32).
 
 ## Home Assistant
 

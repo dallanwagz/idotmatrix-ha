@@ -47,7 +47,7 @@ def rgb_buf():
 def bgr_bytes():
     out = bytearray()
     for (r, g, b) in rgb_buf():
-        out += bytes((b, g, r))   # BGR order
+        out += bytes((r, g, b))   # RGB order (the app's "bitmap2BGR" actually emits RGB)
     return bytes(out)
 
 
@@ -61,7 +61,8 @@ async def main():
 
     async with BleakClient(ADDR, timeout=25.0) as c:
         mtu = c.mtu_size
-        step = max(20, min(mtu - 3, P.INNER_MTU_HIGH))
+        step = int(os.environ.get("IDM_CHUNK", "0")) or max(20, min(mtu - 3, P.INNER_MTU_HIGH))
+        pace = float(os.environ.get("IDM_PACE", "0.02"))
         print(f"connected mtu={mtu} inner_step={step} outer_packets={len(packets)} crc_data={len(data)}B")
 
         def on_notify(_h, d):
@@ -76,17 +77,18 @@ async def main():
             writes = P.inner_writes(pkt, mtu_ok=(step >= 100))
             # re-split to actual negotiated step:
             writes = [pkt[i:i + step] for i in range(0, len(pkt), step)]
-            resp = os.environ.get("IDM_WRITE_RESP", "1") == "1"
-            print(f"outer {pi}: {len(pkt)}B -> {len(writes)} inner writes (response={resp})")
+            resp = os.environ.get("IDM_WRITE_RESP", "0") == "1"
+            print(f"outer {pi}: {len(pkt)}B -> {len(writes)} inner writes (chunk={step} pace={pace} response={resp})")
             for w in writes:
                 await c.write_gatt_char(P.WRITE_UUID, w, response=resp)
-                await asyncio.sleep(0.03)
+                if pace:
+                    await asyncio.sleep(pace)
         try:
             await asyncio.wait_for(done.wait(), timeout=5.0)
             print("UPLOAD DONE (device ACK 3)")
         except asyncio.TimeoutError:
             print(f"no DONE ack within 5s (last={last['status']}) — image may still have rendered")
-        await asyncio.sleep(2.0)
+        await asyncio.sleep(float(os.environ.get("IDM_HOLD", "2.0")))
 
 
 asyncio.run(main())

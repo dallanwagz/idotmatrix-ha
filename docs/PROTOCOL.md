@@ -70,28 +70,32 @@ Enter DIY mode first (`enter_diy(1)` = `0500040101`), then per pixel:
 ```
 Captured golden frame: `0a00050100ff00000808` = red pixel at (col 8, row 8). ✅
 `option` = move/effect (0=none). Same-colour multi-pixel variant appends more
-`col,row` pairs after one `R,G,B`. **Colour order here is RGB** (note: the bulk image
-path below is BGR — they differ).
+`col,row` pairs after one `R,G,B`. **Colour order is RGB** (same as the bulk image path).
 
-## Bulk media upload (image / GIF / text) 📖 — session-gated on this firmware
+## Bulk image upload ✅ — fully working (no session handshake needed)
 
 Two-level chunked transport with CRC32 (class `ImageUpload` in `protocol.py`):
 
-1. Split media into **4096-byte** outer packets; prepend a **16-byte header**:
+1. Split the raster into **4096-byte** outer packets; prepend a **16-byte header**:
    `[len(2 LE)=chunk+16, 2, 0, option(0 first/2 rest), totalLen(4 LE), CRC32(4 LE),
-   timeSign(2 LE; 0 if image_index==12), image_index(1)]`.
-2. Split each outer packet into **MTU-3 (≤509)**-byte inner GATT writes (raw, no
-   sub-header). Wait for the fa03 ACK between outer packets: status `1`=send next,
-   `3`=done, `2`=no-space.
-- **Pixel data is BGR**, row-major, 3 bytes/pixel → **3072 bytes for 32×32**. CRC32 is
+   timeSign(2 LE; 0 when image_index==12), image_index(1)]`. Use **`image_index=12`**
+   for a "show now, no schedule" image (forces `timeSign=0`).
+2. Split each outer packet into inner GATT writes and write them to fa02
+   (write-without-response), ~20 ms apart. After the last inner write of an outer
+   packet, **wait for the fa03 ACK**: status `1`=send next packet, `3`=done, `2`=no-space.
+- **Pixel data is RGB**, row-major top-to-bottom, 3 bytes/pixel → **3072 bytes for
+  32×32**. (The app's `bitmap2BGR` is misleadingly named: Android `copyPixelsToBuffer`
+  yields little-endian BGRA and that function reverses it back to **RGB**.) CRC32 is
   standard `zlib.crc32` over the whole buffer.
-- **Hardware finding:** sending this from a bare `bleak` client (header + CRC + chunking
-  all verified correct, with `response` writes) produced **no ACK and no render** — the
-  panel stayed on its idle clock. Simple display commands work standalone, but the
-  **bitmap/material upload appears gated on the JieLi-RCSP "session" the app establishes
-  on connect** (the big `fe dc ba …` exchange on service 0xAE00). Replicating that
-  handshake is future work. **Until then, render images via the DIY pixel path above**
-  (works standalone).
+- **Inner-write size matters (hardware finding):** the panel's fa02 receiver **silently
+  drops GATT writes larger than ~256 bytes**, even though a 512 MTU is negotiated. The
+  Android app gets away with 509-byte writes because Android fragments them transparently;
+  other stacks (e.g. macOS CoreBluetooth) send the whole value and the device ignores it.
+  **Cap inner writes at ≤256 bytes** (`protocol.SAFE_WRITE_LEN = 244`). This — not any
+  RCSP session — was why a naive 509-byte-chunk upload got no ACK. A 32×32 RGB frame
+  (3072 B → one 4 KiB packet → ~13×244 writes) uploads and ACKs `[05,00,02,00,03]`,
+  **confirmed rendering on hardware** (4-colour quadrants + a red-X test). GIF/text use
+  the same transport with a different header byte[2] (gif=1) / glyph payload.
 
 ## Inbound notify / ACK (fa03) ✅
 

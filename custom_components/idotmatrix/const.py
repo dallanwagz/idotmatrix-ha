@@ -18,7 +18,13 @@ NAME_PREFIX: Final = "IDM-"
 RECONNECT_BACKOFF_MIN: Final = 3
 RECONNECT_BACKOFF_MAX: Final = 300
 
-# Generic service.
+# Panel pixel dimensions (deviceType 3 = 32x32).
+PANEL_WIDTH: Final = 32
+PANEL_HEIGHT: Final = 32
+
+# Services.
 SERVICE_SEND_COMMAND: Final = "send_command"
 ATTR_COMMAND: Final = "command"
 ATTR_PARAMS: Final = "params"
+SERVICE_SET_IMAGE: Final = "set_image"
+ATTR_PATH: Final = "path"

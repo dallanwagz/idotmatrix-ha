@@ -61,6 +61,16 @@
           "description": "Ordered list of integer arguments for the command (e.g. [1, 5, 0] for set_countdown mode/minutes/seconds)."
         }
       }
+    },
+    "set_image": {
+      "name": "Set image",
+      "description": "Uploads an image file to the panel (resized to 32x32).",
+      "fields": {
+        "path": {
+          "name": "Image path",
+          "description": "Path to an image file readable by Home Assistant (e.g. /config/www/pixel.png)."
+        }
+      }
     }
   }
 }

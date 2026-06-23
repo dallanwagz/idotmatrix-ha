@@ -114,11 +114,23 @@ def test_image_upload_header():
     assert pkt[15] == 12                          # image index
 
 
-def test_inner_writes_split():
+def test_inner_writes_capped_at_safe_len():
+    # The panel drops writes > ~256 B, so inner_writes must cap at SAFE_WRITE_LEN.
     pkt = bytes(range(256)) * 13   # 3328 bytes
-    writes = P.inner_writes(pkt, mtu_ok=True)
-    assert all(len(w) <= P.INNER_MTU_HIGH for w in writes)
+    writes = P.inner_writes(pkt)
+    assert all(len(w) <= P.SAFE_WRITE_LEN for w in writes)
     assert b"".join(writes) == pkt
+
+
+def test_image_rgb_helper():
+    # 32x32 RGB raster -> single outer packet, image dtype, RGB preserved.
+    px = bytes([10, 20, 30]) * (32 * 32)
+    up = P.image_rgb(px)
+    pkt = up.outer_packets()[0]
+    assert pkt[2] == 2 and pkt[16:19] == bytes([10, 20, 30])   # first pixel RGB, not BGR
+    import pytest
+    with pytest.raises(ValueError):
+        P.image_rgb(b"\x00" * 10)   # wrong size rejected
 
 
 # --- notify / status parsing ---------------------------------------------

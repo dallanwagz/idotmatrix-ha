@@ -243,9 +243,9 @@ def draw_pixel(r: int, g: int, b: int, x: int, y: int, option: int = 0) -> bytes
     """Live graffiti single-pixel draw (no CRC, no ACK). CMD 5 / SUB 1.
 
     Frame ``[0x0a,0,5,1, option, r,g,b, col,row]`` (DIY type 5). ``option`` is the
-    move/effect type (0 = none). Colour is **RGB** order here (note: the bulk image
-    upload uses BGR — the two paths differ). Hardware-captured golden frame:
-    ``0a00050100ff00000808`` = red pixel at (col=8,row=8).
+    move/effect type (0 = none). Colour is **RGB** order (same as the bulk image
+    path). Hardware-captured golden frame: ``0a00050100ff00000808`` = red pixel at
+    (col=8,row=8).
     """
     return frame(5, 1, option, r, g, b, x, y)
 
@@ -255,8 +255,12 @@ def draw_pixel(r: int, g: int, b: int, x: int, y: int, option: int = 0) -> bytes
 # ---------------------------------------------------------------------------
 
 OUTER_CHUNK = 4096        # getSendData4096: media split into 4 KiB "big packets"
-INNER_MTU_HIGH = 509      # negotiated MTU 512 -> 512-3
+INNER_MTU_HIGH = 509      # what the Android app uses (negotiated MTU 512 -> 512-3)
 INNER_MTU_LOW = 18        # fallback when MTU not negotiated
+# Hardware finding: the panel's fa02 receiver silently DROPS GATT writes larger than
+# ~256 bytes even when a 512 MTU is negotiated (Android fragments transparently; other
+# stacks send the whole value and the device ignores it). Cap inner writes here.
+SAFE_WRITE_LEN = 244
 
 
 class DataType(IntEnum):
@@ -276,16 +280,29 @@ def _crc32_le(data: bytes) -> bytes:
     return struct.pack("<I", zlib.crc32(data) & 0xFFFFFFFF)
 
 
+def image_rgb(pixels: bytes, width: int = 32, height: int = 32) -> "ImageUpload":
+    """Build an :class:`ImageUpload` from raw **RGB** pixel bytes (row-major, 3 B/px).
+
+    Validated on hardware: the panel wants RGB order (the app's ``bitmap2BGR`` is
+    misleadingly named — it actually emits RGB), row-major top-to-bottom. A 32x32
+    frame is ``32*32*3 == 3072`` bytes.
+    """
+    if len(pixels) != width * height * 3:
+        raise ValueError(f"expected {width * height * 3} RGB bytes, got {len(pixels)}")
+    return ImageUpload(pixels, DataType.IMAGE)
+
+
 @dataclass
 class ImageUpload:
-    """Builds the outer 4 KiB packets for a still image / GIF upload.
+    """Builds the outer 4 KiB packets for a still image upload.
 
-    Mirrors ``ImageAgreement`` / ``SendCore.payload``. For a 32x32 panel a static
-    RGB frame is 3072 bytes => a single outer packet with a 16-byte header.
+    Mirrors ``ImageAgreement``. For a 32x32 panel a static **RGB** frame is 3072
+    bytes => a single outer packet with a 16-byte header.
 
-    Use :meth:`outer_packets` to get the per-4KiB buffers, then split each into
-    MTU writes with :func:`inner_writes`, sending the next outer packet only after
-    the device ACKs (see :func:`parse_status`).
+    Use :meth:`outer_packets` to get the per-4KiB buffers, then split each into GATT
+    writes with :func:`inner_writes` (which caps at :data:`SAFE_WRITE_LEN`), sending
+    the next outer packet only after the device ACKs (see :func:`parse_status`).
+    Hardware-confirmed: a 3072 B RGB frame uploads and ACKs ``[05,00,02,00,03]``.
     """
 
     data: bytes
@@ -313,9 +330,12 @@ class ImageUpload:
         return packets
 
 
-def inner_writes(outer_packet: bytes, mtu_ok: bool = True) -> list[bytes]:
-    """Split one outer 4 KiB packet into MTU-sized GATT writes."""
-    step = INNER_MTU_HIGH if mtu_ok else INNER_MTU_LOW
+def inner_writes(outer_packet: bytes, max_len: int = SAFE_WRITE_LEN) -> list[bytes]:
+    """Split one outer 4 KiB packet into GATT writes of at most ``max_len`` bytes.
+
+    Defaults to :data:`SAFE_WRITE_LEN` (244) because the panel drops larger writes.
+    """
+    step = max(20, min(max_len, SAFE_WRITE_LEN))
     return [outer_packet[i : i + step] for i in range(0, len(outer_packet), step)]
 
 
