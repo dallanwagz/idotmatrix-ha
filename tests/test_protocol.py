@@ -95,6 +95,17 @@ def test_get_device_info():
     assert h(P.get_device_info()) == "0400 0180".replace(" ", "")
 
 
+def test_set_eco_field_order():
+    # ground-truthed flag,start_h,start_m,end_h,end_m,light (EcoActivity.java:62); fixed bug
+    assert h(P.set_eco(1, 22, 0, 7, 30, 10)) == "0a000280011600071e0a"
+
+
+def test_password():
+    # 6 digits -> 3 decimal pairs (123456 -> 12,34,56 = 0c,22,38)
+    assert h(P.set_password("123456", enable=1)) == "0800040201" + "0c2238"
+    assert h(P.verify_password("123456")) == "07000502" + "0c2238"
+
+
 # --- image upload (BGR, chunked, CRC32) ----------------------------------
 
 def test_image_upload_header():

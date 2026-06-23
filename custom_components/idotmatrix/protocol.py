@@ -182,9 +182,9 @@ def set_chronograph(mode: int) -> bytes:
 def set_scoreboard(count1: int, count2: int) -> bytes:
     """Scoreboard. CMD 10 / SUB 0x80. Two uint16 scores, little-endian on the wire.
 
-    NOTE: the OSS libraries document big-endian; the decompiled app emits
-    little-endian (``short2Bytes`` BE, then placed ``[1],[0]``). Flagged to verify
-    on hardware — see docs/PROTOCOL.md.
+    Endianness SETTLED little-endian: verified on hardware (258 shows as 258) and
+    independently emitted LE by 8none1, derkalle4, and markusressel + the app
+    (``short2Bytes`` BE then placed ``[1],[0]``). The "big-endian" in OSS comments is wrong.
     """
     return frame(10, 0x80, count1 & 0xFF, (count1 >> 8) & 0xFF, count2 & 0xFF, (count2 >> 8) & 0xFF)
 
@@ -209,9 +209,38 @@ def set_time_indicator(on: bool) -> bytes:
     return frame(7, 0x80, 1 if on else 0)
 
 
-def set_eco(on_h: int, on_m: int, off_h: int, off_m: int, e5: int = 0, e6: int = 0) -> bytes:
-    """Eco / sleep schedule (auto on/off). CMD 2 / SUB 0x80."""
-    return frame(2, 0x80, on_h, on_m, off_h, off_m, e5, e6)
+def set_eco(flag: int, start_h: int, start_m: int, end_h: int, end_m: int, light: int = 10) -> bytes:
+    """Eco / sleep schedule (auto-dim window). CMD 2 / SUB 0x80.
+
+    Payload = ``flag, start_h, start_m, end_h, end_m, light`` — ground-truthed against
+    ``EcoActivity.java:62`` (``setEco(flag, hour1, min1, hour2, min2, light)``). ``flag``
+    1=enabled/0=off; ``light`` is the dimmed brightness during the window (app default 10).
+    (Corrected from an earlier mislabeled signature; confirmed by 8none1 + derkalle4 + markusressel.)
+    """
+    return frame(2, 0x80, flag, start_h, start_m, end_h, end_m, light)
+
+
+def _pwd_pairs(password: str) -> list[int]:
+    if len(password) != 6 or not password.isdigit():
+        raise ValueError("password must be 6 digits")
+    return [int(password[i : i + 2]) for i in (0, 2, 4)]
+
+
+def set_password(password: str, enable: int = 1) -> bytes:
+    """Set the 6-digit device password. CMD 4 / SUB 2. (BleProtocolN.setPwd:140)
+
+    Wire: ``[8,0,4,2, enable, dd1, dd2, dd3]`` where the 6 digits are sent as three
+    decimal byte-pairs (e.g. "123456" -> 12,34,56). ``enable`` 1=on/0=off.
+    """
+    return frame(4, 2, enable, *_pwd_pairs(password))
+
+
+def verify_password(password: str) -> bytes:
+    """Verify the 6-digit device password. CMD 5 / SUB 2. (BleProtocolN.verifyPwd:188)
+
+    Wire: ``[7,0,5,2, dd1, dd2, dd3]`` (same decimal-pair encoding as set_password).
+    """
+    return frame(5, 2, *_pwd_pairs(password))
 
 
 def set_screen_light_time(value: int) -> bytes:
