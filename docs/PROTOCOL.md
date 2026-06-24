@@ -189,33 +189,39 @@ This makes the panel viable as a **live audio visualizer** from a Python/HA host
 
 ## Device carousel / on-device asset storage ✅
 
-The panel **persistently stores up to 36 assets (3 pages × 12 slots)** and **cycles them
+The panel **persistently carousels 12 slots** (`image_index` 0–11) and **cycles them
 autonomously** — no host needed, survives disconnect. This is the "Device Assets" feature.
-RE'd + driven from our own client (verified: stored blinking-colour GIFs cycle on their own).
+RE'd + driven from our own client (verified: 12-scene story loops on its own).
+
+⚠️ **The device holds 12, not 36.** The app shows "3 pages of 12 = 36," but those are
+**app-side** sets: a "push page" always uploads to `image_index` 0–11 (`curIndex` increments
+0,1,2,… *per push*, `DeviceMaterialChildFragment.sendData`), so pushing any page **replaces** the
+12 on the device. Uploading to index 14–35 ACKs but never enters the carousel.
 
 **Store an asset to a slot** — reuse the bulk **GIF** upload (`DataType.GIF`, dtype byte[2]=1)
 with two header fields:
-- **`image_index` (byte[15]) = the slot number 0–35.** (NOT 12/13 — those are display buffers.)
+- **`image_index` (byte[15]) = the slot number 0–11.**
 - **`timeSign` (bytes[13–14], LE) = the per-asset carousel dwell time in *seconds*.**
 
 `image_index` semantics (corrects the bulk-image note above):
 | value | meaning |
 |---|---|
-| `0`–`35` | carousel **storage slot** — requires `DataType.GIF` to actually persist |
+| `0`–`11` | carousel **storage slot** — requires `DataType.GIF` to actually persist |
 | `12` | **live / show-now** (transient display; `timeSign` forced to 0) — what a plain push uses |
 | `13` | **preview / "currently showing"** buffer (transient) |
+| `14`–`35` | not a playable carousel slot (ACKs but is dropped) |
 
 A **static image (`DataType.IMAGE`) at idx 12/13 only displays** — it does not enter the
 carousel. Storage needs an animated GIF at a slot index. Each upload ACKs the GIF state
 machine (`0500010001`=next / `0500010003`=done).
 
 **Control:**
-- **Clear a page** (slots 0–11): `cmd 2/1` = `[17,0,2,1, 12, 0,1,2,3,4,5,6,7,8,9,10,11]`
-  (`Agreement.getDeleteMaterial`). This is the "material-wipe" — ⚠️ destroys stored assets.
+- **Slot-setup / clear** (slots 0–11): `cmd 2/1` = `[17,0,2,1, 12, 0,1,2,3,4,5,6,7,8,9,10,11]`
+  (`Agreement.getDeleteMaterial`). Sent once before a push — ⚠️ destroys stored assets.
 - **Start the carousel / enter asset view:** `cmd 10/1` = `04000a01`.
-- Slots fill in arrival order after a page-clear; per-slot dwell is each asset's `timeSign`.
+- Slots fill in arrival order after the slot-setup; per-slot dwell is each asset's `timeSign`.
 
-**Why this matters:** it's the true **set-and-forget** mode — preload up to 36 animations and
+**Why this matters:** it's the true **set-and-forget** mode — preload 12 animations and
 the panel loops them itself, unlike rhythm (streamed) or stills (host-driven). Builders:
 `material_wipe()`, `enter_asset_view()`, and `ImageUpload(gif, DataType.GIF, image_index=slot,
 time_sign=dwell)`.
@@ -246,8 +252,10 @@ Just two opcodes — there is no distinct "lamp" command:
   (The community RE's "len 6+count" layout is wrong — this is byte-for-byte from the app builder.)
 
 ### Device-Assets sub-tab (carousel)
-Store = GIF upload (`DataType.GIF`) with `image_index`=slot 0–35, `timeSign`=dwell. The `+` boxes
-are empty slots; the down-arrow pushes the page. **Carousel interval → `timeSign` seconds:**
+Store = GIF upload (`DataType.GIF`) with `image_index`=slot **0–11**, `timeSign`=dwell. The `+`
+boxes are empty slots; the down-arrow pushes the page. **The device carousels 12 slots** — the
+app's "3 pages" are swappable app-side sets, each push replaces the on-device 12 (see Device-carousel
+section). **Carousel interval → `timeSign` seconds:**
 | UI | 5s | 10s | 30s | 1min | 5min |
 |---|---|---|---|---|---|
 | seconds | 5 | 10 | 30 | 60 | 300 |
@@ -269,5 +277,5 @@ BLE drops over multi-minute transfers, not a device limit). Practical guidance a
 - dense/noisy frames (~2 KB/frame): **~650–800 frames** (≈60–80 s @ 10 fps);
 - typical 256-colour content (~300–600 B/frame): **thousands of frames** (many minutes).
 - Storage is **not** the bottleneck — BLE upload time/reliability and the device's playback decode
-  are. The 36 slots almost certainly share a flash pool (not 36 × 1.6 MB), so budget the **total**
-  pool at ≥1.6 MB and a single continuous animation at **1–2 min of full-motion 32×32 GIF**.
+  are. The carousel is **12 slots** (≥1.3 MB measured into one), so a single animation can run
+  **1–2 min of full-motion 32×32 GIF**, and the full 12-slot set loops untethered.

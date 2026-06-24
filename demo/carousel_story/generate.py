@@ -293,22 +293,34 @@ def act_finale(s, N):
     return out
 
 
-ACTS = [(act_train, "train"), (act_dummy, "dummy"), (act_awaken, "awaken"),
-        (act_dance, "dance"), (act_poles, "poles"), (act_finale, "finale")]
+# The device carousels exactly 12 slots (image_index 0-11); the app's "3 pages" are
+# swappable 12-scene sets you push one at a time. So the story is told in 12 beats,
+# two per act, chosen for visual contrast across each act's arc.
+STORY = [
+    (act_train, 0, "train-horse"),    # 0  wide horse stance at sunrise
+    (act_train, 3, "train-kick"),     # 1  high kick
+    (act_dummy, 1, "dummy-strike"),   # 2  striking the mook jong
+    (act_dummy, 4, "dummy-flurry"),   # 3  a fast flurry
+    (act_awaken, 0, "lion-asleep"),   # 4  the lion head, eyes closed
+    (act_awaken, 5, "lion-awake"),    # 5  awake, mouth open, mane shaking
+    (act_dance, 1, "dance-weave"),    # 6  weaving the street
+    (act_dance, 4, "dance-leap"),     # 7  a big sway/leap
+    (act_poles, 1, "poles-climb"),    # 8  onto the plum-blossom poles
+    (act_poles, 5, "poles-reach"),    # 9  reaching for the green up high
+    (act_finale, 0, "the-green"),     # 10 the green hangs, lion below
+    (act_finale, 4, "cai-qing"),      # 11 pluck + fireworks finale
+]
 
 
 def main():
     total = 0
-    slot = 0
-    for act, title in ACTS:
-        for s in range(6):
-            frames = act(s, 46)
-            frames = [enrich(im, fi, slot) for fi, im in enumerate(frames)]
-            n = save_gif(frames, f"slot_{slot:02d}_{title}_{s}.gif")
-            total += n
-            print(f"  slot {slot:02d}  {title}.{s}  {len(frames)}f  {n:6d} B")
-            slot += 1
-    print(f"\n36 scenes, total {total} bytes ({total/1024:.0f} KB), avg {total//36} B/scene")
+    for slot, (act, s, name) in enumerate(STORY):
+        frames = act(s, 48)
+        frames = [enrich(im, fi, slot) for fi, im in enumerate(frames)]
+        n = save_gif(frames, f"slot_{slot:02d}_{name}.gif")
+        total += n
+        print(f"  slot {slot:02d}  {name:14s} {len(frames)}f  {n:6d} B")
+    print(f"\n12 scenes, total {total} bytes ({total/1024:.0f} KB), avg {total//12} B/scene")
 
 
 if __name__ == "__main__":
