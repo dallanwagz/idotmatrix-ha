@@ -63,6 +63,16 @@ def test_flip_captured():
     assert h(P.set_flip(False)) == "0500068000"
 
 
+def test_clock_styles_and_flags_captured():
+    # Captured via a clock-screen sweep (8 styles + 12/24 + date + colour picker):
+    assert h(P.set_clock(2, show_date=False, hour24=True, r=255, g=152, b=43)) == "0800060142ff982b"
+    assert h(P.set_clock(1, show_date=True, hour24=False, r=229, g=12, b=23)) == "0800060181e50c17"
+    # all 8 styles land in byte[4] low bits; 0x80=date, 0x40=24h
+    for s in range(8):
+        assert P.set_clock(s, show_date=False, hour24=False, r=0, g=0, b=0)[4] == s
+    assert P.set_clock(0, show_date=True, hour24=True)[4] == 0xC0
+
+
 def test_screen_captured():
     assert h(P.set_screen(False)) == "0500070100"
     assert h(P.set_screen(True)) == "0500070101"

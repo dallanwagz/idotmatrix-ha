@@ -65,6 +65,20 @@ All validated on the 32×32 unless marked. CMD/SUB are bytes [2]/[3]; `0x80`=128
 `mode` enums: Countdown/Stopwatch `0=disable/reset,1=start,2=pause,3=restart/continue`.
 DIY fun `0=quit-nosave,1=enter+clear,2=quit-still,3=enter-noclear`.
 
+### Clock faces (`cmd 6/1`) — full sweep confirmed ✅
+
+`sendClockMode(style, showDate, hour24, r, g, b)` →
+`[8,0, 6,1, style | (0x80 if date) | (0x40 if 24h), r, g, b]`.
+
+- **8 styles** `0–7` in the low bits of byte[4] (the 32×32 set). Captured swiping the preview:
+  `42→43→44→45→46→47→40→41` = styles 2,3,4,5,6,7,0,1.
+- **`0x80` = show date**, **`0x40` = 24-hour** — each verified by toggling: `0x41`↔`0x01` (24h),
+  `0x01`↔`0x81` (date).
+- **bytes[5–7] = RGB**, set by the colour picker (captured `…81ffd981`, `…81b6ffff`, `…81ff5a7f`).
+- Each style ships a **default colour** (`default16x16TimeColor`): 0=`(97,24,214)` 1=`(229,12,23)`
+  2=`(255,152,43)` 3=`(19,67,248)` 4=`(106,39,248)` 5=`(255,146,42)` 6=`(255,15,77)` 7=`(67,250,85)`.
+- **"Intensity" is the separate `set_brightness` (`cmd 4/0x80`)** — NOT part of the clock frame.
+
 ## DIY pixel draw (live graffiti) ✅
 
 Enter DIY mode first (`enter_diy(1)` = `0500040101`), then per pixel:
