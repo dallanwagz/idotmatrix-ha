@@ -1,0 +1,3502 @@
+{
+ "anim/daily/32718": {
+  "file_id": 32718,
+  "category": "daily",
+  "type": "anim",
+  "name": "chocolate-chip-cookie",
+  "description": "A round brown cookie studded with dark chocolate chips, with a few crumbs scattered around it. A classic snack icon."
+ },
+ "anim/daily/32719": {
+  "file_id": 32719,
+  "category": "daily",
+  "type": "anim",
+  "name": "shooting-comet",
+  "description": "A bright yellow-orange streak of light slashing diagonally across a dark starry sky, like a comet or shooting star. The trail flickers."
+ },
+ "anim/daily/32720": {
+  "file_id": 32720,
+  "category": "daily",
+  "type": "anim",
+  "name": "horse-head-silhouette",
+  "description": "A solid black silhouette of a horse's head and arched neck on a white background. A minimalist equine profile."
+ },
+ "anim/daily/32721": {
+  "file_id": 32721,
+  "category": "daily",
+  "type": "anim",
+  "name": "color-test-bars",
+  "description": "Horizontal stacked color bars (red, yellow, cyan, green, magenta) against white, like a TV/monitor color-test pattern or a simple equalizer."
+ },
+ "anim/daily/32722": {
+  "file_id": 32722,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-corner-gradient",
+  "description": "Concentric rainbow squares radiating from one corner, forming a nested spectrum gradient across the panel."
+ },
+ "anim/daily/32723": {
+  "file_id": 32723,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-chevrons",
+  "description": "Nested multicolored chevron/zigzag bands forming a layered rainbow angle pattern."
+ },
+ "anim/daily/32724": {
+  "file_id": 32724,
+  "category": "daily",
+  "type": "anim",
+  "name": "vertical-rainbow-bars",
+  "description": "Full-spectrum vertical color stripes spanning the panel, a bright rainbow bar pattern."
+ },
+ "anim/daily/32725": {
+  "file_id": 32725,
+  "category": "daily",
+  "type": "anim",
+  "name": "faint-beige-texture",
+  "description": "A low-contrast sandy/beige noise texture with no clear subject; appears to be a subtle grain or static pattern."
+ },
+ "anim/daily/32726": {
+  "file_id": 32726,
+  "category": "daily",
+  "type": "anim",
+  "name": "elephant-face",
+  "description": "A gray elephant's face seen head-on, with large floppy ears and a hanging trunk. Friendly cartoon style."
+ },
+ "anim/daily/32727": {
+  "file_id": 32727,
+  "category": "daily",
+  "type": "anim",
+  "name": "gold-emblem-blue",
+  "description": "An abstract golden shape (resembling a stylized '4' or curled animal) on a deep blue background; an ornamental emblem."
+ },
+ "anim/daily/32728": {
+  "file_id": 32728,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-robot-toaster",
+  "description": "A boxy light-blue robot/appliance character with a small smiling face, like a toaster robot. Cute mascot."
+ },
+ "anim/daily/32729": {
+  "file_id": 32729,
+  "category": "daily",
+  "type": "anim",
+  "name": "cola-soda-can",
+  "description": "A blue aluminum soda can with red and white accents, styled like a cola drink. Refreshment icon."
+ },
+ "anim/daily/25338": {
+  "file_id": 25338,
+  "category": "daily",
+  "type": "anim",
+  "name": "lit-bomb",
+  "description": "A classic round black cartoon bomb with a sparking lit fuse on top, about to explode."
+ },
+ "anim/daily/16712": {
+  "file_id": 16712,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-figure-cyan",
+  "description": "A simple red stick-like figure or antenna shape centered on a bright cyan background; an abstract red glyph."
+ },
+ "anim/daily/16713": {
+  "file_id": 16713,
+  "category": "daily",
+  "type": "anim",
+  "name": "music-notes",
+  "description": "Assorted white and colored musical notes floating on a red background, with a rainbow strip; a music/sound motif."
+ },
+ "anim/daily/16714": {
+  "file_id": 16714,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-stripes",
+  "description": "Horizontal full-spectrum rainbow stripes filling the panel, a bold color-band pattern."
+ },
+ "anim/daily/16715": {
+  "file_id": 16715,
+  "category": "daily",
+  "type": "anim",
+  "name": "running-character",
+  "description": "A small pixel person in a red cap and green shirt shown mid-stride, running to the side. Retro game-style sprite."
+ },
+ "anim/daily/16716": {
+  "file_id": 16716,
+  "category": "daily",
+  "type": "anim",
+  "name": "nyan-cat",
+  "description": "The Nyan Cat meme: a gray cat with a pink pop-tart body leaving a rainbow trail as it flies. Iconic internet animation."
+ },
+ "anim/daily/16717": {
+  "file_id": 16717,
+  "category": "daily",
+  "type": "anim",
+  "name": "subscribe-button",
+  "description": "A red rounded button with bold 'SUB' text (short for subscribe), styled like a YouTube call-to-action."
+ },
+ "anim/daily/16718": {
+  "file_id": 16718,
+  "category": "daily",
+  "type": "anim",
+  "name": "reindeer-face",
+  "description": "A brown reindeer face with antlers and a red nose, a cheerful Christmas Rudolph motif."
+ },
+ "anim/daily/16719": {
+  "file_id": 16719,
+  "category": "daily",
+  "type": "anim",
+  "name": "color-burst",
+  "description": "A vivid multicolored burst of pixels exploding outward on a dark background, like fireworks or a starburst. Bright and chaotic."
+ },
+ "anim/daily/16720": {
+  "file_id": 16720,
+  "category": "daily",
+  "type": "anim",
+  "name": "dancing-boy",
+  "description": "A pixel boy with red-brown hair, a red shirt and blue overalls, arms flung out as if dancing. Cheerful retro sprite."
+ },
+ "anim/daily/16721": {
+  "file_id": 16721,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-figure-cross",
+  "description": "A blue-bodied character with yellow hair holding a small cross/dagger shape. A simple costumed sprite on dark."
+ },
+ "anim/daily/16722": {
+  "file_id": 16722,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-haired-girl",
+  "description": "A cartoon girl with bright magenta hair and a pink outfit, facing forward. Cute character portrait."
+ },
+ "anim/daily/16723": {
+  "file_id": 16723,
+  "category": "daily",
+  "type": "anim",
+  "name": "dancing-figure-blue",
+  "description": "A blue character with blonde hair and arms outstretched in a dancing pose. Lively sprite on a dark panel."
+ },
+ "anim/daily/16724": {
+  "file_id": 16724,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-hero",
+  "description": "A blue-armored character with a white helmet/hair, resembling a retro action hero like Mega Man. Heroic sprite."
+ },
+ "anim/daily/16725": {
+  "file_id": 16725,
+  "category": "daily",
+  "type": "anim",
+  "name": "clown-grin",
+  "description": "A creepy clown/Joker face with a pale head and a huge red grinning mouth. Unsettling carnival expression."
+ },
+ "anim/daily/16726": {
+  "file_id": 16726,
+  "category": "daily",
+  "type": "anim",
+  "name": "dark-monolith",
+  "description": "A dark purple gravestone-or-doorway shape flecked with colorful speckles on black; an ambiguous shadowy form."
+ },
+ "anim/daily/16727": {
+  "file_id": 16727,
+  "category": "daily",
+  "type": "anim",
+  "name": "screaming-green-face",
+  "description": "A green monster face with wide eyes and a gaping red mouth mid-scream. A spooky shouting creature."
+ },
+ "anim/daily/16728": {
+  "file_id": 16728,
+  "category": "daily",
+  "type": "anim",
+  "name": "chinese-road-glyph",
+  "description": "Stylized cyan Chinese characters (including 路, 'road') on black; a glowing neon text motif."
+ },
+ "anim/daily/16729": {
+  "file_id": 16729,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-frog-creature",
+  "description": "A smiling green frog-like creature with big eyes, a friendly amphibian mascot."
+ },
+ "anim/daily/16730": {
+  "file_id": 16730,
+  "category": "daily",
+  "type": "anim",
+  "name": "cyan-cyclops",
+  "description": "A round cyan blob monster with a single large eye on a magenta background. A cute one-eyed creature."
+ },
+ "anim/daily/16731": {
+  "file_id": 16731,
+  "category": "daily",
+  "type": "anim",
+  "name": "blank-frame",
+  "description": "A nearly empty black frame with no discernible subject; likely a blank or very dark animation cell."
+ },
+ "anim/daily/16732": {
+  "file_id": 16732,
+  "category": "daily",
+  "type": "anim",
+  "name": "acrobat-pose",
+  "description": "A small magenta pixel figure balanced on a green platform with arms raised, like an acrobat or gymnast."
+ },
+ "anim/daily/16733": {
+  "file_id": 16733,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-fish",
+  "description": "A simple blue fish swimming on a teal background. A tidy aquatic icon."
+ },
+ "anim/daily/16734": {
+  "file_id": 16734,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-bird",
+  "description": "A round blue bird or penguin with outstretched wings on a dark background. Friendly avian sprite."
+ },
+ "anim/daily/16735": {
+  "file_id": 16735,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-bunny",
+  "description": "A pink rabbit's face with tall ears peeking up, with a hint of green grass below. A soft bunny motif."
+ },
+ "anim/daily/16736": {
+  "file_id": 16736,
+  "category": "daily",
+  "type": "anim",
+  "name": "purple-monster-tongue",
+  "description": "A blocky purple monster face with white eyes and a pink tongue sticking out playfully. Silly creature."
+ },
+ "anim/daily/16737": {
+  "file_id": 16737,
+  "category": "daily",
+  "type": "anim",
+  "name": "circuit-maze",
+  "description": "An abstract pattern of brown, green and red horizontal bars and blocks resembling a maze or circuit board."
+ },
+ "anim/daily/16738": {
+  "file_id": 16738,
+  "category": "daily",
+  "type": "anim",
+  "name": "smiley-face",
+  "description": "A classic smiley face — white head, two eyes and a pink grin — inside a bright yellow border. Happy emoji."
+ },
+ "anim/daily/16739": {
+  "file_id": 16739,
+  "category": "daily",
+  "type": "anim",
+  "name": "teal-robot-face",
+  "description": "A blocky teal robot/monster face with two rectangular eyes and a flat mouth. A simple boxy character."
+ },
+ "anim/daily/16740": {
+  "file_id": 16740,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-chick",
+  "description": "A fluffy yellow baby chick with an orange beak, standing and looking ahead. Cute bird sprite."
+ },
+ "anim/daily/16741": {
+  "file_id": 16741,
+  "category": "daily",
+  "type": "anim",
+  "name": "dizzy-face",
+  "description": "A cyan outlined smiley face with X-shaped eyes, the classic dizzy or knocked-out emoji."
+ },
+ "anim/daily/16742": {
+  "file_id": 16742,
+  "category": "daily",
+  "type": "anim",
+  "name": "orange-surprised-face",
+  "description": "An orange square face with purple eyebrows and an open purple mouth, looking surprised or yawning."
+ },
+ "anim/daily/16743": {
+  "file_id": 16743,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-gift-box",
+  "description": "A blue blocky box with a lighter window/patch, resembling a present or a simple blue cube."
+ },
+ "anim/daily/16744": {
+  "file_id": 16744,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-smile",
+  "description": "A black panel with two white eyes and a wide yellow grin, a minimalist happy face."
+ },
+ "anim/daily/16745": {
+  "file_id": 16745,
+  "category": "daily",
+  "type": "anim",
+  "name": "purple-kiss-face",
+  "description": "A round purple face with bright red puckered lips on a purple background, a flirty kissing emoji."
+ },
+ "anim/daily/16746": {
+  "file_id": 16746,
+  "category": "daily",
+  "type": "anim",
+  "name": "heart-piano",
+  "description": "A red heart hovering above a piano keyboard on purple, combining music and love."
+ },
+ "anim/daily/16747": {
+  "file_id": 16747,
+  "category": "daily",
+  "type": "anim",
+  "name": "duck-equalizer",
+  "description": "A little white duck standing in front of pulsing audio equalizer bars; a music-loving bird."
+ },
+ "anim/daily/16748": {
+  "file_id": 16748,
+  "category": "daily",
+  "type": "anim",
+  "name": "heart-headphones",
+  "description": "A red heart wearing yellow headphones with sound waves around it, symbolizing love of music."
+ },
+ "anim/daily/16749": {
+  "file_id": 16749,
+  "category": "daily",
+  "type": "anim",
+  "name": "gray-ghost",
+  "description": "A fuzzy gray ghost with a simple face and a purple outline, like a Pac-Man ghost. Spooky-cute."
+ },
+ "anim/daily/16750": {
+  "file_id": 16750,
+  "category": "daily",
+  "type": "anim",
+  "name": "color-bar-grid",
+  "description": "A dense grid of small multicolored vertical dashes, like a colorful equalizer or pixel mosaic."
+ },
+ "anim/daily/16751": {
+  "file_id": 16751,
+  "category": "daily",
+  "type": "anim",
+  "name": "equalizer-bars",
+  "description": "Vertical rainbow audio-equalizer bars rising on a dark background, a music spectrum visual."
+ },
+ "anim/daily/16752": {
+  "file_id": 16752,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-sound-bars",
+  "description": "A row of red audio spectrum bars of varying heights, an animated sound visualizer."
+ },
+ "anim/daily/16753": {
+  "file_id": 16753,
+  "category": "daily",
+  "type": "anim",
+  "name": "piano-visualizer",
+  "description": "A piano keyboard topped with colorful bars, a music visualizer combining keys and an equalizer."
+ },
+ "anim/daily/16754": {
+  "file_id": 16754,
+  "category": "daily",
+  "type": "anim",
+  "name": "chick-with-cap",
+  "description": "A yellow baby chick wearing a small gray cap, a cute bird character."
+ },
+ "anim/daily/16755": {
+  "file_id": 16755,
+  "category": "daily",
+  "type": "anim",
+  "name": "headphone-dj",
+  "description": "A character with an orange face and blue hair wearing headphones, like a DJ or music listener."
+ },
+ "anim/daily/16756": {
+  "file_id": 16756,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-owl",
+  "description": "A cute white owl with big round eyes on a teal background. Friendly bird mascot."
+ },
+ "anim/daily/16757": {
+  "file_id": 16757,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-bunny",
+  "description": "A white rabbit with tall ears on an orange background, a simple bunny face."
+ },
+ "anim/daily/16758": {
+  "file_id": 16758,
+  "category": "daily",
+  "type": "anim",
+  "name": "gray-cat",
+  "description": "A gray pixel cat/animal face looking forward, rendered in simple blocky shading."
+ },
+ "anim/daily/16759": {
+  "file_id": 16759,
+  "category": "daily",
+  "type": "anim",
+  "name": "music-note",
+  "description": "A single white eighth-note on a black background, a clean musical-note icon."
+ },
+ "anim/daily/16760": {
+  "file_id": 16760,
+  "category": "daily",
+  "type": "anim",
+  "name": "christmas-trees",
+  "description": "A small cluster of decorated Christmas trees in purple, red, blue and brown. Festive holiday motif."
+ },
+ "anim/daily/16761": {
+  "file_id": 16761,
+  "category": "daily",
+  "type": "anim",
+  "name": "unicorn-head",
+  "description": "A white unicorn/horse head with a flowing purple mane on a green background. Whimsical cartoon."
+ },
+ "anim/daily/16762": {
+  "file_id": 16762,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-frog",
+  "description": "A simple green frog seen from above on a black background. Tidy amphibian icon."
+ },
+ "anim/daily/16763": {
+  "file_id": 16763,
+  "category": "daily",
+  "type": "anim",
+  "name": "snowman-stars",
+  "description": "A white snowman figure surrounded by little yellow stars on a blue sky. Wintry holiday scene."
+ },
+ "anim/daily/16764": {
+  "file_id": 16764,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-diamond-grid",
+  "description": "A repeating green-and-yellow diamond/checker grid filling the panel. Geometric pattern."
+ },
+ "anim/daily/16765": {
+  "file_id": 16765,
+  "category": "daily",
+  "type": "anim",
+  "name": "orange-waveform",
+  "description": "An orange zigzag waveform line snaking across a dark panel, like an audio wave."
+ },
+ "anim/daily/16766": {
+  "file_id": 16766,
+  "category": "daily",
+  "type": "anim",
+  "name": "fox-equalizer",
+  "description": "An orange fox standing in front of green equalizer bars; a music-themed animal."
+ },
+ "anim/daily/16767": {
+  "file_id": 16767,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-pig",
+  "description": "A cartoon pink pig face with a snout on a dark background. Cute farm animal."
+ },
+ "anim/daily/16768": {
+  "file_id": 16768,
+  "category": "daily",
+  "type": "anim",
+  "name": "toothy-mouth",
+  "description": "A wide-open red mouth showing white teeth, a bold mouth/lips graphic."
+ },
+ "anim/daily/16769": {
+  "file_id": 16769,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-lips",
+  "description": "A pair of glossy red lips on black, a classic kiss/lips motif."
+ },
+ "anim/daily/16770": {
+  "file_id": 16770,
+  "category": "daily",
+  "type": "anim",
+  "name": "tiny-spark",
+  "description": "A small faint yellow glow/spark on an otherwise black panel; a subtle point of light."
+ },
+ "anim/daily/16771": {
+  "file_id": 16771,
+  "category": "daily",
+  "type": "anim",
+  "name": "gray-particles",
+  "description": "Scattered gray and white pixels bursting across black, like smoke, debris or a small explosion."
+ },
+ "anim/daily/16772": {
+  "file_id": 16772,
+  "category": "daily",
+  "type": "anim",
+  "name": "flame-bands",
+  "description": "Horizontal wavy bands of orange, yellow and white, resembling flickering flames or sound waves."
+ },
+ "anim/daily/16773": {
+  "file_id": 16773,
+  "category": "daily",
+  "type": "anim",
+  "name": "dark-streaks",
+  "description": "A dark scene with vertical red/purple light streaks and a small toothy creature below; moody and abstract."
+ },
+ "anim/daily/16774": {
+  "file_id": 16774,
+  "category": "daily",
+  "type": "anim",
+  "name": "circuit-maze",
+  "description": "A maze-like arrangement of green and blue blocks on black, resembling a circuit board or labyrinth."
+ },
+ "anim/daily/16775": {
+  "file_id": 16775,
+  "category": "daily",
+  "type": "anim",
+  "name": "purple-maze",
+  "description": "A symmetric purple-and-blue maze pattern with a green center. Geometric labyrinth."
+ },
+ "anim/daily/16776": {
+  "file_id": 16776,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-diamond",
+  "description": "Concentric rainbow diamonds nested around a center, a colorful kaleidoscopic pattern."
+ },
+ "anim/daily/16777": {
+  "file_id": 16777,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-green-fragments",
+  "description": "A black panel with a pink/orange blob at the bottom and a small green arrow above; abstract fragments."
+ },
+ "anim/daily/16778": {
+  "file_id": 16778,
+  "category": "daily",
+  "type": "anim",
+  "name": "heart-in-frames",
+  "description": "A red heart centered inside nested pink square frames, like a framed love icon."
+ },
+ "anim/daily/16779": {
+  "file_id": 16779,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-bunny-green",
+  "description": "A white rabbit face with tall ears on a green background. Simple cheerful bunny."
+ },
+ "anim/daily/16780": {
+  "file_id": 16780,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-blob-face",
+  "description": "A round pink blob creature with a simple face, reminiscent of Kirby. Soft and cute."
+ },
+ "anim/daily/16781": {
+  "file_id": 16781,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-blob",
+  "description": "A chunky green blob/frog creature with small eyes, a friendly slime-like character."
+ },
+ "anim/daily/16782": {
+  "file_id": 16782,
+  "category": "daily",
+  "type": "anim",
+  "name": "tiger-face",
+  "description": "An orange tiger face with black stripes and whiskers, a bold feline portrait."
+ },
+ "anim/daily/16783": {
+  "file_id": 16783,
+  "category": "daily",
+  "type": "anim",
+  "name": "color-square-grid",
+  "description": "A grid of brightly colored squares in many hues on black, a confetti-like pattern."
+ },
+ "anim/daily/16784": {
+  "file_id": 16784,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-cat-outfit",
+  "description": "A white cat/rabbit character wearing a green outfit. Dressed-up animal sprite."
+ },
+ "anim/daily/16785": {
+  "file_id": 16785,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-cat",
+  "description": "A blue cat face with pink cheeks and pointed ears on a dark background. Cute kitty."
+ },
+ "anim/daily/16786": {
+  "file_id": 16786,
+  "category": "daily",
+  "type": "anim",
+  "name": "night-skyline",
+  "description": "A purple city skyline of tall buildings under a starry night sky with lit windows."
+ },
+ "anim/daily/16787": {
+  "file_id": 16787,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-burst",
+  "description": "A radial tie-dye burst of rainbow colors forming an X/star shape. Psychedelic pattern."
+ },
+ "anim/daily/16788": {
+  "file_id": 16788,
+  "category": "daily",
+  "type": "anim",
+  "name": "battery-empty",
+  "description": "A white outline of a battery on black, an empty battery/charge icon."
+ },
+ "anim/daily/16789": {
+  "file_id": 16789,
+  "category": "daily",
+  "type": "anim",
+  "name": "battery-rainbow",
+  "description": "A yellow battery icon over a rainbow-striped background, suggesting charging or power."
+ },
+ "anim/daily/16790": {
+  "file_id": 16790,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-fish",
+  "description": "A multicolored fish with rainbow scales swimming on a dark background. Vibrant sea creature."
+ },
+ "anim/daily/16791": {
+  "file_id": 16791,
+  "category": "daily",
+  "type": "anim",
+  "name": "colored-lights-row",
+  "description": "A horizontal row of small multicolored segments/lights on black, like a string of candies or bulbs."
+ },
+ "anim/daily/16792": {
+  "file_id": 16792,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-eared-bunny",
+  "description": "A white rabbit with pink inner ears on a dark panel with a red/orange base. Bunny motif."
+ },
+ "anim/daily/16793": {
+  "file_id": 16793,
+  "category": "daily",
+  "type": "anim",
+  "name": "purple-cat",
+  "description": "A purple cat face with glowing green eyes on a dark background. Mysterious kitty."
+ },
+ "anim/daily/16794": {
+  "file_id": 16794,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-radial-dots",
+  "description": "A pattern of green dots arranged in concentric rings, a hypnotic radial dot design."
+ },
+ "anim/daily/16795": {
+  "file_id": 16795,
+  "category": "daily",
+  "type": "anim",
+  "name": "scattered-squares",
+  "description": "Several colored squares (red, blue, cyan, green, magenta) scattered on black. Minimal color blocks."
+ },
+ "anim/daily/16796": {
+  "file_id": 16796,
+  "category": "daily",
+  "type": "anim",
+  "name": "heart-eyes-face",
+  "description": "A pink face with red heart-shaped eyes and a smile, the 'in love' emoji."
+ },
+ "anim/daily/16797": {
+  "file_id": 16797,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-letters",
+  "description": "Bold yellow block letters (reading like 'LLO') under a rainbow strip on black; a partial text/logo."
+ },
+ "anim/daily/16798": {
+  "file_id": 16798,
+  "category": "daily",
+  "type": "anim",
+  "name": "tomato-face",
+  "description": "A red tomato with a little cartoon face on a black background. Cheerful vegetable character."
+ },
+ "anim/daily/16799": {
+  "file_id": 16799,
+  "category": "daily",
+  "type": "anim",
+  "name": "space-invaders",
+  "description": "Rows of colorful pixel alien sprites arranged in a grid, like the classic Space Invaders arcade game."
+ },
+ "anim/daily/16800": {
+  "file_id": 16800,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-rows",
+  "description": "Stacked rows of yellow/orange arrow-or-fish shapes on black with red accents; a repeating bright pattern."
+ },
+ "anim/daily/16801": {
+  "file_id": 16801,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-cross",
+  "description": "A bold white plus/cross centered on a colorful rainbow background, like a medical or aid symbol."
+ },
+ "anim/daily/16802": {
+  "file_id": 16802,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-stripes",
+  "description": "Horizontal red and dark stripes filling the panel, like glowing venetian blinds or a barcode."
+ },
+ "anim/daily/16803": {
+  "file_id": 16803,
+  "category": "daily",
+  "type": "anim",
+  "name": "night-city",
+  "description": "A blue night-time city skyline with lit windows under a starry sky. Calm urban scene."
+ },
+ "anim/daily/16804": {
+  "file_id": 16804,
+  "category": "daily",
+  "type": "anim",
+  "name": "purple-cityscape",
+  "description": "A purple city skyline at night with buildings and twinkling stars. Moody metropolis."
+ },
+ "anim/daily/16805": {
+  "file_id": 16805,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-buildings",
+  "description": "A dark blue cluster of skyscrapers with yellow lit windows. Nighttime downtown."
+ },
+ "anim/daily/16806": {
+  "file_id": 16806,
+  "category": "daily",
+  "type": "anim",
+  "name": "striped-beetle",
+  "description": "A beetle/turtle creature with a rainbow-striped shell and little legs. Colorful bug."
+ },
+ "anim/daily/16807": {
+  "file_id": 16807,
+  "category": "daily",
+  "type": "anim",
+  "name": "skillet-dish",
+  "description": "A cooked dish in a black pan, like shakshuka or a baked egg meal seen from above. Tasty food icon."
+ },
+ "anim/daily/16808": {
+  "file_id": 16808,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-pastry",
+  "description": "A plump yellow pastry or taco-like food with a small colorful topping. Cartoon snack."
+ },
+ "anim/daily/16809": {
+  "file_id": 16809,
+  "category": "daily",
+  "type": "anim",
+  "name": "sleeping-character",
+  "description": "A small character in a green hat with a pink face, dozing with 'Zzz' above. Sleepy sprite."
+ },
+ "anim/daily/16810": {
+  "file_id": 16810,
+  "category": "daily",
+  "type": "anim",
+  "name": "hot-coffee",
+  "description": "A red cup of hot coffee or tea with steam rising. Cozy beverage icon."
+ },
+ "anim/daily/16811": {
+  "file_id": 16811,
+  "category": "daily",
+  "type": "anim",
+  "name": "pizza-slice",
+  "description": "A single cheesy slice of pepperoni pizza. Classic food graphic."
+ },
+ "anim/daily/16812": {
+  "file_id": 16812,
+  "category": "daily",
+  "type": "anim",
+  "name": "pizza-love",
+  "description": "A slice of pizza surrounded by little red hearts, expressing love of pizza."
+ },
+ "anim/daily/16813": {
+  "file_id": 16813,
+  "category": "daily",
+  "type": "anim",
+  "name": "cake-slice",
+  "description": "A layered slice of cake topped with a strawberry and floating hearts. Sweet dessert."
+ },
+ "anim/daily/16814": {
+  "file_id": 16814,
+  "category": "daily",
+  "type": "anim",
+  "name": "duck-in-bowl",
+  "description": "A white duck peeking out of a white bowl/cup with an orange bill. Quirky food-or-pet motif."
+ },
+ "anim/daily/16815": {
+  "file_id": 16815,
+  "category": "daily",
+  "type": "anim",
+  "name": "rice-bowl",
+  "description": "A bowl of rice/congee or noodle soup with a spoon. Warm meal icon."
+ },
+ "anim/daily/16816": {
+  "file_id": 16816,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-bunny",
+  "description": "A cyan-blue toy rabbit with long ears on a pink background. Soft plush-like bunny."
+ },
+ "anim/daily/16817": {
+  "file_id": 16817,
+  "category": "daily",
+  "type": "anim",
+  "name": "cat-float",
+  "description": "A white cat lounging in a yellow inflatable ring/donut float, ready for the pool. Cute summer scene."
+ },
+ "anim/daily/16818": {
+  "file_id": 16818,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-silhouette",
+  "description": "A black silhouette set against a red-orange gradient; an ambiguous figure or shape against a sunset."
+ },
+ "anim/daily/16819": {
+  "file_id": 16819,
+  "category": "daily",
+  "type": "anim",
+  "name": "sleeping-in-bed",
+  "description": "A figure tucked in a bed with 'Zzz' floating above, sound asleep. Bedtime/rest motif."
+ },
+ "anim/daily/16820": {
+  "file_id": 16820,
+  "category": "daily",
+  "type": "anim",
+  "name": "roast-chicken",
+  "description": "A roasted chicken or turkey on a plate with cutlery beside it. Hearty cooked meal."
+ },
+ "anim/daily/16821": {
+  "file_id": 16821,
+  "category": "daily",
+  "type": "anim",
+  "name": "toothbrush-paste",
+  "description": "A toothbrush with a blob of white toothpaste on a blue base; a dental-hygiene icon."
+ },
+ "anim/daily/16822": {
+  "file_id": 16822,
+  "category": "daily",
+  "type": "anim",
+  "name": "bubble-tea",
+  "description": "A cup of bubble/boba tea with a straw poking out the top. Trendy drink icon."
+ },
+ "anim/daily/16823": {
+  "file_id": 16823,
+  "category": "daily",
+  "type": "anim",
+  "name": "chef-character",
+  "description": "A character in a red hat and white outfit, like a chef or sailor, holding an item. Costumed sprite."
+ },
+ "anim/daily/16824": {
+  "file_id": 16824,
+  "category": "daily",
+  "type": "anim",
+  "name": "color-block-stack",
+  "description": "A vertical totem-like stack of multicolored pixel blocks on black. Abstract column."
+ },
+ "anim/daily/16825": {
+  "file_id": 16825,
+  "category": "daily",
+  "type": "anim",
+  "name": "gold-trophy",
+  "description": "A shiny gold trophy cup on a pink/red background, a winner's award icon."
+ },
+ "anim/daily/16826": {
+  "file_id": 16826,
+  "category": "daily",
+  "type": "anim",
+  "name": "swimmer",
+  "description": "A person swimming through blue water with splashes, mid-stroke. Aquatic action scene."
+ },
+ "anim/daily/16827": {
+  "file_id": 16827,
+  "category": "daily",
+  "type": "anim",
+  "name": "star-pouch",
+  "description": "A green pouch/bag marked with a black star on a mossy background, like a treasure or item bag."
+ },
+ "anim/daily/16828": {
+  "file_id": 16828,
+  "category": "daily",
+  "type": "anim",
+  "name": "brick-fireplace",
+  "description": "A brick wall with a red-and-white checker band and a dark arch, like a hearth or fireplace."
+ },
+ "anim/daily/16829": {
+  "file_id": 16829,
+  "category": "daily",
+  "type": "anim",
+  "name": "coffee-foam",
+  "description": "A cup of coffee or latte topped with pale foam. Warm cafe drink."
+ },
+ "anim/daily/16830": {
+  "file_id": 16830,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-mug",
+  "description": "A bright red mug of a hot beverage. Simple drink icon."
+ },
+ "anim/daily/16831": {
+  "file_id": 16831,
+  "category": "daily",
+  "type": "anim",
+  "name": "food-bowl",
+  "description": "A bowl or plate piled with food and toppings, like nachos or a loaded salad. Appetizing dish."
+ },
+ "anim/daily/16832": {
+  "file_id": 16832,
+  "category": "daily",
+  "type": "anim",
+  "name": "toiletries",
+  "description": "Bathroom toiletry bottles (a blue bottle and white containers), like shampoo and soap."
+ },
+ "anim/daily/16833": {
+  "file_id": 16833,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-pouch",
+  "description": "A plump green-and-gold sack/pouch, resembling a money bag or item satchel."
+ },
+ "anim/daily/16834": {
+  "file_id": 16834,
+  "category": "daily",
+  "type": "anim",
+  "name": "picnic-sandwich",
+  "description": "A sandwich set on a blue-and-white checkered picnic cloth. Outdoor-meal scene."
+ },
+ "anim/daily/16835": {
+  "file_id": 16835,
+  "category": "daily",
+  "type": "anim",
+  "name": "masked-face",
+  "description": "A face wearing a green surgical/medical mask. Health and hygiene motif."
+ },
+ "anim/daily/16836": {
+  "file_id": 16836,
+  "category": "daily",
+  "type": "anim",
+  "name": "blonde-face",
+  "description": "A pale round face with blonde hair and a startled expression. Cartoon person portrait."
+ },
+ "anim/daily/16837": {
+  "file_id": 16837,
+  "category": "daily",
+  "type": "anim",
+  "name": "donut",
+  "description": "A glazed brown donut seen from above, with a hole in the center. Sweet treat."
+ },
+ "anim/daily/16838": {
+  "file_id": 16838,
+  "category": "daily",
+  "type": "anim",
+  "name": "brown-bowl",
+  "description": "A brown bowl filled with a creamy rice or porridge dish. Comforting food icon."
+ },
+ "anim/daily/16839": {
+  "file_id": 16839,
+  "category": "daily",
+  "type": "anim",
+  "name": "water-bottle",
+  "description": "A clear plastic water bottle on a blue background. Simple hydration icon."
+ },
+ "anim/daily/16840": {
+  "file_id": 16840,
+  "category": "daily",
+  "type": "anim",
+  "name": "hand-flask",
+  "description": "A teal hand holding a small green bottle or flask, like offering a drink or potion."
+ },
+ "anim/daily/16841": {
+  "file_id": 16841,
+  "category": "daily",
+  "type": "anim",
+  "name": "dessert-bowl",
+  "description": "A bowl filled with a creamy brown dessert or food. Tasty treat icon."
+ },
+ "anim/daily/16842": {
+  "file_id": 16842,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-dove",
+  "description": "A small white bird or dove against a pale blue sky. Peaceful avian motif."
+ },
+ "anim/daily/16843": {
+  "file_id": 16843,
+  "category": "daily",
+  "type": "anim",
+  "name": "field-figures",
+  "description": "A green-and-blue field scene with small red figures, suggesting a sport or battle on a pitch."
+ },
+ "anim/daily/16844": {
+  "file_id": 16844,
+  "category": "daily",
+  "type": "anim",
+  "name": "yoga-pose",
+  "description": "A pink figure stretching in a yoga or ballet pose. Graceful exercise sprite."
+ },
+ "anim/daily/16845": {
+  "file_id": 16845,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-teapot",
+  "description": "A blue teapot or kettle with a spout and lid. Tea-time icon."
+ },
+ "anim/daily/16846": {
+  "file_id": 16846,
+  "category": "daily",
+  "type": "anim",
+  "name": "christmas-scene",
+  "description": "A festive holiday scene with Santa, a snowman and other Christmas characters together."
+ },
+ "anim/daily/16847": {
+  "file_id": 16847,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-mug",
+  "description": "A pink mug of a hot frothy drink like cocoa or coffee, with steam. Cozy beverage."
+ },
+ "anim/daily/16848": {
+  "file_id": 16848,
+  "category": "daily",
+  "type": "anim",
+  "name": "hamburger",
+  "description": "A stacked hamburger with a bun, patty and lettuce. Classic fast-food icon."
+ },
+ "anim/daily/16849": {
+  "file_id": 16849,
+  "category": "daily",
+  "type": "anim",
+  "name": "battery-outline",
+  "description": "A white outline of a battery on black, indicating an empty or low charge."
+ },
+ "anim/daily/16850": {
+  "file_id": 16850,
+  "category": "daily",
+  "type": "anim",
+  "name": "cherry-blossom-tree",
+  "description": "A small tree with pink cherry blossoms over green ground, like a sakura or bonsai. Spring motif."
+ },
+ "anim/daily/16851": {
+  "file_id": 16851,
+  "category": "daily",
+  "type": "anim",
+  "name": "sushi-nigiri",
+  "description": "A piece of nigiri sushi with salmon over rice on a pink background. Japanese food icon."
+ },
+ "anim/daily/16852": {
+  "file_id": 16852,
+  "category": "daily",
+  "type": "anim",
+  "name": "sushi-roll",
+  "description": "A maki sushi roll seen from the top, with seaweed wrapping rice and filling. Sushi icon."
+ },
+ "anim/daily/16853": {
+  "file_id": 16853,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-donut",
+  "description": "A pink-glazed donut with a hole, a sweet frosted treat."
+ },
+ "anim/daily/16854": {
+  "file_id": 16854,
+  "category": "daily",
+  "type": "anim",
+  "name": "chocolate-donut",
+  "description": "A chocolate-glazed donut on a blue background. Tasty dessert."
+ },
+ "anim/daily/16855": {
+  "file_id": 16855,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-mug",
+  "description": "A yellow mug of coffee or tea. Simple drink icon."
+ },
+ "anim/daily/16856": {
+  "file_id": 16856,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-character",
+  "description": "A plump white blob character on blue, resembling a little sumo or pudding mascot."
+ },
+ "anim/daily/16857": {
+  "file_id": 16857,
+  "category": "daily",
+  "type": "anim",
+  "name": "orange-juice",
+  "description": "A tall glass of orange juice or a fruity drink. Refreshing beverage icon."
+ },
+ "anim/daily/16858": {
+  "file_id": 16858,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-bottle",
+  "description": "A pink bottle or jar with a label, like a cosmetic or sauce container."
+ },
+ "anim/daily/16859": {
+  "file_id": 16859,
+  "category": "daily",
+  "type": "anim",
+  "name": "phone-music",
+  "description": "A smartphone with a glowing red screen showing music notes, like a device playing a song."
+ },
+ "anim/daily/16860": {
+  "file_id": 16860,
+  "category": "daily",
+  "type": "anim",
+  "name": "flowers-vase",
+  "description": "A small bunch of pink flowers with dark stems, as if in a vase. Simple floral arrangement."
+ },
+ "anim/daily/16861": {
+  "file_id": 16861,
+  "category": "daily",
+  "type": "anim",
+  "name": "lollipop",
+  "description": "A round pink swirl lollipop on a stick against green. Sweet candy icon."
+ },
+ "anim/daily/16862": {
+  "file_id": 16862,
+  "category": "daily",
+  "type": "anim",
+  "name": "popsicle",
+  "description": "A chocolate-coated ice cream bar on a wooden stick. Frozen treat."
+ },
+ "anim/daily/16863": {
+  "file_id": 16863,
+  "category": "daily",
+  "type": "anim",
+  "name": "golden-sparkle",
+  "description": "A glowing golden shape (crown/cheese-like) with sparkles on a purple background. Shiny prize motif."
+ },
+ "anim/daily/16864": {
+  "file_id": 16864,
+  "category": "daily",
+  "type": "anim",
+  "name": "staff-figure",
+  "description": "A dark robed figure holding a staff/cane on a purple background, like a wizard or traveler."
+ },
+ "anim/daily/16865": {
+  "file_id": 16865,
+  "category": "daily",
+  "type": "anim",
+  "name": "hot-dog",
+  "description": "A hot dog sausage in a bun served on a plate. Classic snack food."
+ },
+ "anim/daily/16866": {
+  "file_id": 16866,
+  "category": "daily",
+  "type": "anim",
+  "name": "nuggets-plate",
+  "description": "A plate holding orange food pieces like chicken nuggets or fried snacks. Tasty finger food."
+ },
+ "anim/daily/16867": {
+  "file_id": 16867,
+  "category": "daily",
+  "type": "anim",
+  "name": "cupcake",
+  "description": "A cupcake with swirled pink frosting in a wrapper. Sweet baked treat."
+ },
+ "anim/daily/16868": {
+  "file_id": 16868,
+  "category": "daily",
+  "type": "anim",
+  "name": "white-bulb-face",
+  "description": "A round white bulb/rice-ball creature with a surprised open mouth. Cute food character."
+ },
+ "anim/daily/16869": {
+  "file_id": 16869,
+  "category": "daily",
+  "type": "anim",
+  "name": "skull",
+  "description": "A white human skull on a light background. Spooky bone icon."
+ },
+ "anim/daily/16870": {
+  "file_id": 16870,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-figure",
+  "description": "A pink humanoid figure/torso on a green background. Simple character sprite."
+ },
+ "anim/daily/16871": {
+  "file_id": 16871,
+  "category": "daily",
+  "type": "anim",
+  "name": "boba-tea",
+  "description": "A cup of brown bubble (boba) tea with tapioca pearls. Trendy drink icon."
+ },
+ "anim/daily/16872": {
+  "file_id": 16872,
+  "category": "daily",
+  "type": "anim",
+  "name": "french-fries",
+  "description": "A red carton of golden french fries. Fast-food side icon."
+ },
+ "anim/daily/16873": {
+  "file_id": 16873,
+  "category": "daily",
+  "type": "anim",
+  "name": "pastel-rainbow",
+  "description": "A soft rainbow arch built from pastel beads/dots. Gentle rainbow motif."
+ },
+ "anim/daily/16874": {
+  "file_id": 16874,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-crown",
+  "description": "A pink jeweled crown or tiara. Royalty/princess icon."
+ },
+ "anim/daily/16875": {
+  "file_id": 16875,
+  "category": "daily",
+  "type": "anim",
+  "name": "roaring-creature",
+  "description": "A dark furry creature like a bear with a red open mouth, roaring on a dark background."
+ },
+ "anim/daily/16876": {
+  "file_id": 16876,
+  "category": "daily",
+  "type": "anim",
+  "name": "lit-candle",
+  "description": "A single white candle with a glowing flame. Light/celebration motif."
+ },
+ "anim/daily/16877": {
+  "file_id": 16877,
+  "category": "daily",
+  "type": "anim",
+  "name": "classroom-board",
+  "description": "A green chalkboard with a small figure beside it, like a teacher at the front of a classroom."
+ },
+ "anim/daily/16878": {
+  "file_id": 16878,
+  "category": "daily",
+  "type": "anim",
+  "name": "gems",
+  "description": "Assorted green and pink gems/jewels scattered on a light blue background. Treasure motif."
+ },
+ "anim/daily/16879": {
+  "file_id": 16879,
+  "category": "daily",
+  "type": "anim",
+  "name": "tea-pour",
+  "description": "A teapot pouring hot tea into a pink cup. Tea-time pouring scene."
+ },
+ "anim/daily/16880": {
+  "file_id": 16880,
+  "category": "daily",
+  "type": "anim",
+  "name": "snowy-mountain",
+  "description": "A white snow-capped mountain landscape under a pale blue sky. Serene winter vista."
+ },
+ "anim/daily/16881": {
+  "file_id": 16881,
+  "category": "daily",
+  "type": "anim",
+  "name": "purple-mug",
+  "description": "A purple mug of a hot frothy drink. Cozy beverage icon."
+ },
+ "anim/daily/16882": {
+  "file_id": 16882,
+  "category": "daily",
+  "type": "anim",
+  "name": "sunglasses-face",
+  "description": "A cool face wearing dark sunglasses on a black background. Confident emoji vibe."
+ },
+ "anim/daily/16883": {
+  "file_id": 16883,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-robot",
+  "description": "A green robot/creature with a square head and antenna on a green background. Boxy bot."
+ },
+ "anim/daily/16884": {
+  "file_id": 16884,
+  "category": "daily",
+  "type": "anim",
+  "name": "penguin",
+  "description": "A black-and-white penguin with an orange beak standing on green. Cute polar bird."
+ },
+ "anim/daily/16885": {
+  "file_id": 16885,
+  "category": "daily",
+  "type": "anim",
+  "name": "stew-pot",
+  "description": "A gray pot or bowl holding a brown stew/soup. Hearty cooked meal."
+ },
+ "anim/daily/16886": {
+  "file_id": 16886,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-smoothie",
+  "description": "A green matcha smoothie/drink in a glass with a straw against a sky background. Healthy beverage."
+ },
+ "anim/daily/16887": {
+  "file_id": 16887,
+  "category": "daily",
+  "type": "anim",
+  "name": "beer-mug",
+  "description": "A frothy mug of golden beer. Celebratory drink icon."
+ },
+ "anim/daily/16888": {
+  "file_id": 16888,
+  "category": "daily",
+  "type": "anim",
+  "name": "brown-fuzzy-shape",
+  "description": "A brown rounded fuzzy form with a white base and yellow specks; an ambiguous basket-or-creature shape."
+ },
+ "anim/daily/16889": {
+  "file_id": 16889,
+  "category": "daily",
+  "type": "anim",
+  "name": "ice-cream-cone",
+  "description": "A swirled pink soft-serve ice cream in a cone. Sweet frozen treat."
+ },
+ "anim/daily/16890": {
+  "file_id": 16890,
+  "category": "daily",
+  "type": "anim",
+  "name": "bagel",
+  "description": "A brown ring-shaped bagel or plain donut seen from above. Bakery icon."
+ },
+ "anim/daily/16891": {
+  "file_id": 16891,
+  "category": "daily",
+  "type": "anim",
+  "name": "monster-burger",
+  "description": "A hamburger with monstrous green eyes and teeth, a playful creature-burger."
+ },
+ "anim/daily/16892": {
+  "file_id": 16892,
+  "category": "daily",
+  "type": "anim",
+  "name": "fireplace-fire",
+  "description": "A brick fireplace with a glowing fire inside. Warm hearth scene."
+ },
+ "anim/daily/16893": {
+  "file_id": 16893,
+  "category": "daily",
+  "type": "anim",
+  "name": "celebration-field",
+  "description": "A split scene of confetti/crowd above and a green field below, like a stadium celebration."
+ },
+ "anim/daily/16894": {
+  "file_id": 16894,
+  "category": "daily",
+  "type": "anim",
+  "name": "cook-character",
+  "description": "A chef character in a tall white hat holding something, standing on a dark background."
+ },
+ "anim/daily/16895": {
+  "file_id": 16895,
+  "category": "daily",
+  "type": "anim",
+  "name": "sneakers",
+  "description": "A pair of white sneakers/shoes on a blue argyle background. Footwear icon."
+ },
+ "anim/daily/16896": {
+  "file_id": 16896,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-landscape",
+  "description": "A pixel landscape of green grass and a winding path or river. Nature/terrain scene."
+ },
+ "anim/daily/16897": {
+  "file_id": 16897,
+  "category": "daily",
+  "type": "anim",
+  "name": "basket",
+  "description": "A woven brown basket. Simple container icon."
+ },
+ "anim/daily/16898": {
+  "file_id": 16898,
+  "category": "daily",
+  "type": "anim",
+  "name": "gray-creature",
+  "description": "A chunky gray creature with a simple face, resembling a hippo, elephant or rock golem."
+ },
+ "anim/daily/16899": {
+  "file_id": 16899,
+  "category": "daily",
+  "type": "anim",
+  "name": "salad-bowl",
+  "description": "A bowl of fresh salad with red tomatoes and greens. Healthy meal icon."
+ },
+ "anim/daily/16900": {
+  "file_id": 16900,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-hair-person",
+  "description": "A character with a green mohawk/hair and tan skin on a blue background. Punky portrait."
+ },
+ "anim/daily/16901": {
+  "file_id": 16901,
+  "category": "daily",
+  "type": "anim",
+  "name": "loaded-hotdog",
+  "description": "A long hot dog or sub topped with green relish on a blue background. Tasty street food."
+ },
+ "anim/daily/16902": {
+  "file_id": 16902,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-parrot",
+  "description": "A red parrot with yellow accents perched on a blue background. Tropical bird."
+ },
+ "anim/daily/16903": {
+  "file_id": 16903,
+  "category": "daily",
+  "type": "anim",
+  "name": "rainbow-fish-blue",
+  "description": "A multicolored rainbow fish swimming against a blue sky/water background. Bright sea creature."
+ },
+ "anim/daily/16904": {
+  "file_id": 16904,
+  "category": "daily",
+  "type": "anim",
+  "name": "pancakes",
+  "description": "A stack of fluffy pancakes drizzled with syrup. Breakfast treat."
+ },
+ "anim/daily/16905": {
+  "file_id": 16905,
+  "category": "daily",
+  "type": "anim",
+  "name": "roast-meal",
+  "description": "A steaming roasted dish on a plate under a sun, like a cooked roast. Hearty food scene."
+ },
+ "anim/daily/16906": {
+  "file_id": 16906,
+  "category": "daily",
+  "type": "anim",
+  "name": "drink-two-straws",
+  "description": "A pink/purple cup of drink with two straws on a pink background. Shareable beverage."
+ },
+ "anim/daily/16907": {
+  "file_id": 16907,
+  "category": "daily",
+  "type": "anim",
+  "name": "golf-flag",
+  "description": "A red flag on a green golf hole/hill, a golf course scene."
+ },
+ "anim/daily/16908": {
+  "file_id": 16908,
+  "category": "daily",
+  "type": "anim",
+  "name": "pool-swimmer",
+  "description": "A person swimming in a blue pool, viewed from above. Aquatic exercise."
+ },
+ "anim/daily/16909": {
+  "file_id": 16909,
+  "category": "daily",
+  "type": "anim",
+  "name": "gymnast-bars",
+  "description": "A pink figure performing on parallel bars or playground equipment over grass. Acrobatics scene."
+ },
+ "anim/daily/16910": {
+  "file_id": 16910,
+  "category": "daily",
+  "type": "anim",
+  "name": "rain",
+  "description": "Streaks of rain falling on a black background. Simple weather motif."
+ },
+ "anim/holiday/32730": {
+  "file_id": 32730,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dj-turntable",
+  "description": "A DJ turntable/record player with headphones and colorful accents. Music-party icon."
+ },
+ "anim/holiday/32731": {
+  "file_id": 32731,
+  "category": "holiday",
+  "type": "anim",
+  "name": "party-popper",
+  "description": "A yellow party popper bursting with confetti. Celebration icon."
+ },
+ "anim/holiday/32732": {
+  "file_id": 32732,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cake-slice-pink",
+  "description": "A layered cream cake slice on a pink background. Sweet party dessert."
+ },
+ "anim/holiday/32733": {
+  "file_id": 32733,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cream-cake",
+  "description": "A slice of creamy layered cake on a blue background. Festive dessert."
+ },
+ "anim/holiday/25340": {
+  "file_id": 25340,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa",
+  "description": "A red-and-white Santa Claus figure with a white beard on a dark background. Christmas character."
+ },
+ "anim/holiday/25341": {
+  "file_id": 25341,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cross-candles",
+  "description": "A brown cross on a hill flanked by lit candles, a memorial or Easter scene."
+ },
+ "anim/holiday/25342": {
+  "file_id": 25342,
+  "category": "holiday",
+  "type": "anim",
+  "name": "yellow-fluff",
+  "description": "A fluffy yellow chick/blob creature on a dark background with green below. Springy Easter motif."
+ },
+ "anim/holiday/25343": {
+  "file_id": 25343,
+  "category": "holiday",
+  "type": "anim",
+  "name": "brown-chick",
+  "description": "A small brown chick or peep on a dark background. Tiny Easter bird."
+ },
+ "anim/holiday/25344": {
+  "file_id": 25344,
+  "category": "holiday",
+  "type": "anim",
+  "name": "candles",
+  "description": "Two white candles with glowing flames. Soft candlelight motif for celebrations or remembrance."
+ },
+ "anim/holiday/25345": {
+  "file_id": 25345,
+  "category": "holiday",
+  "type": "anim",
+  "name": "holiday-gathering",
+  "description": "A warm festive scene with a figure and holiday decorations in earthy tones. Celebration gathering."
+ },
+ "anim/holiday/25346": {
+  "file_id": 25346,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pumpkin-cat",
+  "description": "A carved Halloween jack-o'-lantern with a black cat perched above it. Spooky autumn scene."
+ },
+ "anim/holiday/16911": {
+  "file_id": 16911,
+  "category": "holiday",
+  "type": "anim",
+  "name": "year-2022",
+  "description": "Bold white '2022' numerals on black, a New Year 2022 graphic."
+ },
+ "anim/holiday/16912": {
+  "file_id": 16912,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowy-house",
+  "description": "A small house with a snow-covered red roof. Cozy winter home."
+ },
+ "anim/holiday/16913": {
+  "file_id": 16913,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-starburst",
+  "description": "A radial blue-and-orange starburst pattern emanating from the center. Festive light effect."
+ },
+ "anim/holiday/16914": {
+  "file_id": 16914,
+  "category": "holiday",
+  "type": "anim",
+  "name": "year-2023",
+  "description": "'2023' numerals with confetti, a New Year 2023 celebration graphic."
+ },
+ "anim/holiday/16915": {
+  "file_id": 16915,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-bear",
+  "description": "A soft pink bear/bunny face with round ears. Cute plush animal."
+ },
+ "anim/holiday/16916": {
+  "file_id": 16916,
+  "category": "holiday",
+  "type": "anim",
+  "name": "sparkler-hand",
+  "description": "A hand holding a lit sparkler or candle with a flame. Festive light in hand."
+ },
+ "anim/holiday/16917": {
+  "file_id": 16917,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-hat-girl",
+  "description": "A brown-haired girl wearing a Santa hat amid falling snow. Christmas portrait."
+ },
+ "anim/holiday/16918": {
+  "file_id": 16918,
+  "category": "holiday",
+  "type": "anim",
+  "name": "angel",
+  "description": "A blonde angel with a halo, a serene Christmas angel figure."
+ },
+ "anim/holiday/16919": {
+  "file_id": 16919,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-trees",
+  "description": "A Santa Claus figure flanked by green Christmas trees. Festive holiday scene."
+ },
+ "anim/holiday/16920": {
+  "file_id": 16920,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-face",
+  "description": "A classic Santa Claus face with red hat, rosy cheeks and white beard. Christmas icon."
+ },
+ "anim/holiday/16921": {
+  "file_id": 16921,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gnome",
+  "description": "A garden gnome / Santa-like figure with a tall red hat and big white beard. Whimsical holiday character."
+ },
+ "anim/holiday/16922": {
+  "file_id": 16922,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-house",
+  "description": "A house with a red roof on a blue background, a festive winter home."
+ },
+ "anim/holiday/16923": {
+  "file_id": 16923,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-figure",
+  "description": "A full Santa Claus figure in a red suit on a blue background. Christmas mascot."
+ },
+ "anim/holiday/16924": {
+  "file_id": 16924,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-walking",
+  "description": "A Santa Claus sprite shown walking/striding in his red suit. Animated Father Christmas."
+ },
+ "anim/holiday/16925": {
+  "file_id": 16925,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-blue",
+  "description": "A Santa Claus in red standing on a blue background. Holiday character."
+ },
+ "anim/holiday/16926": {
+  "file_id": 16926,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-heart",
+  "description": "A bright red heart on a pink background. Classic love symbol."
+ },
+ "anim/holiday/16927": {
+  "file_id": 16927,
+  "category": "holiday",
+  "type": "anim",
+  "name": "smiling-face",
+  "description": "A simple white face with two eyes and a wide grin on a tan background. Happy emoji."
+ },
+ "anim/holiday/16928": {
+  "file_id": 16928,
+  "category": "holiday",
+  "type": "anim",
+  "name": "peach",
+  "description": "A pink peach with a small green leaf. Juicy fruit icon."
+ },
+ "anim/holiday/16929": {
+  "file_id": 16929,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull-red",
+  "description": "A white skull on a red/pink background. Spooky bone motif."
+ },
+ "anim/holiday/16930": {
+  "file_id": 16930,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull-orange",
+  "description": "A white skull on an orange background, a Halloween skull icon."
+ },
+ "anim/holiday/16931": {
+  "file_id": 16931,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull-red-eyes",
+  "description": "A white skull with glowing red eyes on black. Menacing Halloween skull."
+ },
+ "anim/holiday/16932": {
+  "file_id": 16932,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-hearts",
+  "description": "Red hearts on an orange background. Love/affection motif."
+ },
+ "anim/holiday/16933": {
+  "file_id": 16933,
+  "category": "holiday",
+  "type": "anim",
+  "name": "jack-o-lantern",
+  "description": "An orange carved pumpkin with a glowing jack-o'-lantern face. Halloween classic."
+ },
+ "anim/holiday/16934": {
+  "file_id": 16934,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cool-ghost",
+  "description": "A white ghost/blob wearing 3D or sunglasses. Playful spooky character."
+ },
+ "anim/holiday/16935": {
+  "file_id": 16935,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-robot",
+  "description": "A pink robot/mech creature on a pink background. Cute mechanical character."
+ },
+ "anim/holiday/16936": {
+  "file_id": 16936,
+  "category": "holiday",
+  "type": "anim",
+  "name": "radar",
+  "description": "A green radar screen with a rotating sweep and a blip. Detection/scanner motif."
+ },
+ "anim/holiday/16937": {
+  "file_id": 16937,
+  "category": "holiday",
+  "type": "anim",
+  "name": "minimal-bars",
+  "description": "A mostly black panel with thin blue and colored marks; a sparse, minimal graphic."
+ },
+ "anim/holiday/16938": {
+  "file_id": 16938,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-car",
+  "description": "A red sports car on a green background. Vehicle icon."
+ },
+ "anim/holiday/16939": {
+  "file_id": 16939,
+  "category": "holiday",
+  "type": "anim",
+  "name": "hand-gesture",
+  "description": "A hand with a beige sleeve making a gesture on a dark background. Pointing/greeting motif."
+ },
+ "anim/holiday/16940": {
+  "file_id": 16940,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-alien",
+  "description": "A glowing blue alien/creature face on a bright background. Otherworldly character."
+ },
+ "anim/holiday/16941": {
+  "file_id": 16941,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-apple",
+  "description": "A green apple on a blue background. Fresh fruit icon."
+ },
+ "anim/holiday/16942": {
+  "file_id": 16942,
+  "category": "holiday",
+  "type": "anim",
+  "name": "eye",
+  "description": "A realistic brown human eye on black. Watchful eye motif."
+ },
+ "anim/holiday/16943": {
+  "file_id": 16943,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dark-red-heart",
+  "description": "A deep red 3D heart on a black background. Bold love symbol."
+ },
+ "anim/holiday/16944": {
+  "file_id": 16944,
+  "category": "holiday",
+  "type": "anim",
+  "name": "ghost-wall",
+  "description": "A white ghost floating beside a brick wall. Halloween haunting scene."
+ },
+ "anim/holiday/16945": {
+  "file_id": 16945,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-door",
+  "description": "A blue door or locker with a handle. Entryway icon."
+ },
+ "anim/holiday/16946": {
+  "file_id": 16946,
+  "category": "holiday",
+  "type": "anim",
+  "name": "rose",
+  "description": "A single red rose on a stem. Romantic flower motif."
+ },
+ "anim/holiday/16947": {
+  "file_id": 16947,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-slime",
+  "description": "Green slime/liquid spreading across the panel. Gooey ooze motif."
+ },
+ "anim/holiday/16948": {
+  "file_id": 16948,
+  "category": "holiday",
+  "type": "anim",
+  "name": "framed-trophy",
+  "description": "A gold trophy displayed in a green-bordered frame on white. Award/achievement icon."
+ },
+ "anim/holiday/16949": {
+  "file_id": 16949,
+  "category": "holiday",
+  "type": "anim",
+  "name": "trophy-frame",
+  "description": "A gold cup/trophy inside a red picture frame. Winner's award display."
+ },
+ "anim/holiday/16950": {
+  "file_id": 16950,
+  "category": "holiday",
+  "type": "anim",
+  "name": "abstract-pink-line",
+  "description": "A minimalist scene with a thin pink bar on a blue field. Abstract horizon graphic."
+ },
+ "anim/holiday/16951": {
+  "file_id": 16951,
+  "category": "holiday",
+  "type": "anim",
+  "name": "teal-stage",
+  "description": "A teal-and-pink scene with a small platform/hill at the bottom. Simple stage-like backdrop."
+ },
+ "anim/holiday/16952": {
+  "file_id": 16952,
+  "category": "holiday",
+  "type": "anim",
+  "name": "purple-gift",
+  "description": "A purple wrapped gift or cupcake on a purple background. Present motif."
+ },
+ "anim/holiday/16953": {
+  "file_id": 16953,
+  "category": "holiday",
+  "type": "anim",
+  "name": "envelope",
+  "description": "A yellow envelope/letter with a flap on a cream background. Mail/message icon."
+ },
+ "anim/holiday/16954": {
+  "file_id": 16954,
+  "category": "holiday",
+  "type": "anim",
+  "name": "two-ghosts",
+  "description": "Two little white ghosts floating on a gray background. Cute Halloween spirits."
+ },
+ "anim/holiday/16955": {
+  "file_id": 16955,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pac-man",
+  "description": "A yellow Pac-Man chomping dots with blue ghosts nearby. Classic arcade scene."
+ },
+ "anim/holiday/16956": {
+  "file_id": 16956,
+  "category": "holiday",
+  "type": "anim",
+  "name": "orange-monster",
+  "description": "An orange monster/devil face with glowing eyes. Spooky Halloween creature."
+ },
+ "anim/holiday/16957": {
+  "file_id": 16957,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-figures",
+  "description": "White snowman/figures standing in a snowy winter scene. Festive cold-weather motif."
+ },
+ "anim/holiday/16958": {
+  "file_id": 16958,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-face-2",
+  "description": "A Santa Claus face with a red hat and bushy white beard. Christmas icon."
+ },
+ "anim/holiday/16959": {
+  "file_id": 16959,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-gem",
+  "description": "A faceted green gem/emerald on a purple background. Treasure jewel."
+ },
+ "anim/holiday/16960": {
+  "file_id": 16960,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-hat-face",
+  "description": "A cartoon face wearing a Santa hat. Festive holiday portrait."
+ },
+ "anim/holiday/16961": {
+  "file_id": 16961,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-tv",
+  "description": "A red TV/computer screen displaying a Christmas tree scene. Holiday media motif."
+ },
+ "anim/holiday/16962": {
+  "file_id": 16962,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-scene-2",
+  "description": "A warm red-and-brown holiday scene with festive elements. Cozy Christmas vignette."
+ },
+ "anim/holiday/16963": {
+  "file_id": 16963,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-heart",
+  "description": "A white heart with a warm orange/red interior on black. Glowing love symbol."
+ },
+ "anim/holiday/16964": {
+  "file_id": 16964,
+  "category": "holiday",
+  "type": "anim",
+  "name": "confetti-board",
+  "description": "A dark green board sprinkled with colorful confetti dots/lights. Party decoration."
+ },
+ "anim/holiday/16965": {
+  "file_id": 16965,
+  "category": "holiday",
+  "type": "anim",
+  "name": "number-one",
+  "description": "A large white numeral '1' on black, part of a countdown."
+ },
+ "anim/holiday/16966": {
+  "file_id": 16966,
+  "category": "holiday",
+  "type": "anim",
+  "name": "number-two",
+  "description": "A large white numeral '2' on black, part of a countdown."
+ },
+ "anim/holiday/16967": {
+  "file_id": 16967,
+  "category": "holiday",
+  "type": "anim",
+  "name": "number-three",
+  "description": "A large white numeral '3' on black, part of a countdown."
+ },
+ "anim/holiday/16968": {
+  "file_id": 16968,
+  "category": "holiday",
+  "type": "anim",
+  "name": "zombie-face",
+  "description": "A green zombie/monster face with purple hair and glowing red eyes. Spooky Halloween creature."
+ },
+ "anim/holiday/16969": {
+  "file_id": 16969,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-3",
+  "description": "A Santa Claus figure in a red suit on a dark background. Christmas character."
+ },
+ "anim/holiday/16970": {
+  "file_id": 16970,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-snow",
+  "description": "A Santa figure peeking up amid snow. Wintry holiday scene."
+ },
+ "anim/holiday/16971": {
+  "file_id": 16971,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer-face-2",
+  "description": "A brown reindeer face with antlers and a red nose. Rudolph-style Christmas motif."
+ },
+ "anim/holiday/16972": {
+  "file_id": 16972,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-hat",
+  "description": "A red Santa hat with a white pom-pom and sparkling stars on blue. Festive headwear."
+ },
+ "anim/holiday/16973": {
+  "file_id": 16973,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-4",
+  "description": "A red-suited Santa Claus figure. Holiday mascot."
+ },
+ "anim/holiday/16974": {
+  "file_id": 16974,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-5",
+  "description": "A Santa Claus in a red coat on a dark background. Father Christmas sprite."
+ },
+ "anim/holiday/16975": {
+  "file_id": 16975,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gifts",
+  "description": "A stack of wrapped Christmas presents with ribbons. Gift-giving motif."
+ },
+ "anim/holiday/16976": {
+  "file_id": 16976,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer-3",
+  "description": "An orange-brown reindeer face with antlers. Cheerful Christmas deer."
+ },
+ "anim/holiday/16977": {
+  "file_id": 16977,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowball-fight",
+  "description": "A yellow character and a snowman in a snowy winter play scene. Festive snowball fun."
+ },
+ "anim/holiday/16978": {
+  "file_id": 16978,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-tree",
+  "description": "A small decorated Christmas tree. Festive evergreen icon."
+ },
+ "anim/holiday/16979": {
+  "file_id": 16979,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pine-tree",
+  "description": "A simple green pine/Christmas tree. Evergreen motif."
+ },
+ "anim/holiday/16980": {
+  "file_id": 16980,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman",
+  "description": "A classic white snowman with a hat and arms. Winter character."
+ },
+ "anim/holiday/16981": {
+  "file_id": 16981,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-beard-face",
+  "description": "A face with a flowing white beard amid snow, like Santa or a winter elder."
+ },
+ "anim/holiday/16982": {
+  "file_id": 16982,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-star",
+  "description": "A decorated Christmas tree topped with a glowing star on a dark background. Festive tree."
+ },
+ "anim/holiday/16983": {
+  "file_id": 16983,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-room",
+  "description": "A cozy dark room lit with Christmas lights and a tree. Warm holiday interior."
+ },
+ "anim/holiday/16984": {
+  "file_id": 16984,
+  "category": "holiday",
+  "type": "anim",
+  "name": "decorated-tree",
+  "description": "A large Christmas tree covered in colorful ornaments. Festive centerpiece."
+ },
+ "anim/holiday/16985": {
+  "file_id": 16985,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-globe",
+  "description": "A blue snow-globe-like ornament containing a small scene. Wintry keepsake."
+ },
+ "anim/holiday/16986": {
+  "file_id": 16986,
+  "category": "holiday",
+  "type": "anim",
+  "name": "grass-field",
+  "description": "A minimal landscape of green grass over brown dirt. Simple ground scene."
+ },
+ "anim/holiday/16987": {
+  "file_id": 16987,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-presents-room",
+  "description": "A festive room with a decorated Christmas tree and presents. Holiday morning scene."
+ },
+ "anim/holiday/16988": {
+  "file_id": 16988,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-night-figure",
+  "description": "A green figure standing amid falling snow at night. Wintry nighttime scene."
+ },
+ "anim/holiday/16989": {
+  "file_id": 16989,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-penguin",
+  "description": "A blue penguin wearing a red Santa hat. Festive polar bird."
+ },
+ "anim/holiday/16990": {
+  "file_id": 16990,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-tree-2",
+  "description": "A decorated green Christmas tree on a white background. Festive evergreen."
+ },
+ "anim/holiday/16991": {
+  "file_id": 16991,
+  "category": "holiday",
+  "type": "anim",
+  "name": "decorated-reindeer",
+  "description": "A brown reindeer adorned with pink/purple markings and crosses. Stylized holiday deer."
+ },
+ "anim/holiday/16992": {
+  "file_id": 16992,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-elf",
+  "description": "A character in a green elf outfit. Santa's-helper holiday sprite."
+ },
+ "anim/holiday/16993": {
+  "file_id": 16993,
+  "category": "holiday",
+  "type": "anim",
+  "name": "wreath",
+  "description": "A green Christmas wreath with a red bow on a blue background. Festive door decoration."
+ },
+ "anim/holiday/16994": {
+  "file_id": 16994,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-3",
+  "description": "A small decorated Christmas tree with ornaments. Holiday evergreen."
+ },
+ "anim/holiday/16995": {
+  "file_id": 16995,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-santa-hat",
+  "description": "A white snowman wearing a red Santa hat. Cheerful winter character."
+ },
+ "anim/holiday/16996": {
+  "file_id": 16996,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer-face-3",
+  "description": "A brown reindeer face with antlers and a red nose. Rudolph motif."
+ },
+ "anim/holiday/16997": {
+  "file_id": 16997,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart",
+  "description": "A pink heart on a pink background. Sweet love symbol."
+ },
+ "anim/holiday/16998": {
+  "file_id": 16998,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-monster",
+  "description": "A green monster face with teeth and big eyes. Goofy creature."
+ },
+ "anim/holiday/16999": {
+  "file_id": 16999,
+  "category": "holiday",
+  "type": "anim",
+  "name": "among-us",
+  "description": "A red Among Us crewmate character on a purple background. Popular game mascot."
+ },
+ "anim/holiday/17000": {
+  "file_id": 17000,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-shark",
+  "description": "A blue shark/fish on a yellow background. Toothy sea creature."
+ },
+ "anim/holiday/17001": {
+  "file_id": 17001,
+  "category": "holiday",
+  "type": "anim",
+  "name": "one-up",
+  "description": "Bold '1UP' text on cyan, the classic video-game extra-life symbol."
+ },
+ "anim/holiday/17002": {
+  "file_id": 17002,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gray-wolf",
+  "description": "A gray wolf/husky face on a green background. Canine portrait."
+ },
+ "anim/holiday/17003": {
+  "file_id": 17003,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-square",
+  "description": "A solid red square on white. Minimalist color block."
+ },
+ "anim/holiday/17004": {
+  "file_id": 17004,
+  "category": "holiday",
+  "type": "anim",
+  "name": "flying-pig",
+  "description": "A pink winged pig flying on a purple background. Whimsical 'when pigs fly' motif."
+ },
+ "anim/holiday/17005": {
+  "file_id": 17005,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-mask",
+  "description": "A fierce red-and-white creature face like a lion-dance or oni mask. Festival mask motif."
+ },
+ "anim/holiday/17006": {
+  "file_id": 17006,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pastel-confetti",
+  "description": "A soft pastel scene scattered with colorful confetti dots. Dreamy party backdrop."
+ },
+ "anim/holiday/17007": {
+  "file_id": 17007,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-unicorn",
+  "description": "A white unicorn/horse with pink accents on a dark background. Magical creature."
+ },
+ "anim/holiday/17008": {
+  "file_id": 17008,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-pink",
+  "description": "A decorated Christmas tree on a pink background. Festive evergreen."
+ },
+ "anim/holiday/17009": {
+  "file_id": 17009,
+  "category": "holiday",
+  "type": "anim",
+  "name": "waving-snowman",
+  "description": "A white snowman waving on a red background. Cheerful winter greeter."
+ },
+ "anim/holiday/17010": {
+  "file_id": 17010,
+  "category": "holiday",
+  "type": "anim",
+  "name": "bear-face",
+  "description": "A brown bear/teddy face with a floral collar. Cuddly animal portrait."
+ },
+ "anim/holiday/17011": {
+  "file_id": 17011,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-hat-blonde",
+  "description": "A blonde cartoon face wearing a red Santa hat. Festive holiday portrait."
+ },
+ "anim/holiday/17012": {
+  "file_id": 17012,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-gift",
+  "description": "A blue wrapped present with a bow. Gift-giving icon."
+ },
+ "anim/holiday/17013": {
+  "file_id": 17013,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-4",
+  "description": "A small Christmas tree decorated with ornaments. Holiday tree."
+ },
+ "anim/holiday/17014": {
+  "file_id": 17014,
+  "category": "holiday",
+  "type": "anim",
+  "name": "ice-cream-cone-2",
+  "description": "A hand holding a waffle ice cream cone strung with little lights. Festive treat."
+ },
+ "anim/holiday/17015": {
+  "file_id": 17015,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-6",
+  "description": "A Santa Claus figure in a snowy setting. Father Christmas."
+ },
+ "anim/holiday/17016": {
+  "file_id": 17016,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-creature",
+  "description": "A pink creature/pig on a purple background. Whimsical animal."
+ },
+ "anim/holiday/17017": {
+  "file_id": 17017,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-2",
+  "description": "A glowing pink heart on a pink background. Love symbol."
+ },
+ "anim/holiday/17018": {
+  "file_id": 17018,
+  "category": "holiday",
+  "type": "anim",
+  "name": "purple-heart",
+  "description": "A purple heart on a purple background. Affection motif."
+ },
+ "anim/holiday/17019": {
+  "file_id": 17019,
+  "category": "holiday",
+  "type": "anim",
+  "name": "heart-wreath",
+  "description": "A red heart encircled by a green wreath/garland. Valentine-holiday blend."
+ },
+ "anim/holiday/17020": {
+  "file_id": 17020,
+  "category": "holiday",
+  "type": "anim",
+  "name": "striped-heart",
+  "description": "A red-and-white striped heart on a blue background. Candy-cane-style love icon."
+ },
+ "anim/holiday/17021": {
+  "file_id": 17021,
+  "category": "holiday",
+  "type": "anim",
+  "name": "ghost-hearts",
+  "description": "A white ghost surrounded by little red hearts on dark. Spooky-cute love motif."
+ },
+ "anim/holiday/17022": {
+  "file_id": 17022,
+  "category": "holiday",
+  "type": "anim",
+  "name": "hearts-confetti",
+  "description": "Red hearts with a green party hat and confetti. Celebration of love."
+ },
+ "anim/holiday/17023": {
+  "file_id": 17023,
+  "category": "holiday",
+  "type": "anim",
+  "name": "couple",
+  "description": "Two people standing together on a pink background, a romantic couple. Love scene."
+ },
+ "anim/holiday/17024": {
+  "file_id": 17024,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-heart-blue",
+  "description": "A red pixel heart on a blue background. Classic love symbol."
+ },
+ "anim/holiday/17025": {
+  "file_id": 17025,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gold-sparkles",
+  "description": "Golden diamonds/sparkles glittering on black. Treasure or shine motif."
+ },
+ "anim/holiday/17026": {
+  "file_id": 17026,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-presents",
+  "description": "A decorated Christmas tree with presents beneath it. Holiday morning scene."
+ },
+ "anim/holiday/17027": {
+  "file_id": 17027,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-3",
+  "description": "A plump pink 3D heart. Sweet love icon."
+ },
+ "anim/holiday/17028": {
+  "file_id": 17028,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-gift",
+  "description": "A Santa Claus holding a wrapped present. Gift-giving Christmas scene."
+ },
+ "anim/holiday/17029": {
+  "file_id": 17029,
+  "category": "holiday",
+  "type": "anim",
+  "name": "jack-o-lantern-2",
+  "description": "A carved jack-o'-lantern with a glowing toothy face. Halloween pumpkin."
+ },
+ "anim/emoji/32734": {
+  "file_id": 32734,
+  "category": "emoji",
+  "type": "anim",
+  "name": "unamused-cat",
+  "description": "A tan cat/dog face with a flat, unamused expression. Deadpan animal emoji."
+ },
+ "anim/emoji/32735": {
+  "file_id": 32735,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cool-sunglasses",
+  "description": "A face wearing dark sunglasses, looking cool and relaxed. 'Deal with it' emoji."
+ },
+ "anim/emoji/25347": {
+  "file_id": 25347,
+  "category": "emoji",
+  "type": "anim",
+  "name": "smiling-pumpkin",
+  "description": "An orange pumpkin with a friendly smile. Cute autumn face."
+ },
+ "anim/emoji/25348": {
+  "file_id": 25348,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cat-face",
+  "description": "A white cat face outline on a black background. Minimal feline emoji."
+ },
+ "anim/emoji/17030": {
+  "file_id": 17030,
+  "category": "emoji",
+  "type": "anim",
+  "name": "nerd-face",
+  "description": "A yellow face with glasses and buck teeth, the classic nerd emoji."
+ },
+ "anim/emoji/17031": {
+  "file_id": 17031,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blush-face",
+  "description": "A pink face with rosy blushing cheeks. Bashful emoji."
+ },
+ "anim/emoji/17032": {
+  "file_id": 17032,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-freckle-face",
+  "description": "A round pink/red face with freckles and eyes. Cute character emoji."
+ },
+ "anim/emoji/17033": {
+  "file_id": 17033,
+  "category": "emoji",
+  "type": "anim",
+  "name": "meh-face",
+  "description": "A tan face with a flat, indifferent expression. 'Meh' emoji."
+ },
+ "anim/emoji/17034": {
+  "file_id": 17034,
+  "category": "emoji",
+  "type": "anim",
+  "name": "grinning-heart",
+  "description": "A red heart with a wide grinning face, like a Cheshire-cat heart. Mischievous love emoji."
+ },
+ "anim/emoji/17035": {
+  "file_id": 17035,
+  "category": "emoji",
+  "type": "anim",
+  "name": "orange-grin",
+  "description": "An orange face/pumpkin with a toothy grin. Playful spooky face."
+ },
+ "anim/emoji/17036": {
+  "file_id": 17036,
+  "category": "emoji",
+  "type": "anim",
+  "name": "happy-orange-face",
+  "description": "An orange smiling face with rosy cheeks. Cheerful emoji."
+ },
+ "anim/emoji/17037": {
+  "file_id": 17037,
+  "category": "emoji",
+  "type": "anim",
+  "name": "one-banner",
+  "description": "A bold '1' on a red-and-black banner/flag graphic. Number/first motif."
+ },
+ "anim/emoji/17038": {
+  "file_id": 17038,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-2",
+  "description": "A white skull face on a dark background. Spooky bone emoji."
+ },
+ "anim/emoji/17039": {
+  "file_id": 17039,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rose-cut",
+  "description": "A red rose flower with blue scissors beside it, suggesting cutting a flower."
+ },
+ "anim/emoji/17040": {
+  "file_id": 17040,
+  "category": "emoji",
+  "type": "anim",
+  "name": "grinning-face",
+  "description": "A white face with a huge toothy grin on black. Big-smile emoji."
+ },
+ "anim/emoji/17041": {
+  "file_id": 17041,
+  "category": "emoji",
+  "type": "anim",
+  "name": "crying-skull",
+  "description": "A white skull with blue tears on an orange background. Sad/spooky emoji."
+ },
+ "anim/emoji/17042": {
+  "file_id": 17042,
+  "category": "emoji",
+  "type": "anim",
+  "name": "angry-red-face",
+  "description": "A red face with bared teeth and an angry scowl. Rage emoji."
+ },
+ "anim/emoji/17043": {
+  "file_id": 17043,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-pink",
+  "description": "A white skull on a red/pink background. Halloween skull emoji."
+ },
+ "anim/emoji/17044": {
+  "file_id": 17044,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-lion-mask",
+  "description": "A fierce red lion-dance or demon mask with fangs. Festival creature face."
+ },
+ "anim/emoji/17045": {
+  "file_id": 17045,
+  "category": "emoji",
+  "type": "anim",
+  "name": "brown-smiley",
+  "description": "A round brown cookie-like face with a smile. Friendly snack emoji."
+ },
+ "anim/emoji/17046": {
+  "file_id": 17046,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-3",
+  "description": "A white skull face on black. Spooky bone emoji."
+ },
+ "anim/emoji/17047": {
+  "file_id": 17047,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-face",
+  "description": "A simple gray round face with a neutral expression. Plain emoji."
+ },
+ "anim/emoji/17048": {
+  "file_id": 17048,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-cat",
+  "description": "A white cat face with a red/blue glitch effect. Distorted feline emoji."
+ },
+ "anim/emoji/17049": {
+  "file_id": 17049,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-face",
+  "description": "A green face looking queasy or sleepy. Sick/nauseated emoji."
+ },
+ "anim/emoji/17050": {
+  "file_id": 17050,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-smiley",
+  "description": "A cyan-blue smiling face. Cheerful emoji."
+ },
+ "anim/emoji/17051": {
+  "file_id": 17051,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-face",
+  "description": "A red-and-blue glitch-distorted grinning face. Trippy emoji effect."
+ },
+ "anim/emoji/17052": {
+  "file_id": 17052,
+  "category": "emoji",
+  "type": "anim",
+  "name": "chattering-teeth",
+  "description": "A pink mouth showing rows of chattering teeth. Nervous/cold emoji."
+ },
+ "anim/emoji/17053": {
+  "file_id": 17053,
+  "category": "emoji",
+  "type": "anim",
+  "name": "heart-outline",
+  "description": "A pink-and-blue outlined heart on black. Simple love symbol."
+ },
+ "anim/emoji/17054": {
+  "file_id": 17054,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-angry-face",
+  "description": "A green face with red eyes and an angry look. Furious emoji."
+ },
+ "anim/emoji/17055": {
+  "file_id": 17055,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-robot",
+  "description": "A gray robot/machine face. Mechanical emoji."
+ },
+ "anim/emoji/17056": {
+  "file_id": 17056,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-2",
+  "description": "A red pixel heart on white. Classic love icon."
+ },
+ "anim/emoji/17057": {
+  "file_id": 17057,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gold-heart",
+  "description": "A golden heart with confetti and colored streamers. Celebratory love emoji."
+ },
+ "anim/emoji/17058": {
+  "file_id": 17058,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-snake",
+  "description": "A green snake/worm wriggling on a black background. Slithery creature."
+ },
+ "anim/emoji/17059": {
+  "file_id": 17059,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart-4",
+  "description": "A plump pink 3D heart. Sweet love icon."
+ },
+ "anim/emoji/17060": {
+  "file_id": 17060,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-ghost",
+  "description": "A friendly white ghost on black. Halloween spirit."
+ },
+ "anim/emoji/17061": {
+  "file_id": 17061,
+  "category": "emoji",
+  "type": "anim",
+  "name": "small-red-heart",
+  "description": "A small red heart on a dark background. Minimal love icon."
+ },
+ "anim/emoji/17062": {
+  "file_id": 17062,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-face-box",
+  "description": "A red blocky face/robot with a neutral expression. Square emoji character."
+ },
+ "anim/emoji/17063": {
+  "file_id": 17063,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dark-hearts",
+  "description": "Dark hearts with little yellow sparkles on black. Moody love motif."
+ },
+ "anim/emoji/17064": {
+  "file_id": 17064,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-frog-face",
+  "description": "A green frog/alien face with big eyes and a grin. Goofy creature emoji."
+ },
+ "anim/emoji/17065": {
+  "file_id": 17065,
+  "category": "emoji",
+  "type": "anim",
+  "name": "yellow-skull",
+  "description": "A bright yellow skull on black. Bony Halloween emoji."
+ },
+ "anim/emoji/17066": {
+  "file_id": 17066,
+  "category": "emoji",
+  "type": "anim",
+  "name": "yellow-face",
+  "description": "A yellow round face on pink, looking surprised. Classic emoji."
+ },
+ "anim/emoji/17067": {
+  "file_id": 17067,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-ghost-2",
+  "description": "A gray ghost/figure silhouette. Simple spooky emoji."
+ },
+ "anim/emoji/17068": {
+  "file_id": 17068,
+  "category": "emoji",
+  "type": "anim",
+  "name": "man-face",
+  "description": "A man's face with brown hair and a blue shirt. Person portrait."
+ },
+ "anim/emoji/17069": {
+  "file_id": 17069,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pig-face",
+  "description": "A pink pig face with a snout. Farm animal emoji."
+ },
+ "anim/emoji/17070": {
+  "file_id": 17070,
+  "category": "emoji",
+  "type": "anim",
+  "name": "thumbs-up",
+  "description": "A blue-and-white hand giving a thumbs up. Approval gesture."
+ },
+ "anim/emoji/17071": {
+  "file_id": 17071,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-bunny-2",
+  "description": "A pink bunny/cat character with a bow, like My Melody. Cute mascot."
+ },
+ "anim/emoji/17072": {
+  "file_id": 17072,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cap-character",
+  "description": "A character wearing a green cap with an 'H'. Casual person emoji."
+ },
+ "anim/emoji/17073": {
+  "file_id": 17073,
+  "category": "emoji",
+  "type": "anim",
+  "name": "robot-face",
+  "description": "A gray robot/mech face with glowing red eyes. Mechanical character."
+ },
+ "anim/emoji/17074": {
+  "file_id": 17074,
+  "category": "emoji",
+  "type": "anim",
+  "name": "monkey-santa",
+  "description": "A brown monkey/bear wearing a Santa hat. Festive animal."
+ },
+ "anim/emoji/17075": {
+  "file_id": 17075,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-ghost-2",
+  "description": "A white ghost floating on a teal background. Halloween spirit."
+ },
+ "anim/emoji/17076": {
+  "file_id": 17076,
+  "category": "emoji",
+  "type": "anim",
+  "name": "iron-man",
+  "description": "A red-and-gold Iron Man helmet with glowing blue eyes. Superhero mask."
+ },
+ "anim/emoji/17077": {
+  "file_id": 17077,
+  "category": "emoji",
+  "type": "anim",
+  "name": "steamed-bun",
+  "description": "A white steamed bun/dumpling (bao) with a little face. Cute food emoji."
+ },
+ "anim/emoji/17078": {
+  "file_id": 17078,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-smiley",
+  "description": "A round white smiling face. Simple happy emoji."
+ },
+ "anim/emoji/17079": {
+  "file_id": 17079,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-mech",
+  "description": "A red robot/mech faceplate with segmented panels. Mechanical motif."
+ },
+ "anim/emoji/17080": {
+  "file_id": 17080,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dark-heart",
+  "description": "A deep red 3D heart on a purple background. Bold love symbol."
+ },
+ "anim/emoji/17081": {
+  "file_id": 17081,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pacman-maze",
+  "description": "A yellow Pac-Man maze board. Classic arcade game motif."
+ },
+ "anim/emoji/17082": {
+  "file_id": 17082,
+  "category": "emoji",
+  "type": "anim",
+  "name": "maroon-heart",
+  "description": "A dark maroon heart on an orange background. Moody love icon."
+ },
+ "anim/emoji/17083": {
+  "file_id": 17083,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gudetama-face",
+  "description": "A lazy yellow egg-yolk face looking tired, like Gudetama. Sleepy/unmotivated emoji."
+ },
+ "anim/emoji/17084": {
+  "file_id": 17084,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-3",
+  "description": "A red 3D heart on a light blue background. Classic love icon."
+ },
+ "anim/emoji/17085": {
+  "file_id": 17085,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-worm",
+  "description": "A small green worm/snake wriggling on black. Tiny creature."
+ },
+ "anim/emoji/17086": {
+  "file_id": 17086,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rainbow-frame-face",
+  "description": "A smiling face inside a rainbow-striped border. Colorful happy emoji."
+ },
+ "anim/emoji/17087": {
+  "file_id": 17087,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-4",
+  "description": "A glossy red heart on a black background. Bold love symbol."
+ },
+ "anim/emoji/17088": {
+  "file_id": 17088,
+  "category": "emoji",
+  "type": "anim",
+  "name": "brown-mountain-face",
+  "description": "A brown triangular creature/mountain with red eyes on pink. Quirky character."
+ },
+ "anim/emoji/17089": {
+  "file_id": 17089,
+  "category": "emoji",
+  "type": "anim",
+  "name": "maroon-heart-2",
+  "description": "A purple-maroon heart on black. Moody love icon."
+ },
+ "anim/emoji/17090": {
+  "file_id": 17090,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-clown-face",
+  "description": "A pink face with green eyebrows and a goofy grin, like a clown or troll. Funny emoji."
+ },
+ "anim/emoji/17091": {
+  "file_id": 17091,
+  "category": "emoji",
+  "type": "anim",
+  "name": "yellow-circle",
+  "description": "A solid yellow circle on black, like a dot or moon. Minimal shape."
+ },
+ "anim/emoji/17092": {
+  "file_id": 17092,
+  "category": "emoji",
+  "type": "anim",
+  "name": "panda-face",
+  "description": "A white-and-gray panda face framed in a box. Cute bear emoji."
+ },
+ "anim/emoji/17093": {
+  "file_id": 17093,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-ten",
+  "description": "A white skull with the number '10' above it. Spooky countdown motif."
+ },
+ "anim/emoji/17094": {
+  "file_id": 17094,
+  "category": "emoji",
+  "type": "anim",
+  "name": "checker-glitch",
+  "description": "A red-and-white checkered pattern with scattered squares. Glitchy grid graphic."
+ },
+ "anim/emoji/17095": {
+  "file_id": 17095,
+  "category": "emoji",
+  "type": "anim",
+  "name": "helmet-smiley",
+  "description": "A gray smiling face wearing a yellow helmet/cap, like a worker emoji."
+ },
+ "anim/emoji/17096": {
+  "file_id": 17096,
+  "category": "emoji",
+  "type": "anim",
+  "name": "hanging-heart",
+  "description": "A red heart dangling from a string/hook on gray. Hanging love decoration."
+ },
+ "anim/emoji/17097": {
+  "file_id": 17097,
+  "category": "emoji",
+  "type": "anim",
+  "name": "faint-heart",
+  "description": "A dim dark-red heart on a black background. Subtle love motif."
+ },
+ "anim/emoji/17098": {
+  "file_id": 17098,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-zigzag",
+  "description": "A small purple zigzag/lightning mark on black. Minimal abstract glyph."
+ },
+ "anim/emoji/17099": {
+  "file_id": 17099,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-box-smiley",
+  "description": "A red square face with a simple smile. Blocky happy emoji."
+ },
+ "anim/emoji/17100": {
+  "file_id": 17100,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-grin",
+  "description": "A blue grinning mouth/face outline on black. Cheeky emoji."
+ },
+ "anim/emoji/17101": {
+  "file_id": 17101,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-splash",
+  "description": "A white paint splash/splatter on black. Messy blob graphic."
+ },
+ "anim/emoji/17102": {
+  "file_id": 17102,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-flower",
+  "description": "A white flower with green leaves and an orange center, like a daisy or pinwheel."
+ },
+ "anim/emoji/17103": {
+  "file_id": 17103,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-red-eyes",
+  "description": "A white face with glowing red eyes on black. Eerie emoji."
+ },
+ "anim/emoji/17104": {
+  "file_id": 17104,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blonde-girl",
+  "description": "A cute blonde girl's face with a flower accent. Friendly character emoji."
+ },
+ "anim/emoji/17105": {
+  "file_id": 17105,
+  "category": "emoji",
+  "type": "anim",
+  "name": "teddy-heart",
+  "description": "A brown teddy bear holding a small red heart. Affectionate plush motif."
+ },
+ "anim/emoji/17106": {
+  "file_id": 17106,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart-5",
+  "description": "A pink 3D heart on black. Sweet love icon."
+ },
+ "anim/emoji/17107": {
+  "file_id": 17107,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gold-smiley",
+  "description": "A golden/yellow smiling face on a dark background. Shiny happy emoji."
+ },
+ "anim/emoji/17108": {
+  "file_id": 17108,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-mark",
+  "description": "A small purple zigzag/arrow mark on black. Minimal abstract glyph."
+ },
+ "anim/emoji/17109": {
+  "file_id": 17109,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-robot-face",
+  "description": "A pink boxy robot face with square eyes and a mouth. Cute mechanical emoji."
+ },
+ "anim/emoji/17110": {
+  "file_id": 17110,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-box-face",
+  "description": "A green-gray boxy face with a flat mouth, like a toaster. Deadpan character."
+ },
+ "anim/emoji/17111": {
+  "file_id": 17111,
+  "category": "emoji",
+  "type": "anim",
+  "name": "lips-teeth-face",
+  "description": "A face with red lips and a blue toothy mouth. Bold expressive emoji."
+ },
+ "anim/emoji/17112": {
+  "file_id": 17112,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-grin-face",
+  "description": "A pink face with a wide toothy grin. Goofy emoji."
+ },
+ "anim/emoji/17113": {
+  "file_id": 17113,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-line-face",
+  "description": "A simple red line-art face on black. Minimal expression emoji."
+ },
+ "anim/emoji/17114": {
+  "file_id": 17114,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-purple",
+  "description": "A glowing red heart on a purple background. Love icon."
+ },
+ "anim/emoji/17115": {
+  "file_id": 17115,
+  "category": "emoji",
+  "type": "anim",
+  "name": "broken-heart",
+  "description": "A red heart cracked down the middle on gray. Heartbreak emoji."
+ },
+ "anim/emoji/17116": {
+  "file_id": 17116,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-robot-grin",
+  "description": "A red robot face with blue eyes and a gold tooth in its grin. Mechanical character."
+ },
+ "anim/emoji/17117": {
+  "file_id": 17117,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-creature-2",
+  "description": "A white-and-teal creature (tooth or bird-like) on a teal background. Cute mascot."
+ },
+ "anim/emoji/17118": {
+  "file_id": 17118,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cupid-heart",
+  "description": "A red heart pierced by an arrow with wings, a Cupid's-arrow love symbol."
+ },
+ "anim/emoji/17119": {
+  "file_id": 17119,
+  "category": "emoji",
+  "type": "anim",
+  "name": "love-envelope",
+  "description": "A pink-and-white envelope/love letter. Romantic message motif."
+ },
+ "anim/emoji/17120": {
+  "file_id": 17120,
+  "category": "emoji",
+  "type": "anim",
+  "name": "thumbs-up-heart",
+  "description": "A hand giving a thumbs up with a red heart, combining 'like' and 'love'."
+ },
+ "anim/emoji/17121": {
+  "file_id": 17121,
+  "category": "emoji",
+  "type": "anim",
+  "name": "silver-heart",
+  "description": "A metallic silver heart/badge on a dark background. Shiny love emblem."
+ },
+ "anim/emoji/17122": {
+  "file_id": 17122,
+  "category": "emoji",
+  "type": "anim",
+  "name": "melting-heart",
+  "description": "A pink heart melting with a drip, like a heart-shaped ice cream. Sweet love motif."
+ },
+ "anim/emoji/17123": {
+  "file_id": 17123,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-grid",
+  "description": "A gray grid of squares with one highlighted green cell. Minimal pixel pattern."
+ },
+ "anim/emoji/17124": {
+  "file_id": 17124,
+  "category": "emoji",
+  "type": "anim",
+  "name": "tiny-dot",
+  "description": "A tiny white/gray dot on a black background. Minimal speck of light."
+ },
+ "anim/emoji/17125": {
+  "file_id": 17125,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cupid-heart-2",
+  "description": "A red heart struck by an arrow on a purple background. Cupid's-arrow love symbol."
+ },
+ "anim/emoji/17126": {
+  "file_id": 17126,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-heart-2",
+  "description": "A purple-pink 3D heart on black. Love icon."
+ },
+ "anim/emoji/17127": {
+  "file_id": 17127,
+  "category": "emoji",
+  "type": "anim",
+  "name": "smiling-heart",
+  "description": "A red heart with a happy grinning face. Cheerful love emoji."
+ },
+ "anim/emoji/17128": {
+  "file_id": 17128,
+  "category": "emoji",
+  "type": "anim",
+  "name": "robot-screen-face",
+  "description": "A white robot with a colorful screen showing a green grinning face. Cute bot."
+ },
+ "anim/emoji/17129": {
+  "file_id": 17129,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rainbow-heart",
+  "description": "A heart filled with rainbow stripes on black. Pride/colorful love icon."
+ },
+ "anim/emoji/17130": {
+  "file_id": 17130,
+  "category": "emoji",
+  "type": "anim",
+  "name": "book",
+  "description": "An open book or notebook on a tan background. Reading/study motif."
+ },
+ "anim/emoji/17131": {
+  "file_id": 17131,
+  "category": "emoji",
+  "type": "anim",
+  "name": "heart-eyes-emoji",
+  "description": "A yellow face with red heart-shaped eyes. The 'in love' emoji."
+ },
+ "anim/emoji/17132": {
+  "file_id": 17132,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rainbow-heart-2",
+  "description": "A rainbow-striped heart on a blue background. Colorful love symbol."
+ },
+ "anim/emoji/17133": {
+  "file_id": 17133,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-heart-2",
+  "description": "A white heart on a pink/red background. Love icon."
+ },
+ "anim/emoji/17134": {
+  "file_id": 17134,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-5",
+  "description": "A glossy red heart on black. Classic love symbol."
+ },
+ "anim/emoji/17135": {
+  "file_id": 17135,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart-checker",
+  "description": "A pink heart on a green checkered background. Playful love motif."
+ },
+ "anim/emoji/17136": {
+  "file_id": 17136,
+  "category": "emoji",
+  "type": "anim",
+  "name": "party-face",
+  "description": "A yellow face wearing a party hat. Celebration emoji."
+ },
+ "anim/emoji/17137": {
+  "file_id": 17137,
+  "category": "emoji",
+  "type": "anim",
+  "name": "laughing-gold-face",
+  "description": "A golden-brown laughing face with a big open grin. Joyful emoji."
+ },
+ "anim/emoji/17138": {
+  "file_id": 17138,
+  "category": "emoji",
+  "type": "anim",
+  "name": "magenta-heart",
+  "description": "A bright magenta 3D heart on a light background. Vivid love icon."
+ },
+ "anim/emoji/17139": {
+  "file_id": 17139,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-striped",
+  "description": "A white skull/robot face over a pink striped background. Spooky emoji."
+ },
+ "anim/emoji/17140": {
+  "file_id": 17140,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-arms-up",
+  "description": "A pink figure with arms raised on a pink background. Joyful/celebrating sprite."
+ },
+ "anim/emoji/17141": {
+  "file_id": 17141,
+  "category": "emoji",
+  "type": "anim",
+  "name": "maroon-heart-3",
+  "description": "A dark maroon heart on a pink background. Deep love motif."
+ },
+ "anim/emoji/17142": {
+  "file_id": 17142,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-hearts",
+  "description": "Several small pink hearts on a pink background. Sweet love pattern."
+ },
+ "anim/emoji/17143": {
+  "file_id": 17143,
+  "category": "emoji",
+  "type": "anim",
+  "name": "robot-tv-face",
+  "description": "A white robot/TV face on a pink striped background. Retro bot emoji."
+ },
+ "anim/emoji/17144": {
+  "file_id": 17144,
+  "category": "emoji",
+  "type": "anim",
+  "name": "color-grid",
+  "description": "A grid of brightly colored squares, like a color palette or swatch board."
+ },
+ "anim/emoji/17145": {
+  "file_id": 17145,
+  "category": "emoji",
+  "type": "anim",
+  "name": "split-heart",
+  "description": "A red heart splitting into two halves on black. Heartbreak motif."
+ },
+ "anim/emoji/17146": {
+  "file_id": 17146,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rainbow-heart-3",
+  "description": "A heart filled with rainbow colors on black. Colorful love symbol."
+ },
+ "anim/emoji/17147": {
+  "file_id": 17147,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dotted-heart",
+  "description": "A heart outline formed from small colored dots on black. Twinkling love icon."
+ },
+ "anim/emoji/17148": {
+  "file_id": 17148,
+  "category": "emoji",
+  "type": "anim",
+  "name": "claw-heart",
+  "description": "A red heart held by a claw/hook on gray, like a claw-machine prize. Playful love motif."
+ },
+ "anim/emoji/17149": {
+  "file_id": 17149,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pig-speech",
+  "description": "A pink pig face with an empty speech bubble. Talking animal emoji."
+ },
+ "anim/emoji/17150": {
+  "file_id": 17150,
+  "category": "emoji",
+  "type": "anim",
+  "name": "sparkle-heart",
+  "description": "A red heart with a golden sparkle/cross on a purple background. Shining love icon."
+ },
+ "anim/emoji/17151": {
+  "file_id": 17151,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pig-face-2",
+  "description": "A pink pig face with a snout on a pale background. Cute farm animal."
+ },
+ "anim/emoji/17152": {
+  "file_id": 17152,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-6",
+  "description": "A simple red heart on black. Classic love symbol."
+ },
+ "anim/emoji/17153": {
+  "file_id": 17153,
+  "category": "emoji",
+  "type": "anim",
+  "name": "two-pink-hearts",
+  "description": "A pair of pink hearts side by side on black. Love-struck motif."
+ },
+ "anim/emoji/17154": {
+  "file_id": 17154,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-hearts-row",
+  "description": "A row of three pink hearts. Sweet affection pattern."
+ },
+ "anim/emoji/17155": {
+  "file_id": 17155,
+  "category": "emoji",
+  "type": "anim",
+  "name": "horned-smiley",
+  "description": "A yellow smiley face with little devil horns on blue. Mischievous emoji."
+ },
+ "anim/emoji/17156": {
+  "file_id": 17156,
+  "category": "emoji",
+  "type": "anim",
+  "name": "wood-heart",
+  "description": "A brown wooden heart on a tan background. Rustic love icon."
+ },
+ "anim/emoji/17157": {
+  "file_id": 17157,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glowing-heart",
+  "description": "A glowing red heart flanked by green leaves/arrows on dark. Vibrant love motif."
+ },
+ "anim/emoji/17158": {
+  "file_id": 17158,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart-outline",
+  "description": "A pink heart outline on a dark background. Simple love symbol."
+ },
+ "anim/emoji/17159": {
+  "file_id": 17159,
+  "category": "emoji",
+  "type": "anim",
+  "name": "laughing-face",
+  "description": "A yellow face laughing with a big open smile. Joyful emoji."
+ },
+ "anim/emoji/17160": {
+  "file_id": 17160,
+  "category": "emoji",
+  "type": "anim",
+  "name": "burning-heart",
+  "description": "A dark heart with flames glowing at its base. Fiery passion motif."
+ },
+ "anim/emoji/17161": {
+  "file_id": 17161,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-shape",
+  "description": "A gray tooth/ghost-like shape on a gray background. Ambiguous minimal form."
+ },
+ "anim/emoji/17162": {
+  "file_id": 17162,
+  "category": "emoji",
+  "type": "anim",
+  "name": "two-robots",
+  "description": "Two gray robot/TV faces side by side on purple. Pair of bots."
+ },
+ "anim/emoji/17163": {
+  "file_id": 17163,
+  "category": "emoji",
+  "type": "anim",
+  "name": "nested-heart",
+  "description": "A pink heart nested inside concentric pink frames. Layered love icon."
+ },
+ "anim/emoji/17164": {
+  "file_id": 17164,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-heart-3",
+  "description": "A purple heart on a dark background. Love icon."
+ },
+ "anim/emoji/17165": {
+  "file_id": 17165,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-invader",
+  "description": "A green Space-Invader-style alien on black. Retro arcade creature."
+ },
+ "anim/emoji/17166": {
+  "file_id": 17166,
+  "category": "emoji",
+  "type": "anim",
+  "name": "magenta-heart-2",
+  "description": "A bright magenta 3D heart on dark. Vivid love symbol."
+ },
+ "anim/emoji/17167": {
+  "file_id": 17167,
+  "category": "emoji",
+  "type": "anim",
+  "name": "alert-heart",
+  "description": "A red heart with an exclamation mark and green glitch. Warning/love-alert motif."
+ },
+ "anim/emoji/17168": {
+  "file_id": 17168,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart-line",
+  "description": "A pink heart crossed by a white line/band. Stylized love icon."
+ },
+ "anim/emoji/17169": {
+  "file_id": 17169,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-7",
+  "description": "A glowing red heart on a purple background. Love symbol."
+ },
+ "anim/emoji/17170": {
+  "file_id": 17170,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-heart-3",
+  "description": "A white/pink outlined heart. Soft love icon."
+ },
+ "anim/emoji/17171": {
+  "file_id": 17171,
+  "category": "emoji",
+  "type": "anim",
+  "name": "orange-square",
+  "description": "A solid orange square. Minimal color block."
+ },
+ "anim/emoji/17172": {
+  "file_id": 17172,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-skull",
+  "description": "A white skull with red/blue glitch distortion on dark. Spooky glitch emoji."
+ },
+ "anim/emoji/17173": {
+  "file_id": 17173,
+  "category": "emoji",
+  "type": "anim",
+  "name": "laughing-face-2",
+  "description": "A yellow face laughing with a big grin. Joyful emoji."
+ },
+ "anim/emoji/17174": {
+  "file_id": 17174,
+  "category": "emoji",
+  "type": "anim",
+  "name": "praying-hands",
+  "description": "Two hands pressed together in prayer against a warm glow. Gratitude/prayer emoji."
+ },
+ "anim/emoji/17175": {
+  "file_id": 17175,
+  "category": "emoji",
+  "type": "anim",
+  "name": "storm-cloud",
+  "description": "A white cloud with a lightning bolt. Stormy weather motif."
+ },
+ "anim/emoji/17176": {
+  "file_id": 17176,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-smile",
+  "description": "A simple white smiling-face outline on dark. Minimal happy emoji."
+ },
+ "anim/emoji/17177": {
+  "file_id": 17177,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-screen",
+  "description": "A pink box containing a small TV/screen. Retro device motif."
+ },
+ "anim/emoji/17178": {
+  "file_id": 17178,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-streaks",
+  "description": "Pink streaks/dashes scattered on black. Abstract motion marks."
+ },
+ "anim/emoji/17179": {
+  "file_id": 17179,
+  "category": "emoji",
+  "type": "anim",
+  "name": "faint-light",
+  "description": "A mostly black panel with a faint light. Subtle, near-empty graphic."
+ },
+ "anim/emoji/17180": {
+  "file_id": 17180,
+  "category": "emoji",
+  "type": "anim",
+  "name": "tiny-pixels",
+  "description": "A few tiny red and blue pixels on black. Minimal speckle."
+ },
+ "anim/emoji/17181": {
+  "file_id": 17181,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-devil",
+  "description": "A red horned devil/demon face on dark. Mischievous Halloween emoji."
+ },
+ "anim/emoji/17182": {
+  "file_id": 17182,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cream-smiley",
+  "description": "A cream/beige smiling face. Gentle happy emoji."
+ },
+ "anim/emoji/17183": {
+  "file_id": 17183,
+  "category": "emoji",
+  "type": "anim",
+  "name": "crying-face",
+  "description": "A cream face with blue tears streaming down. Sad/crying emoji."
+ }
+}
