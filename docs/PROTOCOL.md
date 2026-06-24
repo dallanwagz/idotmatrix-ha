@@ -78,6 +78,11 @@ DIY fun `0=quit-nosave,1=enter+clear,2=quit-still,3=enter-noclear`.
 - Each style ships a **default colour** (`default16x16TimeColor`): 0=`(97,24,214)` 1=`(229,12,23)`
   2=`(255,152,43)` 3=`(19,67,248)` 4=`(106,39,248)` 5=`(255,146,42)` 6=`(255,15,77)` 7=`(67,250,85)`.
 - **"Intensity" is the separate `set_brightness` (`cmd 4/0x80`)** — NOT part of the clock frame.
+- **What each style looks like** (photographed on-device, `style N` == app preview `#(N+1)`):
+  0=rainbow border, 1=Christmas tree, 2=checkered bands, 3=filled/inverted, 4=hourglass,
+  5=alarm-clock frame, 6=blue gradient border, 7=corner-gradient border. Full photo gallery:
+  [CLOCK-STYLES.md](CLOCK-STYLES.md). ⚠️ A `set_clock` as the *first* frame after a fresh connect
+  can be dropped — send it twice or after another command.
 
 ## DIY pixel draw (live graffiti) ✅
 
