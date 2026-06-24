@@ -169,6 +169,23 @@ def set_clock(
     return frame(6, 1, flags, r, g, b)
 
 
+def set_effect(model: int, speed: int, colors, saturation: int = 100) -> bytes:
+    """Lighting effect ("MutilColor"). CMD 3 / SUB 2. (MutilColorAgreement.sendMutilColor)
+
+    ``[3,2, model, speed, count, r0,g0,b0, ...]`` — total len = ``count*3 + 7``.
+    ``model`` is the scene/style 0-6 (7 modes); ``speed`` 0-100 (the lightning-bolt slider);
+    ``colors`` is a list of (r,g,b). Each channel is value-``1``->``0`` remapped (1 is reserved)
+    then scaled by ``saturation/100`` (app default 100 = passthrough). RGB 0-255.
+    Hardware-confirmed on the 32×32 (animated multi-colour effect runs; ack ``0500030201``).
+    """
+    payload = [model & 0xFF, max(0, min(100, speed)), len(colors) & 0xFF]
+    for r, g, b in colors:
+        for ch in (r, g, b):
+            ch = 0 if ch == 1 else (ch & 0xFF)
+            payload.append((ch * max(0, min(100, saturation))) // 100)
+    return frame(3, 2, *payload)
+
+
 def set_countdown(mode: int, minutes: int, seconds: int) -> bytes:
     """Countdown timer. CMD 8 / SUB 0x80. ``mode`` per :class:`CountdownMode`."""
     return frame(8, 0x80, mode, minutes, seconds)

@@ -41,6 +41,7 @@ All validated on the 32×32 unless marked. CMD/SUB are bytes [2]/[3]; `0x80`=128
 | Device-info query | 1 | 0x80 | *(none)* | `0400 0180` | ✅ (reply `09000180040e010300`, `03`=32×32) |
 | Brightness 0-100 | 4 | 0x80 | `pct` | `0500048032` (50%) | ✅ |
 | Fullscreen RGB | 2 | 2 | `r, g, b` | `07000202ff0000` (red) | ✅ |
+| Lighting effect (MutilColor) | 3 | 2 | `model, speed, count, rgb…` | `1c000302005a07…` | ✅ (see MODE tab) |
 | Clock | 6 | 1 | `style\|0x80(date)\|0x40(24h), r, g, b` | `08000601c0ffffff` | ✅ |
 | Countdown | 8 | 0x80 | `mode(0-3), min, sec` | `0700088001001e` (start 0:30) | ✅ |
 | Stopwatch | 9 | 0x80 | `mode(0-3)` | `0500098001` (start) | ✅ |
@@ -218,3 +219,55 @@ machine (`0500010001`=next / `0500010003`=done).
 the panel loops them itself, unlike rhythm (streamed) or stills (host-driven). Builders:
 `material_wipe()`, `enter_asset_view()`, and `ImageUpload(gif, DataType.GIF, image_index=slot,
 time_sign=dwell)`.
+
+## MODE tab — Lighting / Lighting-Effects / Assets (full UI map)
+
+Static-decoded from the app + on-device confirmation. Every tunable knob on the four MODE
+sub-tabs maps to these frames.
+
+### Lighting sub-tab
+Just two opcodes — there is no distinct "lamp" command:
+- **Brightness** → `set_brightness` `cmd 4/0x80 [pct]` (UI range 5–100).
+- **Any colour, the 7 presets, and the 3 whites** → `set_fullscreen_color` `cmd 2/2 [r,g,b]`.
+  - 7 presets: red `FF0000` · orange `FFA200` · yellow `FFFF00` · green `00FF00` · blue `0000FF`
+    · pink `FF00FF` · white `FFFFFF`.
+  - 3 whites: warm `F88D1E` · cool `FFD5FF` · night-light `FF996B`.
+
+### Lighting-Effects sub-tab ✅ (`set_effect`, cmd 3/2)
+```
+[len, 0, 3, 2, model, speed, count, r0,g0,b0, r1,g1,b1, …]      len = count*3 + 7
+```
+- **`model`** = the scene/style **0–6** (the 7 swipe modes).
+- **`speed`** = byte[5], **0–100** (the lightning-bolt slider).
+- **`count`** + that many **RGB** triplets (the editable swatch list, 4–8 colours).
+- Each channel is **value-`1`→`0`** remapped (1 is reserved) then scaled by **`saturation/100`**.
+- Brightness here is the same `cmd 4/0x80`. Confirmed on-device (animated multi-colour effect;
+  ack `0500030201`). Golden: `set_effect(0,90,<7 rainbow>)` = `1c000302005a07ff0000ffa200ffff0000ff000000ffff00ffffffff`.
+  (The community RE's "len 6+count" layout is wrong — this is byte-for-byte from the app builder.)
+
+### Device-Assets sub-tab (carousel)
+Store = GIF upload (`DataType.GIF`) with `image_index`=slot 0–35, `timeSign`=dwell. The `+` boxes
+are empty slots; the down-arrow pushes the page. **Carousel interval → `timeSign` seconds:**
+| UI | 5s | 10s | 30s | 1min | 5min |
+|---|---|---|---|---|---|
+| seconds | 5 | 10 | 30 | 60 | 300 |
+
+(byte order of `timeSign` is settled little-endian for our builder; only the 5-min=300 case has a
+non-zero high byte — re-confirm on-wire if it ever misbehaves. The app sends a `cmd 2/1` slot-setup
+frame — `material_wipe()` — before a multi-slot/page download; our multi-packet uploads need it too.)
+
+### My-Assets sub-tab
+A **local SQLite** library of saved items (`type` 0=PNG/img, 1=GIF, 2=text, 3=effect, 4=colour).
+Selecting one just **re-sends its original opcode** (GIF→`cmd 1/0`, effect→`cmd 3/2`,
+colour→`cmd 2/2`, …) — **no new commands**.
+
+### Max animation size (per-slot storage) — MEASURED
+There is **no app-side size/frame/length limit** — the app streams the whole GIF and lets the
+**device firmware** reject overflow (the "insufficient space" NAK = `NO_SPACE`, byte[4]==2).
+Empirically, a single slot **accepted ≥1.3 MB and never returned `NO_SPACE`** (the uploads ended on
+BLE drops over multi-minute transfers, not a device limit). Practical guidance at 32×32:
+- dense/noisy frames (~2 KB/frame): **~650–800 frames** (≈60–80 s @ 10 fps);
+- typical 256-colour content (~300–600 B/frame): **thousands of frames** (many minutes).
+- Storage is **not** the bottleneck — BLE upload time/reliability and the device's playback decode
+  are. The 36 slots almost certainly share a flash pool (not 36 × 1.6 MB), so budget the **total**
+  pool at ≥1.6 MB and a single continuous animation at **1–2 min of full-motion 32×32 GIF**.

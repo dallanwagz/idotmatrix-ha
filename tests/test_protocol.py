@@ -105,6 +105,15 @@ def test_get_device_info():
     assert h(P.get_device_info()) == "0400 0180".replace(" ", "")
 
 
+def test_effect_captured():
+    # Captured + confirmed on-device (animated multi-colour effect): cmd 3/2, len=count*3+7
+    rainbow = [(255, 0, 0), (255, 162, 0), (255, 255, 0), (0, 255, 0), (0, 0, 255), (255, 0, 255), (255, 255, 255)]
+    assert h(P.set_effect(0, 90, rainbow)) == "1c000302005a07ff0000ffa200ffff0000ff000000ffff00ffffffff"
+    assert h(P.set_effect(0, 20, [(0, 0, 255), (255, 0, 255)])) == "0d0003020014020000ffff00ff"
+    # saturation halves each channel; a channel value of exactly 1 collapses to 0
+    assert P.set_effect(2, 50, [(255, 1, 100)], saturation=50)[7:10] == bytes([127, 0, 50])
+
+
 def test_set_eco_field_order():
     # ground-truthed flag,start_h,start_m,end_h,end_m,light (EcoActivity.java:62); fixed bug
     assert h(P.set_eco(1, 22, 0, 7, 30, 10)) == "0a000280011600071e0a"
