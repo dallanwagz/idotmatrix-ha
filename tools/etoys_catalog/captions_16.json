@@ -5738,5 +5738,565 @@
   "type": "anim",
   "name": "dm-red-2",
   "description": "The letters 'DM' in red and white on a dark background. Promo text."
+ },
+ "anim/business/16415": {
+  "file_id": 16415,
+  "category": "business",
+  "type": "anim",
+  "name": "shopping-text",
+  "description": "Red letters reading like 'SHOPPING' on a dark background. Retail signage."
+ },
+ "anim/business/16421": {
+  "file_id": 16421,
+  "category": "business",
+  "type": "anim",
+  "name": "thumbs-up",
+  "description": "A blue hand giving a thumbs up on a dark background. Approval gesture."
+ },
+ "anim/business/16422": {
+  "file_id": 16422,
+  "category": "business",
+  "type": "anim",
+  "name": "purple-frame",
+  "description": "A purple square frame/outline on a dark background. Minimal border."
+ },
+ "anim/business/16423": {
+  "file_id": 16423,
+  "category": "business",
+  "type": "anim",
+  "name": "xo-fruit",
+  "description": "An XO/tic-tac-toe grid with cherries on dark. Playful game-and-fruit motif."
+ },
+ "anim/business/16424": {
+  "file_id": 16424,
+  "category": "business",
+  "type": "anim",
+  "name": "text-sign",
+  "description": "Block letters (reading like 'SSAM'/'55AM') with green accents. Sign/label graphic."
+ },
+ "anim/business/16425": {
+  "file_id": 16425,
+  "category": "business",
+  "type": "anim",
+  "name": "kfc",
+  "description": "The letters 'KFC' on a dark background. Brand/logo motif."
+ },
+ "anim/business/16426": {
+  "file_id": 16426,
+  "category": "business",
+  "type": "anim",
+  "name": "red-flag",
+  "description": "A red flag/banner with white on a red background. Signage motif."
+ },
+ "anim/business/16427": {
+  "file_id": 16427,
+  "category": "business",
+  "type": "anim",
+  "name": "number-zero",
+  "description": "A white number '0'/'01' on a dark background. Digit motif."
+ },
+ "anim/business/16428": {
+  "file_id": 16428,
+  "category": "business",
+  "type": "anim",
+  "name": "color-blocks",
+  "description": "A panel with colored square blocks on dark. Geometric color swatches."
+ },
+ "anim/business/16429": {
+  "file_id": 16429,
+  "category": "business",
+  "type": "anim",
+  "name": "bitcoin",
+  "description": "A gold Bitcoin coin with the 'B' symbol on dark. Cryptocurrency icon."
+ },
+ "anim/business/16430": {
+  "file_id": 16430,
+  "category": "business",
+  "type": "anim",
+  "name": "starfish",
+  "description": "A red-orange starfish on a blue background. Ocean creature."
+ },
+ "anim/business/16431": {
+  "file_id": 16431,
+  "category": "business",
+  "type": "anim",
+  "name": "flan",
+  "description": "A custard/flan pudding dessert on a dark background. Sweet treat."
+ },
+ "anim/business/16432": {
+  "file_id": 16432,
+  "category": "business",
+  "type": "anim",
+  "name": "santa-scene",
+  "description": "A festive scene with red-and-white Santa figures. Christmas vignette."
+ },
+ "anim/business/16433": {
+  "file_id": 16433,
+  "category": "business",
+  "type": "anim",
+  "name": "teacup",
+  "description": "A cup of coffee on a pink saucer on a pink background. Hot-beverage icon."
+ },
+ "anim/business/16434": {
+  "file_id": 16434,
+  "category": "business",
+  "type": "anim",
+  "name": "burger",
+  "description": "A hamburger on a striped background. Fast-food icon."
+ },
+ "anim/business/16435": {
+  "file_id": 16435,
+  "category": "business",
+  "type": "anim",
+  "name": "french-fries",
+  "description": "French fries in a carton on an orange background. Fast-food icon."
+ },
+ "anim/business/16436": {
+  "file_id": 16436,
+  "category": "business",
+  "type": "anim",
+  "name": "rainbow",
+  "description": "A rainbow arch on a dark background. Colorful weather motif."
+ },
+ "anim/business/16437": {
+  "file_id": 16437,
+  "category": "business",
+  "type": "anim",
+  "name": "pink-castle",
+  "description": "A pink castle/crown structure on a tan background. Fairy-tale motif."
+ },
+ "anim/business/16438": {
+  "file_id": 16438,
+  "category": "business",
+  "type": "anim",
+  "name": "sundae",
+  "description": "A bowl of ice cream sundae with toppings on blue. Dessert."
+ },
+ "anim/business/16439": {
+  "file_id": 16439,
+  "category": "business",
+  "type": "anim",
+  "name": "green-hair-figure",
+  "description": "A green-haired figure/person on a blue background. Character portrait."
+ },
+ "anim/business/16440": {
+  "file_id": 16440,
+  "category": "business",
+  "type": "anim",
+  "name": "sushi-bento",
+  "description": "A sushi roll/bento box of food on a dark background. Japanese meal."
+ },
+ "anim/business/16441": {
+  "file_id": 16441,
+  "category": "business",
+  "type": "anim",
+  "name": "food-bowl",
+  "description": "An orange/red bowl of food on a tan background. Meal icon."
+ },
+ "image/daily/16442": {
+  "file_id": 16442,
+  "category": "daily",
+  "type": "image",
+  "name": "airplane",
+  "description": "A white airplane on a teal background. Air-travel icon."
+ },
+ "image/daily/16443": {
+  "file_id": 16443,
+  "category": "daily",
+  "type": "image",
+  "name": "green-frog",
+  "description": "A green frog face (Keroppi-style) on a blue background. Cute amphibian."
+ },
+ "image/daily/16444": {
+  "file_id": 16444,
+  "category": "daily",
+  "type": "image",
+  "name": "santa-kid",
+  "description": "A child in a Santa hat on a dark background. Festive kid."
+ },
+ "image/daily/16445": {
+  "file_id": 16445,
+  "category": "daily",
+  "type": "image",
+  "name": "yellow-drink",
+  "description": "A yellow drink/cup with steam on a purple background. Hot beverage."
+ },
+ "image/daily/16446": {
+  "file_id": 16446,
+  "category": "daily",
+  "type": "image",
+  "name": "classroom",
+  "description": "A teacher at a green blackboard, a classroom scene. School motif."
+ },
+ "image/daily/16447": {
+  "file_id": 16447,
+  "category": "daily",
+  "type": "image",
+  "name": "garden",
+  "description": "A garden/landscape with trees and plants. Outdoor scene."
+ },
+ "image/daily/16448": {
+  "file_id": 16448,
+  "category": "daily",
+  "type": "image",
+  "name": "red-flag",
+  "description": "A red flag on a pole on a green background. Flag/marker motif."
+ },
+ "image/daily/16449": {
+  "file_id": 16449,
+  "category": "daily",
+  "type": "image",
+  "name": "carrot",
+  "description": "An orange carrot on a dark background. Vegetable icon."
+ },
+ "image/daily/16450": {
+  "file_id": 16450,
+  "category": "daily",
+  "type": "image",
+  "name": "pineapple",
+  "description": "A yellow pineapple on a purple background. Tropical fruit."
+ },
+ "image/daily/16451": {
+  "file_id": 16451,
+  "category": "daily",
+  "type": "image",
+  "name": "green-shirt-man",
+  "description": "A man in a green shirt on a blue background. Person portrait."
+ },
+ "image/daily/16452": {
+  "file_id": 16452,
+  "category": "daily",
+  "type": "image",
+  "name": "couple",
+  "description": "A man and woman couple on a white background. Romance scene."
+ },
+ "image/daily/16453": {
+  "file_id": 16453,
+  "category": "daily",
+  "type": "image",
+  "name": "sunset-landscape",
+  "description": "A pink sunset landscape on a blue background. Scenery."
+ },
+ "image/daily/16454": {
+  "file_id": 16454,
+  "category": "daily",
+  "type": "image",
+  "name": "rainbow-cat",
+  "description": "A white cat/rabbit against a rainbow background. Colorful animal scene."
+ },
+ "image/daily/16455": {
+  "file_id": 16455,
+  "category": "daily",
+  "type": "image",
+  "name": "strawberries",
+  "description": "A pattern of red strawberries on a green background. Fruit motif."
+ },
+ "image/daily/16456": {
+  "file_id": 16456,
+  "category": "daily",
+  "type": "image",
+  "name": "pink-abstract",
+  "description": "A pink abstract/heart shape on a pink background. Soft motif."
+ },
+ "image/daily/16457": {
+  "file_id": 16457,
+  "category": "daily",
+  "type": "image",
+  "name": "checker",
+  "description": "A red-and-blue checkered pattern on a light background. Geometric design."
+ },
+ "image/daily/16458": {
+  "file_id": 16458,
+  "category": "daily",
+  "type": "image",
+  "name": "sprout",
+  "description": "A white plant/sprout on a blue background. Growth motif."
+ },
+ "image/daily/16459": {
+  "file_id": 16459,
+  "category": "daily",
+  "type": "image",
+  "name": "aquarium",
+  "description": "A blue aquarium/fish tank scene on a dark background. Underwater vignette."
+ },
+ "image/daily/16460": {
+  "file_id": 16460,
+  "category": "daily",
+  "type": "image",
+  "name": "blue-sword",
+  "description": "A glowing blue sword/crystal on a dark background. Weapon/gem motif."
+ },
+ "image/daily/16461": {
+  "file_id": 16461,
+  "category": "daily",
+  "type": "image",
+  "name": "white-bird",
+  "description": "A white duck/bird on a dark background. Bird portrait."
+ },
+ "image/daily/16462": {
+  "file_id": 16462,
+  "category": "daily",
+  "type": "image",
+  "name": "gray-device",
+  "description": "A gray phone/device with a skull on a green background. Tech motif."
+ },
+ "image/daily/16463": {
+  "file_id": 16463,
+  "category": "daily",
+  "type": "image",
+  "name": "red-scene",
+  "description": "A red scene with white dots (cherries/snow) on red. Festive motif."
+ },
+ "image/daily/16464": {
+  "file_id": 16464,
+  "category": "daily",
+  "type": "image",
+  "name": "whale",
+  "description": "A purple whale on a blue background. Sea mammal."
+ },
+ "image/daily/16465": {
+  "file_id": 16465,
+  "category": "daily",
+  "type": "image",
+  "name": "snow-tree",
+  "description": "A snow-covered mushroom/tree on a blue background. Winter scene."
+ },
+ "image/daily/16466": {
+  "file_id": 16466,
+  "category": "daily",
+  "type": "image",
+  "name": "cloud",
+  "description": "A gray cloud on a red background. Weather motif."
+ },
+ "image/daily/16467": {
+  "file_id": 16467,
+  "category": "daily",
+  "type": "image",
+  "name": "purple-monster",
+  "description": "A purple monster/bat creature on a dark background. Spooky creature."
+ },
+ "image/daily/16468": {
+  "file_id": 16468,
+  "category": "daily",
+  "type": "image",
+  "name": "night-city",
+  "description": "A city skyline at night with a moon on a dark background. Urban scene."
+ },
+ "image/daily/16469": {
+  "file_id": 16469,
+  "category": "daily",
+  "type": "image",
+  "name": "cherry-blossom",
+  "description": "A pink cherry-blossom tree on a gray background. Spring scene."
+ },
+ "image/daily/16470": {
+  "file_id": 16470,
+  "category": "daily",
+  "type": "image",
+  "name": "white-goose",
+  "description": "A white duck/goose on a dark background. Bird portrait."
+ },
+ "image/daily/16471": {
+  "file_id": 16471,
+  "category": "daily",
+  "type": "image",
+  "name": "armored-bear",
+  "description": "A brown bear/lion in armor on a green background. Warrior animal."
+ },
+ "image/daily/16472": {
+  "file_id": 16472,
+  "category": "daily",
+  "type": "image",
+  "name": "sleeping-cat",
+  "description": "A black cat sleeping on a teal background. Resting kitty."
+ },
+ "image/daily/16473": {
+  "file_id": 16473,
+  "category": "daily",
+  "type": "image",
+  "name": "red-window",
+  "description": "A red window/gift with panes on a green background. Festive motif."
+ },
+ "image/daily/16474": {
+  "file_id": 16474,
+  "category": "daily",
+  "type": "image",
+  "name": "snow-globe",
+  "description": "A snowy planet/globe on a teal background. Wintry sphere."
+ },
+ "image/daily/16475": {
+  "file_id": 16475,
+  "category": "daily",
+  "type": "image",
+  "name": "pink-pig",
+  "description": "A pink pig face on a pink background. Cute farm animal."
+ },
+ "image/daily/16476": {
+  "file_id": 16476,
+  "category": "daily",
+  "type": "image",
+  "name": "frog",
+  "description": "A green frog face on a green background. Amphibian."
+ },
+ "image/daily/16477": {
+  "file_id": 16477,
+  "category": "daily",
+  "type": "image",
+  "name": "red-plane",
+  "description": "A red plane/bird on a dark background. Flying object."
+ },
+ "image/daily/16478": {
+  "file_id": 16478,
+  "category": "daily",
+  "type": "image",
+  "name": "brown-dog",
+  "description": "A brown puppy/dog face on a blue background. Cute canine."
+ },
+ "image/daily/16479": {
+  "file_id": 16479,
+  "category": "daily",
+  "type": "image",
+  "name": "night-moon",
+  "description": "A night scene with a moon and a cat on a dark background. Nocturnal vignette."
+ },
+ "image/daily/16480": {
+  "file_id": 16480,
+  "category": "daily",
+  "type": "image",
+  "name": "white-ghost",
+  "description": "A white ghost on a dark background. Spooky spirit."
+ },
+ "image/daily/16481": {
+  "file_id": 16481,
+  "category": "daily",
+  "type": "image",
+  "name": "parrot",
+  "description": "A red-and-green parrot on a cyan background. Tropical bird."
+ },
+ "image/daily/16482": {
+  "file_id": 16482,
+  "category": "daily",
+  "type": "image",
+  "name": "dog-face",
+  "description": "A brown dog face on a gray background. Canine portrait."
+ },
+ "image/daily/16483": {
+  "file_id": 16483,
+  "category": "daily",
+  "type": "image",
+  "name": "black-cat",
+  "description": "A black cat with yellow eyes on a dark background. Spooky kitty."
+ },
+ "image/daily/16484": {
+  "file_id": 16484,
+  "category": "daily",
+  "type": "image",
+  "name": "fox",
+  "description": "An orange fox/squirrel face on a tan background. Woodland animal."
+ },
+ "image/daily/16485": {
+  "file_id": 16485,
+  "category": "daily",
+  "type": "image",
+  "name": "brown-cat",
+  "description": "A brown cat/wolf on a blue background. Animal portrait."
+ },
+ "image/daily/16486": {
+  "file_id": 16486,
+  "category": "daily",
+  "type": "image",
+  "name": "blue-marble",
+  "description": "A blue glass marble/bubble on a green background. Shiny sphere."
+ },
+ "image/daily/16487": {
+  "file_id": 16487,
+  "category": "daily",
+  "type": "image",
+  "name": "green-monster",
+  "description": "A green frog/monster on a dark background. Goofy creature."
+ },
+ "image/daily/16488": {
+  "file_id": 16488,
+  "category": "daily",
+  "type": "image",
+  "name": "tan-cat",
+  "description": "A tan cat/raccoon face with whiskers on dark. Cute animal portrait."
+ },
+ "image/daily/16489": {
+  "file_id": 16489,
+  "category": "daily",
+  "type": "image",
+  "name": "santa-cat",
+  "description": "A gray cat in a Santa hat on a teal background. Festive pet."
+ },
+ "image/daily/16490": {
+  "file_id": 16490,
+  "category": "daily",
+  "type": "image",
+  "name": "violin",
+  "description": "A violin/cello instrument on a tan background. Music motif."
+ },
+ "image/daily/16491": {
+  "file_id": 16491,
+  "category": "daily",
+  "type": "image",
+  "name": "white-smiley",
+  "description": "A round white smiling face on a blue background. Happy emoji."
+ },
+ "image/daily/16492": {
+  "file_id": 16492,
+  "category": "daily",
+  "type": "image",
+  "name": "giraffe",
+  "description": "A yellow giraffe on a purple background. Tall savanna animal."
+ },
+ "image/daily/16493": {
+  "file_id": 16493,
+  "category": "daily",
+  "type": "image",
+  "name": "gray-cat",
+  "description": "A gray cat/wolf face on a dark background. Feline portrait."
+ },
+ "image/daily/16494": {
+  "file_id": 16494,
+  "category": "daily",
+  "type": "image",
+  "name": "santa-man",
+  "description": "A man in a red Santa hat on a red background. Christmas character."
+ },
+ "image/daily/16495": {
+  "file_id": 16495,
+  "category": "daily",
+  "type": "image",
+  "name": "horse-head",
+  "description": "A yellow horse/knight head on a blue background. Chess/equine motif."
+ },
+ "image/daily/16496": {
+  "file_id": 16496,
+  "category": "daily",
+  "type": "image",
+  "name": "santa-dog",
+  "description": "A brown dog in a Santa hat on a blue background. Festive pet."
+ },
+ "image/daily/16497": {
+  "file_id": 16497,
+  "category": "daily",
+  "type": "image",
+  "name": "snowy-tree",
+  "description": "A white snow-covered tree on a blue background. Winter scene."
+ },
+ "image/daily/16498": {
+  "file_id": 16498,
+  "category": "daily",
+  "type": "image",
+  "name": "rabbit",
+  "description": "A tan rabbit/bunny on a pink background. Cute animal."
+ },
+ "image/daily/16499": {
+  "file_id": 16499,
+  "category": "daily",
+  "type": "image",
+  "name": "tomato",
+  "description": "A red tomato on a dark background. Vegetable icon."
  }
 }
