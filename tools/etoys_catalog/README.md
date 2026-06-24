@@ -57,3 +57,9 @@ anytime with `catalog.py` + `download.py`.
 | images | 105 | 70 | 72 | 74 | 31 | **352** |
 
 So the full e-toys catalog is **1,103 assets** (751 animations + 352 images).
+
+## Captions
+
+Every asset is named + described in `captions.json` (keyed `type/category/file_id`), and those
+`name` + `description` columns are merged into `index.csv` / `index_images.csv`. Built by a vision
+pass over labeled montages (`build_montage.py`). 1103/1103 assets captioned.

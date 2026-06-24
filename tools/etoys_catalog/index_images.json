@@ -8,7 +8,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b03c6.88757383",
-  "local": "library_images/daily/17475.png"
+  "local": "library_images/daily/17475.png",
+  "name": "open-book",
+  "description": "An open white book on a dark background. Reading/study icon."
  },
  {
   "category": "daily",
@@ -19,7 +21,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0436.27699895",
-  "local": "library_images/daily/17476.png"
+  "local": "library_images/daily/17476.png",
+  "name": "bunny-face-2",
+  "description": "A white rabbit face with pink accents on cyan. Cute bunny portrait."
  },
  {
   "category": "daily",
@@ -30,7 +34,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0499.53447851",
-  "local": "library_images/daily/17477.png"
+  "local": "library_images/daily/17477.png",
+  "name": "full-moon",
+  "description": "A gray cratered full moon on a blue background. Night-sky icon."
  },
  {
   "category": "daily",
@@ -41,7 +47,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0506.49977753",
-  "local": "library_images/daily/17478.png"
+  "local": "library_images/daily/17478.png",
+  "name": "sleeping-cat",
+  "description": "A black cat lying down/sleeping on a green background. Resting kitty."
  },
  {
   "category": "daily",
@@ -52,7 +60,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b05a4.15671502",
-  "local": "library_images/daily/17479.png"
+  "local": "library_images/daily/17479.png",
+  "name": "white-cat-2",
+  "description": "A white cat/creature with a face. Cute animal portrait."
  },
  {
   "category": "daily",
@@ -63,7 +73,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0609.64808606",
-  "local": "library_images/daily/17480.png"
+  "local": "library_images/daily/17480.png",
+  "name": "husky",
+  "description": "A black-and-white husky/dog face. Canine portrait."
  },
  {
   "category": "daily",
@@ -74,7 +86,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0675.81465344",
-  "local": "library_images/daily/17481.png"
+  "local": "library_images/daily/17481.png",
+  "name": "gray-person",
+  "description": "A simple gray humanoid figure on a blue background. Generic person icon."
  },
  {
   "category": "daily",
@@ -85,7 +99,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b06e1.04856409",
-  "local": "library_images/daily/17482.png"
+  "local": "library_images/daily/17482.png",
+  "name": "bunny-carrot",
+  "description": "A white rabbit with a carrot on a blue background. Easter/spring motif."
  },
  {
   "category": "daily",
@@ -96,7 +112,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0746.35076862",
-  "local": "library_images/daily/17483.png"
+  "local": "library_images/daily/17483.png",
+  "name": "green-dragon",
+  "description": "A green dragon/dinosaur face with horns on a dark background. Mythical reptile."
  },
  {
   "category": "daily",
@@ -107,7 +125,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b07b3.95312928",
-  "local": "library_images/daily/17484.png"
+  "local": "library_images/daily/17484.png",
+  "name": "green-dino",
+  "description": "A green dinosaur/dragon creature on a gray background. Friendly reptile."
  },
  {
   "category": "daily",
@@ -118,7 +138,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0827.87764447",
-  "local": "library_images/daily/17485.png"
+  "local": "library_images/daily/17485.png",
+  "name": "sushi-roll-2",
+  "description": "A maki sushi roll with colorful filling seen from above. Japanese food icon."
  },
  {
   "category": "daily",
@@ -129,7 +151,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b08b7.74675502",
-  "local": "library_images/daily/17486.png"
+  "local": "library_images/daily/17486.png",
+  "name": "snow-planet",
+  "description": "A white snowy planet/moon sphere on a dark background. Wintry celestial body."
  },
  {
   "category": "daily",
@@ -140,7 +164,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0919.67478399",
-  "local": "library_images/daily/17487.png"
+  "local": "library_images/daily/17487.png",
+  "name": "man-face-2",
+  "description": "A man's face with gray hair and a blue shirt. Person portrait."
  },
  {
   "category": "daily",
@@ -151,7 +177,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0984.62171863",
-  "local": "library_images/daily/17488.png"
+  "local": "library_images/daily/17488.png",
+  "name": "white-ghost-3",
+  "description": "A white ghost on a dark background. Halloween spirit."
  },
  {
   "category": "daily",
@@ -162,7 +190,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b09f4.43603822",
-  "local": "library_images/daily/17489.png"
+  "local": "library_images/daily/17489.png",
+  "name": "gray-figure",
+  "description": "A gray ghost/figure with a pale face on blue. Simple character."
  },
  {
   "category": "daily",
@@ -173,7 +203,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0a56.20901505",
-  "local": "library_images/daily/17490.png"
+  "local": "library_images/daily/17490.png",
+  "name": "cherries",
+  "description": "A pair of red cherries on a pink background. Fruit icon."
  },
  {
   "category": "daily",
@@ -184,7 +216,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0ab4.17380959",
-  "local": "library_images/daily/17491.png"
+  "local": "library_images/daily/17491.png",
+  "name": "tan-animal",
+  "description": "A tan cat/rabbit face on an orange background. Cute animal portrait."
  },
  {
   "category": "daily",
@@ -195,7 +229,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0b45.47338156",
-  "local": "library_images/daily/17492.png"
+  "local": "library_images/daily/17492.png",
+  "name": "red-fruit",
+  "description": "A red apple/cherry on a green background. Fruit icon."
  },
  {
   "category": "daily",
@@ -206,7 +242,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0bb3.64766395",
-  "local": "library_images/daily/17493.png"
+  "local": "library_images/daily/17493.png",
+  "name": "bulldog",
+  "description": "A French bulldog face on a dark background. Canine portrait."
  },
  {
   "category": "daily",
@@ -217,7 +255,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0c29.28364928",
-  "local": "library_images/daily/17494.png"
+  "local": "library_images/daily/17494.png",
+  "name": "green-creature-2",
+  "description": "A green frog/turtle creature on a dark background. Amphibian/reptile."
  },
  {
   "category": "daily",
@@ -228,7 +268,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0c89.93686847",
-  "local": "library_images/daily/17495.png"
+  "local": "library_images/daily/17495.png",
+  "name": "pride-flag",
+  "description": "A colorful rainbow/pride flag on a pole in a landscape. Flag motif."
  },
  {
   "category": "daily",
@@ -239,7 +281,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0cf3.56953198",
-  "local": "library_images/daily/17496.png"
+  "local": "library_images/daily/17496.png",
+  "name": "fireplace-room",
+  "description": "A cozy brown room with a fireplace. Warm interior scene."
  },
  {
   "category": "daily",
@@ -250,7 +294,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0d66.17607320",
-  "local": "library_images/daily/17497.png"
+  "local": "library_images/daily/17497.png",
+  "name": "black-bat",
+  "description": "A black bat/spider creature on a dark background. Spooky animal."
  },
  {
   "category": "daily",
@@ -261,7 +307,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0dc3.78478023",
-  "local": "library_images/daily/17498.png"
+  "local": "library_images/daily/17498.png",
+  "name": "boy-face",
+  "description": "A boy's face with brown hair and a green shirt. Person portrait."
  },
  {
   "category": "daily",
@@ -272,7 +320,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0e50.22878569",
-  "local": "library_images/daily/17499.png"
+  "local": "library_images/daily/17499.png",
+  "name": "thumbs-up-2",
+  "description": "A blue hand giving a thumbs up. Approval gesture."
  },
  {
   "category": "daily",
@@ -283,7 +333,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0ec0.30765321",
-  "local": "library_images/daily/17500.png"
+  "local": "library_images/daily/17500.png",
+  "name": "black-cat",
+  "description": "A black cat face with glowing eyes on dark. Spooky kitty."
  },
  {
   "category": "daily",
@@ -294,7 +346,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0f35.68674890",
-  "local": "library_images/daily/17501.png"
+  "local": "library_images/daily/17501.png",
+  "name": "rainbow-heart-4",
+  "description": "A heart made of concentric rainbow bands. Colorful love symbol."
  },
  {
   "category": "daily",
@@ -305,7 +359,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b0fd6.67521976",
-  "local": "library_images/daily/17502.png"
+  "local": "library_images/daily/17502.png",
+  "name": "zombie-2",
+  "description": "A green zombie/Frankenstein face. Spooky monster portrait."
  },
  {
   "category": "daily",
@@ -316,7 +372,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1045.58963295",
-  "local": "library_images/daily/17503.png"
+  "local": "library_images/daily/17503.png",
+  "name": "brown-dog",
+  "description": "A brown puppy/dog face on a tan background. Cute canine."
  },
  {
   "category": "daily",
@@ -327,7 +385,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b10b9.94437934",
-  "local": "library_images/daily/17504.png"
+  "local": "library_images/daily/17504.png",
+  "name": "cat-moon-night",
+  "description": "A cat gazing at the moon in a snowy night scene. Peaceful nocturnal vignette."
  },
  {
   "category": "daily",
@@ -338,7 +398,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1142.41602121",
-  "local": "library_images/daily/17505.png"
+  "local": "library_images/daily/17505.png",
+  "name": "red-gnome",
+  "description": "A red gnome/figure in a pointed Santa-style hat. Whimsical character."
  },
  {
   "category": "daily",
@@ -349,7 +411,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b11b4.33498609",
-  "local": "library_images/daily/17506.png"
+  "local": "library_images/daily/17506.png",
+  "name": "clover",
+  "description": "A green four-leaf clover/shamrock on a dark background. Luck motif."
  },
  {
   "category": "daily",
@@ -360,7 +424,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1228.57602359",
-  "local": "library_images/daily/17507.png"
+  "local": "library_images/daily/17507.png",
+  "name": "mushroom-cat",
+  "description": "A white cat/bear wearing a mushroom-shaped hat on cyan. Cute creature."
  },
  {
   "category": "daily",
@@ -371,7 +437,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1293.84145357",
-  "local": "library_images/daily/17508.png"
+  "local": "library_images/daily/17508.png",
+  "name": "cap-mask-person",
+  "description": "A character with a green 'H' cap and a mask. Costumed person portrait."
  },
  {
   "category": "daily",
@@ -382,7 +450,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1306.20882418",
-  "local": "library_images/daily/17509.png"
+  "local": "library_images/daily/17509.png",
+  "name": "dog-heart",
+  "description": "A brown dog with a heart on a pink background. Affectionate pet motif."
  },
  {
   "category": "daily",
@@ -393,7 +463,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1365.24102926",
-  "local": "library_images/daily/17510.png"
+  "local": "library_images/daily/17510.png",
+  "name": "parrot",
+  "description": "A red-and-green parrot. Colorful tropical bird."
  },
  {
   "category": "daily",
@@ -404,7 +476,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b13d4.62428470",
-  "local": "library_images/daily/17511.png"
+  "local": "library_images/daily/17511.png",
+  "name": "burger",
+  "description": "A loaded hamburger with bun and fillings. Fast-food icon."
  },
  {
   "category": "daily",
@@ -415,7 +489,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1461.78664810",
-  "local": "library_images/daily/17512.png"
+  "local": "library_images/daily/17512.png",
+  "name": "wolf-face",
+  "description": "A brown wolf/cat face with blue accents. Canine/feline portrait."
  },
  {
   "category": "daily",
@@ -426,7 +502,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b14d7.57542827",
-  "local": "library_images/daily/17513.png"
+  "local": "library_images/daily/17513.png",
+  "name": "iron-man-2",
+  "description": "A red-and-gold Iron Man helmet on yellow. Superhero mask."
  },
  {
   "category": "daily",
@@ -437,7 +515,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1532.40959023",
-  "local": "library_images/daily/17514.png"
+  "local": "library_images/daily/17514.png",
+  "name": "gingerbread-man",
+  "description": "A brown gingerbread-man cookie figure. Holiday baking treat."
  },
  {
   "category": "daily",
@@ -448,7 +528,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b15a1.64984254",
-  "local": "library_images/daily/17515.png"
+  "local": "library_images/daily/17515.png",
+  "name": "yellow-duck",
+  "description": "A yellow duck/chick. Cute bird icon."
  },
  {
   "category": "daily",
@@ -459,7 +541,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1601.24024583",
-  "local": "library_images/daily/17516.png"
+  "local": "library_images/daily/17516.png",
+  "name": "brown-monkey",
+  "description": "A brown monkey/bear character in a scene. Animal portrait."
  },
  {
   "category": "daily",
@@ -470,7 +554,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1670.71164463",
-  "local": "library_images/daily/17517.png"
+  "local": "library_images/daily/17517.png",
+  "name": "gray-pyramid",
+  "description": "A gray striped pyramid/mountain with a red top. Geometric peak."
  },
  {
   "category": "daily",
@@ -481,7 +567,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1702.70687253",
-  "local": "library_images/daily/17518.png"
+  "local": "library_images/daily/17518.png",
+  "name": "white-smiley-2",
+  "description": "A round white smiling face on a blue background. Happy emoji."
  },
  {
   "category": "daily",
@@ -492,7 +580,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1768.17737542",
-  "local": "library_images/daily/17519.png"
+  "local": "library_images/daily/17519.png",
+  "name": "green-alien-2",
+  "description": "A green alien/creature with arms on a black background. Quirky extraterrestrial."
  },
  {
   "category": "daily",
@@ -503,7 +593,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b17d7.43336034",
-  "local": "library_images/daily/17520.png"
+  "local": "library_images/daily/17520.png",
+  "name": "brown-cat",
+  "description": "A brown cat face on a blue background. Feline portrait."
  },
  {
   "category": "daily",
@@ -514,7 +606,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1836.93166832",
-  "local": "library_images/daily/17521.png"
+  "local": "library_images/daily/17521.png",
+  "name": "green-frog-2",
+  "description": "A green frog/monster with big eyes on gray. Goofy amphibian."
  },
  {
   "category": "daily",
@@ -525,7 +619,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1897.91898178",
-  "local": "library_images/daily/17522.png"
+  "local": "library_images/daily/17522.png",
+  "name": "tan-cat",
+  "description": "A tan cat/raccoon face with whiskers. Cute animal portrait."
  },
  {
   "category": "daily",
@@ -536,7 +632,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1904.30788370",
-  "local": "library_images/daily/17523.png"
+  "local": "library_images/daily/17523.png",
+  "name": "campfire-scene",
+  "description": "A dark scene with a glowing campfire and a figure. Cozy nighttime vignette."
  },
  {
   "category": "daily",
@@ -547,7 +645,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1967.12849920",
-  "local": "library_images/daily/17524.png"
+  "local": "library_images/daily/17524.png",
+  "name": "raccoon-face",
+  "description": "A gray-and-white raccoon/panda face on a dark background. Cute animal portrait."
  },
  {
   "category": "daily",
@@ -558,7 +658,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b19f7.36311320",
-  "local": "library_images/daily/17525.png"
+  "local": "library_images/daily/17525.png",
+  "name": "red-gold-pattern",
+  "description": "A decorative pattern of gold shapes on red. Festive ornamental design."
  },
  {
   "category": "daily",
@@ -569,7 +671,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1a64.76264878",
-  "local": "library_images/daily/17526.png"
+  "local": "library_images/daily/17526.png",
+  "name": "penguins",
+  "description": "Two black-and-white penguins on a blue background. Polar birds."
  },
  {
   "category": "daily",
@@ -580,7 +684,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1ad4.39408545",
-  "local": "library_images/daily/17527.png"
+  "local": "library_images/daily/17527.png",
+  "name": "gray-wolf-2",
+  "description": "A gray wolf face with red eyes on blue. Fierce canine portrait."
  },
  {
   "category": "daily",
@@ -591,7 +697,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1b45.38690128",
-  "local": "library_images/daily/17528.png"
+  "local": "library_images/daily/17528.png",
+  "name": "reindeer-2",
+  "description": "A brown reindeer/deer on a blue background. Antlered animal."
  },
  {
   "category": "daily",
@@ -602,7 +710,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1bb4.57278020",
-  "local": "library_images/daily/17529.png"
+  "local": "library_images/daily/17529.png",
+  "name": "gold-coin",
+  "description": "A round gold coin on a dark background. Money/treasure icon."
  },
  {
   "category": "daily",
@@ -613,7 +723,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1c18.36923296",
-  "local": "library_images/daily/17530.png"
+  "local": "library_images/daily/17530.png",
+  "name": "ghost-waving",
+  "description": "A white ghost waving on a dark background. Friendly Halloween spirit."
  },
  {
   "category": "daily",
@@ -624,7 +736,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1c86.33920153",
-  "local": "library_images/daily/17531.png"
+  "local": "library_images/daily/17531.png",
+  "name": "bear-face-2",
+  "description": "A brown bear/teddy face on a dark background. Cuddly animal."
  },
  {
   "category": "daily",
@@ -635,7 +749,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1d47.72595008",
-  "local": "library_images/daily/17532.png"
+  "local": "library_images/daily/17532.png",
+  "name": "snowy-tree",
+  "description": "A white snow-covered tree on a blue background. Winter scene."
  },
  {
   "category": "daily",
@@ -646,7 +762,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1db5.79599505",
-  "local": "library_images/daily/17533.png"
+  "local": "library_images/daily/17533.png",
+  "name": "tomato",
+  "description": "A red tomato with a little face. Cheerful vegetable character."
  },
  {
   "category": "daily",
@@ -657,7 +775,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1e11.60721242",
-  "local": "library_images/daily/17534.png"
+  "local": "library_images/daily/17534.png",
+  "name": "stocking",
+  "description": "A red Christmas stocking. Festive holiday decoration."
  },
  {
   "category": "daily",
@@ -668,7 +788,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1e86.54921230",
-  "local": "library_images/daily/17535.png"
+  "local": "library_images/daily/17535.png",
+  "name": "floral-pattern",
+  "description": "A repeating floral pattern of flowers on blue. Decorative wallpaper motif."
  },
  {
   "category": "daily",
@@ -679,7 +801,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1ef3.24669471",
-  "local": "library_images/daily/17536.png"
+  "local": "library_images/daily/17536.png",
+  "name": "lava-sunset",
+  "description": "An orange-and-red lava/sunset landscape. Fiery horizon scene."
  },
  {
   "category": "daily",
@@ -690,7 +814,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1f67.29474957",
-  "local": "library_images/daily/17537.png"
+  "local": "library_images/daily/17537.png",
+  "name": "crab",
+  "description": "A red crab on sand. Seaside creature."
  },
  {
   "category": "daily",
@@ -701,7 +827,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b1ff0.69337413",
-  "local": "library_images/daily/17538.png"
+  "local": "library_images/daily/17538.png",
+  "name": "torch",
+  "description": "A flaming torch on a stick against black. Fire/light motif."
  },
  {
   "category": "daily",
@@ -712,7 +840,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2052.65940683",
-  "local": "library_images/daily/17539.png"
+  "local": "library_images/daily/17539.png",
+  "name": "grapes",
+  "description": "Purple bunches of grapes on a black background. Fruit icon."
  },
  {
   "category": "daily",
@@ -723,7 +853,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b20c8.41661412",
-  "local": "library_images/daily/17540.png"
+  "local": "library_images/daily/17540.png",
+  "name": "sunset-runner",
+  "description": "A silhouette figure running against a red-and-yellow sunset. Dramatic scene."
  },
  {
   "category": "daily",
@@ -734,7 +866,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2130.87953370",
-  "local": "library_images/daily/17541.png"
+  "local": "library_images/daily/17541.png",
+  "name": "green-antler-creature",
+  "description": "A green frog/monster with antlers on a blue background. Quirky creature."
  },
  {
   "category": "daily",
@@ -745,7 +879,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b21a1.60910749",
-  "local": "library_images/daily/17542.png"
+  "local": "library_images/daily/17542.png",
+  "name": "dog-scarf",
+  "description": "A brown dog wearing a scarf on a blue background. Cozy pet portrait."
  },
  {
   "category": "daily",
@@ -756,7 +892,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2213.02284960",
-  "local": "library_images/daily/17543.png"
+  "local": "library_images/daily/17543.png",
+  "name": "sunny-garden",
+  "description": "A sun shining over flowers on a blue background. Cheerful garden scene."
  },
  {
   "category": "daily",
@@ -767,7 +905,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2278.39189629",
-  "local": "library_images/daily/17544.png"
+  "local": "library_images/daily/17544.png",
+  "name": "dolphin-sky",
+  "description": "A gray dolphin/shark leaping against a blue cloudy sky. Whimsical aquatic-aerial scene."
  },
  {
   "category": "daily",
@@ -778,7 +918,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2304.24885284",
-  "local": "library_images/daily/17545.png"
+  "local": "library_images/daily/17545.png",
+  "name": "green-field-2",
+  "description": "A green landscape with trees and plants. Simple nature scene."
  },
  {
   "category": "daily",
@@ -789,7 +931,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2363.74322180",
-  "local": "library_images/daily/17546.png"
+  "local": "library_images/daily/17546.png",
+  "name": "yellow-duck-2",
+  "description": "A yellow duck/chick on a blue background. Cute bird."
  },
  {
   "category": "daily",
@@ -800,7 +944,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b23d6.00128790",
-  "local": "library_images/daily/17547.png"
+  "local": "library_images/daily/17547.png",
+  "name": "purple-flame",
+  "description": "A purple flame/bonfire on a dark background. Mystical fire motif."
  },
  {
   "category": "daily",
@@ -811,7 +957,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2430.01482940",
-  "local": "library_images/daily/17548.png"
+  "local": "library_images/daily/17548.png",
+  "name": "red-balloon",
+  "description": "A red balloon floating in a blue sky. Cheerful party motif."
  },
  {
   "category": "daily",
@@ -822,7 +970,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b24a3.26587306",
-  "local": "library_images/daily/17549.png"
+  "local": "library_images/daily/17549.png",
+  "name": "radish",
+  "description": "A red radish/tomato root vegetable with a leaf. Produce icon."
  },
  {
   "category": "daily",
@@ -833,7 +983,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2511.02109365",
-  "local": "library_images/daily/17550.png"
+  "local": "library_images/daily/17550.png",
+  "name": "green-dino-2",
+  "description": "A green spotted dinosaur/turtle creature on blue. Friendly reptile."
  },
  {
   "category": "daily",
@@ -844,7 +996,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b25b0.54028308",
-  "local": "library_images/daily/17551.png"
+  "local": "library_images/daily/17551.png",
+  "name": "moon-figure",
+  "description": "A small figure with a star standing on a gray rock/moon. Space vignette."
  },
  {
   "category": "daily",
@@ -855,7 +1009,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2613.23413073",
-  "local": "library_images/daily/17552.png"
+  "local": "library_images/daily/17552.png",
+  "name": "gray-robot-2",
+  "description": "A gray robot with a yellow face on a gray background. Mechanical character."
  },
  {
   "category": "daily",
@@ -866,7 +1022,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2673.89746974",
-  "local": "library_images/daily/17553.png"
+  "local": "library_images/daily/17553.png",
+  "name": "white-goose",
+  "description": "A white duck/goose on a dark background. Bird portrait."
  },
  {
   "category": "daily",
@@ -877,7 +1035,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b26e5.50682651",
-  "local": "library_images/daily/17554.png"
+  "local": "library_images/daily/17554.png",
+  "name": "ice-cream-2",
+  "description": "A pink ice cream cone. Sweet frozen treat."
  },
  {
   "category": "daily",
@@ -888,7 +1048,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2749.65606703",
-  "local": "library_images/daily/17555.png"
+  "local": "library_images/daily/17555.png",
+  "name": "gold-rings",
+  "description": "Two golden rings/circles on a black background. Jewelry/loop motif."
  },
  {
   "category": "daily",
@@ -899,7 +1061,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b27b8.49844443",
-  "local": "library_images/daily/17556.png"
+  "local": "library_images/daily/17556.png",
+  "name": "green-frog-3",
+  "description": "A green frog/turtle creature on a cyan background. Cute amphibian."
  },
  {
   "category": "daily",
@@ -910,7 +1074,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2813.77562183",
-  "local": "library_images/daily/17557.png"
+  "local": "library_images/daily/17557.png",
+  "name": "rainbow-ufo",
+  "description": "A colorful rainbow alien/UFO craft on a dark background. Sci-fi creature."
  },
  {
   "category": "daily",
@@ -921,7 +1087,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b28a9.83846420",
-  "local": "library_images/daily/17558.png"
+  "local": "library_images/daily/17558.png",
+  "name": "wolf-sunburst",
+  "description": "A gray wolf/lion framed by an orange sunburst. Dramatic animal portrait."
  },
  {
   "category": "daily",
@@ -932,7 +1100,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2904.17331192",
-  "local": "library_images/daily/17559.png"
+  "local": "library_images/daily/17559.png",
+  "name": "red-robot-3",
+  "description": "A red box-shaped robot/monster face with teeth. Blocky creature."
  },
  {
   "category": "daily",
@@ -943,7 +1113,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2971.79218093",
-  "local": "library_images/daily/17560.png"
+  "local": "library_images/daily/17560.png",
+  "name": "blue-character-2",
+  "description": "A blue-and-white penguin/snowman-like character with red accents. Cute mascot."
  },
  {
   "category": "daily",
@@ -954,7 +1126,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b29d8.29470588",
-  "local": "library_images/daily/17561.png"
+  "local": "library_images/daily/17561.png",
+  "name": "stacked-faces",
+  "description": "Two stacked emoji faces (blue and pink). Paired character motif."
  },
  {
   "category": "daily",
@@ -965,7 +1139,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2a44.16507957",
-  "local": "library_images/daily/17562.png"
+  "local": "library_images/daily/17562.png",
+  "name": "color-circle",
+  "description": "A circle split into red, yellow and black segments on dark. Abstract color wheel."
  },
  {
   "category": "daily",
@@ -976,7 +1152,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2ab7.11933702",
-  "local": "library_images/daily/17563.png"
+  "local": "library_images/daily/17563.png",
+  "name": "red-hat-character",
+  "description": "A character in a red hat, like a clown or magician, on yellow. Playful figure."
  },
  {
   "category": "daily",
@@ -987,7 +1165,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2b54.13903243",
-  "local": "library_images/daily/17564.png"
+  "local": "library_images/daily/17564.png",
+  "name": "masked-face-2",
+  "description": "A face wearing a mask on a purple background. Health/disguise motif."
  },
  {
   "category": "daily",
@@ -998,7 +1178,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2bc8.96167224",
-  "local": "library_images/daily/17565.png"
+  "local": "library_images/daily/17565.png",
+  "name": "eyes-dark",
+  "description": "Two glowing white eyes peering out of the dark. Spooky 'something watching' motif."
  },
  {
   "category": "daily",
@@ -1009,7 +1191,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2c21.63716561",
-  "local": "library_images/daily/17566.png"
+  "local": "library_images/daily/17566.png",
+  "name": "alarm-clock",
+  "description": "A red alarm clock. Time/wake-up icon."
  },
  {
   "category": "daily",
@@ -1020,7 +1204,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2c90.88182079",
-  "local": "library_images/daily/17567.png"
+  "local": "library_images/daily/17567.png",
+  "name": "eating-face",
+  "description": "A face eating or yawning with food. Hungry/sleepy emoji."
  },
  {
   "category": "daily",
@@ -1031,7 +1217,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2d00.00809453",
-  "local": "library_images/daily/17568.png"
+  "local": "library_images/daily/17568.png",
+  "name": "burger-2",
+  "description": "A loaded hamburger with lettuce and cheese. Fast-food icon."
  },
  {
   "category": "daily",
@@ -1042,7 +1230,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2d74.25667455",
-  "local": "library_images/daily/17569.png"
+  "local": "library_images/daily/17569.png",
+  "name": "no-sign",
+  "description": "A red prohibition/no-entry sign with a slash. Forbidden symbol."
  },
  {
   "category": "daily",
@@ -1053,7 +1243,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2dd9.72895299",
-  "local": "library_images/daily/17570.png"
+  "local": "library_images/daily/17570.png",
+  "name": "sleeping-desk",
+  "description": "A blonde person resting/sleeping at a desk. Tired-at-work scene."
  },
  {
   "category": "daily",
@@ -1064,7 +1256,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2ef1.65969633",
-  "local": "library_images/daily/17571.png"
+  "local": "library_images/daily/17571.png",
+  "name": "rice-bowl-2",
+  "description": "A bowl of rice/soup with greens. Warm meal icon."
  },
  {
   "category": "daily",
@@ -1075,7 +1269,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2f52.57916543",
-  "local": "library_images/daily/17572.png"
+  "local": "library_images/daily/17572.png",
+  "name": "yellow-sleep",
+  "description": "A yellow blob/pillow shape with 'Zzz', sleeping. Drowsy motif."
  },
  {
   "category": "daily",
@@ -1086,7 +1282,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b2fb6.62409893",
-  "local": "library_images/daily/17573.png"
+  "local": "library_images/daily/17573.png",
+  "name": "red-coffee",
+  "description": "A red cup of steaming coffee. Hot beverage icon."
  },
  {
   "category": "daily",
@@ -1097,7 +1295,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3017.12633272",
-  "local": "library_images/daily/17574.png"
+  "local": "library_images/daily/17574.png",
+  "name": "weightlifter",
+  "description": "A muscular figure lifting a barbell. Strength/fitness motif."
  },
  {
   "category": "daily",
@@ -1108,7 +1308,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3075.75470690",
-  "local": "library_images/daily/17575.png"
+  "local": "library_images/daily/17575.png",
+  "name": "duck-bowl-2",
+  "description": "A white duck peeking out of a bowl. Quirky food-or-pet motif."
  },
  {
   "category": "daily",
@@ -1119,7 +1321,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b30c1.73361209",
-  "local": "library_images/daily/17576.png"
+  "local": "library_images/daily/17576.png",
+  "name": "blue-bunny-2",
+  "description": "A blue rabbit/cat on a blue background. Cute bunny."
  },
  {
   "category": "daily",
@@ -1130,7 +1334,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3140.22589544",
-  "local": "library_images/daily/17577.png"
+  "local": "library_images/daily/17577.png",
+  "name": "sleeping-animal",
+  "description": "A cat/fox sleeping with 'Zzz' on a dark background. Resting pet."
  },
  {
   "category": "daily",
@@ -1141,7 +1347,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3198.11053022",
-  "local": "library_images/daily/17578.png"
+  "local": "library_images/daily/17578.png",
+  "name": "pink-hearts-2",
+  "description": "A pink heart with an arrow and little hearts. Love motif."
  },
  {
   "category": "daily",
@@ -1152,7 +1360,9 @@
   "category_name": "日常_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b31c6.80363536",
-  "local": "library_images/daily/17579.png"
+  "local": "library_images/daily/17579.png",
+  "name": "pizza-slice-2",
+  "description": "A single slice of pepperoni pizza. Food icon."
  },
  {
   "category": "holiday",
@@ -1163,7 +1373,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3209.68843855",
-  "local": "library_images/holiday/17580.png"
+  "local": "library_images/holiday/17580.png",
+  "name": "white-cat-3",
+  "description": "A white cat outline on a dark background. Minimal feline."
  },
  {
   "category": "holiday",
@@ -1174,7 +1386,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3246.59710281",
-  "local": "library_images/holiday/17581.png"
+  "local": "library_images/holiday/17581.png",
+  "name": "halloween-cat",
+  "description": "A black cat with pumpkins. Spooky Halloween scene."
  },
  {
   "category": "holiday",
@@ -1185,7 +1399,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3281.48537957",
-  "local": "library_images/holiday/17582.png"
+  "local": "library_images/holiday/17582.png",
+  "name": "jack-o-lantern-3",
+  "description": "An orange jack-o'-lantern pumpkin with a green stem. Halloween icon."
  },
  {
   "category": "holiday",
@@ -1196,7 +1412,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b32c9.62027472",
-  "local": "library_images/holiday/17583.png"
+  "local": "library_images/holiday/17583.png",
+  "name": "bat",
+  "description": "A dark bat on a maroon background. Halloween creature."
  },
  {
   "category": "holiday",
@@ -1207,7 +1425,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3331.48942612",
-  "local": "library_images/holiday/17584.png"
+  "local": "library_images/holiday/17584.png",
+  "name": "skull-blue-eyes",
+  "description": "A white skull/ghost with glowing blue eyes on red. Spooky Halloween face."
  },
  {
   "category": "holiday",
@@ -1218,7 +1438,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3375.25612208",
-  "local": "library_images/holiday/17585.png"
+  "local": "library_images/holiday/17585.png",
+  "name": "zombie-hand",
+  "description": "A green zombie creature/hand on a dark background. Undead Halloween motif."
  },
  {
   "category": "holiday",
@@ -1229,7 +1451,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b33b8.63891148",
-  "local": "library_images/holiday/17586.png"
+  "local": "library_images/holiday/17586.png",
+  "name": "jack-o-lantern-4",
+  "description": "A grinning jack-o'-lantern pumpkin with sparkles. Halloween icon."
  },
  {
   "category": "holiday",
@@ -1240,7 +1464,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b33e6.85331283",
-  "local": "library_images/holiday/17587.png"
+  "local": "library_images/holiday/17587.png",
+  "name": "glowing-eyes",
+  "description": "A dark creature with glowing eyes peering from black. Lurking-monster motif."
  },
  {
   "category": "holiday",
@@ -1251,7 +1477,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3426.40139608",
-  "local": "library_images/holiday/17588.png"
+  "local": "library_images/holiday/17588.png",
+  "name": "yellow-bat",
+  "description": "A yellow bat/creature shape on a black background. Halloween animal."
  },
  {
   "category": "holiday",
@@ -1262,7 +1490,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3462.89401603",
-  "local": "library_images/holiday/17589.png"
+  "local": "library_images/holiday/17589.png",
+  "name": "frankenstein",
+  "description": "A green Frankenstein's-monster face. Classic Halloween creature."
  },
  {
   "category": "holiday",
@@ -1273,7 +1503,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b34a9.76821488",
-  "local": "library_images/holiday/17590.png"
+  "local": "library_images/holiday/17590.png",
+  "name": "orange-box-face",
+  "description": "An orange boxy robot/pumpkin face. Halloween character."
  },
  {
   "category": "holiday",
@@ -1284,7 +1516,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3503.19694531",
-  "local": "library_images/holiday/17591.png"
+  "local": "library_images/holiday/17591.png",
+  "name": "skull-4",
+  "description": "A white skull on a dark background. Bony Halloween motif."
  },
  {
   "category": "holiday",
@@ -1295,7 +1529,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3545.32550370",
-  "local": "library_images/holiday/17592.png"
+  "local": "library_images/holiday/17592.png",
+  "name": "white-ghost-4",
+  "description": "A white ghost with red accents on dark. Halloween spirit."
  },
  {
   "category": "holiday",
@@ -1306,7 +1542,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3582.78152330",
-  "local": "library_images/holiday/17593.png"
+  "local": "library_images/holiday/17593.png",
+  "name": "witch-pumpkin",
+  "description": "A jack-o'-lantern wearing a witch hat on cyan. Halloween mashup."
  },
  {
   "category": "holiday",
@@ -1317,7 +1555,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b35c8.69589157",
-  "local": "library_images/holiday/17594.png"
+  "local": "library_images/holiday/17594.png",
+  "name": "jack-o-lantern-5",
+  "description": "A glowing jack-o'-lantern on a purple background. Halloween pumpkin."
  },
  {
   "category": "holiday",
@@ -1328,7 +1568,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3608.17946436",
-  "local": "library_images/holiday/17595.png"
+  "local": "library_images/holiday/17595.png",
+  "name": "white-ghost-5",
+  "description": "A white ghost on a dark background. Halloween spirit."
  },
  {
   "category": "holiday",
@@ -1339,7 +1581,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3639.61552419",
-  "local": "library_images/holiday/17596.png"
+  "local": "library_images/holiday/17596.png",
+  "name": "skeleton-2",
+  "description": "A white skeleton figure on a purple/orange background. Halloween bones."
  },
  {
   "category": "holiday",
@@ -1350,7 +1594,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b36a4.22169071",
-  "local": "library_images/holiday/17597.png"
+  "local": "library_images/holiday/17597.png",
+  "name": "red-devil-2",
+  "description": "A red devil/demon face with horns on dark. Spooky character."
  },
  {
   "category": "holiday",
@@ -1361,7 +1607,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b36e9.37893883",
-  "local": "library_images/holiday/17598.png"
+  "local": "library_images/holiday/17598.png",
+  "name": "witch",
+  "description": "A purple witch with a pointed hat. Halloween character."
  },
  {
   "category": "holiday",
@@ -1372,7 +1620,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3720.86551647",
-  "local": "library_images/holiday/17599.png"
+  "local": "library_images/holiday/17599.png",
+  "name": "blue-joker",
+  "description": "A blue-green Joker/zombie face. Creepy Halloween portrait."
  },
  {
   "category": "holiday",
@@ -1383,7 +1633,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3767.89521357",
-  "local": "library_images/holiday/17600.png"
+  "local": "library_images/holiday/17600.png",
+  "name": "white-robot",
+  "description": "A white robot/doctor figure. Mechanical character."
  },
  {
   "category": "holiday",
@@ -1394,7 +1646,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b37a5.00916713",
-  "local": "library_images/holiday/17601.png"
+  "local": "library_images/holiday/17601.png",
+  "name": "fu-fortune",
+  "description": "The red Chinese character 福 ('fortune') on red. Lunar New Year motif."
  },
  {
   "category": "holiday",
@@ -1405,7 +1659,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b37e2.10925703",
-  "local": "library_images/holiday/17602.png"
+  "local": "library_images/holiday/17602.png",
+  "name": "pink-heart-6",
+  "description": "A pink 3D heart with sparkles. Sweet love icon."
  },
  {
   "category": "holiday",
@@ -1416,7 +1672,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3816.86096441",
-  "local": "library_images/holiday/17603.png"
+  "local": "library_images/holiday/17603.png",
+  "name": "pink-gift-2",
+  "description": "A pink gift/screen box. Present motif."
  },
  {
   "category": "holiday",
@@ -1427,7 +1685,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3949.67475725",
-  "local": "library_images/holiday/17604.png"
+  "local": "library_images/holiday/17604.png",
+  "name": "green-creature-3",
+  "description": "A green frog/monster creature on a dark background. Goofy critter."
  },
  {
   "category": "holiday",
@@ -1438,7 +1698,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b39a1.58540562",
-  "local": "library_images/holiday/17605.png"
+  "local": "library_images/holiday/17605.png",
+  "name": "sunset-heart",
+  "description": "A heart containing a sunset scene. Romantic love-and-sky motif."
  },
  {
   "category": "holiday",
@@ -1449,7 +1711,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b39f4.01268095",
-  "local": "library_images/holiday/17606.png"
+  "local": "library_images/holiday/17606.png",
+  "name": "purple-bat",
+  "description": "A purple/pink bat creature on a pink background. Halloween animal."
  },
  {
   "category": "holiday",
@@ -1460,7 +1724,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3a49.38858067",
-  "local": "library_images/holiday/17607.png"
+  "local": "library_images/holiday/17607.png",
+  "name": "purple-heart-4",
+  "description": "A purple-pink 3D heart on a purple background. Love icon."
  },
  {
   "category": "holiday",
@@ -1471,7 +1737,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3aa2.02857699",
-  "local": "library_images/holiday/17608.png"
+  "local": "library_images/holiday/17608.png",
+  "name": "beaded-heart",
+  "description": "A heart outline made of colorful beads/lights. Festive love decoration."
  },
  {
   "category": "holiday",
@@ -1482,7 +1750,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3af3.61422339",
-  "local": "library_images/holiday/17609.png"
+  "local": "library_images/holiday/17609.png",
+  "name": "doctor-face",
+  "description": "A man's face in a doctor's coat. Person/professional portrait."
  },
  {
   "category": "holiday",
@@ -1493,7 +1763,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3b71.77466312",
-  "local": "library_images/holiday/17610.png"
+  "local": "library_images/holiday/17610.png",
+  "name": "teddy-bear-2",
+  "description": "A brown teddy bear with a heart. Affectionate plush toy."
  },
  {
   "category": "holiday",
@@ -1504,7 +1776,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3bc5.41713362",
-  "local": "library_images/holiday/17611.png"
+  "local": "library_images/holiday/17611.png",
+  "name": "pink-camera",
+  "description": "A pink retro camera on a pink background. Photography icon."
  },
  {
   "category": "holiday",
@@ -1515,7 +1789,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3c23.01565896",
-  "local": "library_images/holiday/17612.png"
+  "local": "library_images/holiday/17612.png",
+  "name": "red-heart-9",
+  "description": "A red 3D heart on a blue background. Love symbol."
  },
  {
   "category": "holiday",
@@ -1526,7 +1802,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3c75.34915769",
-  "local": "library_images/holiday/17613.png"
+  "local": "library_images/holiday/17613.png",
+  "name": "ghost-hearts-2",
+  "description": "A white ghost surrounded by little red hearts. Spooky-cute love motif."
  },
  {
   "category": "holiday",
@@ -1537,7 +1815,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3cc1.09442157",
-  "local": "library_images/holiday/17614.png"
+  "local": "library_images/holiday/17614.png",
+  "name": "green-orange-hearts",
+  "description": "A green heart and an orange heart on purple. Pair of love hearts."
  },
  {
   "category": "holiday",
@@ -1548,7 +1828,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3d02.58904914",
-  "local": "library_images/holiday/17615.png"
+  "local": "library_images/holiday/17615.png",
+  "name": "cupcake-2",
+  "description": "A cupcake with pink frosting. Sweet baked treat."
  },
  {
   "category": "holiday",
@@ -1559,7 +1841,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3d38.33248698",
-  "local": "library_images/holiday/17616.png"
+  "local": "library_images/holiday/17616.png",
+  "name": "love-letter",
+  "description": "A white envelope/love letter with a little face. Romantic message motif."
  },
  {
   "category": "holiday",
@@ -1570,7 +1854,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3d91.32269993",
-  "local": "library_images/holiday/17617.png"
+  "local": "library_images/holiday/17617.png",
+  "name": "couple-2",
+  "description": "A man and woman couple on a red background. Romance scene."
  },
  {
   "category": "holiday",
@@ -1581,7 +1867,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3de1.66123405",
-  "local": "library_images/holiday/17618.png"
+  "local": "library_images/holiday/17618.png",
+  "name": "gray-bunny",
+  "description": "A gray rabbit on a pink background. Cute bunny portrait."
  },
  {
   "category": "holiday",
@@ -1592,7 +1880,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3e24.86448138",
-  "local": "library_images/holiday/17619.png"
+  "local": "library_images/holiday/17619.png",
+  "name": "green-heart",
+  "description": "A green 3D heart on a black background. Love icon."
  },
  {
   "category": "holiday",
@@ -1603,7 +1893,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3e51.93467821",
-  "local": "library_images/holiday/17620.png"
+  "local": "library_images/holiday/17620.png",
+  "name": "heart-figure",
+  "description": "A red heart with a small figure on a blue background. Love-themed scene."
  },
  {
   "category": "holiday",
@@ -1614,7 +1906,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3e96.82208020",
-  "local": "library_images/holiday/17621.png"
+  "local": "library_images/holiday/17621.png",
+  "name": "pink-pig-2",
+  "description": "A pink pig on a magenta background. Cute farm animal."
  },
  {
   "category": "holiday",
@@ -1625,7 +1919,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3ed2.98986046",
-  "local": "library_images/holiday/17622.png"
+  "local": "library_images/holiday/17622.png",
+  "name": "red-nested-square",
+  "description": "A red square nested in concentric frames on magenta. Geometric tunnel pattern."
  },
  {
   "category": "holiday",
@@ -1636,7 +1932,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3f31.03637742",
-  "local": "library_images/holiday/17623.png"
+  "local": "library_images/holiday/17623.png",
+  "name": "pumpkin",
+  "description": "An orange pumpkin on a dark background. Autumn/Halloween icon."
  },
  {
   "category": "holiday",
@@ -1647,7 +1945,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3f79.18437092",
-  "local": "library_images/holiday/17624.png"
+  "local": "library_images/holiday/17624.png",
+  "name": "red-heart-10",
+  "description": "A red 3D heart on a blue background. Love symbol."
  },
  {
   "category": "holiday",
@@ -1658,7 +1958,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3fb7.82583450",
-  "local": "library_images/holiday/17625.png"
+  "local": "library_images/holiday/17625.png",
+  "name": "xmas-tree-6",
+  "description": "A fully decorated Christmas tree with lights and ornaments. Festive centerpiece."
  },
  {
   "category": "holiday",
@@ -1669,7 +1971,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b3ff1.34241739",
-  "local": "library_images/holiday/17626.png"
+  "local": "library_images/holiday/17626.png",
+  "name": "snowy-night",
+  "description": "A snowy night scene with a small tree. Quiet winter vignette."
  },
  {
   "category": "holiday",
@@ -1680,7 +1984,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4037.02919664",
-  "local": "library_images/holiday/17627.png"
+  "local": "library_images/holiday/17627.png",
+  "name": "red-heart-cream",
+  "description": "A red heart on a cream background. Love icon."
  },
  {
   "category": "holiday",
@@ -1691,7 +1997,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4075.20787875",
-  "local": "library_images/holiday/17628.png"
+  "local": "library_images/holiday/17628.png",
+  "name": "wreath-2",
+  "description": "A green Christmas wreath with a bell and bow. Holiday door decoration."
  },
  {
   "category": "holiday",
@@ -1702,7 +2010,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b40a2.37115534",
-  "local": "library_images/holiday/17629.png"
+  "local": "library_images/holiday/17629.png",
+  "name": "yellow-gift-2",
+  "description": "A yellow-and-red wrapped present with a bow. Gift motif."
  },
  {
   "category": "holiday",
@@ -1713,7 +2023,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4109.66734211",
-  "local": "library_images/holiday/17630.png"
+  "local": "library_images/holiday/17630.png",
+  "name": "xmas-tree-7",
+  "description": "A decorated green Christmas tree. Festive evergreen."
  },
  {
   "category": "holiday",
@@ -1724,7 +2036,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4141.09218070",
-  "local": "library_images/holiday/17631.png"
+  "local": "library_images/holiday/17631.png",
+  "name": "snowman-2",
+  "description": "A white snowman with a hat on a cyan background. Winter character."
  },
  {
   "category": "holiday",
@@ -1735,7 +2049,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4181.28307800",
-  "local": "library_images/holiday/17632.png"
+  "local": "library_images/holiday/17632.png",
+  "name": "santa-hat-person",
+  "description": "A person wearing a Santa hat on a pink background. Festive portrait."
  },
  {
   "category": "holiday",
@@ -1746,7 +2062,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b41c0.35243888",
-  "local": "library_images/holiday/17633.png"
+  "local": "library_images/holiday/17633.png",
+  "name": "red-heart-11",
+  "description": "A glossy red 3D heart on black. Love symbol."
  },
  {
   "category": "holiday",
@@ -1757,7 +2075,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b41f4.11319256",
-  "local": "library_images/holiday/17634.png"
+  "local": "library_images/holiday/17634.png",
+  "name": "skull-5",
+  "description": "A white skull/skeleton face on a dark background. Spooky motif."
  },
  {
   "category": "holiday",
@@ -1768,7 +2088,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4239.81778946",
-  "local": "library_images/holiday/17635.png"
+  "local": "library_images/holiday/17635.png",
+  "name": "santa-7",
+  "description": "A Santa Claus figure on a blue starry background. Christmas character."
  },
  {
   "category": "holiday",
@@ -1779,7 +2101,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4277.01194478",
-  "local": "library_images/holiday/17636.png"
+  "local": "library_images/holiday/17636.png",
+  "name": "house",
+  "description": "A brown house with a red roof on a red background. Home icon."
  },
  {
   "category": "holiday",
@@ -1790,7 +2114,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b42d9.93248252",
-  "local": "library_images/holiday/17637.png"
+  "local": "library_images/holiday/17637.png",
+  "name": "gold-bell",
+  "description": "A gold Christmas bell with a red bow. Festive chime."
  },
  {
   "category": "holiday",
@@ -1801,7 +2127,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4313.50597963",
-  "local": "library_images/holiday/17638.png"
+  "local": "library_images/holiday/17638.png",
+  "name": "santa-8",
+  "description": "A red-suited Santa Claus on a green background. Holiday mascot."
  },
  {
   "category": "holiday",
@@ -1812,7 +2140,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4354.09409377",
-  "local": "library_images/holiday/17639.png"
+  "local": "library_images/holiday/17639.png",
+  "name": "cat-santa",
+  "description": "A gray cat/wolf wearing a Santa hat. Festive pet."
  },
  {
   "category": "holiday",
@@ -1823,7 +2153,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4393.86937760",
-  "local": "library_images/holiday/17640.png"
+  "local": "library_images/holiday/17640.png",
+  "name": "santa-boy",
+  "description": "A boy in a Santa outfit with an excited expression. Christmas kid."
  },
  {
   "category": "holiday",
@@ -1834,7 +2166,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b43d9.53095460",
-  "local": "library_images/holiday/17641.png"
+  "local": "library_images/holiday/17641.png",
+  "name": "santa-girl",
+  "description": "A girl in a Santa hat. Festive winter portrait."
  },
  {
   "category": "holiday",
@@ -1845,7 +2179,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4406.93518725",
-  "local": "library_images/holiday/17642.png"
+  "local": "library_images/holiday/17642.png",
+  "name": "red-tulip",
+  "description": "A red tulip/flower with a green stem. Floral motif."
  },
  {
   "category": "holiday",
@@ -1856,7 +2192,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4463.28074557",
-  "local": "library_images/holiday/17643.png"
+  "local": "library_images/holiday/17643.png",
+  "name": "snowman-3",
+  "description": "A white snowman with a red scarf on a blue background. Cheerful winter character."
  },
  {
   "category": "holiday",
@@ -1867,7 +2205,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b44a1.85665501",
-  "local": "library_images/holiday/17644.png"
+  "local": "library_images/holiday/17644.png",
+  "name": "snowman-4",
+  "description": "A white snowman on a blue snowy background. Winter character."
  },
  {
   "category": "holiday",
@@ -1878,7 +2218,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b44e4.52813574",
-  "local": "library_images/holiday/17645.png"
+  "local": "library_images/holiday/17645.png",
+  "name": "birthday-cake",
+  "description": "A birthday cake with lit candles on a pink background. Celebration treat."
  },
  {
   "category": "holiday",
@@ -1889,7 +2231,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4525.11921993",
-  "local": "library_images/holiday/17646.png"
+  "local": "library_images/holiday/17646.png",
+  "name": "i-love-you",
+  "description": "The message 'I ♥ U' on a dark background. Valentine love note."
  },
  {
   "category": "holiday",
@@ -1900,7 +2244,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4562.85380476",
-  "local": "library_images/holiday/17647.png"
+  "local": "library_images/holiday/17647.png",
+  "name": "rainbow-heart-5",
+  "description": "A rainbow heart with a disco/sparkle effect. Colorful love icon."
  },
  {
   "category": "holiday",
@@ -1911,7 +2257,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4591.09222733",
-  "local": "library_images/holiday/17648.png"
+  "local": "library_images/holiday/17648.png",
+  "name": "red-heart-12",
+  "description": "A red 3D heart on a black background. Love symbol."
  },
  {
   "category": "holiday",
@@ -1922,7 +2270,9 @@
   "category_name": "节日_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b45d2.58784355",
-  "local": "library_images/holiday/17649.png"
+  "local": "library_images/holiday/17649.png",
+  "name": "heart-eyes-pair",
+  "description": "A pair of red hearts on a purple background. Love-struck motif."
  },
  {
   "category": "emoji",
@@ -1933,7 +2283,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4632.38333821",
-  "local": "library_images/emoji/17650.png"
+  "local": "library_images/emoji/17650.png",
+  "name": "letter-b",
+  "description": "An orange letter 'B' emblem framed on orange. Initial/badge motif."
  },
  {
   "category": "emoji",
@@ -1944,7 +2296,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4675.74136014",
-  "local": "library_images/emoji/17651.png"
+  "local": "library_images/emoji/17651.png",
+  "name": "green-frog-4",
+  "description": "A green frog face on a dark background. Cute amphibian emoji."
  },
  {
   "category": "emoji",
@@ -1955,7 +2309,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b46b3.28887025",
-  "local": "library_images/emoji/17652.png"
+  "local": "library_images/emoji/17652.png",
+  "name": "love-skull",
+  "description": "A white skull with red heart-shaped eyes. Love-struck spooky emoji."
  },
  {
   "category": "emoji",
@@ -1966,7 +2322,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b46e7.58177519",
-  "local": "library_images/emoji/17653.png"
+  "local": "library_images/emoji/17653.png",
+  "name": "skull-6",
+  "description": "A white skull on a dark background. Bony emoji."
  },
  {
   "category": "emoji",
@@ -1977,7 +2335,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4739.36661217",
-  "local": "library_images/emoji/17654.png"
+  "local": "library_images/emoji/17654.png",
+  "name": "grinning-face-2",
+  "description": "A black-and-white face with a big toothy grin. Cheeky emoji."
  },
  {
   "category": "emoji",
@@ -1988,7 +2348,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4763.16978940",
-  "local": "library_images/emoji/17655.png"
+  "local": "library_images/emoji/17655.png",
+  "name": "smiling-heart-2",
+  "description": "A pink heart with a grinning face. Happy love emoji."
  },
  {
   "category": "emoji",
@@ -1999,7 +2361,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b47d1.70873831",
-  "local": "library_images/emoji/17656.png"
+  "local": "library_images/emoji/17656.png",
+  "name": "ihl-text",
+  "description": "The colorful letters 'IHL' on a dark background. Text/logo motif."
  },
  {
   "category": "emoji",
@@ -2010,7 +2374,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4817.02400837",
-  "local": "library_images/emoji/17657.png"
+  "local": "library_images/emoji/17657.png",
+  "name": "pink-heart-7",
+  "description": "A pink heart with sparkles. Sweet love icon."
  },
  {
   "category": "emoji",
@@ -2021,7 +2387,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4854.57488747",
-  "local": "library_images/emoji/17658.png"
+  "local": "library_images/emoji/17658.png",
+  "name": "bmo-robot",
+  "description": "A green robot face resembling BMO from Adventure Time. Cute gaming bot."
  },
  {
   "category": "emoji",
@@ -2032,7 +2400,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4899.65264181",
-  "local": "library_images/emoji/17659.png"
+  "local": "library_images/emoji/17659.png",
+  "name": "orange-smiley",
+  "description": "An orange smiling face. Cheerful emoji."
  },
  {
   "category": "emoji",
@@ -2043,7 +2413,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b48d0.41473657",
-  "local": "library_images/emoji/17660.png"
+  "local": "library_images/emoji/17660.png",
+  "name": "orange-camera",
+  "description": "An orange boxy robot/camera with a screen. Retro gadget."
  },
  {
   "category": "emoji",
@@ -2054,7 +2426,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4902.92935761",
-  "local": "library_images/emoji/17661.png"
+  "local": "library_images/emoji/17661.png",
+  "name": "knife-figure",
+  "description": "A small figure holding a knife/blade. Quirky character scene."
  },
  {
   "category": "emoji",
@@ -2065,7 +2439,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4949.52913385",
-  "local": "library_images/emoji/17662.png"
+  "local": "library_images/emoji/17662.png",
+  "name": "dotted-heart-2",
+  "description": "A heart outline made of colorful dots on black. Twinkling love icon."
  },
  {
   "category": "emoji",
@@ -2076,7 +2452,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b49a9.44276156",
-  "local": "library_images/emoji/17663.png"
+  "local": "library_images/emoji/17663.png",
+  "name": "skull-7",
+  "description": "A white skull on a dark background. Spooky emoji."
  },
  {
   "category": "emoji",
@@ -2087,7 +2465,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b49e3.29898231",
-  "local": "library_images/emoji/17664.png"
+  "local": "library_images/emoji/17664.png",
+  "name": "skull-glasses",
+  "description": "A yellow skull wearing glasses on a dark background. Studious spooky emoji."
  },
  {
   "category": "emoji",
@@ -2098,7 +2478,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4a22.68181640",
-  "local": "library_images/emoji/17665.png"
+  "local": "library_images/emoji/17665.png",
+  "name": "nerd-face-2",
+  "description": "A yellow nerd face with glasses and a frown. Geeky emoji."
  },
  {
   "category": "emoji",
@@ -2109,7 +2491,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4a61.84451442",
-  "local": "library_images/emoji/17666.png"
+  "local": "library_images/emoji/17666.png",
+  "name": "glasses-man",
+  "description": "A man's face with glasses and brown hair. Bespectacled portrait."
  },
  {
   "category": "emoji",
@@ -2120,7 +2504,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4aa1.46323779",
-  "local": "library_images/emoji/17667.png"
+  "local": "library_images/emoji/17667.png",
+  "name": "pink-blush-face",
+  "description": "A pink face with heart-shaped cheeks, blushing. Bashful love emoji."
  },
  {
   "category": "emoji",
@@ -2131,7 +2517,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4ae1.87600453",
-  "local": "library_images/emoji/17668.png"
+  "local": "library_images/emoji/17668.png",
+  "name": "orange-face-2",
+  "description": "An orange face with a sad/yawning expression. Tired emoji."
  },
  {
   "category": "emoji",
@@ -2142,7 +2530,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4b47.04632681",
-  "local": "library_images/emoji/17669.png"
+  "local": "library_images/emoji/17669.png",
+  "name": "glitch-frame",
+  "description": "A rainbow-glitch framed face. Distorted digital emoji."
  },
  {
   "category": "emoji",
@@ -2153,7 +2543,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4b83.64067629",
-  "local": "library_images/emoji/17670.png"
+  "local": "library_images/emoji/17670.png",
+  "name": "brown-creature-2",
+  "description": "A brown triangular creature with red eyes on pink. Quirky character."
  },
  {
   "category": "emoji",
@@ -2164,7 +2556,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4bc2.70264704",
-  "local": "library_images/emoji/17671.png"
+  "local": "library_images/emoji/17671.png",
+  "name": "lemon-face",
+  "description": "A yellow lemon with a face. Citrus character emoji."
  },
  {
   "category": "emoji",
@@ -2175,7 +2569,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4c07.72809792",
-  "local": "library_images/emoji/17672.png"
+  "local": "library_images/emoji/17672.png",
+  "name": "pink-clown-face-2",
+  "description": "A pink face with goofy features, like a clown/troll. Funny emoji."
  },
  {
   "category": "emoji",
@@ -2186,7 +2582,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4c36.29113597",
-  "local": "library_images/emoji/17673.png"
+  "local": "library_images/emoji/17673.png",
+  "name": "skull-ten-2",
+  "description": "A white skull with the number '10'. Spooky countdown motif."
  },
  {
   "category": "emoji",
@@ -2197,7 +2595,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4c75.52546041",
-  "local": "library_images/emoji/17674.png"
+  "local": "library_images/emoji/17674.png",
+  "name": "pink-monster",
+  "description": "A pink monster face with big eyes. Cute creature."
  },
  {
   "category": "emoji",
@@ -2208,7 +2608,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4ca8.87283796",
-  "local": "library_images/emoji/17675.png"
+  "local": "library_images/emoji/17675.png",
+  "name": "clown-grin-2",
+  "description": "A creepy white clown/joker face with a wide grin. Unsettling emoji."
  },
  {
   "category": "emoji",
@@ -2219,7 +2621,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4d12.89257549",
-  "local": "library_images/emoji/17676.png"
+  "local": "library_images/emoji/17676.png",
+  "name": "black-box-red-eyes",
+  "description": "A black box face with red eyes and a smile. Eerie blocky emoji."
  },
  {
   "category": "emoji",
@@ -2230,7 +2634,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4d44.61414570",
-  "local": "library_images/emoji/17677.png"
+  "local": "library_images/emoji/17677.png",
+  "name": "anime-girl",
+  "description": "A blonde anime-style girl face on a red background. Cute character."
  },
  {
   "category": "emoji",
@@ -2241,7 +2647,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4d86.73376353",
-  "local": "library_images/emoji/17678.png"
+  "local": "library_images/emoji/17678.png",
+  "name": "brown-bear-2",
+  "description": "A brown bear/monkey face. Cuddly animal emoji."
  },
  {
   "category": "emoji",
@@ -2252,7 +2660,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4dc7.79850181",
-  "local": "library_images/emoji/17679.png"
+  "local": "library_images/emoji/17679.png",
+  "name": "gold-laugh",
+  "description": "A golden/yellow laughing face. Joyful emoji."
  },
  {
   "category": "emoji",
@@ -2263,7 +2673,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4df3.88249427",
-  "local": "library_images/emoji/17680.png"
+  "local": "library_images/emoji/17680.png",
+  "name": "gray-smiley",
+  "description": "A gray smiling face. Neutral happy emoji."
  },
  {
   "category": "emoji",
@@ -2274,7 +2686,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4e31.38333464",
-  "local": "library_images/emoji/17681.png"
+  "local": "library_images/emoji/17681.png",
+  "name": "red-face-lines",
+  "description": "A red face/mask drawn in line art. Bold expressive emoji."
  },
  {
   "category": "emoji",
@@ -2285,7 +2699,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4e64.80637048",
-  "local": "library_images/emoji/17682.png"
+  "local": "library_images/emoji/17682.png",
+  "name": "red-heart-13",
+  "description": "A red 3D heart on a gray background. Love symbol."
  },
  {
   "category": "emoji",
@@ -2296,7 +2712,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4ec0.48515632",
-  "local": "library_images/emoji/17683.png"
+  "local": "library_images/emoji/17683.png",
+  "name": "red-robot-4",
+  "description": "A red box-shaped robot face with teeth. Blocky mechanical emoji."
  },
  {
   "category": "emoji",
@@ -2307,7 +2725,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4f03.76081011",
-  "local": "library_images/emoji/17684.png"
+  "local": "library_images/emoji/17684.png",
+  "name": "skull-heart",
+  "description": "A white skull/figure with a heart on teal. Spooky-love motif."
  },
  {
   "category": "emoji",
@@ -2318,7 +2738,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4f46.62205873",
-  "local": "library_images/emoji/17685.png"
+  "local": "library_images/emoji/17685.png",
+  "name": "smiling-heart-3",
+  "description": "A red heart with a grinning face. Happy love emoji."
  },
  {
   "category": "emoji",
@@ -2329,7 +2751,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4f80.69325483",
-  "local": "library_images/emoji/17686.png"
+  "local": "library_images/emoji/17686.png",
+  "name": "yellow-box-smiley",
+  "description": "A yellow square face with a smile. Blocky happy emoji."
  },
  {
   "category": "emoji",
@@ -2340,7 +2764,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b4fc7.88019089",
-  "local": "library_images/emoji/17687.png"
+  "local": "library_images/emoji/17687.png",
+  "name": "heart-eyes-3",
+  "description": "A yellow face with red heart eyes. 'In love' emoji."
  },
  {
   "category": "emoji",
@@ -2351,7 +2777,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5001.09283558",
-  "local": "library_images/emoji/17688.png"
+  "local": "library_images/emoji/17688.png",
+  "name": "angry-yellow",
+  "description": "A yellow face/chick with an angry expression. Cross emoji."
  },
  {
   "category": "emoji",
@@ -2362,7 +2790,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5063.10279301",
-  "local": "library_images/emoji/17689.png"
+  "local": "library_images/emoji/17689.png",
+  "name": "gold-laugh-2",
+  "description": "A golden laughing face. Joyful emoji."
  },
  {
   "category": "emoji",
@@ -2373,7 +2803,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b50a3.50148538",
-  "local": "library_images/emoji/17690.png"
+  "local": "library_images/emoji/17690.png",
+  "name": "cool-skull",
+  "description": "A white skull wearing sunglasses on pink. Cool spooky emoji."
  },
  {
   "category": "emoji",
@@ -2384,7 +2816,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b50e8.48636652",
-  "local": "library_images/emoji/17691.png"
+  "local": "library_images/emoji/17691.png",
+  "name": "rose-snail",
+  "description": "A red rose with a snail beside it. Garden/nature motif."
  },
  {
   "category": "emoji",
@@ -2395,7 +2829,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5117.39762450",
-  "local": "library_images/emoji/17692.png"
+  "local": "library_images/emoji/17692.png",
+  "name": "color-grid-2",
+  "description": "A grid of brightly colored squares. Color palette pattern."
  },
  {
   "category": "emoji",
@@ -2406,7 +2842,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5154.77412950",
-  "local": "library_images/emoji/17693.png"
+  "local": "library_images/emoji/17693.png",
+  "name": "pig-face-3",
+  "description": "A pink pig face with a snout. Farm animal emoji."
  },
  {
   "category": "emoji",
@@ -2417,7 +2855,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5197.76731278",
-  "local": "library_images/emoji/17694.png"
+  "local": "library_images/emoji/17694.png",
+  "name": "heart-faces",
+  "description": "A pair of pink hearts with little faces. Love-struck emoji."
  },
  {
   "category": "emoji",
@@ -2428,7 +2868,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b51d6.38473757",
-  "local": "library_images/emoji/17695.png"
+  "local": "library_images/emoji/17695.png",
+  "name": "rose-heart",
+  "description": "A red heart formed like a rose with leaves on dark. Romantic flower-heart."
  },
  {
   "category": "emoji",
@@ -2439,7 +2881,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5235.31331922",
-  "local": "library_images/emoji/17696.png"
+  "local": "library_images/emoji/17696.png",
+  "name": "skull-orange-2",
+  "description": "A white skull on an orange background. Halloween emoji."
  },
  {
   "category": "emoji",
@@ -2450,7 +2894,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5272.92712507",
-  "local": "library_images/emoji/17697.png"
+  "local": "library_images/emoji/17697.png",
+  "name": "glitch-skull-2",
+  "description": "A white skull with red glitch distortion. Spooky glitch emoji."
  },
  {
   "category": "emoji",
@@ -2461,7 +2907,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b52b4.37203223",
-  "local": "library_images/emoji/17698.png"
+  "local": "library_images/emoji/17698.png",
+  "name": "white-grin",
+  "description": "A white grinning mouth/face on black. Cheeky emoji."
  },
  {
   "category": "emoji",
@@ -2472,7 +2920,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b52f0.44979325",
-  "local": "library_images/emoji/17699.png"
+  "local": "library_images/emoji/17699.png",
+  "name": "glitch-smiley",
+  "description": "A black smiley with red/blue glitch on white. Distorted happy emoji."
  },
  {
   "category": "emoji",
@@ -2483,7 +2933,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5343.97986837",
-  "local": "library_images/emoji/17700.png"
+  "local": "library_images/emoji/17700.png",
+  "name": "red-smiley",
+  "description": "A red smiling face on white. Cheerful emoji."
  },
  {
   "category": "emoji",
@@ -2494,7 +2946,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5381.11813211",
-  "local": "library_images/emoji/17701.png"
+  "local": "library_images/emoji/17701.png",
+  "name": "glitch-smiley-2",
+  "description": "A blue/red 3D-glitch smiley on white. Trippy happy emoji."
  },
  {
   "category": "emoji",
@@ -2505,7 +2959,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b53e2.02166862",
-  "local": "library_images/emoji/17702.png"
+  "local": "library_images/emoji/17702.png",
+  "name": "heart-outline-2",
+  "description": "A pink-and-blue heart outline on black. Simple love icon."
  },
  {
   "category": "emoji",
@@ -2516,7 +2972,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5422.23392860",
-  "local": "library_images/emoji/17703.png"
+  "local": "library_images/emoji/17703.png",
+  "name": "green-angry-2",
+  "description": "A green face with red eyes, looking angry. Furious emoji."
  },
  {
   "category": "emoji",
@@ -2527,7 +2985,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5459.11916307",
-  "local": "library_images/emoji/17704.png"
+  "local": "library_images/emoji/17704.png",
+  "name": "gold-heart-2",
+  "description": "A golden/yellow heart on a dark background. Shiny love icon."
  },
  {
   "category": "emoji",
@@ -2538,7 +2998,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5494.92257175",
-  "local": "library_images/emoji/17705.png"
+  "local": "library_images/emoji/17705.png",
+  "name": "white-ghost-6",
+  "description": "A white ghost on a dark background. Halloween spirit."
  },
  {
   "category": "emoji",
@@ -2549,7 +3011,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b54c1.30950670",
-  "local": "library_images/emoji/17706.png"
+  "local": "library_images/emoji/17706.png",
+  "name": "green-grin",
+  "description": "A green smiling-face outline on black. Minimal happy emoji."
  },
  {
   "category": "emoji",
@@ -2560,7 +3024,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5507.72614614",
-  "local": "library_images/emoji/17707.png"
+  "local": "library_images/emoji/17707.png",
+  "name": "yellow-skull-3",
+  "description": "A yellow skull on a dark background. Bony emoji."
  },
  {
   "category": "emoji",
@@ -2571,7 +3037,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5546.05153648",
-  "local": "library_images/emoji/17708.png"
+  "local": "library_images/emoji/17708.png",
+  "name": "red-devil-3",
+  "description": "A dark red devil/demon face. Spooky character."
  },
  {
   "category": "emoji",
@@ -2582,7 +3050,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b55a6.15357813",
-  "local": "library_images/emoji/17709.png"
+  "local": "library_images/emoji/17709.png",
+  "name": "thumbs-up-heart-2",
+  "description": "A hand giving a thumbs up with a red heart. Like-and-love motif."
  },
  {
   "category": "emoji",
@@ -2593,7 +3063,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b55d1.93153128",
-  "local": "library_images/emoji/17710.png"
+  "local": "library_images/emoji/17710.png",
+  "name": "pink-face-2",
+  "description": "A pink blushing face on a pink background. Bashful emoji."
  },
  {
   "category": "emoji",
@@ -2604,7 +3076,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5610.37840988",
-  "local": "library_images/emoji/17711.png"
+  "local": "library_images/emoji/17711.png",
+  "name": "skull-music",
+  "description": "A white skull with a music note. Musical spooky emoji."
  },
  {
   "category": "emoji",
@@ -2615,7 +3089,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5653.78583542",
-  "local": "library_images/emoji/17712.png"
+  "local": "library_images/emoji/17712.png",
+  "name": "orange-box-robot",
+  "description": "An orange boxy robot face with green eyes. Mechanical emoji."
  },
  {
   "category": "emoji",
@@ -2626,7 +3102,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5697.37342931",
-  "local": "library_images/emoji/17713.png"
+  "local": "library_images/emoji/17713.png",
+  "name": "dizzy-face-2",
+  "description": "A blue face with X-shaped eyes, dizzy/knocked out. Woozy emoji."
  },
  {
   "category": "emoji",
@@ -2637,7 +3115,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b56d3.20928334",
-  "local": "library_images/emoji/17714.png"
+  "local": "library_images/emoji/17714.png",
+  "name": "pink-grin-2",
+  "description": "A pink face with a toothy grin. Goofy emoji."
  },
  {
   "category": "emoji",
@@ -2648,7 +3128,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5809.63196902",
-  "local": "library_images/emoji/17715.png"
+  "local": "library_images/emoji/17715.png",
+  "name": "red-teeth-face",
+  "description": "A red box face showing teeth. Bold blocky emoji."
  },
  {
   "category": "emoji",
@@ -2659,7 +3141,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5852.32719164",
-  "local": "library_images/emoji/17716.png"
+  "local": "library_images/emoji/17716.png",
+  "name": "pig-face-4",
+  "description": "A pink pig face. Farm animal emoji."
  },
  {
   "category": "emoji",
@@ -2670,7 +3154,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5890.57411556",
-  "local": "library_images/emoji/17717.png"
+  "local": "library_images/emoji/17717.png",
+  "name": "diamond-face",
+  "description": "A cyan diamond/gem with a face and sparkles. Shiny character emoji."
  },
  {
   "category": "emoji",
@@ -2681,7 +3167,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b58d9.12007952",
-  "local": "library_images/emoji/17718.png"
+  "local": "library_images/emoji/17718.png",
+  "name": "blue-tongue-creature",
+  "description": "A blue bird/creature sticking out its tongue on pink. Silly character."
  },
  {
   "category": "emoji",
@@ -2692,7 +3180,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5917.36347917",
-  "local": "library_images/emoji/17719.png"
+  "local": "library_images/emoji/17719.png",
+  "name": "banana",
+  "description": "A yellow banana character. Fruit mascot emoji."
  },
  {
   "category": "emoji",
@@ -2703,7 +3193,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5950.03722741",
-  "local": "library_images/emoji/17720.png"
+  "local": "library_images/emoji/17720.png",
+  "name": "pink-skull",
+  "description": "A pink skull on a purple background. Cute spooky emoji."
  },
  {
   "category": "emoji",
@@ -2714,7 +3206,9 @@
   "category_name": "表情_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5995.67301122",
-  "local": "library_images/emoji/17721.png"
+  "local": "library_images/emoji/17721.png",
+  "name": "surprised-face",
+  "description": "A black-and-white face with big eyes, surprised, on cyan. Shocked emoji."
  },
  {
   "category": "creative",
@@ -2725,7 +3219,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b59f8.66847919",
-  "local": "library_images/creative/17722.png"
+  "local": "library_images/creative/17722.png",
+  "name": "sundae",
+  "description": "An ice cream sundae dessert served in a glass. Sweet treat."
  },
  {
   "category": "creative",
@@ -2736,7 +3232,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5a38.72954235",
-  "local": "library_images/creative/17723.png"
+  "local": "library_images/creative/17723.png",
+  "name": "gray-bomb-2",
+  "description": "A gray cartoon bomb with a fuse. Explosive icon."
  },
  {
   "category": "creative",
@@ -2747,7 +3245,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5a79.06708406",
-  "local": "library_images/creative/17724.png"
+  "local": "library_images/creative/17724.png",
+  "name": "earth-2",
+  "description": "The planet Earth as a blue-and-green globe. Our world icon."
  },
  {
   "category": "creative",
@@ -2758,7 +3258,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5ab8.03743550",
-  "local": "library_images/creative/17725.png"
+  "local": "library_images/creative/17725.png",
+  "name": "strawberry",
+  "description": "A red strawberry with green leaves on pink. Fruit icon."
  },
  {
   "category": "creative",
@@ -2769,7 +3271,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5ae7.42687133",
-  "local": "library_images/creative/17726.png"
+  "local": "library_images/creative/17726.png",
+  "name": "blue-skull-2",
+  "description": "A glowing blue skull on a dark background. Spooky neon motif."
  },
  {
   "category": "creative",
@@ -2780,7 +3284,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5b36.96715415",
-  "local": "library_images/creative/17727.png"
+  "local": "library_images/creative/17727.png",
+  "name": "pink-dragon",
+  "description": "A pink dragon/dinosaur creature on a dark background. Mythical reptile."
  },
  {
   "category": "creative",
@@ -2791,7 +3297,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5bb4.50027394",
-  "local": "library_images/creative/17728.png"
+  "local": "library_images/creative/17728.png",
+  "name": "white-bunny-3",
+  "description": "A white rabbit on a cream background. Cute bunny."
  },
  {
   "category": "creative",
@@ -2802,7 +3310,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5bf1.43016982",
-  "local": "library_images/creative/17729.png"
+  "local": "library_images/creative/17729.png",
+  "name": "among-us-welder",
+  "description": "A red Among Us crewmate wearing a welding mask. Game-character variant."
  },
  {
   "category": "creative",
@@ -2813,7 +3323,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5c30.84360952",
-  "local": "library_images/creative/17730.png"
+  "local": "library_images/creative/17730.png",
+  "name": "yellow-duck-3",
+  "description": "A yellow duck/bird character on a green background. Cute bird."
  },
  {
   "category": "creative",
@@ -2824,7 +3336,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5c61.46252703",
-  "local": "library_images/creative/17731.png"
+  "local": "library_images/creative/17731.png",
+  "name": "villager-face",
+  "description": "A cat/girl villager character face, Animal-Crossing style. Friendly portrait."
  },
  {
   "category": "creative",
@@ -2835,7 +3349,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5ca8.07836786",
-  "local": "library_images/creative/17732.png"
+  "local": "library_images/creative/17732.png",
+  "name": "rainbow-kaleidoscope-2",
+  "description": "Concentric rainbow diamonds forming a kaleidoscopic pattern. Psychedelic design."
  },
  {
   "category": "creative",
@@ -2846,7 +3362,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5ce4.26955593",
-  "local": "library_images/creative/17733.png"
+  "local": "library_images/creative/17733.png",
+  "name": "blue-target",
+  "description": "Concentric blue-and-white circles forming a target. Bullseye pattern."
  },
  {
   "category": "creative",
@@ -2857,7 +3375,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5d12.28173605",
-  "local": "library_images/creative/17734.png"
+  "local": "library_images/creative/17734.png",
+  "name": "green-invader-3",
+  "description": "A green Space-Invader alien on a dark background. Retro arcade enemy."
  },
  {
   "category": "creative",
@@ -2868,7 +3388,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5d77.73116544",
-  "local": "library_images/creative/17735.png"
+  "local": "library_images/creative/17735.png",
+  "name": "spaceship-4",
+  "description": "A gray-and-red spaceship on black. Sci-fi craft."
  },
  {
   "category": "creative",
@@ -2879,7 +3401,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5db7.38751926",
-  "local": "library_images/creative/17736.png"
+  "local": "library_images/creative/17736.png",
+  "name": "orange-character",
+  "description": "An orange character/robot face on a blue background. Quirky sprite."
  },
  {
   "category": "creative",
@@ -2890,7 +3414,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5df3.26765544",
-  "local": "library_images/creative/17737.png"
+  "local": "library_images/creative/17737.png",
+  "name": "red-spiral",
+  "description": "A red spiral/galaxy swirl on a black background. Cosmic vortex."
  },
  {
   "category": "creative",
@@ -2901,7 +3427,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5e32.02034441",
-  "local": "library_images/creative/17738.png"
+  "local": "library_images/creative/17738.png",
+  "name": "blue-eye-2",
+  "description": "A blue eyeball on a blue background. Watchful eye motif."
  },
  {
   "category": "creative",
@@ -2912,7 +3440,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5e79.87769203",
-  "local": "library_images/creative/17739.png"
+  "local": "library_images/creative/17739.png",
+  "name": "moon-2",
+  "description": "A gray cratered moon/planet. Celestial body."
  },
  {
   "category": "creative",
@@ -2923,7 +3453,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5ea2.52449365",
-  "local": "library_images/creative/17740.png"
+  "local": "library_images/creative/17740.png",
+  "name": "orange-mech-2",
+  "description": "An orange robot/machine on a dark background. Mechanical character."
  },
  {
   "category": "creative",
@@ -2934,7 +3466,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5f13.69945404",
-  "local": "library_images/creative/17741.png"
+  "local": "library_images/creative/17741.png",
+  "name": "hockey-mask-2",
+  "description": "A white hockey/Jason mask. Horror-movie icon."
  },
  {
   "category": "creative",
@@ -2945,7 +3479,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5f55.54987279",
-  "local": "library_images/creative/17742.png"
+  "local": "library_images/creative/17742.png",
+  "name": "dice-2",
+  "description": "A pair of white dice with red and black pips. Game-of-chance icon."
  },
  {
   "category": "creative",
@@ -2956,7 +3492,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5f90.58993477",
-  "local": "library_images/creative/17743.png"
+  "local": "library_images/creative/17743.png",
+  "name": "crane-tower",
+  "description": "A gray tower/crane structure on a dark background. Construction scene."
  },
  {
   "category": "creative",
@@ -2967,7 +3505,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b5fd5.69447233",
-  "local": "library_images/creative/17744.png"
+  "local": "library_images/creative/17744.png",
+  "name": "angry-monitor-2",
+  "description": "A green-faced old computer monitor looking angry. Grumpy retro device."
  },
  {
   "category": "creative",
@@ -2978,7 +3518,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6012.47647599",
-  "local": "library_images/creative/17745.png"
+  "local": "library_images/creative/17745.png",
+  "name": "blue-crystal-2",
+  "description": "A glowing blue crystal/diamond shard on black. Gem/magic motif."
  },
  {
   "category": "creative",
@@ -2989,7 +3531,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6059.39121229",
-  "local": "library_images/creative/17746.png"
+  "local": "library_images/creative/17746.png",
+  "name": "hourglass",
+  "description": "A yellow hourglass on a blue background. Time-passing motif."
  },
  {
   "category": "creative",
@@ -3000,7 +3544,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6081.37711137",
-  "local": "library_images/creative/17747.png"
+  "local": "library_images/creative/17747.png",
+  "name": "peach-3",
+  "description": "A pink peach/heart fruit on a pink background. Juicy fruit icon."
  },
  {
   "category": "creative",
@@ -3011,7 +3557,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b60e8.63486543",
-  "local": "library_images/creative/17748.png"
+  "local": "library_images/creative/17748.png",
+  "name": "monitor-heart",
+  "description": "A computer monitor displaying a dark heart. Digital love motif."
  },
  {
   "category": "creative",
@@ -3022,7 +3570,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6124.89623840",
-  "local": "library_images/creative/17749.png"
+  "local": "library_images/creative/17749.png",
+  "name": "black-spider-2",
+  "description": "A black spider/bat with yellow eyes on a gray web. Creepy crawler."
  },
  {
   "category": "creative",
@@ -3033,7 +3583,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6164.16245111",
-  "local": "library_images/creative/17750.png"
+  "local": "library_images/creative/17750.png",
+  "name": "white-bird-crown",
+  "description": "A white bird/duck with a small crown on a red background. Regal bird."
  },
  {
   "category": "creative",
@@ -3044,7 +3596,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b61a3.93850654",
-  "local": "library_images/creative/17751.png"
+  "local": "library_images/creative/17751.png",
+  "name": "ghosts-2",
+  "description": "Two white ghosts on a dark background. Spooky spirits."
  },
  {
   "category": "creative",
@@ -3055,7 +3609,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b61e2.45189313",
-  "local": "library_images/creative/17752.png"
+  "local": "library_images/creative/17752.png",
+  "name": "orange-box-2",
+  "description": "An orange boxy robot/face. Blocky character."
  },
  {
   "category": "creative",
@@ -3066,7 +3622,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6211.80129405",
-  "local": "library_images/creative/17753.png"
+  "local": "library_images/creative/17753.png",
+  "name": "white-cat-fire",
+  "description": "A white cat against a fiery orange background. Dramatic feline scene."
  },
  {
   "category": "creative",
@@ -3077,7 +3635,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6253.54173477",
-  "local": "library_images/creative/17754.png"
+  "local": "library_images/creative/17754.png",
+  "name": "yellow-star",
+  "description": "A shining yellow star. Sparkle/achievement icon."
  },
  {
   "category": "creative",
@@ -3088,7 +3648,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b62b9.94028816",
-  "local": "library_images/creative/17755.png"
+  "local": "library_images/creative/17755.png",
+  "name": "cream-skull-2",
+  "description": "A cream/beige skull on a dark background. Spooky bone motif."
  },
  {
   "category": "creative",
@@ -3099,7 +3661,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b62f2.06620816",
-  "local": "library_images/creative/17756.png"
+  "local": "library_images/creative/17756.png",
+  "name": "rocket",
+  "description": "A gray rocket/spaceship among stars. Space-launch motif."
  },
  {
   "category": "creative",
@@ -3110,7 +3674,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6324.19256092",
-  "local": "library_images/creative/17757.png"
+  "local": "library_images/creative/17757.png",
+  "name": "pokeball-2",
+  "description": "A red-and-white Pokeball. Pokemon catching device."
  },
  {
   "category": "creative",
@@ -3121,7 +3687,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6365.08664760",
-  "local": "library_images/creative/17758.png"
+  "local": "library_images/creative/17758.png",
+  "name": "blue-marble",
+  "description": "A glossy blue glass marble/bubble. Shiny sphere icon."
  },
  {
   "category": "creative",
@@ -3132,7 +3700,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6397.18444552",
-  "local": "library_images/creative/17759.png"
+  "local": "library_images/creative/17759.png",
+  "name": "gray-angry",
+  "description": "A gray angry face/monster. Cross emoji character."
  },
  {
   "category": "creative",
@@ -3143,7 +3713,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b63d0.94113660",
-  "local": "library_images/creative/17760.png"
+  "local": "library_images/creative/17760.png",
+  "name": "cross-pattern",
+  "description": "A red-and-blue cross/flag pattern. Geometric Union-Jack-like design."
  },
  {
   "category": "creative",
@@ -3154,7 +3726,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6433.36177318",
-  "local": "library_images/creative/17761.png"
+  "local": "library_images/creative/17761.png",
+  "name": "game-boy",
+  "description": "A handheld Game Boy console with a colorful screen. Retro gaming device."
  },
  {
   "category": "creative",
@@ -3165,7 +3739,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6470.62148206",
-  "local": "library_images/creative/17762.png"
+  "local": "library_images/creative/17762.png",
+  "name": "screaming-person",
+  "description": "A character/person screaming on a blue background. Shocked figure."
  },
  {
   "category": "creative",
@@ -3176,7 +3752,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b64b7.45209343",
-  "local": "library_images/creative/17763.png"
+  "local": "library_images/creative/17763.png",
+  "name": "rainbow-ghost",
+  "description": "A rainbow-colored ghost on a dark background. Colorful spooky character."
  },
  {
   "category": "creative",
@@ -3187,7 +3765,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b64f2.38027322",
-  "local": "library_images/creative/17764.png"
+  "local": "library_images/creative/17764.png",
+  "name": "platform-figure",
+  "description": "A pixel character on a platform, mid-action. Retro platform-game scene."
  },
  {
   "category": "creative",
@@ -3198,7 +3778,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6531.48483590",
-  "local": "library_images/creative/17765.png"
+  "local": "library_images/creative/17765.png",
+  "name": "red-gameboy",
+  "description": "A red handheld Game Boy console. Retro gaming device."
  },
  {
   "category": "creative",
@@ -3209,7 +3791,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6579.12460147",
-  "local": "library_images/creative/17766.png"
+  "local": "library_images/creative/17766.png",
+  "name": "gameboy-gray",
+  "description": "A gray Game Boy with a green screen. Classic handheld console."
  },
  {
   "category": "creative",
@@ -3220,7 +3804,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b65b3.85868975",
-  "local": "library_images/creative/17767.png"
+  "local": "library_images/creative/17767.png",
+  "name": "hourglass-2",
+  "description": "An orange-and-white hourglass. Time-passing motif."
  },
  {
   "category": "creative",
@@ -3231,7 +3817,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6610.09142420",
-  "local": "library_images/creative/17768.png"
+  "local": "library_images/creative/17768.png",
+  "name": "teal-screen",
+  "description": "A teal screen inside a red frame, like a TV/monitor. Display motif."
  },
  {
   "category": "creative",
@@ -3242,7 +3830,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6658.49014137",
-  "local": "library_images/creative/17769.png"
+  "local": "library_images/creative/17769.png",
+  "name": "blue-penguin",
+  "description": "A blue penguin/duck character on a dark background. Cute bird."
  },
  {
   "category": "creative",
@@ -3253,7 +3843,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6684.39713205",
-  "local": "library_images/creative/17770.png"
+  "local": "library_images/creative/17770.png",
+  "name": "blue-bunny-3",
+  "description": "A blue rabbit/cat on a dark background. Cute bunny."
  },
  {
   "category": "creative",
@@ -3264,7 +3856,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b66c2.41107808",
-  "local": "library_images/creative/17771.png"
+  "local": "library_images/creative/17771.png",
+  "name": "yellow-qr",
+  "description": "A yellow QR-code-like maze pattern. Tech/scan motif."
  },
  {
   "category": "creative",
@@ -3275,7 +3869,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6706.33298807",
-  "local": "library_images/creative/17772.png"
+  "local": "library_images/creative/17772.png",
+  "name": "color-blocks",
+  "description": "Colorful red, yellow and green squares on black. Geometric color blocks."
  },
  {
   "category": "creative",
@@ -3286,7 +3882,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6733.24630915",
-  "local": "library_images/creative/17773.png"
+  "local": "library_images/creative/17773.png",
+  "name": "blue-tunnel-2",
+  "description": "Concentric blue squares forming a tunnel effect. Geometric depth pattern."
  },
  {
   "category": "creative",
@@ -3297,7 +3895,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6793.44073949",
-  "local": "library_images/creative/17774.png"
+  "local": "library_images/creative/17774.png",
+  "name": "checker-cross",
+  "description": "A red-and-green checkered cross/grid. Geometric pattern."
  },
  {
   "category": "creative",
@@ -3308,7 +3908,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b67d5.37853569",
-  "local": "library_images/creative/17775.png"
+  "local": "library_images/creative/17775.png",
+  "name": "flower-burst",
+  "description": "A green-and-orange floral burst pattern. Blooming radial design."
  },
  {
   "category": "creative",
@@ -3319,7 +3921,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6810.67510270",
-  "local": "library_images/creative/17776.png"
+  "local": "library_images/creative/17776.png",
+  "name": "rainbow-smiley",
+  "description": "A yellow smiley face with rainbow accents. Cheerful colorful emoji."
  },
  {
   "category": "creative",
@@ -3330,7 +3934,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6859.93309696",
-  "local": "library_images/creative/17777.png"
+  "local": "library_images/creative/17777.png",
+  "name": "red-heart-14",
+  "description": "A red 3D heart with little hearts around it. Love motif."
  },
  {
   "category": "creative",
@@ -3341,7 +3947,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6895.87640087",
-  "local": "library_images/creative/17778.png"
+  "local": "library_images/creative/17778.png",
+  "name": "rainbow-heart-6",
+  "description": "A heart filled with rainbow stripes. Colorful love symbol."
  },
  {
   "category": "creative",
@@ -3352,7 +3960,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b68c9.66093838",
-  "local": "library_images/creative/17779.png"
+  "local": "library_images/creative/17779.png",
+  "name": "skull-8",
+  "description": "A white skull on an orange background. Halloween skull."
  },
  {
   "category": "creative",
@@ -3363,7 +3973,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6907.03114174",
-  "local": "library_images/creative/17780.png"
+  "local": "library_images/creative/17780.png",
+  "name": "heart-outline-3",
+  "description": "A cyan-and-pink heart outline on a dark background. Simple love icon."
  },
  {
   "category": "creative",
@@ -3374,7 +3986,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6955.54681236",
-  "local": "library_images/creative/17781.png"
+  "local": "library_images/creative/17781.png",
+  "name": "pink-hearts-3",
+  "description": "Three pink hearts on a dark background. Sweet love pattern."
  },
  {
   "category": "creative",
@@ -3385,7 +3999,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6997.63317783",
-  "local": "library_images/creative/17782.png"
+  "local": "library_images/creative/17782.png",
+  "name": "praying-hands-2",
+  "description": "Praying hands beside a candle. Prayer/remembrance motif."
  },
  {
   "category": "creative",
@@ -3396,7 +4012,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b69d6.04210204",
-  "local": "library_images/creative/17783.png"
+  "local": "library_images/creative/17783.png",
+  "name": "wooden-gear",
+  "description": "A brown wooden gear/cube shape on a tan background. Mechanical wood motif."
  },
  {
   "category": "creative",
@@ -3407,7 +4025,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6a10.61435384",
-  "local": "library_images/creative/17784.png"
+  "local": "library_images/creative/17784.png",
+  "name": "flying-pig-2",
+  "description": "A pink-and-blue pig flying on a blue background. 'When pigs fly' motif."
  },
  {
   "category": "creative",
@@ -3418,7 +4038,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6a55.08832782",
-  "local": "library_images/creative/17785.png"
+  "local": "library_images/creative/17785.png",
+  "name": "red-flag-2",
+  "description": "A red flag on a pole in a landscape. Flag/marker motif."
  },
  {
   "category": "creative",
@@ -3429,7 +4051,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6a86.98005697",
-  "local": "library_images/creative/17786.png"
+  "local": "library_images/creative/17786.png",
+  "name": "blue-maze-2",
+  "description": "A blue maze/labyrinth pattern. Puzzle motif."
  },
  {
   "category": "creative",
@@ -3440,7 +4064,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6ae2.10028499",
-  "local": "library_images/creative/17787.png"
+  "local": "library_images/creative/17787.png",
+  "name": "hourglass-3",
+  "description": "An hourglass with yellow caution stripes. Time-warning motif."
  },
  {
   "category": "creative",
@@ -3451,7 +4077,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6b29.89852321",
-  "local": "library_images/creative/17788.png"
+  "local": "library_images/creative/17788.png",
+  "name": "pink-monster-2",
+  "description": "A pink monster face with a wide toothy grin. Goofy creature."
  },
  {
   "category": "creative",
@@ -3462,7 +4090,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6b69.84267018",
-  "local": "library_images/creative/17789.png"
+  "local": "library_images/creative/17789.png",
+  "name": "halloween-cat-2",
+  "description": "A black cat with a pumpkin on a purple background. Halloween scene."
  },
  {
   "category": "creative",
@@ -3473,7 +4103,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6b98.92223145",
-  "local": "library_images/creative/17790.png"
+  "local": "library_images/creative/17790.png",
+  "name": "radiator",
+  "description": "A brown radiator/grill machine. Appliance/industrial motif."
  },
  {
   "category": "creative",
@@ -3484,7 +4116,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6bd5.37695229",
-  "local": "library_images/creative/17791.png"
+  "local": "library_images/creative/17791.png",
+  "name": "night-skyline-2",
+  "description": "A gray city skyline at night with lit windows. Urban scene."
  },
  {
   "category": "creative",
@@ -3495,7 +4129,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6c13.04188751",
-  "local": "library_images/creative/17792.png"
+  "local": "library_images/creative/17792.png",
+  "name": "black-swirl",
+  "description": "A black tornado/swirl on a cyan background. Whirlwind motif."
  },
  {
   "category": "creative",
@@ -3506,7 +4142,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6c54.47093129",
-  "local": "library_images/creative/17793.png"
+  "local": "library_images/creative/17793.png",
+  "name": "spiral-target",
+  "description": "A red-and-white hypnotic spiral/target. Dizzying pattern."
  },
  {
   "category": "creative",
@@ -3517,7 +4155,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6ca7.04439876",
-  "local": "library_images/creative/17794.png"
+  "local": "library_images/creative/17794.png",
+  "name": "pink-microwave",
+  "description": "A pink microwave/TV appliance. Retro device motif."
  },
  {
   "category": "creative",
@@ -3528,7 +4168,9 @@
   "category_name": "创意_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6d59.39397658",
-  "local": "library_images/creative/17795.png"
+  "local": "library_images/creative/17795.png",
+  "name": "running-hat-figure",
+  "description": "A figure in a hat running on a dark background. Action sprite."
  },
  {
   "category": "business",
@@ -3539,7 +4181,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6da8.37819900",
-  "local": "library_images/business/17796.png"
+  "local": "library_images/business/17796.png",
+  "name": "daji-dali",
+  "description": "Red Chinese characters 大吉大利 ('great luck and prosperity') on red. Festive blessing."
  },
  {
   "category": "business",
@@ -3550,7 +4194,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6de2.87953142",
-  "local": "library_images/business/17797.png"
+  "local": "library_images/business/17797.png",
+  "name": "grand-opening",
+  "description": "Red Chinese characters 开业大吉 ('grand opening / good luck') on red. Shop-opening signage."
  },
  {
   "category": "business",
@@ -3561,7 +4207,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6e24.00531174",
-  "local": "library_images/business/17798.png"
+  "local": "library_images/business/17798.png",
+  "name": "xinpin-new",
+  "description": "Green Chinese characters 新品 ('new product') on green. New-arrival signage."
  },
  {
   "category": "business",
@@ -3572,7 +4220,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6e57.06003315",
-  "local": "library_images/business/17799.png"
+  "local": "library_images/business/17799.png",
+  "name": "new-magenta-2",
+  "description": "The word 'NEW' in white on a magenta starburst. Promo badge."
  },
  {
   "category": "business",
@@ -3583,7 +4233,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6e90.15188408",
-  "local": "library_images/business/17800.png"
+  "local": "library_images/business/17800.png",
+  "name": "bao-hot",
+  "description": "The purple Chinese character 爆 ('explosive/hot sale'). Big-sale signage."
  },
  {
   "category": "business",
@@ -3594,7 +4246,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6ef7.16741035",
-  "local": "library_images/business/17801.png"
+  "local": "library_images/business/17801.png",
+  "name": "closed-sign-2",
+  "description": "The word 'CLOSED' in red with a dashed border. Shop signage."
  },
  {
   "category": "business",
@@ -3605,7 +4259,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6f36.47813323",
-  "local": "library_images/business/17802.png"
+  "local": "library_images/business/17802.png",
+  "name": "new-burst-2",
+  "description": "The word 'NEW!' on an orange starburst. Attention-grabbing badge."
  },
  {
   "category": "business",
@@ -3616,7 +4272,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6f75.59485876",
-  "local": "library_images/business/17803.png"
+  "local": "library_images/business/17803.png",
+  "name": "sale-star-2",
+  "description": "The word 'SALE' on a glowing gold star. Discount promo badge."
  },
  {
   "category": "business",
@@ -3627,7 +4285,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6fb0.32322501",
-  "local": "library_images/business/17804.png"
+  "local": "library_images/business/17804.png",
+  "name": "sale-magenta",
+  "description": "The word 'SALE' in white on a magenta background. Discount signage."
  },
  {
   "category": "business",
@@ -3638,7 +4298,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b6ff2.41990952",
-  "local": "library_images/business/17805.png"
+  "local": "library_images/business/17805.png",
+  "name": "special-price",
+  "description": "Red Chinese characters 特价 ('special price') on orange. Sale signage."
  },
  {
   "category": "business",
@@ -3649,7 +4311,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7035.22542557",
-  "local": "library_images/business/17806.png"
+  "local": "library_images/business/17806.png",
+  "name": "new-discount",
+  "description": "Red Chinese 新品 8折 ('new product, 20% off') on blue. Promotion signage."
  },
  {
   "category": "business",
@@ -3660,7 +4324,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7096.98523031",
-  "local": "library_images/business/17807.png"
+  "local": "library_images/business/17807.png",
+  "name": "hui-discount-2",
+  "description": "The white Chinese character 惠 ('discount/benefit') on green. Sale signage."
  },
  {
   "category": "business",
@@ -3671,7 +4337,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b70d7.43505181",
-  "local": "library_images/business/17808.png"
+  "local": "library_images/business/17808.png",
+  "name": "green-dollar-2",
+  "description": "A green dollar sign on a dark background. Money/finance icon."
  },
  {
   "category": "business",
@@ -3682,7 +4350,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7107.65866502",
-  "local": "library_images/business/17809.png"
+  "local": "library_images/business/17809.png",
+  "name": "thumbs-up-3",
+  "description": "A blue hand giving a thumbs up. Approval gesture."
  },
  {
   "category": "business",
@@ -3693,7 +4363,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7143.07435987",
-  "local": "library_images/business/17810.png"
+  "local": "library_images/business/17810.png",
+  "name": "shopping-cart-2",
+  "description": "A brown shopping cart. Retail/checkout icon."
  },
  {
   "category": "business",
@@ -3704,7 +4376,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7181.15891906",
-  "local": "library_images/business/17811.png"
+  "local": "library_images/business/17811.png",
+  "name": "shopping-pink",
+  "description": "The word 'Shopping' in pink. Retail signage."
  },
  {
   "category": "business",
@@ -3715,7 +4389,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b71b4.87309735",
-  "local": "library_images/business/17812.png"
+  "local": "library_images/business/17812.png",
+  "name": "fu-fortune-2",
+  "description": "The red Chinese character 福 ('fortune') on red. Lunar New Year motif."
  },
  {
   "category": "business",
@@ -3726,7 +4402,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b71f2.65183658",
-  "local": "library_images/business/17813.png"
+  "local": "library_images/business/17813.png",
+  "name": "welcome-text",
+  "description": "Red Chinese characters 欢迎 ('welcome') on red. Greeting signage."
  },
  {
   "category": "business",
@@ -3737,7 +4415,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7255.11257053",
-  "local": "library_images/business/17814.png"
+  "local": "library_images/business/17814.png",
+  "name": "guanglin-welcome",
+  "description": "Red Chinese characters 光临 ('welcome / please visit') on red. Shop greeting."
  },
  {
   "category": "business",
@@ -3748,7 +4428,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7297.01758304",
-  "local": "library_images/business/17815.png"
+  "local": "library_images/business/17815.png",
+  "name": "dollar-coin-2",
+  "description": "A yellow coin stamped with a dollar sign. Money icon."
  },
  {
   "category": "business",
@@ -3759,7 +4441,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b72d5.79654904",
-  "local": "library_images/business/17816.png"
+  "local": "library_images/business/17816.png",
+  "name": "shop-text",
+  "description": "The word 'SHOP' in orange on a storefront. Retail signage."
  },
  {
   "category": "business",
@@ -3770,7 +4454,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7311.39439382",
-  "local": "library_images/business/17817.png"
+  "local": "library_images/business/17817.png",
+  "name": "new-arrivals",
+  "description": "White Chinese characters 上新 ('new arrivals') on red. Product signage."
  },
  {
   "category": "business",
@@ -3781,7 +4467,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7346.23373448",
-  "local": "library_images/business/17818.png"
+  "local": "library_images/business/17818.png",
+  "name": "sale-blue",
+  "description": "The word 'SALE' in blue on black. Discount signage."
  },
  {
   "category": "business",
@@ -3792,7 +4480,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7382.65313569",
-  "local": "library_images/business/17819.png"
+  "local": "library_images/business/17819.png",
+  "name": "big-sale",
+  "description": "'BIG SALE' in red and blue text. Promotional signage."
  },
  {
   "category": "business",
@@ -3803,7 +4493,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b73e9.20484031",
-  "local": "library_images/business/17820.png"
+  "local": "library_images/business/17820.png",
+  "name": "taxi-sign",
+  "description": "A yellow 'TAXI' sign. Transportation signage."
  },
  {
   "category": "business",
@@ -3814,7 +4506,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7425.19164811",
-  "local": "library_images/business/17821.png"
+  "local": "library_images/business/17821.png",
+  "name": "taxi-checker",
+  "description": "'TAXI' in white over a checkered border. Cab signage."
  },
  {
   "category": "business",
@@ -3825,7 +4519,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7462.69257615",
-  "local": "library_images/business/17822.png"
+  "local": "library_images/business/17822.png",
+  "name": "dm-blue",
+  "description": "The letters 'DM' in white on a blue background. Promotional text."
  },
  {
   "category": "business",
@@ -3836,7 +4532,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b74a3.08536445",
-  "local": "library_images/business/17823.png"
+  "local": "library_images/business/17823.png",
+  "name": "qr-code",
+  "description": "A black-and-white QR code with a red accent. Scan-to-link motif."
  },
  {
   "category": "business",
@@ -3847,7 +4545,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b74e6.63661998",
-  "local": "library_images/business/17824.png"
+  "local": "library_images/business/17824.png",
+  "name": "big-sale-2",
+  "description": "'BIG SALE' in colorful letters. Promotional signage."
  },
  {
   "category": "business",
@@ -3858,7 +4558,9 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7524.09031591",
-  "local": "library_images/business/17825.png"
+  "local": "library_images/business/17825.png",
+  "name": "bluetooth-2",
+  "description": "A white Bluetooth symbol on red. Connectivity icon."
  },
  {
   "category": "business",
@@ -3869,6 +4571,8 @@
   "category_name": "商业_IDM",
   "label": "ALL",
   "file_path": "https://images.heaton.com.cn/download/675bdcdf0b7562.30270690",
-  "local": "library_images/business/17826.png"
+  "local": "library_images/business/17826.png",
+  "name": "hi-bubble",
+  "description": "The greeting 'Hi!' in a red speech bubble. Friendly message motif."
  }
 ]
