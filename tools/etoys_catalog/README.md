@@ -63,3 +63,17 @@ So the full e-toys catalog is **1,103 assets** (751 animations + 352 images).
 Every asset is named + described in `captions.json` (keyed `type/category/file_id`), and those
 `name` + `description` columns are merged into `index.csv` / `index_images.csv`. Built by a vision
 pass over labeled montages (`build_montage.py`). 1103/1103 assets captioned.
+
+## Keeping it up to date — `sync.py`
+
+```bash
+python sync.py          # re-query the full catalog, download ONLY new assets, skip existing
+python sync.py --list   # just report catalog-vs-local counts (no downloads)
+```
+
+Idempotent and safe to re-run anytime: it compares the server catalog (animations + images
+across all 5 categories) against what's on disk and fetches only `file_id`s you don't already
+have, deobfuscating them in place. It rebuilds the indexes, preserves existing captions, and writes
+any newly-fetched (un-captioned) assets to `new_assets.json` so you can caption just those.
+
+Verified complete: server `totalCount` == local for both types (**751 anim, 352 image, 0 missing**).
