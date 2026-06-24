@@ -48,14 +48,16 @@ All validated on the 32×32 unless marked. CMD/SUB are bytes [2]/[3]; `0x80`=128
 | Flip 180° | 6 | 0x80 | `0/1` | `0500068001` | ✅ |
 | Screen on/off | 7 | 1 | `0/1` | `0500070100` (off) | ✅ |
 | Time-indicator | 7 | 0x80 | `0/1` | `0500078001` | 📖 |
-| Eco/sleep sched | 2 | 0x80 | `onH,onM,offH,offM,e5,e6` | — | 📖 |
-| Screen-on timer | 15 | 0x80 | `value` (`0xFF`=query) | `0500078f…` | 📖 |
+| Eco/sleep sched | 2 | 0x80 | `flag, startH,startM, endH,endM, light` | `0a000280010000173b08` | ✅ (dims; sticky — see gotcha) |
+| Screen-on timer | 15 | 0x80 | `value` (`0xFF`=query) | `0500078f…` | 📖 (read is SILENT) |
 | Text speed | 3 | 1 | `speed` | `0500030105` | 📖 |
 | Reset | 3 | 0x80 | *(none)* | `04000380` | 📖 |
 | Enter/exit DIY | 4 | 1 | `mode(0-3)` | `0500040101` (enter+clear) | ✅ |
-| Password set/verify | 4/5 | 2 | `…` | — | 📖 |
+| Password set | 4 | 2 | `enable, dd1,dd2,dd3` (6 digits→3 pairs) | `0800040201` `0c2238` | ✅ (verify→01 ok/00 wrong) |
+| Password verify | 5 | 2 | `dd1,dd2,dd3` | `070005020c2238` | ✅ |
+| Rhythm pattern-select | 11 | 0x80 | `mode+1, sensitivity` | `06000b800164` | ✅ (see Rhythm section) |
+| Rhythm stop | 0 | 2 | `0,0` | `060000020000` | ✅ |
 | Joint (multi-panel) | 12 | 0x80 | `mode` | — | n/a (not 32×32) |
-| Mic/rhythm/FM | 0/11 | 2/0x80 | `…` | — | n/a (speaker models) |
 | OTA | type | 0x80 | `pkgCount, CRC32(4), binSize(4)` | — | 📖 (don't blind-fire) |
 
 `mode` enums: Countdown/Stopwatch `0=disable/reset,1=start,2=pause,3=restart/continue`.
@@ -106,9 +108,17 @@ commands echo their CMD/SUB with status 1. No battery/sensor telemetry is report
 ## Model gating (this device = deviceType 3, 32×32)
 
 LED-size map: `1=16×16, 2=8×32, 3=32×32, 4=64×64, 6=24×48, 7=16×32, 11=16×64`.
-Valid for 32×32: all of the above except **joint** (multi-panel) and **mic/rhythm/FM**
-(speaker models, gated by adv `isNewDeviceRhythm`). Text rendering uses the 16-tall font
-path (the 12-px path is only `ledType==2`/8×32).
+Valid for 32×32: all of the above except **joint** (multi-panel). The 32×32 **DOES** support
+the mic/**rhythm** visualizers (`RhythmLedView32x32`) — see the Rhythm section. Text rendering
+uses the 16-tall font path (the 12-px path is only `ledType==2`/8×32).
+
+## Gotchas (state-changing commands that stick) ⚠️
+- **`set_eco` dims persistently.** Eco's `light` byte sets a dimmed brightness for the
+  window; it's a saved device setting that **survives a power-cycle** and overrides
+  `set_brightness`. A software "off" (`flag=0`) may not fully restore it — clearing it
+  reliably needed a power-cycle. Avoid eco in any automated/test path, or always restore.
+- **`set_password` with `enable=1` locks the device** (the app then prompts for it). Sent
+  over plain BLE; disable with `set_password(pwd, enable=0)`. Don't fire it casually.
 
 ## Golden frames (regression anchors)
 
@@ -126,3 +136,31 @@ set_screen(False/True)             0500070100 / 0500070101  ✅
 enter_diy(1)                       0500040101               ✅
 draw_pixel(255,0,0,8,8)            0a00050100ff00000808     ✅ captured
 ```
+
+## Rhythm / sound-reactive spectrum ✅ (plaintext path)
+
+The mic/rhythm visualizers. The phone does the FFT and **streams** to the panel; the
+panel renders a built-in pattern. RE'd from live captures + driven from our client.
+
+**Two parts:**
+1. **Pattern select** — `sendMicCommand1`, CMD 11 / SUB 0x80:
+   `[06,00,0b,80, mode+1, sensitivity]` (`sensitivity` 0-100). `mode` picks the device-side
+   render pattern (bars / lightbulb / tree / …) — captured `06000b800164` (mode 0) and
+   `06000b800564` (mode 4). **Stop:** `sendStopMicRhythm` CMD 0/2 = `060000020000`.
+2. **Spectrum stream** — a RAW 21-byte frame (no envelope/CRC), ~**12 fps**:
+   `21 00 01 02 02 | <16 band heights>` — the 16 are **8 bands mirrored left-right**
+   (`right = reverse(left)`), so the bars are symmetric. ✅ golden frame from 8 bands
+   `[0a,05,04,02,02,04,02,02]` → `2100010202 0a05040202040202 02020402020405 0a`.
+
+**Modes/limits:**
+- The **bars/lightbulb/etc. patterns are PLAINTEXT** and fully replicable — only the mode
+  byte in `sendMicCommand1` differs between them; the 21-byte data frame format is identical.
+  We drive them from a host (`rhythm_select` + `rhythm_frame`) — verified on-device (synthetic
+  bars + a file-FFT visualizer both track the audio).
+- The **fancier image-based visualizer modes** render frames on the phone and send them as
+  GIF/image uploads + an **AES-encrypted** `sendRhythmData` path (`csh.tiro.cc.aes`, the same
+  native cipher that walls off `LOCATE`/material-wipe) — NOT replicable.
+- It is **not autonomous**: even the "device-mic" pattern still streams from the phone at ~12 fps.
+
+This makes the panel viable as a **live audio visualizer** from a Python/HA host (FFT → 8 bands →
+`rhythm_frame` at 12 fps) — and unlike full-frame stills, it's not gated by the ~3 fps image ceiling.
