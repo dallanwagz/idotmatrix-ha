@@ -57,6 +57,8 @@ All validated on the 32×32 unless marked. CMD/SUB are bytes [2]/[3]; `0x80`=128
 | Password verify | 5 | 2 | `dd1,dd2,dd3` | `070005020c2238` | ✅ |
 | Rhythm pattern-select | 11 | 0x80 | `mode+1, sensitivity` | `06000b800164` | ✅ (see Rhythm section) |
 | Rhythm stop | 0 | 2 | `0,0` | `060000020000` | ✅ |
+| Material-wipe (carousel page) | 2 | 1 | `12, 0..11` | `110002010c000102030405060708090a0b` | ✅ ⚠️ destroys stored assets |
+| Enter asset/carousel view | 10 | 1 | *(none)* | `04000a01` | ✅ (see Carousel section) |
 | Joint (multi-panel) | 12 | 0x80 | `mode` | — | n/a (not 32×32) |
 | OTA | type | 0x80 | `pkgCount, CRC32(4), binSize(4)` | — | 📖 (don't blind-fire) |
 
@@ -164,3 +166,36 @@ panel renders a built-in pattern. RE'd from live captures + driven from our clie
 
 This makes the panel viable as a **live audio visualizer** from a Python/HA host (FFT → 8 bands →
 `rhythm_frame` at 12 fps) — and unlike full-frame stills, it's not gated by the ~3 fps image ceiling.
+
+## Device carousel / on-device asset storage ✅
+
+The panel **persistently stores up to 36 assets (3 pages × 12 slots)** and **cycles them
+autonomously** — no host needed, survives disconnect. This is the "Device Assets" feature.
+RE'd + driven from our own client (verified: stored blinking-colour GIFs cycle on their own).
+
+**Store an asset to a slot** — reuse the bulk **GIF** upload (`DataType.GIF`, dtype byte[2]=1)
+with two header fields:
+- **`image_index` (byte[15]) = the slot number 0–35.** (NOT 12/13 — those are display buffers.)
+- **`timeSign` (bytes[13–14], LE) = the per-asset carousel dwell time in *seconds*.**
+
+`image_index` semantics (corrects the bulk-image note above):
+| value | meaning |
+|---|---|
+| `0`–`35` | carousel **storage slot** — requires `DataType.GIF` to actually persist |
+| `12` | **live / show-now** (transient display; `timeSign` forced to 0) — what a plain push uses |
+| `13` | **preview / "currently showing"** buffer (transient) |
+
+A **static image (`DataType.IMAGE`) at idx 12/13 only displays** — it does not enter the
+carousel. Storage needs an animated GIF at a slot index. Each upload ACKs the GIF state
+machine (`0500010001`=next / `0500010003`=done).
+
+**Control:**
+- **Clear a page** (slots 0–11): `cmd 2/1` = `[17,0,2,1, 12, 0,1,2,3,4,5,6,7,8,9,10,11]`
+  (`Agreement.getDeleteMaterial`). This is the "material-wipe" — ⚠️ destroys stored assets.
+- **Start the carousel / enter asset view:** `cmd 10/1` = `04000a01`.
+- Slots fill in arrival order after a page-clear; per-slot dwell is each asset's `timeSign`.
+
+**Why this matters:** it's the true **set-and-forget** mode — preload up to 36 animations and
+the panel loops them itself, unlike rhythm (streamed) or stills (host-driven). Builders:
+`material_wipe()`, `enter_asset_view()`, and `ImageUpload(gif, DataType.GIF, image_index=slot,
+time_sign=dwell)`.
