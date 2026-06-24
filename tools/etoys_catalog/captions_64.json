@@ -2378,5 +2378,565 @@
   "type": "anim",
   "name": "be-bold",
   "description": "A 'Be Bold!' scene with a game character. Motivational graphic."
+ },
+ "anim/creative/24107": {
+  "file_id": 24107,
+  "category": "creative",
+  "type": "anim",
+  "name": "blue-boar",
+  "description": "A blue boar/wolf beast. Fantasy creature."
+ },
+ "anim/creative/24108": {
+  "file_id": 24108,
+  "category": "creative",
+  "type": "anim",
+  "name": "waterfall",
+  "description": "A waterfall/river flowing through a landscape. Nature scene."
+ },
+ "anim/creative/24109": {
+  "file_id": 24109,
+  "category": "creative",
+  "type": "anim",
+  "name": "dark-grid",
+  "description": "A dark grid/cage on black. Minimal abstract motif."
+ },
+ "anim/creative/24110": {
+  "file_id": 24110,
+  "category": "creative",
+  "type": "anim",
+  "name": "red-frog",
+  "description": "A red frog/creature. Amphibian character."
+ },
+ "anim/creative/24111": {
+  "file_id": 24111,
+  "category": "creative",
+  "type": "anim",
+  "name": "bird-grass",
+  "description": "A bird diving toward grass. Nature action scene."
+ },
+ "anim/creative/24112": {
+  "file_id": 24112,
+  "category": "creative",
+  "type": "anim",
+  "name": "resting-lions",
+  "description": "Lions/big cats resting together. Wildlife scene."
+ },
+ "anim/creative/24113": {
+  "file_id": 24113,
+  "category": "creative",
+  "type": "anim",
+  "name": "sword-boy",
+  "description": "A blonde boy holding a sword. RPG-hero character."
+ },
+ "anim/creative/24114": {
+  "file_id": 24114,
+  "category": "creative",
+  "type": "anim",
+  "name": "poop",
+  "description": "A brown swirl/poop emoji. Cheeky icon."
+ },
+ "anim/creative/24115": {
+  "file_id": 24115,
+  "category": "creative",
+  "type": "anim",
+  "name": "banana-skeleton",
+  "description": "A banana beside a skeleton, a decay gag. Quirky still life."
+ },
+ "anim/creative/24116": {
+  "file_id": 24116,
+  "category": "creative",
+  "type": "anim",
+  "name": "scooter-couple-2",
+  "description": "A couple riding a scooter together. Cute travel scene."
+ },
+ "anim/creative/24117": {
+  "file_id": 24117,
+  "category": "creative",
+  "type": "anim",
+  "name": "stargazer",
+  "description": "A person stargazing through a telescope at night. Astronomy scene."
+ },
+ "anim/creative/24118": {
+  "file_id": 24118,
+  "category": "creative",
+  "type": "anim",
+  "name": "shiba",
+  "description": "An orange Shiba Inu dog. Cute canine."
+ },
+ "anim/creative/24119": {
+  "file_id": 24119,
+  "category": "creative",
+  "type": "anim",
+  "name": "orange-cat",
+  "description": "An orange cat lying down. Feline portrait."
+ },
+ "anim/creative/24120": {
+  "file_id": 24120,
+  "category": "creative",
+  "type": "anim",
+  "name": "black-bear",
+  "description": "A black bear/boar. Wild animal."
+ },
+ "anim/creative/24121": {
+  "file_id": 24121,
+  "category": "creative",
+  "type": "anim",
+  "name": "bear-desk",
+  "description": "A teddy bear at a computer desk. Cozy work scene."
+ },
+ "anim/creative/24122": {
+  "file_id": 24122,
+  "category": "creative",
+  "type": "anim",
+  "name": "blue-genie",
+  "description": "A blue genie/spirit creature. Fantasy character."
+ },
+ "anim/creative/24123": {
+  "file_id": 24123,
+  "category": "creative",
+  "type": "anim",
+  "name": "red-fox",
+  "description": "A red fox/creature. Woodland animal."
+ },
+ "anim/creative/24125": {
+  "file_id": 24125,
+  "category": "creative",
+  "type": "anim",
+  "name": "demon-boss",
+  "description": "A demon/devil figure wielding a sword. RPG-boss character."
+ },
+ "anim/creative/24126": {
+  "file_id": 24126,
+  "category": "creative",
+  "type": "anim",
+  "name": "chimera",
+  "description": "A monster/chimera beast. Mythical creature."
+ },
+ "anim/creative/24127": {
+  "file_id": 24127,
+  "category": "creative",
+  "type": "anim",
+  "name": "computer-heart",
+  "description": "A retro computer displaying a heart on screen. Digital-love motif."
+ },
+ "anim/creative/24128": {
+  "file_id": 24128,
+  "category": "creative",
+  "type": "anim",
+  "name": "gray-bot",
+  "description": "A dark gray robot/machine face. Mechanical character."
+ },
+ "anim/creative/24129": {
+  "file_id": 24129,
+  "category": "creative",
+  "type": "anim",
+  "name": "tv-girl",
+  "description": "A girl framed inside a retro TV set. Nostalgic broadcast scene."
+ },
+ "anim/creative/24130": {
+  "file_id": 24130,
+  "category": "creative",
+  "type": "anim",
+  "name": "flower-figure",
+  "description": "A blonde figure holding a flower. Anime character."
+ },
+ "anim/creative/24131": {
+  "file_id": 24131,
+  "category": "creative",
+  "type": "anim",
+  "name": "warrior-figure",
+  "description": "A figure wielding a weapon. Warrior character."
+ },
+ "anim/creative/24132": {
+  "file_id": 24132,
+  "category": "creative",
+  "type": "anim",
+  "name": "purple-geode",
+  "description": "A purple crystal geode/gem. Mineral motif."
+ },
+ "anim/creative/24133": {
+  "file_id": 24133,
+  "category": "creative",
+  "type": "anim",
+  "name": "comic-poster",
+  "description": "A framed comic/poster artwork. Pop-art motif."
+ },
+ "anim/creative/24134": {
+  "file_id": 24134,
+  "category": "creative",
+  "type": "anim",
+  "name": "green-record",
+  "description": "A green vinyl record. Music motif."
+ },
+ "anim/creative/24135": {
+  "file_id": 24135,
+  "category": "creative",
+  "type": "anim",
+  "name": "red-record",
+  "description": "A red vinyl record. Music motif."
+ },
+ "anim/creative/24136": {
+  "file_id": 24136,
+  "category": "creative",
+  "type": "anim",
+  "name": "pink-record",
+  "description": "A pink vinyl record. Music motif."
+ },
+ "anim/creative/24137": {
+  "file_id": 24137,
+  "category": "creative",
+  "type": "anim",
+  "name": "campfire",
+  "description": "A glowing campfire ringed by stones. Outdoor fire scene."
+ },
+ "anim/creative/24138": {
+  "file_id": 24138,
+  "category": "creative",
+  "type": "anim",
+  "name": "torii-gate",
+  "description": "A red torii gate/shrine in the snow. Japanese scene."
+ },
+ "anim/creative/24139": {
+  "file_id": 24139,
+  "category": "creative",
+  "type": "anim",
+  "name": "forest-man",
+  "description": "A man in a hat standing in a forest. Eerie woodland scene."
+ },
+ "anim/creative/24140": {
+  "file_id": 24140,
+  "category": "creative",
+  "type": "anim",
+  "name": "factory-city",
+  "description": "An isometric factory/industrial cityscape. Urban-industry scene."
+ },
+ "anim/creative/24141": {
+  "file_id": 24141,
+  "category": "creative",
+  "type": "anim",
+  "name": "brown-dress-girl",
+  "description": "A girl in a brown dress. Anime character."
+ },
+ "anim/creative/24142": {
+  "file_id": 24142,
+  "category": "creative",
+  "type": "anim",
+  "name": "koi-pond",
+  "description": "Koi fish swimming in a pond. Tranquil water scene."
+ },
+ "anim/creative/24143": {
+  "file_id": 24143,
+  "category": "creative",
+  "type": "anim",
+  "name": "night-pond",
+  "description": "A dark pond with fish at night. Moody water scene."
+ },
+ "anim/creative/24144": {
+  "file_id": 24144,
+  "category": "creative",
+  "type": "anim",
+  "name": "zelda-map",
+  "description": "A top-down Zelda-style game map. Adventure-game scene."
+ },
+ "anim/creative/24145": {
+  "file_id": 24145,
+  "category": "creative",
+  "type": "anim",
+  "name": "grapes",
+  "description": "A bunch of purple grapes/berries. Fruit motif."
+ },
+ "anim/creative/24146": {
+  "file_id": 24146,
+  "category": "creative",
+  "type": "anim",
+  "name": "airplane",
+  "description": "An airplane flying through clouds. Air-travel scene."
+ },
+ "anim/creative/24147": {
+  "file_id": 24147,
+  "category": "creative",
+  "type": "anim",
+  "name": "black-goat",
+  "description": "A black goat/ram. Farm/wild animal."
+ },
+ "anim/creative/24148": {
+  "file_id": 24148,
+  "category": "creative",
+  "type": "anim",
+  "name": "white-fox",
+  "description": "A white fox/wolf face. Animal portrait."
+ },
+ "anim/creative/23482": {
+  "file_id": 23482,
+  "category": "creative",
+  "type": "anim",
+  "name": "sleeping-person",
+  "description": "A person sleeping in a bed/tent. Rest scene."
+ },
+ "anim/creative/23483": {
+  "file_id": 23483,
+  "category": "creative",
+  "type": "anim",
+  "name": "terrarium",
+  "description": "A glass terrarium of plants lit by a lantern. Cozy botanical scene."
+ },
+ "anim/creative/23484": {
+  "file_id": 23484,
+  "category": "creative",
+  "type": "anim",
+  "name": "game-boy",
+  "description": "A handheld Game Boy console. Retro gaming device."
+ },
+ "anim/creative/23485": {
+  "file_id": 23485,
+  "category": "creative",
+  "type": "anim",
+  "name": "kaleidoscope",
+  "description": "A psychedelic kaleidoscope/symmetry pattern. Trippy abstract art."
+ },
+ "anim/creative/23486": {
+  "file_id": 23486,
+  "category": "creative",
+  "type": "anim",
+  "name": "bee",
+  "description": "A yellow-and-black bee/wasp. Insect motif."
+ },
+ "anim/creative/23487": {
+  "file_id": 23487,
+  "category": "creative",
+  "type": "anim",
+  "name": "stained-glass",
+  "description": "A colorful stained-glass grid pattern. Decorative motif."
+ },
+ "anim/creative/23488": {
+  "file_id": 23488,
+  "category": "creative",
+  "type": "anim",
+  "name": "love-potion",
+  "description": "A flask of pink potion bubbling with hearts. Love-chemistry motif."
+ },
+ "anim/creative/23489": {
+  "file_id": 23489,
+  "category": "creative",
+  "type": "anim",
+  "name": "among-us",
+  "description": "A yellow Among Us crewmate. Game mascot."
+ },
+ "anim/creative/23490": {
+  "file_id": 23490,
+  "category": "creative",
+  "type": "anim",
+  "name": "tunnel-track",
+  "description": "A tunnel/race track in perspective. Speed motif."
+ },
+ "anim/creative/23491": {
+  "file_id": 23491,
+  "category": "creative",
+  "type": "anim",
+  "name": "jukebox",
+  "description": "A jukebox/arcade machine with a glowing waveform. Music machine."
+ },
+ "anim/creative/23492": {
+  "file_id": 23492,
+  "category": "creative",
+  "type": "anim",
+  "name": "equalizer",
+  "description": "A colorful bar-chart/audio equalizer. Music-visualizer motif."
+ },
+ "anim/creative/23493": {
+  "file_id": 23493,
+  "category": "creative",
+  "type": "anim",
+  "name": "phone-tap",
+  "description": "A hand tapping a smartphone touchscreen. Mobile-use scene."
+ },
+ "anim/creative/23494": {
+  "file_id": 23494,
+  "category": "creative",
+  "type": "anim",
+  "name": "yoshi-room",
+  "description": "Yoshi standing in a kitchen/room. Game scene."
+ },
+ "anim/creative/23495": {
+  "file_id": 23495,
+  "category": "creative",
+  "type": "anim",
+  "name": "fireworks",
+  "description": "A dark scene of colorful firework/floral bursts. Celebration pattern."
+ },
+ "anim/creative/23496": {
+  "file_id": 23496,
+  "category": "creative",
+  "type": "anim",
+  "name": "slot-machine",
+  "description": "A 'SLOTS JACKPOT' slot machine. Casino motif."
+ },
+ "anim/creative/23497": {
+  "file_id": 23497,
+  "category": "creative",
+  "type": "anim",
+  "name": "pastel-grid",
+  "description": "A pastel checker/grid pattern. Soft geometric design."
+ },
+ "anim/creative/23498": {
+  "file_id": 23498,
+  "category": "creative",
+  "type": "anim",
+  "name": "purple-arch",
+  "description": "A purple arch/tunnel shape. Geometric motif."
+ },
+ "anim/creative/23499": {
+  "file_id": 23499,
+  "category": "creative",
+  "type": "anim",
+  "name": "garden-scene",
+  "description": "A garden/pond scene with small characters. Game vignette."
+ },
+ "anim/creative/23500": {
+  "file_id": 23500,
+  "category": "creative",
+  "type": "anim",
+  "name": "red-glitch-face",
+  "description": "A red glitchy face/skull on dark. Abstract digital art."
+ },
+ "anim/creative/23501": {
+  "file_id": 23501,
+  "category": "creative",
+  "type": "anim",
+  "name": "hourglass",
+  "description": "An hourglass/sand timer. Time-passing motif."
+ },
+ "anim/creative/23502": {
+  "file_id": 23502,
+  "category": "creative",
+  "type": "anim",
+  "name": "diamond-pattern",
+  "description": "A dark diamond/glitch pattern. Abstract design."
+ },
+ "anim/creative/23503": {
+  "file_id": 23503,
+  "category": "creative",
+  "type": "anim",
+  "name": "seaplane",
+  "description": "A seaplane flying over water. Aviation scene."
+ },
+ "anim/creative/23504": {
+  "file_id": 23504,
+  "category": "creative",
+  "type": "anim",
+  "name": "pottery",
+  "description": "A clay/pottery sculpting scene. Craft motif."
+ },
+ "anim/creative/23505": {
+  "file_id": 23505,
+  "category": "creative",
+  "type": "anim",
+  "name": "haunted-house",
+  "description": "A haunted house at night. Halloween scene."
+ },
+ "anim/creative/23506": {
+  "file_id": 23506,
+  "category": "creative",
+  "type": "anim",
+  "name": "cat-fireworks",
+  "description": "A cat watching fireworks at night. Festive night scene."
+ },
+ "anim/creative/23507": {
+  "file_id": 23507,
+  "category": "creative",
+  "type": "anim",
+  "name": "tower",
+  "description": "A tall tower/temple building. Architecture motif."
+ },
+ "anim/creative/23508": {
+  "file_id": 23508,
+  "category": "creative",
+  "type": "anim",
+  "name": "bird-bucket",
+  "description": "An origami bird/crane over a bucket. Quirky scene."
+ },
+ "anim/creative/23509": {
+  "file_id": 23509,
+  "category": "creative",
+  "type": "anim",
+  "name": "hard-mode",
+  "description": "'HARD' text with a red angry face. Difficulty motif."
+ },
+ "anim/creative/23510": {
+  "file_id": 23510,
+  "category": "creative",
+  "type": "anim",
+  "name": "animal-shop",
+  "description": "A storefront with pig/animal characters. Cute shop scene."
+ },
+ "anim/creative/23511": {
+  "file_id": 23511,
+  "category": "creative",
+  "type": "anim",
+  "name": "flower-grid",
+  "description": "A grid of purple flowers/grapes. Decorative pattern."
+ },
+ "anim/creative/23512": {
+  "file_id": 23512,
+  "category": "creative",
+  "type": "anim",
+  "name": "animal-wheel",
+  "description": "A wheel/roulette ringed with animals. Spinner game."
+ },
+ "anim/creative/23513": {
+  "file_id": 23513,
+  "category": "creative",
+  "type": "anim",
+  "name": "forest-figures",
+  "description": "Two figures standing in a forest. Outdoor scene."
+ },
+ "anim/creative/23514": {
+  "file_id": 23514,
+  "category": "creative",
+  "type": "anim",
+  "name": "unicycle",
+  "description": "A person riding a unicycle. Circus/balance act."
+ },
+ "anim/creative/23515": {
+  "file_id": 23515,
+  "category": "creative",
+  "type": "anim",
+  "name": "scoreboard",
+  "description": "A scoreboard showing '56 78' with characters. Game-score scene."
+ },
+ "anim/creative/23516": {
+  "file_id": 23516,
+  "category": "creative",
+  "type": "anim",
+  "name": "bird-truck",
+  "description": "A bird/duck in clouds above a truck. Whimsical scene."
+ },
+ "anim/creative/23517": {
+  "file_id": 23517,
+  "category": "creative",
+  "type": "anim",
+  "name": "ufo-town",
+  "description": "A UFO hovering over a town at night. Alien-visit scene."
+ },
+ "anim/creative/23518": {
+  "file_id": 23518,
+  "category": "creative",
+  "type": "anim",
+  "name": "bathtub",
+  "description": "A person relaxing in a bathtub. Bath-time scene."
+ },
+ "anim/creative/23519": {
+  "file_id": 23519,
+  "category": "creative",
+  "type": "anim",
+  "name": "cave-climber",
+  "description": "A character climbing/falling in a cave. Platformer scene."
+ },
+ "anim/creative/23520": {
+  "file_id": 23520,
+  "category": "creative",
+  "type": "anim",
+  "name": "teal-record",
+  "description": "A green-teal vinyl record/portal. Music motif."
  }
 }
