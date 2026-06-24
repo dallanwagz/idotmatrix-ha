@@ -222,6 +222,16 @@ machine (`0500010001`=next / `0500010003`=done).
   (`Agreement.getDeleteMaterial`). Sent once before a push — ⚠️ destroys stored assets.
 - **Start the carousel / enter asset view:** `cmd 10/1` = `04000a01`.
 - Slots fill in arrival order after the slot-setup; per-slot dwell is each asset's `timeSign`.
+- **Slot-setup count can be < 12:** `[1, 0]` (`06 00 02 01 01 00`) makes a **1-slot** carousel.
+
+**Playback gotchas (hardware):**
+- The on-device **GIF decoder silently skips colour-heavy frames.** A 32×32 frame with a smooth
+  per-row gradient (full palette) gets dropped — the panel froze and skipped that scene. Keep to a
+  handful of **solid** colours per frame, not gradients.
+- Each slot **loops its GIF for the whole `timeSign` dwell**, so a multi-scene GIF repeats
+  (`1,2,3,1,2,3,…`) before advancing. For a **long sequential story**, store ONE big GIF in a
+  **`count=1`** slot — the device loops it in true frame order (verified: a 360-frame / 36-scene GIF
+  in slot 0 plays 1→36 in order). Storage is ample (≥1.3 MB/slot), so frame count isn't the limit.
 
 **Why this matters:** it's the true **set-and-forget** mode — preload 12 animations and
 the panel loops them itself, unlike rhythm (streamed) or stills (host-driven). Builders:

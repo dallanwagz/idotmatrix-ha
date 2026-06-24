@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw
 W = H = 32
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gifs")
 os.makedirs(OUT, exist_ok=True)
-N = 16          # frames per scene
+N = 10          # frames per scene
 
 GOLD = (255, 205, 70); RED = (210, 30, 30); JADE = (30, 200, 130)
 WHITE = (250, 245, 235); BLACK = (20, 18, 24); NEON = (60, 220, 255)
@@ -112,16 +112,14 @@ def guangzhou(v, fr):
 def canton_tower(v, fr):
     img = vgrad((20, 15, 50), (60, 20, 70)); d = ImageDraw.Draw(img); stars(d, fr)
     cx = 16
-    for y in range(2, 30):                                          # twisty hyperboloid
-        wgt = abs(y - 16) / 14
-        w = 1 + wgt * 4
-        hue = lerp((NEON), (255, 80, 200), (math.sin(y * 0.4 + fr * 0.5) + 1) / 2)
-        d.line([(cx - w, y), (cx + w, y)], fill=hue)
+    band = [NEON, (255, 80, 200), GOLD][int(fr * 0.3) % 3]          # tower one cycling colour
+    for y in range(2, 30):                                          # twisty hyperboloid (solid)
+        w = 1 + abs(y - 16) / 14 * 4
+        d.line([(cx - w, y), (cx + w, y)], fill=band)
     d.point((cx, 1), fill=GOLD)
-    if v >= 2:
-        for k in range(6):
-            a = k / 6 * math.tau + fr
-            d.point((cx + math.cos(a) * (5 + fr % 5), 6 + math.sin(a) * (5 + fr % 5)), fill=GOLD)
+    for k in range(6):                                             # always-on rotating lights
+        a = k / 6 * math.tau + fr * 0.4
+        d.point((cx + math.cos(a) * (5 + fr % 5), 6 + math.sin(a) * (5 + fr % 5)), fill=GOLD)
     return img
 
 
@@ -260,13 +258,19 @@ def main():
     for i, (func, v) in enumerate(SCENES):
         frames = [stamp(enrich(func(v, f), f, i), i + 1) for f in range(N)]    # number 1..36
         scene_frames.append(frames)
+    # Recommended: one long GIF of all 36 scenes -> a single carousel slot (count=1).
+    # The device loops it in true frame order, so playback is sequential 1..36. (The
+    # 12-slot packed version below repeats each trio during its dwell, reading out of order.)
+    flat = [im for scene in scene_frames for im in scene]
+    nc = save_gif(flat, "combined.gif")
+    print(f"  combined.gif  {len(flat)} frames  {nc} B ({nc/1024:.0f} KB)  <- store to slot 0, count=1")
+
     total = 0
-    for slot in range(12):                                  # pack 3 scenes per slot
+    for slot in range(12):                                  # alt: pack 3 scenes per slot
         combined = scene_frames[slot * 3] + scene_frames[slot * 3 + 1] + scene_frames[slot * 3 + 2]
         n = save_gif(combined, f"slot_{slot:02d}.gif")
         total += n
-        print(f"  slot {slot:02d}  scenes {slot*3+1}-{slot*3+3}  {len(combined)}f  {n:6d} B")
-    print(f"\n36 scenes in 12 slots, total {total} bytes ({total/1024:.0f} KB)")
+    print(f"  + 12 packed slot GIFs (alt carousel form), {total/1024:.0f} KB")
 
 
 if __name__ == "__main__":
