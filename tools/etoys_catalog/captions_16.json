@@ -2518,5 +2518,985 @@
   "type": "anim",
   "name": "santa-hat-2",
   "description": "A red Santa hat on a blue background. Festive headwear."
+ },
+ "anim/holiday/15859": {
+  "file_id": 15859,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-kid-2",
+  "description": "A child in a red Santa outfit on a dark background. Festive kid."
+ },
+ "anim/holiday/15860": {
+  "file_id": 15860,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-7",
+  "description": "A standing Santa Claus on a dark background. Christmas character."
+ },
+ "anim/holiday/15861": {
+  "file_id": 15861,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gifts",
+  "description": "A pile of wrapped presents on a dark background. Gift motif."
+ },
+ "anim/holiday/15862": {
+  "file_id": 15862,
+  "category": "holiday",
+  "type": "anim",
+  "name": "deer-face",
+  "description": "An orange reindeer/deer face on a cream background. Antlered animal."
+ },
+ "anim/holiday/15863": {
+  "file_id": 15863,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-gift",
+  "description": "A snowman with a yellow gift on a blue background. Winter scene."
+ },
+ "anim/holiday/15864": {
+  "file_id": 15864,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-3",
+  "description": "A decorated Christmas tree on a tan background. Festive evergreen."
+ },
+ "anim/holiday/15865": {
+  "file_id": 15865,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-3",
+  "description": "A green Christmas tree on a white background. Evergreen."
+ },
+ "anim/holiday/15866": {
+  "file_id": 15866,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-4",
+  "description": "A white snowman on a teal background. Winter character."
+ },
+ "anim/holiday/15867": {
+  "file_id": 15867,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-face-2",
+  "description": "A white-bearded Santa face on a gray background. Christmas portrait."
+ },
+ "anim/holiday/15868": {
+  "file_id": 15868,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-window",
+  "description": "A decorated room/window with Christmas lights on dark. Festive interior."
+ },
+ "anim/holiday/15869": {
+  "file_id": 15869,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-4",
+  "description": "A Christmas tree with ornaments on a dark background. Festive evergreen."
+ },
+ "anim/holiday/15870": {
+  "file_id": 15870,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-globe",
+  "description": "A snow globe with a house inside on a dark background. Wintry keepsake."
+ },
+ "anim/holiday/15871": {
+  "file_id": 15871,
+  "category": "holiday",
+  "type": "anim",
+  "name": "field",
+  "description": "A green-and-tan landscape/field. Minimal outdoor scene."
+ },
+ "anim/holiday/15872": {
+  "file_id": 15872,
+  "category": "holiday",
+  "type": "anim",
+  "name": "sword",
+  "description": "A sword/cross with snow on a dark background. Weapon motif."
+ },
+ "anim/holiday/15873": {
+  "file_id": 15873,
+  "category": "holiday",
+  "type": "anim",
+  "name": "wreath-2",
+  "description": "A green Christmas wreath on a cyan background. Holiday decoration."
+ },
+ "anim/holiday/15874": {
+  "file_id": 15874,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-5",
+  "description": "A pink 3D heart on a pink background. Love icon."
+ },
+ "anim/holiday/15875": {
+  "file_id": 15875,
+  "category": "holiday",
+  "type": "anim",
+  "name": "ice-cream-santa",
+  "description": "An ice cream cone with a Santa hat on a dark background. Festive treat."
+ },
+ "anim/holiday/15876": {
+  "file_id": 15876,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-person",
+  "description": "A person in a Santa hat on a dark background. Festive figure."
+ },
+ "anim/holiday/15877": {
+  "file_id": 15877,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-pig",
+  "description": "A pink pig/creature in a Santa hat on a purple background. Festive animal."
+ },
+ "anim/holiday/15878": {
+  "file_id": 15878,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull-red-eyes",
+  "description": "A white skull with red eyes on a dark background. Spooky motif."
+ },
+ "anim/holiday/15879": {
+  "file_id": 15879,
+  "category": "holiday",
+  "type": "anim",
+  "name": "clown-face",
+  "description": "A white clown/joker face with a creepy grin on dark. Unsettling character."
+ },
+ "anim/holiday/15880": {
+  "file_id": 15880,
+  "category": "holiday",
+  "type": "anim",
+  "name": "yellow-blob",
+  "description": "A yellow face/blob with little hearts on a dark background. Cute creature."
+ },
+ "anim/holiday/15881": {
+  "file_id": 15881,
+  "category": "holiday",
+  "type": "anim",
+  "name": "heart-outline-2",
+  "description": "A red heart outline on a dark background. Simple love icon."
+ },
+ "anim/holiday/15882": {
+  "file_id": 15882,
+  "category": "holiday",
+  "type": "anim",
+  "name": "confetti",
+  "description": "A colorful party scene with confetti on a dark background. Celebration motif."
+ },
+ "anim/holiday/15883": {
+  "file_id": 15883,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-6",
+  "description": "A pink 3D heart on a dark background. Love icon."
+ },
+ "anim/holiday/15884": {
+  "file_id": 15884,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-7",
+  "description": "A pink heart on a pink background. Love icon."
+ },
+ "anim/holiday/15885": {
+  "file_id": 15885,
+  "category": "holiday",
+  "type": "anim",
+  "name": "light-heart",
+  "description": "A heart outlined in colorful lights on a dark background. Festive love decoration."
+ },
+ "anim/holiday/15886": {
+  "file_id": 15886,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-drip",
+  "description": "A pink melting/drip scene on a pink background. Abstract motif."
+ },
+ "anim/holiday/15887": {
+  "file_id": 15887,
+  "category": "holiday",
+  "type": "anim",
+  "name": "purple-gem",
+  "description": "A pink-purple gem/crystal on a dark background. Jewel motif."
+ },
+ "anim/holiday/15888": {
+  "file_id": 15888,
+  "category": "holiday",
+  "type": "anim",
+  "name": "black-mask",
+  "description": "A black skull/mask on a teal background. Spooky face."
+ },
+ "anim/holiday/15889": {
+  "file_id": 15889,
+  "category": "holiday",
+  "type": "anim",
+  "name": "maroon-hill",
+  "description": "A dark red hill/wave shape on a dark background. Abstract form."
+ },
+ "anim/holiday/15890": {
+  "file_id": 15890,
+  "category": "holiday",
+  "type": "anim",
+  "name": "love-face",
+  "description": "A pink face with heart eyes on a pink background. Love-struck emoji."
+ },
+ "anim/emoji/32705": {
+  "file_id": 32705,
+  "category": "emoji",
+  "type": "anim",
+  "name": "content-face",
+  "description": "A yellow smiling/content face on a yellow background. Happy emoji."
+ },
+ "anim/emoji/32706": {
+  "file_id": 32706,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cat-heart",
+  "description": "A white cat with a heart on a pink background. Cute love motif."
+ },
+ "anim/emoji/32707": {
+  "file_id": 32707,
+  "category": "emoji",
+  "type": "anim",
+  "name": "hamster",
+  "description": "A tan hamster/mouse face on a dark background. Cute rodent."
+ },
+ "anim/emoji/32708": {
+  "file_id": 32708,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-owl",
+  "description": "A green owl/frog face on a dark background. Quirky creature."
+ },
+ "anim/emoji/32709": {
+  "file_id": 32709,
+  "category": "emoji",
+  "type": "anim",
+  "name": "fox",
+  "description": "An orange fox face on a brown background. Woodland animal."
+ },
+ "anim/emoji/32710": {
+  "file_id": 32710,
+  "category": "emoji",
+  "type": "anim",
+  "name": "orange-fox",
+  "description": "An orange fox/cat face on a pink background. Cute animal."
+ },
+ "anim/emoji/15891": {
+  "file_id": 15891,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-face",
+  "description": "A pink face/pig with blue eyes on a pink background. Cute creature."
+ },
+ "anim/emoji/15892": {
+  "file_id": 15892,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-emoji",
+  "description": "A pink face/creature on a dark background. Cute emoji."
+ },
+ "anim/emoji/15893": {
+  "file_id": 15893,
+  "category": "emoji",
+  "type": "anim",
+  "name": "tan-smiley",
+  "description": "A tan smiling face on a tan background. Happy emoji."
+ },
+ "anim/emoji/15894": {
+  "file_id": 15894,
+  "category": "emoji",
+  "type": "anim",
+  "name": "smiling-heart",
+  "description": "A red heart with a grinning face on a dark background. Happy love emoji."
+ },
+ "anim/emoji/15895": {
+  "file_id": 15895,
+  "category": "emoji",
+  "type": "anim",
+  "name": "orange-face",
+  "description": "A round yellow/orange face on a dark background. Simple emoji."
+ },
+ "anim/emoji/15896": {
+  "file_id": 15896,
+  "category": "emoji",
+  "type": "anim",
+  "name": "happy-orange",
+  "description": "An orange face with blushing cheeks on orange. Cheerful emoji."
+ },
+ "anim/emoji/15897": {
+  "file_id": 15897,
+  "category": "emoji",
+  "type": "anim",
+  "name": "number-one",
+  "description": "A bold '1' on a red-and-black flag on blue. Number/first motif."
+ },
+ "anim/emoji/15898": {
+  "file_id": 15898,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull",
+  "description": "A white skull on a dark background. Bony emoji."
+ },
+ "anim/emoji/15899": {
+  "file_id": 15899,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-rose",
+  "description": "A red rose flower on a dark background. Floral motif."
+ },
+ "anim/emoji/15900": {
+  "file_id": 15900,
+  "category": "emoji",
+  "type": "anim",
+  "name": "grinning-skull",
+  "description": "A white skull grinning on a dark background. Spooky emoji."
+ },
+ "anim/emoji/15901": {
+  "file_id": 15901,
+  "category": "emoji",
+  "type": "anim",
+  "name": "crying-skull",
+  "description": "A white skull with blue tears on an orange background. Sad-spooky emoji."
+ },
+ "anim/emoji/15902": {
+  "file_id": 15902,
+  "category": "emoji",
+  "type": "anim",
+  "name": "angry-red",
+  "description": "A red face with bared teeth on a dark background. Angry emoji."
+ },
+ "anim/emoji/15903": {
+  "file_id": 15903,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-2",
+  "description": "A pink-and-white skull on a red background. Spooky emoji."
+ },
+ "anim/emoji/15904": {
+  "file_id": 15904,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-face",
+  "description": "A red glitch-distorted face on a white background. Trippy emoji."
+ },
+ "anim/emoji/15905": {
+  "file_id": 15905,
+  "category": "emoji",
+  "type": "anim",
+  "name": "brown-smiley",
+  "description": "A brown cookie-like smiling face on a dark background. Friendly emoji."
+ },
+ "anim/emoji/15906": {
+  "file_id": 15906,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-3",
+  "description": "A white skull on a dark background. Spooky emoji."
+ },
+ "anim/emoji/15907": {
+  "file_id": 15907,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-face",
+  "description": "A round white face/skull on a dark background. Pale emoji."
+ },
+ "anim/emoji/15908": {
+  "file_id": 15908,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-2",
+  "description": "A blue-and-red glitch face/fish on a dark background. Distorted graphic."
+ },
+ "anim/emoji/15909": {
+  "file_id": 15909,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-face",
+  "description": "A green face/blob with a grin on a dark background. Goofy emoji."
+ },
+ "anim/emoji/15910": {
+  "file_id": 15910,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-smiley",
+  "description": "A cyan-blue smiling face on a white background. Cheerful emoji."
+ },
+ "anim/emoji/15911": {
+  "file_id": 15911,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-smiley",
+  "description": "A red-and-blue 3D-glitch smiley on white. Trippy happy emoji."
+ },
+ "anim/emoji/15912": {
+  "file_id": 15912,
+  "category": "emoji",
+  "type": "anim",
+  "name": "chattering-teeth",
+  "description": "A pink mouth showing chattering teeth on tan. Nervous/cold emoji."
+ },
+ "anim/emoji/15913": {
+  "file_id": 15913,
+  "category": "emoji",
+  "type": "anim",
+  "name": "heart-outline",
+  "description": "A pink-and-cyan heart outline on a dark background. Simple love icon."
+ },
+ "anim/emoji/15914": {
+  "file_id": 15914,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-face-2",
+  "description": "A green face with red eyes on a green background. Spooky emoji."
+ },
+ "anim/emoji/15915": {
+  "file_id": 15915,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-robot",
+  "description": "A gray robot/machine box on a dark background. Mechanical emoji."
+ },
+ "anim/emoji/15916": {
+  "file_id": 15916,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart",
+  "description": "A red 3D heart on a white background. Love symbol."
+ },
+ "anim/emoji/15917": {
+  "file_id": 15917,
+  "category": "emoji",
+  "type": "anim",
+  "name": "party-heart",
+  "description": "A gold heart with confetti streamers on a dark background. Celebratory love."
+ },
+ "anim/emoji/15918": {
+  "file_id": 15918,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-snake",
+  "description": "A green snake/worm on a dark background. Slithery creature."
+ },
+ "anim/emoji/15919": {
+  "file_id": 15919,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart",
+  "description": "A pink 3D heart on a pink background. Love icon."
+ },
+ "anim/emoji/15920": {
+  "file_id": 15920,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-ghost",
+  "description": "A white ghost on a dark background. Spooky spirit."
+ },
+ "anim/emoji/15921": {
+  "file_id": 15921,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-v",
+  "description": "A red heart/V shape on a dark background. Minimal love motif."
+ },
+ "anim/emoji/15922": {
+  "file_id": 15922,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-box",
+  "description": "A red square face/smiley on a dark background. Blocky emoji."
+ },
+ "anim/emoji/15923": {
+  "file_id": 15923,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dark-heart",
+  "description": "A dark red heart with sparkles on a dark background. Moody love motif."
+ },
+ "anim/emoji/15924": {
+  "file_id": 15924,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-grin",
+  "description": "A green grinning face on a dark background. Goofy emoji."
+ },
+ "anim/emoji/15925": {
+  "file_id": 15925,
+  "category": "emoji",
+  "type": "anim",
+  "name": "yellow-skull",
+  "description": "A yellow skull on a dark background. Spooky emoji."
+ },
+ "anim/emoji/15926": {
+  "file_id": 15926,
+  "category": "emoji",
+  "type": "anim",
+  "name": "lemon-face",
+  "description": "A yellow lemon/face with little hands on a pink background. Citrus character."
+ },
+ "anim/emoji/15927": {
+  "file_id": 15927,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-ghost",
+  "description": "A gray ghost/figure on a dark background. Simple spooky emoji."
+ },
+ "anim/emoji/15928": {
+  "file_id": 15928,
+  "category": "emoji",
+  "type": "anim",
+  "name": "man-face",
+  "description": "A man's face with gray hair and a blue shirt on dark. Person portrait."
+ },
+ "anim/emoji/15929": {
+  "file_id": 15929,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pig-face",
+  "description": "A pink pig face on a dark background. Farm animal emoji."
+ },
+ "anim/emoji/15930": {
+  "file_id": 15930,
+  "category": "emoji",
+  "type": "anim",
+  "name": "thumbs-up",
+  "description": "A blue hand giving a thumbs up on white. Approval gesture."
+ },
+ "anim/emoji/15931": {
+  "file_id": 15931,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-bunny",
+  "description": "A pink bunny/cat character with a bow, like My Melody. Cute mascot."
+ },
+ "anim/emoji/15932": {
+  "file_id": 15932,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cap-character",
+  "description": "A character in a green 'H' cap on an orange background. Costumed person."
+ },
+ "anim/emoji/15933": {
+  "file_id": 15933,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-mech",
+  "description": "A gray robot/mech with red eyes on a dark background. Mechanical character."
+ },
+ "anim/emoji/15934": {
+  "file_id": 15934,
+  "category": "emoji",
+  "type": "anim",
+  "name": "brown-bear",
+  "description": "A brown bear/monkey in a Santa hat on white. Festive animal."
+ },
+ "anim/emoji/15935": {
+  "file_id": 15935,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-ghost-2",
+  "description": "A white ghost on a teal background. Spooky spirit."
+ },
+ "anim/emoji/15936": {
+  "file_id": 15936,
+  "category": "emoji",
+  "type": "anim",
+  "name": "iron-man",
+  "description": "A red-and-gold Iron Man helmet on a dark background. Superhero mask."
+ },
+ "anim/emoji/15937": {
+  "file_id": 15937,
+  "category": "emoji",
+  "type": "anim",
+  "name": "steamed-bun",
+  "description": "A white steamed bun/face on a dark background. Cute food emoji."
+ },
+ "anim/emoji/15938": {
+  "file_id": 15938,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-smiley",
+  "description": "A round white smiling face on a blue background. Happy emoji."
+ },
+ "anim/emoji/15939": {
+  "file_id": 15939,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-mech",
+  "description": "A red mech/faceplate with panels on a dark background. Mechanical motif."
+ },
+ "anim/emoji/15940": {
+  "file_id": 15940,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dark-heart",
+  "description": "A dark red heart on a dark background. Moody love motif."
+ },
+ "anim/emoji/15941": {
+  "file_id": 15941,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pacman-maze",
+  "description": "A yellow Pac-Man maze board on a dark background. Arcade motif."
+ },
+ "anim/emoji/15942": {
+  "file_id": 15942,
+  "category": "emoji",
+  "type": "anim",
+  "name": "maroon-heart",
+  "description": "A maroon heart on a dark background. Love icon."
+ },
+ "anim/emoji/15943": {
+  "file_id": 15943,
+  "category": "emoji",
+  "type": "anim",
+  "name": "lazy-egg",
+  "description": "A tired yellow egg-yolk face like Gudetama on orange. Sleepy emoji."
+ },
+ "anim/emoji/15944": {
+  "file_id": 15944,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-2",
+  "description": "A red 3D heart on a blue background. Love symbol."
+ },
+ "anim/emoji/15945": {
+  "file_id": 15945,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-zigzag",
+  "description": "A small green zigzag/snake on a dark background. Minimal creature."
+ },
+ "anim/emoji/15946": {
+  "file_id": 15946,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rainbow-face",
+  "description": "A smiling face inside a rainbow border on a dark background. Colorful emoji."
+ },
+ "anim/emoji/15947": {
+  "file_id": 15947,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-3",
+  "description": "A red 3D heart on a dark background. Love symbol."
+ },
+ "anim/emoji/15948": {
+  "file_id": 15948,
+  "category": "emoji",
+  "type": "anim",
+  "name": "brown-creature",
+  "description": "A brown triangular creature with red eyes on purple. Quirky character."
+ },
+ "anim/emoji/15949": {
+  "file_id": 15949,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-heart",
+  "description": "A purple-maroon heart on a dark background. Love icon."
+ },
+ "anim/emoji/15950": {
+  "file_id": 15950,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-clown",
+  "description": "A pink clown/troll face with goofy features on cyan. Funny emoji."
+ },
+ "anim/emoji/15951": {
+  "file_id": 15951,
+  "category": "emoji",
+  "type": "anim",
+  "name": "yellow-circle",
+  "description": "A solid yellow circle/sun on a dark background. Minimal shape."
+ },
+ "anim/emoji/15952": {
+  "file_id": 15952,
+  "category": "emoji",
+  "type": "anim",
+  "name": "panda",
+  "description": "A white-and-black panda face framed in a box on gray. Cute bear emoji."
+ },
+ "anim/emoji/15953": {
+  "file_id": 15953,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-ten",
+  "description": "A white skull with the number '10' on an orange background. Spooky countdown."
+ },
+ "anim/emoji/15954": {
+  "file_id": 15954,
+  "category": "emoji",
+  "type": "anim",
+  "name": "checker-glitch",
+  "description": "A red-and-white checkered/glitch grid on a dark background. Abstract pattern."
+ },
+ "anim/emoji/15955": {
+  "file_id": 15955,
+  "category": "emoji",
+  "type": "anim",
+  "name": "helmet-smiley",
+  "description": "A gray smiling face wearing a yellow helmet on dark. Worker emoji."
+ },
+ "anim/emoji/15956": {
+  "file_id": 15956,
+  "category": "emoji",
+  "type": "anim",
+  "name": "hanging-heart",
+  "description": "A red heart hanging from a hook on a gray background. Hanging-love motif."
+ },
+ "anim/emoji/15957": {
+  "file_id": 15957,
+  "category": "emoji",
+  "type": "anim",
+  "name": "faint-heart",
+  "description": "A faint dark-red heart on a dark background. Subtle love motif."
+ },
+ "anim/emoji/15958": {
+  "file_id": 15958,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-zigzag",
+  "description": "A small purple zigzag mark on a dark background. Minimal glyph."
+ },
+ "anim/emoji/15959": {
+  "file_id": 15959,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-box-smiley",
+  "description": "A red square face with a smile on a dark background. Blocky emoji."
+ },
+ "anim/emoji/15960": {
+  "file_id": 15960,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-grin",
+  "description": "A blue grinning mouth/face outline on a dark background. Cheeky emoji."
+ },
+ "anim/emoji/15961": {
+  "file_id": 15961,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-splash",
+  "description": "A white paint splash/blob on a dark background. Messy graphic."
+ },
+ "anim/emoji/15962": {
+  "file_id": 15962,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-flower",
+  "description": "A white flower with an orange center on green. Daisy motif."
+ },
+ "anim/emoji/15963": {
+  "file_id": 15963,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-red-eyes",
+  "description": "A white face with glowing red eyes on a dark background. Eerie emoji."
+ },
+ "anim/emoji/15964": {
+  "file_id": 15964,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-hair-girl",
+  "description": "A pink-haired girl/clown face on a dark background. Character portrait."
+ },
+ "anim/emoji/15965": {
+  "file_id": 15965,
+  "category": "emoji",
+  "type": "anim",
+  "name": "teddy-heart",
+  "description": "A brown teddy bear with a heart on a dark background. Affectionate plush."
+ },
+ "anim/emoji/15966": {
+  "file_id": 15966,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-heart-2",
+  "description": "A pink 3D heart on a dark background. Love icon."
+ },
+ "anim/emoji/15967": {
+  "file_id": 15967,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gold-laugh",
+  "description": "A golden laughing face on a dark background. Joyful emoji."
+ },
+ "anim/emoji/15968": {
+  "file_id": 15968,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-mark",
+  "description": "A small purple zigzag/mark on a dark background. Minimal glyph."
+ },
+ "anim/emoji/15969": {
+  "file_id": 15969,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-grin",
+  "description": "A pink face with a toothy grin on a dark background. Goofy emoji."
+ },
+ "anim/emoji/15970": {
+  "file_id": 15970,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-monster",
+  "description": "A pink-and-green creature with horns on a dark background. Quirky monster."
+ },
+ "anim/emoji/15971": {
+  "file_id": 15971,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-screen",
+  "description": "A blue screen/panel with a line. Minimal display motif."
+ },
+ "anim/emoji/15972": {
+  "file_id": 15972,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-box",
+  "description": "A gray boxy face/toaster on a tan background. Deadpan emoji."
+ },
+ "anim/emoji/15973": {
+  "file_id": 15973,
+  "category": "emoji",
+  "type": "anim",
+  "name": "lips-teeth",
+  "description": "A red face with lips and a blue toothy mouth on dark. Expressive emoji."
+ },
+ "anim/emoji/15974": {
+  "file_id": 15974,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-grin-2",
+  "description": "A pink face with a toothy grin on a dark background. Goofy emoji."
+ },
+ "anim/emoji/15975": {
+  "file_id": 15975,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-line-face",
+  "description": "A red line-art face on a dark background. Minimal expression emoji."
+ },
+ "anim/emoji/15976": {
+  "file_id": 15976,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-heart-4",
+  "description": "A red 3D heart on a purple background. Love symbol."
+ },
+ "anim/emoji/15977": {
+  "file_id": 15977,
+  "category": "emoji",
+  "type": "anim",
+  "name": "broken-heart",
+  "description": "A red heart cracked down the middle on gray. Heartbreak emoji."
+ },
+ "anim/emoji/15978": {
+  "file_id": 15978,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-robot",
+  "description": "A red robot face with a gold tooth on a red background. Mechanical character."
+ },
+ "anim/emoji/15979": {
+  "file_id": 15979,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-creature",
+  "description": "A white creature/tooth on a teal background. Cute mascot."
+ },
+ "anim/emoji/15980": {
+  "file_id": 15980,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cupid-heart",
+  "description": "A red heart with an arrow and wings on a dark background. Cupid's-arrow love."
+ },
+ "anim/emoji/15981": {
+  "file_id": 15981,
+  "category": "emoji",
+  "type": "anim",
+  "name": "envelope",
+  "description": "A white-and-pink envelope/love letter on pink. Message motif."
+ },
+ "anim/emoji/15982": {
+  "file_id": 15982,
+  "category": "emoji",
+  "type": "anim",
+  "name": "silver-heart",
+  "description": "A metallic silver heart/badge on a dark background. Shiny love emblem."
+ },
+ "anim/emoji/15983": {
+  "file_id": 15983,
+  "category": "emoji",
+  "type": "anim",
+  "name": "melting-heart",
+  "description": "A pink heart melting with a drip on a dark background. Sweet love motif."
+ },
+ "anim/emoji/15984": {
+  "file_id": 15984,
+  "category": "emoji",
+  "type": "anim",
+  "name": "gray-grid",
+  "description": "A gray grid with one green cell on a dark background. Pixel pattern."
+ },
+ "anim/emoji/15985": {
+  "file_id": 15985,
+  "category": "emoji",
+  "type": "anim",
+  "name": "tiny-dot",
+  "description": "A tiny white dot on a dark background. Minimal speck."
+ },
+ "anim/emoji/15986": {
+  "file_id": 15986,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cupid-heart-2",
+  "description": "A red heart struck by an arrow on a purple background. Cupid's-arrow love."
+ },
+ "anim/emoji/15987": {
+  "file_id": 15987,
+  "category": "emoji",
+  "type": "anim",
+  "name": "magenta-heart",
+  "description": "A bright magenta 3D heart on a dark background. Vivid love icon."
+ },
+ "anim/emoji/15988": {
+  "file_id": 15988,
+  "category": "emoji",
+  "type": "anim",
+  "name": "smiling-heart-2",
+  "description": "A red heart with a grinning face on a dark background. Happy love emoji."
+ },
+ "anim/emoji/15989": {
+  "file_id": 15989,
+  "category": "emoji",
+  "type": "anim",
+  "name": "robot-screen",
+  "description": "A white robot with a colorful screen face on dark. Cute bot."
+ },
+ "anim/emoji/15990": {
+  "file_id": 15990,
+  "category": "emoji",
+  "type": "anim",
+  "name": "rainbow-heart",
+  "description": "A heart filled with rainbow stripes on a dark background. Colorful love icon."
+ },
+ "anim/emoji/15991": {
+  "file_id": 15991,
+  "category": "emoji",
+  "type": "anim",
+  "name": "book",
+  "description": "An open book/notebook on a tan background. Reading motif."
+ },
+ "anim/emoji/15992": {
+  "file_id": 15992,
+  "category": "emoji",
+  "type": "anim",
+  "name": "heart-eyes",
+  "description": "A yellow face with red heart eyes on yellow. 'In love' emoji."
  }
 }
