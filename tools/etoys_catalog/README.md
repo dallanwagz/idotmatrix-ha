@@ -70,7 +70,7 @@ The same API serves a **separate catalog per panel size**. The app's `category_n
 `etoys_api.category_name_for`): 16×16 and 32×32 use `<group>_IDM` for both types; 64×64 uses
 `<group>_IDM` for animations but a single `iDotMatrix` pool for images. Each size lives in its own
 folders (`library_16/`, `library_images_16/`, `index_16.*`, `captions_16.json`, …; 32 keeps the
-unsuffixed names).
+unsuffixed names). **Both the 32×32 and 16×16 catalogs are fully captioned** (name + description per asset).
 
 **16×16 catalog — 1,099 assets** (verified `totalCount` == local):
 
