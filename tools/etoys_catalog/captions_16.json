@@ -1398,5 +1398,1125 @@
   "type": "anim",
   "name": "pink-bear",
   "description": "A pink bear face on a pink background. Cuddly animal."
+ },
+ "anim/daily/15698": {
+  "file_id": 15698,
+  "category": "daily",
+  "type": "anim",
+  "name": "sunset-hills",
+  "description": "Purple-and-orange mountains at sunset. Landscape scene."
+ },
+ "anim/daily/15699": {
+  "file_id": 15699,
+  "category": "daily",
+  "type": "anim",
+  "name": "turtle-face",
+  "description": "A tan turtle/creature face on a green background. Animal portrait."
+ },
+ "anim/daily/15700": {
+  "file_id": 15700,
+  "category": "daily",
+  "type": "anim",
+  "name": "dungeon",
+  "description": "A dark dungeon/altar room on a checkered floor. Spooky interior."
+ },
+ "anim/daily/15701": {
+  "file_id": 15701,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-figure",
+  "description": "A red figure/mark on a teal background. Minimal character."
+ },
+ "anim/daily/15702": {
+  "file_id": 15702,
+  "category": "daily",
+  "type": "anim",
+  "name": "green-robot",
+  "description": "A green robot/alien creature on a dark background. Mechanical character."
+ },
+ "anim/daily/15703": {
+  "file_id": 15703,
+  "category": "daily",
+  "type": "anim",
+  "name": "among-us",
+  "description": "A green Among Us crewmate with a camera on white. Game mascot."
+ },
+ "anim/daily/15704": {
+  "file_id": 15704,
+  "category": "daily",
+  "type": "anim",
+  "name": "orange-maze",
+  "description": "An orange maze/swirl pattern on a dark background. Abstract design."
+ },
+ "anim/daily/15705": {
+  "file_id": 15705,
+  "category": "daily",
+  "type": "anim",
+  "name": "pink-popsicle",
+  "description": "A pink popsicle/paint shape on a blue background. Sweet/abstract motif."
+ },
+ "anim/daily/15706": {
+  "file_id": 15706,
+  "category": "daily",
+  "type": "anim",
+  "name": "winged-heart",
+  "description": "A red heart with wings on a dark background. Flying-love motif."
+ },
+ "anim/daily/15707": {
+  "file_id": 15707,
+  "category": "daily",
+  "type": "anim",
+  "name": "flying-heart",
+  "description": "A pink winged heart on a blue sky background. Love-takes-flight motif."
+ },
+ "anim/daily/15708": {
+  "file_id": 15708,
+  "category": "daily",
+  "type": "anim",
+  "name": "heart-outline",
+  "description": "A red heart outline on a dark background. Simple love icon."
+ },
+ "anim/daily/15709": {
+  "file_id": 15709,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-heart",
+  "description": "A red-and-white heart on a gray background. Love symbol."
+ },
+ "anim/daily/15710": {
+  "file_id": 15710,
+  "category": "daily",
+  "type": "anim",
+  "name": "neon-heart",
+  "description": "A glowing neon pink-and-blue heart on dark. Vibrant love icon."
+ },
+ "anim/daily/15711": {
+  "file_id": 15711,
+  "category": "daily",
+  "type": "anim",
+  "name": "red-rose",
+  "description": "A red rose/flower on a gray background. Floral motif."
+ },
+ "anim/daily/15712": {
+  "file_id": 15712,
+  "category": "daily",
+  "type": "anim",
+  "name": "gray-ghost",
+  "description": "A gray ghost on a dark background. Spooky spirit."
+ },
+ "anim/daily/15713": {
+  "file_id": 15713,
+  "category": "daily",
+  "type": "anim",
+  "name": "blue-ghost",
+  "description": "A blue Pac-Man ghost on a red background. Arcade enemy."
+ },
+ "anim/daily/15714": {
+  "file_id": 15714,
+  "category": "daily",
+  "type": "anim",
+  "name": "pacman",
+  "description": "A yellow Pac-Man on a dark background. Arcade mascot."
+ },
+ "anim/daily/15715": {
+  "file_id": 15715,
+  "category": "daily",
+  "type": "anim",
+  "name": "yellow-creature",
+  "description": "A yellow/orange creature/camel on a blue background. Quirky animal."
+ },
+ "anim/daily/15716": {
+  "file_id": 15716,
+  "category": "daily",
+  "type": "anim",
+  "name": "fire",
+  "description": "An orange fire/explosion on a dark background. Flame motif."
+ },
+ "anim/daily/15717": {
+  "file_id": 15717,
+  "category": "daily",
+  "type": "anim",
+  "name": "mushroom",
+  "description": "A red-and-white mushroom/toadstool on a dark background. Fungi icon."
+ },
+ "anim/holiday/15718": {
+  "file_id": 15718,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree",
+  "description": "A decorated Christmas tree with lights on dark. Festive evergreen."
+ },
+ "anim/holiday/15719": {
+  "file_id": 15719,
+  "category": "holiday",
+  "type": "anim",
+  "name": "wreath",
+  "description": "A green Christmas wreath with a red bow. Holiday door decoration."
+ },
+ "anim/holiday/15720": {
+  "file_id": 15720,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa",
+  "description": "Santa Claus on a blue starry background. Christmas character."
+ },
+ "anim/holiday/15721": {
+  "file_id": 15721,
+  "category": "holiday",
+  "type": "anim",
+  "name": "house",
+  "description": "A brown house on a red background. Home icon."
+ },
+ "anim/holiday/15722": {
+  "file_id": 15722,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-2",
+  "description": "A red-suited Santa Claus on a blue background. Holiday mascot."
+ },
+ "anim/holiday/15723": {
+  "file_id": 15723,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-room",
+  "description": "A Christmas tree with presents in a room on tan. Festive interior."
+ },
+ "anim/holiday/15724": {
+  "file_id": 15724,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman",
+  "description": "A blue-and-white snowman on a dark background. Winter character."
+ },
+ "anim/holiday/15725": {
+  "file_id": 15725,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree",
+  "description": "A simple green Christmas tree on a dark background. Evergreen."
+ },
+ "anim/holiday/15726": {
+  "file_id": 15726,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer",
+  "description": "A brown reindeer on a green background. Antlered animal."
+ },
+ "anim/holiday/15727": {
+  "file_id": 15727,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-gifts",
+  "description": "A Christmas tree with gifts on a dark background. Holiday scene."
+ },
+ "anim/holiday/15728": {
+  "file_id": 15728,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-2",
+  "description": "A snowman wearing a Santa hat on a dark background. Festive figure."
+ },
+ "anim/holiday/15729": {
+  "file_id": 15729,
+  "category": "holiday",
+  "type": "anim",
+  "name": "rudolph",
+  "description": "A reindeer face with a red nose on dark. Rudolph the red-nosed reindeer."
+ },
+ "anim/holiday/15730": {
+  "file_id": 15730,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-unicorn",
+  "description": "A pink unicorn/horse on a purple background. Magical creature."
+ },
+ "anim/holiday/15731": {
+  "file_id": 15731,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cow",
+  "description": "A black-and-white cow on a pink background. Farm animal."
+ },
+ "anim/holiday/15732": {
+  "file_id": 15732,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-2",
+  "description": "A decorated Christmas tree on a pink background. Festive evergreen."
+ },
+ "anim/holiday/15733": {
+  "file_id": 15733,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-3",
+  "description": "A white snowman with a scarf on a blue background. Cheerful winter character."
+ },
+ "anim/holiday/15734": {
+  "file_id": 15734,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-gift",
+  "description": "A blue wrapped present on a dark background. Gift motif."
+ },
+ "anim/holiday/15735": {
+  "file_id": 15735,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-star",
+  "description": "A Christmas tree topped with a star/cross on dark. Festive tree."
+ },
+ "anim/holiday/15736": {
+  "file_id": 15736,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowy-night",
+  "description": "A snowy night landscape on a dark background. Winter scene."
+ },
+ "anim/holiday/15737": {
+  "file_id": 15737,
+  "category": "holiday",
+  "type": "anim",
+  "name": "purple-heart",
+  "description": "A purple heart on a cream background. Love icon."
+ },
+ "anim/holiday/15738": {
+  "file_id": 15738,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dark-light",
+  "description": "A dark scene with a small point of light. Near-empty/candle motif."
+ },
+ "anim/holiday/15739": {
+  "file_id": 15739,
+  "category": "holiday",
+  "type": "anim",
+  "name": "nurse",
+  "description": "A nurse/girl with a red cross cap on blue. Healthcare character."
+ },
+ "anim/holiday/15740": {
+  "file_id": 15740,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-alien",
+  "description": "A blue alien/creature on a dark background. Quirky extraterrestrial."
+ },
+ "anim/holiday/15741": {
+  "file_id": 15741,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tree-2",
+  "description": "A small green Christmas tree on a dark background. Evergreen."
+ },
+ "anim/holiday/15742": {
+  "file_id": 15742,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-window",
+  "description": "A snowman beside a window on a cyan background. Winter scene."
+ },
+ "anim/holiday/15743": {
+  "file_id": 15743,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-figure",
+  "description": "A white-bearded Santa/figure on a pink background. Festive character."
+ },
+ "anim/holiday/15744": {
+  "file_id": 15744,
+  "category": "holiday",
+  "type": "anim",
+  "name": "yoda-elf",
+  "description": "A green Yoda/elf face in a Santa hat on blue. Festive creature."
+ },
+ "anim/holiday/15745": {
+  "file_id": 15745,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-heart-2",
+  "description": "A red 3D heart on a dark background. Love symbol."
+ },
+ "anim/holiday/15746": {
+  "file_id": 15746,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-mushroom",
+  "description": "A white mushroom/cloud shape on a dark background. Pale form."
+ },
+ "anim/holiday/15747": {
+  "file_id": 15747,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-3",
+  "description": "A standing Santa Claus on a cream background. Christmas character."
+ },
+ "anim/holiday/15748": {
+  "file_id": 15748,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-bird",
+  "description": "A red bird/creature in a Santa hat on dark. Festive critter."
+ },
+ "anim/holiday/15749": {
+  "file_id": 15749,
+  "category": "holiday",
+  "type": "anim",
+  "name": "baseball-glove",
+  "description": "A brown baseball glove/mitt on a gray background. Sports gear."
+ },
+ "anim/holiday/15750": {
+  "file_id": 15750,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gold-bell",
+  "description": "A gold Christmas bell with a bow on dark. Festive chime."
+ },
+ "anim/holiday/15751": {
+  "file_id": 15751,
+  "category": "holiday",
+  "type": "anim",
+  "name": "wood-face",
+  "description": "A brown reindeer/wooden face on an orange background. Carved-face motif."
+ },
+ "anim/holiday/15752": {
+  "file_id": 15752,
+  "category": "holiday",
+  "type": "anim",
+  "name": "campfire",
+  "description": "A glowing campfire on a dark background. Fire/warmth motif."
+ },
+ "anim/holiday/15753": {
+  "file_id": 15753,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-face",
+  "description": "A white snowman/ghost face on a blue background. Winter character."
+ },
+ "anim/holiday/15754": {
+  "file_id": 15754,
+  "category": "holiday",
+  "type": "anim",
+  "name": "leaping-figure",
+  "description": "A brown figure leaping on a blue background. Action sprite."
+ },
+ "anim/holiday/15755": {
+  "file_id": 15755,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer-2",
+  "description": "A brown reindeer face on a blue background. Antlered animal."
+ },
+ "anim/holiday/15756": {
+  "file_id": 15756,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-dog",
+  "description": "A brown dog wearing a Santa hat on a blue background. Festive pet."
+ },
+ "anim/holiday/15757": {
+  "file_id": 15757,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dark-red",
+  "description": "A mostly dark scene with red accents. Near-empty/moody frame."
+ },
+ "anim/holiday/15758": {
+  "file_id": 15758,
+  "category": "holiday",
+  "type": "anim",
+  "name": "fireplace-stockings",
+  "description": "A fireplace hung with stockings on a brown background. Cozy Christmas hearth."
+ },
+ "anim/holiday/15759": {
+  "file_id": 15759,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-hat",
+  "description": "A red Santa hat on a blue background. Festive headwear."
+ },
+ "anim/holiday/15760": {
+  "file_id": 15760,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-cat",
+  "description": "A white cat outline on a dark background. Minimal feline."
+ },
+ "anim/holiday/15761": {
+  "file_id": 15761,
+  "category": "holiday",
+  "type": "anim",
+  "name": "halloween-cat",
+  "description": "A black cat with pumpkins on a purple background. Halloween scene."
+ },
+ "anim/holiday/15762": {
+  "file_id": 15762,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pumpkin-2",
+  "description": "An orange pumpkin on a teal background. Autumn icon."
+ },
+ "anim/holiday/15763": {
+  "file_id": 15763,
+  "category": "holiday",
+  "type": "anim",
+  "name": "orange-ghost",
+  "description": "An orange ghost/flame shape on a dark background. Spooky motif."
+ },
+ "anim/holiday/15764": {
+  "file_id": 15764,
+  "category": "holiday",
+  "type": "anim",
+  "name": "bat",
+  "description": "A purple bat on a dark background. Halloween creature."
+ },
+ "anim/holiday/15765": {
+  "file_id": 15765,
+  "category": "holiday",
+  "type": "anim",
+  "name": "zombie",
+  "description": "A green zombie on a red background. Spooky monster."
+ },
+ "anim/holiday/15766": {
+  "file_id": 15766,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-ghost",
+  "description": "A white ghost with sparkles on a dark background. Halloween spirit."
+ },
+ "anim/holiday/15767": {
+  "file_id": 15767,
+  "category": "holiday",
+  "type": "anim",
+  "name": "jack-o-lantern",
+  "description": "A smiling jack-o'-lantern on a dark background. Halloween pumpkin."
+ },
+ "anim/holiday/15768": {
+  "file_id": 15768,
+  "category": "holiday",
+  "type": "anim",
+  "name": "bat-2",
+  "description": "A bat with glowing eyes on a dark background. Halloween creature."
+ },
+ "anim/holiday/15769": {
+  "file_id": 15769,
+  "category": "holiday",
+  "type": "anim",
+  "name": "yellow-monster",
+  "description": "A yellow monster/pumpkin face with a grin on dark. Spooky character."
+ },
+ "anim/holiday/15770": {
+  "file_id": 15770,
+  "category": "holiday",
+  "type": "anim",
+  "name": "frankenstein",
+  "description": "A green Frankenstein's-monster face on a dark background. Halloween creature."
+ },
+ "anim/holiday/15771": {
+  "file_id": 15771,
+  "category": "holiday",
+  "type": "anim",
+  "name": "orange-box",
+  "description": "An orange boxy robot/pumpkin face on a dark background. Halloween character."
+ },
+ "anim/holiday/15772": {
+  "file_id": 15772,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull",
+  "description": "A white skull on a dark background. Bony Halloween motif."
+ },
+ "anim/holiday/15773": {
+  "file_id": 15773,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull-2",
+  "description": "A white skull/skeleton with red eyes on dark. Spooky motif."
+ },
+ "anim/holiday/15774": {
+  "file_id": 15774,
+  "category": "holiday",
+  "type": "anim",
+  "name": "vampire-teeth",
+  "description": "A vampire mouth with red fangs on a dark background. Spooky motif."
+ },
+ "anim/holiday/15775": {
+  "file_id": 15775,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pumpkin-3",
+  "description": "A jack-o'-lantern pumpkin on a brown background. Halloween icon."
+ },
+ "anim/holiday/15776": {
+  "file_id": 15776,
+  "category": "holiday",
+  "type": "anim",
+  "name": "grim-reaper",
+  "description": "A dark grim-reaper/cloaked figure on a dark background. Spooky character."
+ },
+ "anim/holiday/15777": {
+  "file_id": 15777,
+  "category": "holiday",
+  "type": "anim",
+  "name": "witch-pumpkin",
+  "description": "A jack-o'-lantern wearing a witch hat on cyan. Halloween mashup."
+ },
+ "anim/holiday/15778": {
+  "file_id": 15778,
+  "category": "holiday",
+  "type": "anim",
+  "name": "jack-o-lantern-2",
+  "description": "A jack-o'-lantern pumpkin on a purple background. Halloween icon."
+ },
+ "anim/holiday/15779": {
+  "file_id": 15779,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-ghost-2",
+  "description": "A white ghost on a dark background. Halloween spirit."
+ },
+ "anim/holiday/15780": {
+  "file_id": 15780,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skeleton",
+  "description": "A white-skulled skeleton figure on a purple background. Halloween character."
+ },
+ "anim/holiday/15781": {
+  "file_id": 15781,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-devil",
+  "description": "A red devil/demon face on a dark background. Spooky character."
+ },
+ "anim/holiday/15782": {
+  "file_id": 15782,
+  "category": "holiday",
+  "type": "anim",
+  "name": "purple-zombie",
+  "description": "A purple zombie/witch creature on a dark background. Halloween monster."
+ },
+ "anim/holiday/15783": {
+  "file_id": 15783,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-clown",
+  "description": "A blue Joker/clown face on a gray background. Creepy portrait."
+ },
+ "anim/holiday/15784": {
+  "file_id": 15784,
+  "category": "holiday",
+  "type": "anim",
+  "name": "ghost-red-eyes",
+  "description": "A white ghost with red eyes on a dark background. Spooky spirit."
+ },
+ "anim/holiday/15785": {
+  "file_id": 15785,
+  "category": "holiday",
+  "type": "anim",
+  "name": "candle",
+  "description": "A purple candle/lantern on a dark background. Light motif."
+ },
+ "anim/holiday/15786": {
+  "file_id": 15786,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-hair-figure",
+  "description": "A snowman/robot figure with blue hair on dark. Quirky character."
+ },
+ "anim/holiday/15787": {
+  "file_id": 15787,
+  "category": "holiday",
+  "type": "anim",
+  "name": "sky-hearts",
+  "description": "Pink hearts floating in a cloudy sky. Love-in-the-air motif."
+ },
+ "anim/holiday/15789": {
+  "file_id": 15789,
+  "category": "holiday",
+  "type": "anim",
+  "name": "orange-face",
+  "description": "An orange face/pumpkin with a smile on tan. Cheerful Halloween face."
+ },
+ "anim/holiday/15790": {
+  "file_id": 15790,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cupid-heart",
+  "description": "A pink heart with an arrow on a dark background. Cupid's-arrow love symbol."
+ },
+ "anim/holiday/15791": {
+  "file_id": 15791,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-screen",
+  "description": "A monitor/TV with a pink screen on a dark background. Display motif."
+ },
+ "anim/holiday/15792": {
+  "file_id": 15792,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-rose",
+  "description": "A red rose/flame flower on a tan background. Floral motif."
+ },
+ "anim/holiday/15793": {
+  "file_id": 15793,
+  "category": "holiday",
+  "type": "anim",
+  "name": "year-2020",
+  "description": "The numbers '2020' on a dark background. New-year motif."
+ },
+ "anim/holiday/15794": {
+  "file_id": 15794,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-heart",
+  "description": "A green heart outline on a teal background. Love icon."
+ },
+ "anim/holiday/15795": {
+  "file_id": 15795,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowflake",
+  "description": "A blue snowflake with red dots on a dark background. Winter motif."
+ },
+ "anim/holiday/15796": {
+  "file_id": 15796,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-monster-2",
+  "description": "A green monster/creature with red accents on dark. Spooky critter."
+ },
+ "anim/holiday/15797": {
+  "file_id": 15797,
+  "category": "holiday",
+  "type": "anim",
+  "name": "sunset-heart",
+  "description": "A heart containing a sunset on a dark background. Romantic motif."
+ },
+ "anim/holiday/15798": {
+  "file_id": 15798,
+  "category": "holiday",
+  "type": "anim",
+  "name": "graveyard",
+  "description": "A gray graveyard with tombstones on a dark background. Spooky cemetery."
+ },
+ "anim/holiday/15799": {
+  "file_id": 15799,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-monster",
+  "description": "A pink monster/bat with hearts on a dark background. Cute-spooky creature."
+ },
+ "anim/holiday/15800": {
+  "file_id": 15800,
+  "category": "holiday",
+  "type": "anim",
+  "name": "purple-heart-2",
+  "description": "A purple-pink 3D heart on a purple background. Love icon."
+ },
+ "anim/holiday/15801": {
+  "file_id": 15801,
+  "category": "holiday",
+  "type": "anim",
+  "name": "winged-heart",
+  "description": "A red heart with wings/bird on a blue sky. Flying-love motif."
+ },
+ "anim/holiday/15802": {
+  "file_id": 15802,
+  "category": "holiday",
+  "type": "anim",
+  "name": "heart-wreath",
+  "description": "A red heart encircled by a green wreath on dark. Valentine-holiday blend."
+ },
+ "anim/holiday/15803": {
+  "file_id": 15803,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-vial",
+  "description": "A blue bottle/vial of potion on a light background. Liquid container."
+ },
+ "anim/holiday/15804": {
+  "file_id": 15804,
+  "category": "holiday",
+  "type": "anim",
+  "name": "hand-gift",
+  "description": "A hand holding a blue gift box on a white background. Gift-giving motif."
+ },
+ "anim/holiday/15805": {
+  "file_id": 15805,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gray-spider",
+  "description": "A gray spider/crab on a dark background. Creepy crawler."
+ },
+ "anim/holiday/15806": {
+  "file_id": 15806,
+  "category": "holiday",
+  "type": "anim",
+  "name": "candle-2",
+  "description": "A small white candle on a dark background. Light motif."
+ },
+ "anim/holiday/15807": {
+  "file_id": 15807,
+  "category": "holiday",
+  "type": "anim",
+  "name": "blue-blank",
+  "description": "A solid blue square. Minimal color block."
+ },
+ "anim/holiday/15808": {
+  "file_id": 15808,
+  "category": "holiday",
+  "type": "anim",
+  "name": "bandage-heart",
+  "description": "A red heart with a bandage on a pink background. Healing/mending love."
+ },
+ "anim/holiday/15809": {
+  "file_id": 15809,
+  "category": "holiday",
+  "type": "anim",
+  "name": "teddy-bear",
+  "description": "A brown teddy bear with a heart on a dark background. Affectionate plush."
+ },
+ "anim/holiday/15810": {
+  "file_id": 15810,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-camera",
+  "description": "A pink retro camera on a pink background. Photography icon."
+ },
+ "anim/holiday/15811": {
+  "file_id": 15811,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-grid",
+  "description": "A grid of green-and-gray squares on a dark background. Pixel pattern."
+ },
+ "anim/holiday/15812": {
+  "file_id": 15812,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dark-scene",
+  "description": "A mostly dark scene with a small orange accent. Near-empty frame."
+ },
+ "anim/holiday/15813": {
+  "file_id": 15813,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-2",
+  "description": "A pink-and-white heart on a blue background. Love icon."
+ },
+ "anim/holiday/15814": {
+  "file_id": 15814,
+  "category": "holiday",
+  "type": "anim",
+  "name": "skull-hearts",
+  "description": "A white skull surrounded by little hearts on dark. Spooky-love motif."
+ },
+ "anim/holiday/15815": {
+  "file_id": 15815,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-heart-3",
+  "description": "A red heart with green accents on a purple background. Love symbol."
+ },
+ "anim/holiday/15816": {
+  "file_id": 15816,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cupid-heart-2",
+  "description": "A brown heart struck by an arrow on a dark background. Cupid's-arrow motif."
+ },
+ "anim/holiday/15817": {
+  "file_id": 15817,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cupcake",
+  "description": "A pink cupcake on a purple background. Sweet treat."
+ },
+ "anim/holiday/15818": {
+  "file_id": 15818,
+  "category": "holiday",
+  "type": "anim",
+  "name": "love-letter",
+  "description": "An envelope with a heart on a tan background. Love-letter motif."
+ },
+ "anim/holiday/15819": {
+  "file_id": 15819,
+  "category": "holiday",
+  "type": "anim",
+  "name": "two-hearts",
+  "description": "Two pink hearts on a blue background. Love-struck motif."
+ },
+ "anim/holiday/15820": {
+  "file_id": 15820,
+  "category": "holiday",
+  "type": "anim",
+  "name": "couple",
+  "description": "A man and woman couple on a pink background. Romance scene."
+ },
+ "anim/holiday/15821": {
+  "file_id": 15821,
+  "category": "holiday",
+  "type": "anim",
+  "name": "bunny-heart",
+  "description": "A gray rabbit with a heart on a pink background. Cute love motif."
+ },
+ "anim/holiday/15822": {
+  "file_id": 15822,
+  "category": "holiday",
+  "type": "anim",
+  "name": "green-bar",
+  "description": "A green vertical bar/light on a black background. Minimal indicator."
+ },
+ "anim/holiday/15823": {
+  "file_id": 15823,
+  "category": "holiday",
+  "type": "anim",
+  "name": "night-bat",
+  "description": "A bat in a snowy night scene on a dark background. Spooky-winter motif."
+ },
+ "anim/holiday/15824": {
+  "file_id": 15824,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-rose-2",
+  "description": "A red rose flower in a small landscape. Floral motif."
+ },
+ "anim/holiday/15825": {
+  "file_id": 15825,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gray-creature",
+  "description": "A gray cat/bat face on a dark background. Spooky animal."
+ },
+ "anim/holiday/15826": {
+  "file_id": 15826,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-heart-4",
+  "description": "A red 3D heart on a blue background. Love symbol."
+ },
+ "anim/holiday/15827": {
+  "file_id": 15827,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dove",
+  "description": "A white dove/bird with a heart on a pink background. Peace/love motif."
+ },
+ "anim/holiday/15828": {
+  "file_id": 15828,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-fish",
+  "description": "A pink fish/creature on a dark background. Aquatic motif."
+ },
+ "anim/holiday/15829": {
+  "file_id": 15829,
+  "category": "holiday",
+  "type": "anim",
+  "name": "computer",
+  "description": "An old computer/monitor on a purple background. Retro device."
+ },
+ "anim/holiday/15830": {
+  "file_id": 15830,
+  "category": "holiday",
+  "type": "anim",
+  "name": "calendar",
+  "description": "A calendar/list page on a tan background. Schedule motif."
+ },
+ "anim/holiday/15831": {
+  "file_id": 15831,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cupid",
+  "description": "A winged cupid with a bow on a blue background. Valentine cherub."
+ },
+ "anim/holiday/15832": {
+  "file_id": 15832,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-monster-2",
+  "description": "A pink monster/cat with heart eyes on pink. Love-struck creature."
+ },
+ "anim/holiday/15833": {
+  "file_id": 15833,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-gift",
+  "description": "A gift box in a pink frame on a magenta background. Present motif."
+ },
+ "anim/holiday/15834": {
+  "file_id": 15834,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-3",
+  "description": "A pink-and-orange heart on a dark background. Love icon."
+ },
+ "anim/holiday/15835": {
+  "file_id": 15835,
+  "category": "holiday",
+  "type": "anim",
+  "name": "new-text",
+  "description": "The word 'NEW' in green on a gray background. Promo text."
+ },
+ "anim/holiday/15836": {
+  "file_id": 15836,
+  "category": "holiday",
+  "type": "anim",
+  "name": "jack-o-lantern-3",
+  "description": "A glowing jack-o'-lantern on a dark background. Halloween pumpkin."
+ },
+ "anim/holiday/15837": {
+  "file_id": 15837,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dark-heart",
+  "description": "A dark heart with an arrow on a dark background. Moody love motif."
+ },
+ "anim/holiday/15838": {
+  "file_id": 15838,
+  "category": "holiday",
+  "type": "anim",
+  "name": "house-2",
+  "description": "A house with a red roof on a gray background. Home icon."
+ },
+ "anim/holiday/15839": {
+  "file_id": 15839,
+  "category": "holiday",
+  "type": "anim",
+  "name": "year-2023",
+  "description": "The numbers '2023' on a dark background. New-year motif."
+ },
+ "anim/holiday/15840": {
+  "file_id": 15840,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-kid",
+  "description": "A child in a Santa hat on a blue background. Festive kid."
+ },
+ "anim/holiday/15841": {
+  "file_id": 15841,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-trees",
+  "description": "Santa Claus among Christmas trees on a dark background. Holiday scene."
+ },
+ "anim/holiday/15842": {
+  "file_id": 15842,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-4",
+  "description": "A red-suited Santa Claus on a green background. Christmas mascot."
+ },
+ "anim/holiday/15843": {
+  "file_id": 15843,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-gnome",
+  "description": "A white-bearded Santa/gnome face on a cream background. Festive character."
+ },
+ "anim/holiday/15844": {
+  "file_id": 15844,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-house",
+  "description": "A house with a red roof and snow on a dark background. Winter home."
+ },
+ "anim/holiday/15845": {
+  "file_id": 15845,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-5",
+  "description": "A standing Santa Claus on a dark background. Christmas character."
+ },
+ "anim/holiday/15846": {
+  "file_id": 15846,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-hearts",
+  "description": "A pattern of pink hearts on a pink background. Love motif."
+ },
+ "anim/holiday/15847": {
+  "file_id": 15847,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gold-heart",
+  "description": "A glowing gold heart on a dark background. Shiny love icon."
+ },
+ "anim/holiday/15848": {
+  "file_id": 15848,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-heart-4",
+  "description": "A pink heart on a dark background. Love icon."
+ },
+ "anim/holiday/15849": {
+  "file_id": 15849,
+  "category": "holiday",
+  "type": "anim",
+  "name": "yellow-heart",
+  "description": "A yellow 3D heart on a dark background. Love icon."
+ },
+ "anim/holiday/15850": {
+  "file_id": 15850,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-heart-5",
+  "description": "A red 3D heart on an orange background. Love symbol."
+ },
+ "anim/holiday/15851": {
+  "file_id": 15851,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-face",
+  "description": "A bearded Santa face on a dark background. Christmas portrait."
+ },
+ "anim/holiday/15852": {
+  "file_id": 15852,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-boy",
+  "description": "A boy in a Santa hat on a dark background. Festive kid."
+ },
+ "anim/holiday/15853": {
+  "file_id": 15853,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-gift",
+  "description": "A red gift box with greenery on a dark background. Present motif."
+ },
+ "anim/holiday/15854": {
+  "file_id": 15854,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-white-heart",
+  "description": "A red-and-white heart on a dark background. Love symbol."
+ },
+ "anim/holiday/15855": {
+  "file_id": 15855,
+  "category": "holiday",
+  "type": "anim",
+  "name": "zombie-witch",
+  "description": "A green zombie in a witch hat on a dark background. Halloween monster."
+ },
+ "anim/holiday/15856": {
+  "file_id": 15856,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-6",
+  "description": "A red-suited Santa Claus on a blue background. Christmas mascot."
+ },
+ "anim/holiday/15857": {
+  "file_id": 15857,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer",
+  "description": "A reindeer face with a red nose on a dark background. Rudolph motif."
+ },
+ "anim/holiday/15858": {
+  "file_id": 15858,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-hat-2",
+  "description": "A red Santa hat on a blue background. Festive headwear."
  }
 }
