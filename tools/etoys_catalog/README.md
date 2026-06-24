@@ -64,16 +64,34 @@ Every asset is named + described in `captions.json` (keyed `type/category/file_i
 `name` + `description` columns are merged into `index.csv` / `index_images.csv`. Built by a vision
 pass over labeled montages (`build_montage.py`). 1103/1103 assets captioned.
 
-## Keeping it up to date — `sync.py`
+## Other panel sizes (16×16 / 64×64)
+
+The same API serves a **separate catalog per panel size**. The app's `category_name` rule (see
+`etoys_api.category_name_for`): 16×16 and 32×32 use `<group>_IDM` for both types; 64×64 uses
+`<group>_IDM` for animations but a single `iDotMatrix` pool for images. Each size lives in its own
+folders (`library_16/`, `library_images_16/`, `index_16.*`, `captions_16.json`, …; 32 keeps the
+unsuffixed names).
+
+**16×16 catalog — 1,099 assets** (verified `totalCount` == local):
+
+| | daily | holiday | emoji | creative | business | total |
+|---|---|---|---|---|---|---|
+| animations | 220 | 172 | 169 | 238 | 43 | **842** |
+| images | 86 | 49 | 50 | 53 | 19 | **257** |
+
+## Keeping it up to date — `sync.py` (size-flexible)
 
 ```bash
-python sync.py          # re-query the full catalog, download ONLY new assets, skip existing
-python sync.py --list   # just report catalog-vs-local counts (no downloads)
+python sync.py                 # size 32 (default): re-query catalog, download only new, skip existing
+python sync.py --size 16       # 16×16 panel  (own library_16/ folders)
+python sync.py --size 64       # 64×64 panel
+python sync.py --size 16 --list  # dry-run: report catalog-vs-local counts, no downloads
 ```
 
-Idempotent and safe to re-run anytime: it compares the server catalog (animations + images
-across all 5 categories) against what's on disk and fetches only `file_id`s you don't already
-have, deobfuscating them in place. It rebuilds the indexes, preserves existing captions, and writes
-any newly-fetched (un-captioned) assets to `new_assets.json` so you can caption just those.
+Idempotent and safe to re-run anytime: for the chosen size it compares the server catalog
+(animations + images across all 5 categories) against what's on disk and fetches only `file_id`s you
+don't already have, deobfuscating them in place. It rebuilds that size's indexes, preserves existing
+captions, and writes newly-fetched (un-captioned) assets to `new_assets<sfx>.json`.
 
-Verified complete: server `totalCount` == local for both types (**751 anim, 352 image, 0 missing**).
+Verified complete: server `totalCount` == local for every size pulled
+(**32×32: 751 anim + 352 image; 16×16: 842 anim + 257 image; 0 missing**).

@@ -1,15 +1,19 @@
 #!/usr/bin/env python3
-"""Build a labeled montage of the next N un-captioned assets. Prints the batch mapping."""
+"""Build a labeled montage of the next N un-captioned assets. Prints the batch mapping.
+Usage: build_montage.py [N] [--size 16|32|64]   (default N=20, size=32)"""
 import json, os, sys
 from PIL import Image, ImageDraw
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-N = int(sys.argv[1]) if len(sys.argv) > 1 else 20
-CAP = os.path.join(HERE, "captions.json")
+args = [a for a in sys.argv[1:] if not a.startswith("--")]
+N = int(args[0]) if args else 20
+size = int(sys.argv[sys.argv.index("--size") + 1]) if "--size" in sys.argv else 32
+sfx = "" if size == 32 else f"_{size}"
+CAP = os.path.join(HERE, f"captions{sfx}.json")
 done = set(json.load(open(CAP)).keys()) if os.path.exists(CAP) else set()
 
 assets = []
-for idx, typ in [("index.json", "anim"), ("index_images.json", "image")]:
+for idx, typ in [(f"index{sfx}.json", "anim"), (f"index_images{sfx}.json", "image")]:
     p = os.path.join(HERE, idx)
     if os.path.exists(p):
         for r in json.load(open(p)):

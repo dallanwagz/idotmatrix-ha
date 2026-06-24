@@ -1,19 +1,26 @@
 #!/usr/bin/env python3
-"""Sync the e-toys 32x32 asset library — RE-RUNNABLE and idempotent.
+"""Sync the e-toys asset library for a given PANEL SIZE — RE-RUNNABLE and idempotent.
 
-Re-queries the FULL cloud catalog (animations 动画 + images 图片 across all 5 categories),
-then downloads + deobfuscates ONLY assets not already present locally — assets already on
-disk are skipped. Rebuilds manifests + index.csv/index_images.csv. Captions in captions.json
-are preserved; any NEWLY fetched (un-captioned) assets are listed in new_assets.json so you
-can caption them later.
+Re-queries the FULL cloud catalog (animations 动画 + images 图片 across all 5 categories) for the
+chosen panel size, then downloads + deobfuscates ONLY assets not already present locally — assets
+already on disk are skipped. Rebuilds the per-size index.csv/index_images.csv. Captions are
+preserved; any NEWLY fetched (un-captioned) assets are listed in new_assets_<sfx>.json.
 
-    python sync.py            # fetch only what's new, report counts
-    python sync.py --list     # just report catalog vs local (no downloads)
+    python sync.py                 # size 32 (default)
+    python sync.py --size 16       # 16x16 panel
+    python sync.py --size 64       # 64x64 panel
+    python sync.py --size 16 --list   # dry-run: report catalog-vs-local counts, no downloads
 
-Scope: width=height=32 (the HXS-002 panel) and the 5 categories the app exposes
-(日常/节日/表情/创意/商业), types anim(动画) + image(图片). The API requires a category_name and
-a size, so this is exactly "everything the app can browse for a 32x32 panel". To pull other
-panel sizes, change W/H below; to discover other category names you'd need new ones from the app.
+Per-size layout (suffix is "" for 32, "_16"/"_64" otherwise):
+    library{sfx}/<category>/<file_id>.gif        animations
+    library_images{sfx}/<category>/<file_id>.png images
+    index{sfx}.csv/json, index_images{sfx}.csv/json
+    captions{sfx}.json  (read to enrich the indexes; preserved)
+    new_assets{sfx}.json (assets without a caption yet)
+
+Scope: the 5 categories the app exposes (日常/节日/表情/创意/商业), types anim + image. category_name
+follows the app's per-size rule (see etoys_api.category_name_for): 16/32 -> "<group>_IDM" both types;
+64 -> "<group>_IDM" for anim, single pool "iDotMatrix" for images.
 """
 import csv
 import json
@@ -26,14 +33,27 @@ import etoys_api as api
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 CATS = {"daily": "日常", "holiday": "节日", "emoji": "表情", "creative": "创意", "business": "商业"}
-W = H = 32
-TYPES = [("anim", True, "library", "index"), ("image", False, "library_images", "index_images")]
 
 
-def _req(cn, page, anim):
+def parse_size(argv):
+    if "--size" in argv:
+        return int(argv[argv.index("--size") + 1])
+    return 32
+
+
+def groups_for(size, anim):
+    """The (display_category, category_name) pairs to query for this size+type. For 64x64 images the
+    app uses one shared pool ("iDotMatrix") rather than per-group categories."""
+    cn = api.category_name_for("日常", size, size, anim)
+    if cn == "iDotMatrix":               # 64x64 images: a single un-grouped pool
+        return [("all", "iDotMatrix")]
+    return [(cat, f"{zh}_IDM") for cat, zh in CATS.items()]
+
+
+def _req(category_name, page, anim, size):
     for _ in range(6):
         try:
-            r = api.request(api.material_params(cn, page, anim, W, H))
+            r = api.request(api.material_params("", page, anim, size, size, category_name=category_name))
             if r and r.get("data"):
                 return r["data"]
         except Exception:
@@ -41,13 +61,13 @@ def _req(cn, page, anim):
     return None
 
 
-def list_group(cn, anim, pool):
-    d1 = _req(cn, 1, anim)
+def list_group(category_name, anim, size, pool):
+    d1 = _req(category_name, 1, anim, size)
     if not d1:
         return [], 0
     tp = d1["totalPage"]
     bypage = {1: d1["records"]}
-    futs = {pool.submit(_req, cn, p, anim): p for p in range(2, tp + 1)}
+    futs = {pool.submit(_req, category_name, p, anim, size): p for p in range(2, tp + 1)}
     for f in futs:
         d = f.result()
         bypage[futs[f]] = d["records"] if d else []
@@ -66,14 +86,13 @@ def get(url, path):
         return False
 
 
-def sync_type(typ, anim, libdir, idxbase, pool, capkeys, list_only):
+def sync_type(typ, anim, libdir, idxbase, size, pool, capkeys, list_only):
     rows, to_dl = [], []
     total_count = have = 0
-    for cat, cn in CATS.items():
-        recs, tc = list_group(cn, anim, pool)
+    for cat, cn in groups_for(size, anim):
+        recs, tc = list_group(cn, anim, size, pool)
         total_count += tc
-        d = os.path.join(HERE, libdir, cat)
-        os.makedirs(d, exist_ok=True)
+        os.makedirs(os.path.join(HERE, libdir, cat), exist_ok=True)
         for r in recs:
             fmt = r.get("format", "gif" if anim else "png")
             local = f"{libdir}/{cat}/{r['file_id']}.{fmt}"
@@ -90,7 +109,6 @@ def sync_type(typ, anim, libdir, idxbase, pool, capkeys, list_only):
     new_ok = 0
     if not list_only and to_dl:
         new_ok = sum(pool.map(lambda t: get(*t), to_dl))
-    # merge captions, write indexes
     new_uncaptioned = []
     for row in rows:
         c = capkeys.get((typ, row["file_id"]), {})
@@ -109,22 +127,29 @@ def sync_type(typ, anim, libdir, idxbase, pool, capkeys, list_only):
 
 
 def main():
+    size = parse_size(sys.argv)
+    if size not in (16, 32, 64):
+        sys.exit("--size must be 16, 32 or 64")
     list_only = "--list" in sys.argv
-    capf = os.path.join(HERE, "captions.json")
+    sfx = "" if size == 32 else f"_{size}"
+    types = [("anim", True, f"library{sfx}", f"index{sfx}"),
+             ("image", False, f"library_images{sfx}", f"index_images{sfx}")]
+    capf = os.path.join(HERE, f"captions{sfx}.json")
     caps = json.load(open(capf)) if os.path.exists(capf) else {}
     capkeys = {(c["type"], c["file_id"]): c for c in caps.values()}
-    print(f"e-toys sync ({'LIST ONLY' if list_only else 'download new'}) — captions known: {len(caps)}")
+    print(f"e-toys sync — {size}x{size} ({'LIST ONLY' if list_only else 'download new'}) — captions known: {len(caps)}")
     tot = newfound = newdl = 0
     uncaptioned = []
     with ThreadPoolExecutor(max_workers=16) as pool:
-        for typ, anim, libdir, idxbase in TYPES:
-            t, nf, nd, unc = sync_type(typ, anim, libdir, idxbase, pool, capkeys, list_only)
+        for typ, anim, libdir, idxbase in types:
+            t, nf, nd, unc = sync_type(typ, anim, libdir, idxbase, size, pool, capkeys, list_only)
             tot += t; newfound += nf; newdl += nd; uncaptioned += unc
-    json.dump(uncaptioned, open(os.path.join(HERE, "new_assets.json"), "w"), ensure_ascii=False, indent=1)
-    print(f"\nTOTAL available via API: {tot}")
+    if not list_only:
+        json.dump(uncaptioned, open(os.path.join(HERE, f"new_assets{sfx}.json"), "w"), ensure_ascii=False, indent=1)
+    print(f"\n{size}x{size} TOTAL available via API: {tot}")
     print(f"NEW this run: {newfound} found, {newdl} downloaded ({'list-only, none downloaded' if list_only else 'deobfuscated'})")
-    print(f"un-captioned assets: {len(uncaptioned)} -> new_assets.json"
-          + (" (caption these, then re-merge)" if uncaptioned else " (catalog fully captioned)"))
+    print(f"un-captioned assets: {len(uncaptioned)}"
+          + (f" -> new_assets{sfx}.json (caption these, then re-merge)" if uncaptioned else " (fully captioned)"))
 
 
 if __name__ == "__main__":

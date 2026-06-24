@@ -52,9 +52,17 @@ def request(params):
     raw = urllib.request.urlopen(req, timeout=20).read().decode()
     return json.loads(dec(raw))
 
-def material_params(group, page, type_anim=True, width=32, height=32, label="ALL,", filter_tags="IDM_", lang="en"):
+def category_name_for(group, width, height, type_anim):
+    """Per the app (CloudAnimManager.getCloudMateral): 16x16 and 32x32 use "<group>_IDM" for
+    BOTH types; 64x64 uses "<group>_IDM" for animations but the generic "iDotMatrix" for images;
+    any other size falls back to "iDotMatrix"."""
+    idm = (width, height) in ((16, 16), (32, 32)) or ((width, height) == (64, 64) and type_anim)
+    return f"{group}_IDM" if idm else "iDotMatrix"
+
+def material_params(group, page, type_anim=True, width=32, height=32, label="ALL,", filter_tags="IDM_", lang="en", category_name=None):
     return {"appid": "140", "sort": "1", "page": str(page), "count": "10",
-            "category_name": f"{group}_IDM", "type": "动画" if type_anim else "图片",
+            "category_name": category_name or category_name_for(group, width, height, type_anim),
+            "type": "动画" if type_anim else "图片",
             "label": label, "width": str(width), "height": str(height),
             "filter_tags": filter_tags, "file_lang": f"none,{lang}"}
 
