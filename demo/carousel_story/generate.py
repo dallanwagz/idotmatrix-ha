@@ -160,6 +160,28 @@ def enrich(img, fr, seed):
     return img
 
 
+_DIGITS = {
+    "0": ["111", "101", "101", "101", "111"], "1": ["010", "110", "010", "010", "111"],
+    "2": ["111", "001", "111", "100", "111"], "3": ["111", "001", "111", "001", "111"],
+    "4": ["101", "101", "111", "001", "001"], "5": ["111", "100", "111", "001", "111"],
+    "6": ["111", "100", "111", "101", "111"], "7": ["111", "001", "010", "010", "010"],
+    "8": ["111", "101", "111", "101", "111"], "9": ["111", "101", "111", "001", "111"],
+}
+
+
+def stamp(img, n):
+    """Black scene number on a small pale pad, top-left (for debugging where the carousel stops)."""
+    d = ImageDraw.Draw(img)
+    s = str(n)
+    d.rectangle([0, 0, len(s) * 4, 6], fill=(235, 235, 235))
+    for i, ch in enumerate(s):
+        for ry, row in enumerate(_DIGITS[ch]):
+            for cx, bit in enumerate(row):
+                if bit == "1":
+                    d.point((1 + i * 4 + cx, 1 + ry), fill=(0, 0, 0))
+    return img
+
+
 def save_gif(frames, name, ms=70):
     buf = io.BytesIO()
     frames[0].save(buf, format="GIF", save_all=True, append_images=frames[1:],
@@ -316,11 +338,11 @@ def main():
     total = 0
     for slot, (act, s, name) in enumerate(STORY):
         frames = act(s, 48)
-        frames = [enrich(im, fi, slot) for fi, im in enumerate(frames)]
+        frames = [enrich(im, fi, slot) for fi, im in enumerate(frames)]   # stamp(…, slot) to debug
         n = save_gif(frames, f"slot_{slot:02d}_{name}.gif")
         total += n
         print(f"  slot {slot:02d}  {name:14s} {len(frames)}f  {n:6d} B")
-    print(f"\n12 scenes, total {total} bytes ({total/1024:.0f} KB), avg {total//12} B/scene")
+    print(f"\n{len(STORY)} scenes, total {total} bytes ({total/1024:.0f} KB), avg {total//len(STORY)} B/scene")
 
 
 if __name__ == "__main__":

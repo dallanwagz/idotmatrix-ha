@@ -193,10 +193,12 @@ The panel **persistently carousels 12 slots** (`image_index` 0–11) and **cycle
 autonomously** — no host needed, survives disconnect. This is the "Device Assets" feature.
 RE'd + driven from our own client (verified: 12-scene story loops on its own).
 
-⚠️ **The device holds 12, not 36.** The app shows "3 pages of 12 = 36," but those are
-**app-side** sets: a "push page" always uploads to `image_index` 0–11 (`curIndex` increments
-0,1,2,… *per push*, `DeviceMaterialChildFragment.sendData`), so pushing any page **replaces** the
-12 on the device. Uploading to index 14–35 ACKs but never enters the carousel.
+⚠️ **The device holds 12, not 36 — a firmware hard cap.** The app shows "3 pages of 12 = 36," but
+those are **app-side** sets: a "push page" always uploads to `image_index` 0–11 (`curIndex`
+increments 0,1,2,… *per push*, `DeviceMaterialChildFragment.sendData`), so pushing any page
+**replaces** the 12 on the device. The `count` byte in the slot-setup frame does **not** extend it:
+tested `count=16` with 16 GIFs uploaded (all ACK) — the carousel still **wrapped at slot 11**.
+Indices 12–15 store/ACK but never play. So 12 is the cap, full stop.
 
 **Store an asset to a slot** — reuse the bulk **GIF** upload (`DataType.GIF`, dtype byte[2]=1)
 with two header fields:
