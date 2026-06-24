@@ -1258,5 +1258,565 @@
   "type": "anim",
   "name": "happy-valentine",
   "description": "'I ♥ U HAPPY Valentine' text. Valentine greeting."
+ },
+ "anim/holiday/23371": {
+  "file_id": 23371,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gingerbread-house",
+  "description": "A gingerbread house in the snow. Christmas treat scene."
+ },
+ "anim/holiday/23372": {
+  "file_id": 23372,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snow-globe-2",
+  "description": "A snow globe containing trees. Wintry keepsake."
+ },
+ "anim/holiday/23373": {
+  "file_id": 23373,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-ghost",
+  "description": "A white ghost in a pink room. Cute Halloween scene."
+ },
+ "anim/holiday/23374": {
+  "file_id": 23374,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-house",
+  "description": "A house at night with Santa's sleigh overhead. Christmas Eve scene."
+ },
+ "anim/holiday/23375": {
+  "file_id": 23375,
+  "category": "holiday",
+  "type": "anim",
+  "name": "king-logo",
+  "description": "A red 'KING' logo, Burger-King style. Brand graphic."
+ },
+ "anim/holiday/23376": {
+  "file_id": 23376,
+  "category": "holiday",
+  "type": "anim",
+  "name": "cat-couple",
+  "description": "Two cats with a heart between them. Feline-love scene."
+ },
+ "anim/holiday/23377": {
+  "file_id": 23377,
+  "category": "holiday",
+  "type": "anim",
+  "name": "winter-window",
+  "description": "A snowy view through a window at night. Cozy winter scene."
+ },
+ "anim/holiday/23378": {
+  "file_id": 23378,
+  "category": "holiday",
+  "type": "anim",
+  "name": "wedding",
+  "description": "A bride and groom surrounded by hearts. Wedding scene."
+ },
+ "anim/holiday/23379": {
+  "file_id": 23379,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-sheep",
+  "description": "A fluffy pink sheep/poodle in the snow. Cute winter animal."
+ },
+ "anim/holiday/23380": {
+  "file_id": 23380,
+  "category": "holiday",
+  "type": "anim",
+  "name": "eagle",
+  "description": "A bald eagle soaring over water. Majestic bird scene."
+ },
+ "anim/holiday/23381": {
+  "file_id": 23381,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-gifts",
+  "description": "A Christmas tree with presents beneath it. Festive scene."
+ },
+ "anim/holiday/23382": {
+  "file_id": 23382,
+  "category": "holiday",
+  "type": "anim",
+  "name": "fruit-tree",
+  "description": "A tree hung with fruit/lanterns. Harvest/autumn scene."
+ },
+ "anim/holiday/23383": {
+  "file_id": 23383,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer",
+  "description": "A reindeer face with a red nose on blue. Rudolph motif."
+ },
+ "anim/holiday/23384": {
+  "file_id": 23384,
+  "category": "holiday",
+  "type": "anim",
+  "name": "xmas-tree-2",
+  "description": "A decorated Christmas tree. Festive evergreen."
+ },
+ "anim/holiday/23385": {
+  "file_id": 23385,
+  "category": "holiday",
+  "type": "anim",
+  "name": "scooter-couple",
+  "description": "A couple riding a scooter together. Cute travel scene."
+ },
+ "anim/holiday/23386": {
+  "file_id": 23386,
+  "category": "holiday",
+  "type": "anim",
+  "name": "tv-room",
+  "description": "A person watching TV in a cozy living room. Relaxation scene."
+ },
+ "anim/holiday/23387": {
+  "file_id": 23387,
+  "category": "holiday",
+  "type": "anim",
+  "name": "romance-couple",
+  "description": "A couple in an Aladdin-and-Jasmine-style romantic pose. Love scene."
+ },
+ "anim/holiday/23388": {
+  "file_id": 23388,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowy-village-2",
+  "description": "A snowy village with a sleigh at night. Christmas scene."
+ },
+ "anim/holiday/23389": {
+  "file_id": 23389,
+  "category": "holiday",
+  "type": "anim",
+  "name": "christmas-family",
+  "description": "A family gathered by a Christmas tree. Holiday family scene."
+ },
+ "anim/holiday/23390": {
+  "file_id": 23390,
+  "category": "holiday",
+  "type": "anim",
+  "name": "elves",
+  "description": "Christmas elves framed in stained-glass style. Festive characters."
+ },
+ "anim/holiday/23391": {
+  "file_id": 23391,
+  "category": "holiday",
+  "type": "anim",
+  "name": "mothers-day",
+  "description": "'HAPPY MOTHER'S DAY' text on pink. Mother's Day greeting."
+ },
+ "anim/holiday/23392": {
+  "file_id": 23392,
+  "category": "holiday",
+  "type": "anim",
+  "name": "family-couch",
+  "description": "A family sitting together on a couch. Cozy family scene."
+ },
+ "anim/holiday/23393": {
+  "file_id": 23393,
+  "category": "holiday",
+  "type": "anim",
+  "name": "white-ghost",
+  "description": "A white ghost on a dark background. Halloween spirit."
+ },
+ "anim/holiday/23394": {
+  "file_id": 23394,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman",
+  "description": "A cheerful snowman in the snow. Christmas character."
+ },
+ "anim/holiday/23395": {
+  "file_id": 23395,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-castle",
+  "description": "A pink fairy-tale castle. Whimsical structure."
+ },
+ "anim/holiday/23396": {
+  "file_id": 23396,
+  "category": "holiday",
+  "type": "anim",
+  "name": "i-love-mom",
+  "description": "'I ♥ MOM' text. Mother's Day greeting."
+ },
+ "anim/holiday/23397": {
+  "file_id": 23397,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dog-couple",
+  "description": "Two dogs nuzzling, Lady-and-the-Tramp style. Romantic pet scene."
+ },
+ "anim/holiday/23398": {
+  "file_id": 23398,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowy-village-3",
+  "description": "A snowy village at night. Winter scene."
+ },
+ "anim/holiday/23399": {
+  "file_id": 23399,
+  "category": "holiday",
+  "type": "anim",
+  "name": "merry-xmas",
+  "description": "'MERRY XMAS' text with Santa and a tree. Christmas greeting."
+ },
+ "anim/holiday/23400": {
+  "file_id": 23400,
+  "category": "holiday",
+  "type": "anim",
+  "name": "santa-face",
+  "description": "A close-up Santa Claus face. Christmas portrait."
+ },
+ "anim/holiday/23401": {
+  "file_id": 23401,
+  "category": "holiday",
+  "type": "anim",
+  "name": "swan-heart",
+  "description": "Two swans forming a heart with their necks. Romantic scene."
+ },
+ "anim/holiday/23402": {
+  "file_id": 23402,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-2",
+  "description": "A snowman in the falling snow. Christmas character."
+ },
+ "anim/holiday/23403": {
+  "file_id": 23403,
+  "category": "holiday",
+  "type": "anim",
+  "name": "reindeer-sleigh",
+  "description": "A reindeer pulling a sleigh. Christmas scene."
+ },
+ "anim/holiday/23404": {
+  "file_id": 23404,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-cat",
+  "description": "A snowman and a cat in Santa hats. Festive duo."
+ },
+ "anim/holiday/23405": {
+  "file_id": 23405,
+  "category": "holiday",
+  "type": "anim",
+  "name": "yoshi-ski",
+  "description": "A green dinosaur (Yoshi-like) skiing. Playful winter sprite."
+ },
+ "anim/holiday/23406": {
+  "file_id": 23406,
+  "category": "holiday",
+  "type": "anim",
+  "name": "dancing-elves",
+  "description": "Christmas elves dancing. Festive characters."
+ },
+ "anim/holiday/23407": {
+  "file_id": 23407,
+  "category": "holiday",
+  "type": "anim",
+  "name": "snowman-trees",
+  "description": "A snowman between Christmas trees. Winter scene."
+ },
+ "anim/holiday/23408": {
+  "file_id": 23408,
+  "category": "holiday",
+  "type": "anim",
+  "name": "gray-train",
+  "description": "A gray train/carts on a track. Transit scene."
+ },
+ "anim/holiday/23409": {
+  "file_id": 23409,
+  "category": "holiday",
+  "type": "anim",
+  "name": "red-abstract",
+  "description": "A red abstract/text scene. Festive graphic."
+ },
+ "anim/holiday/23410": {
+  "file_id": 23410,
+  "category": "holiday",
+  "type": "anim",
+  "name": "its-friday",
+  "description": "'It's Friday!' text with a pig. Cheerful weekend greeting."
+ },
+ "anim/holiday/23411": {
+  "file_id": 23411,
+  "category": "holiday",
+  "type": "anim",
+  "name": "pink-tulip",
+  "description": "A pink tulip/flower in bloom. Floral motif."
+ },
+ "anim/emoji/24059": {
+  "file_id": 24059,
+  "category": "emoji",
+  "type": "anim",
+  "name": "yoshi",
+  "description": "Green dinosaur Yoshi reaching for a coin. Nintendo character."
+ },
+ "anim/emoji/24060": {
+  "file_id": 24060,
+  "category": "emoji",
+  "type": "anim",
+  "name": "lips-tongue",
+  "description": "Red lips with a sticking-out tongue, Rolling-Stones style. Iconic logo."
+ },
+ "anim/emoji/24061": {
+  "file_id": 24061,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-dragon",
+  "description": "A blue water dragon/serpent. Mythical creature."
+ },
+ "anim/emoji/24062": {
+  "file_id": 24062,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-penguin",
+  "description": "A blue penguin/bird. Cute creature."
+ },
+ "anim/emoji/24063": {
+  "file_id": 24063,
+  "category": "emoji",
+  "type": "anim",
+  "name": "miku",
+  "description": "Hatsune Miku, the teal-haired vocaloid character. Anime idol."
+ },
+ "anim/emoji/24064": {
+  "file_id": 24064,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-glitch",
+  "description": "A purple abstract/glitch scene. Digital art."
+ },
+ "anim/emoji/24065": {
+  "file_id": 24065,
+  "category": "emoji",
+  "type": "anim",
+  "name": "skull-face",
+  "description": "A skull/zombie face. Spooky Halloween portrait."
+ },
+ "anim/emoji/24066": {
+  "file_id": 24066,
+  "category": "emoji",
+  "type": "anim",
+  "name": "kiki",
+  "description": "Kiki on a broomstick, Kiki's-Delivery-Service style. Witch character."
+ },
+ "anim/emoji/24067": {
+  "file_id": 24067,
+  "category": "emoji",
+  "type": "anim",
+  "name": "confused-man",
+  "description": "A man's face with a question mark, looking confused. Puzzled emoji."
+ },
+ "anim/emoji/24068": {
+  "file_id": 24068,
+  "category": "emoji",
+  "type": "anim",
+  "name": "green-robot",
+  "description": "A green robot/monkey character. Quirky mechanical creature."
+ },
+ "anim/emoji/24069": {
+  "file_id": 24069,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-hair-fighter",
+  "description": "A white-haired anime fighter character. Action portrait."
+ },
+ "anim/emoji/24070": {
+  "file_id": 24070,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-cap-man",
+  "description": "A bearded man in a blue cap, Mario-style. Game character."
+ },
+ "anim/emoji/24071": {
+  "file_id": 24071,
+  "category": "emoji",
+  "type": "anim",
+  "name": "pink-hair-figure",
+  "description": "A pink-haired RPG character. Game portrait."
+ },
+ "anim/emoji/24072": {
+  "file_id": 24072,
+  "category": "emoji",
+  "type": "anim",
+  "name": "princess-peach",
+  "description": "Princess Peach, the blonde Nintendo princess. Game character."
+ },
+ "anim/emoji/24073": {
+  "file_id": 24073,
+  "category": "emoji",
+  "type": "anim",
+  "name": "kimono-woman",
+  "description": "A woman in a kimono. Elegant anime portrait."
+ },
+ "anim/emoji/24074": {
+  "file_id": 24074,
+  "category": "emoji",
+  "type": "anim",
+  "name": "purple-slime",
+  "description": "A purple slime/jelly creature. Cute RPG monster."
+ },
+ "anim/emoji/24075": {
+  "file_id": 24075,
+  "category": "emoji",
+  "type": "anim",
+  "name": "cheering-girl",
+  "description": "An anime girl cheering with arms raised. Joyful character."
+ },
+ "anim/emoji/24076": {
+  "file_id": 24076,
+  "category": "emoji",
+  "type": "anim",
+  "name": "capybara",
+  "description": "A capybara/otter relaxing in water. Cute animal."
+ },
+ "anim/emoji/24077": {
+  "file_id": 24077,
+  "category": "emoji",
+  "type": "anim",
+  "name": "blue-cap-boy",
+  "description": "A boy in a blue cap, Gravity-Falls style. Character portrait."
+ },
+ "anim/emoji/24078": {
+  "file_id": 24078,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dark-hair-girl",
+  "description": "A girl with dark hair on a blue background. Anime portrait."
+ },
+ "anim/emoji/24079": {
+  "file_id": 24079,
+  "category": "emoji",
+  "type": "anim",
+  "name": "burger",
+  "description": "A steaming hamburger. Fast-food icon."
+ },
+ "anim/emoji/24080": {
+  "file_id": 24080,
+  "category": "emoji",
+  "type": "anim",
+  "name": "batman",
+  "description": "Batman, the dark-knight superhero. Comic-book character."
+ },
+ "anim/emoji/24081": {
+  "file_id": 24081,
+  "category": "emoji",
+  "type": "anim",
+  "name": "vampire",
+  "description": "A pale vampire/old man in a suit. Spooky character."
+ },
+ "anim/emoji/24082": {
+  "file_id": 24082,
+  "category": "emoji",
+  "type": "anim",
+  "name": "white-duck",
+  "description": "A white duck/swan on a blue background. Bird portrait."
+ },
+ "anim/emoji/24083": {
+  "file_id": 24083,
+  "category": "emoji",
+  "type": "anim",
+  "name": "zombie-couple",
+  "description": "Two zombie figures together. Spooky couple scene."
+ },
+ "anim/emoji/24084": {
+  "file_id": 24084,
+  "category": "emoji",
+  "type": "anim",
+  "name": "black-creature",
+  "description": "A black cat/orca creature in water. Aquatic animal."
+ },
+ "anim/emoji/24085": {
+  "file_id": 24085,
+  "category": "emoji",
+  "type": "anim",
+  "name": "redhead-woman",
+  "description": "A red-haired woman portrait. Character art."
+ },
+ "anim/emoji/24086": {
+  "file_id": 24086,
+  "category": "emoji",
+  "type": "anim",
+  "name": "dark-hair-woman",
+  "description": "A dark-haired woman portrait. Anime art."
+ },
+ "anim/emoji/24087": {
+  "file_id": 24087,
+  "category": "emoji",
+  "type": "anim",
+  "name": "people-group",
+  "description": "A group of people standing together. Crowd scene."
+ },
+ "anim/emoji/24088": {
+  "file_id": 24088,
+  "category": "emoji",
+  "type": "anim",
+  "name": "anime-girl-laughing",
+  "description": "A red-and-white haired anime girl laughing. Lively portrait."
+ },
+ "anim/emoji/24089": {
+  "file_id": 24089,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-crab",
+  "description": "A red crab. Seaside creature."
+ },
+ "anim/emoji/24090": {
+  "file_id": 24090,
+  "category": "emoji",
+  "type": "anim",
+  "name": "red-crab-2",
+  "description": "A red crab/monster. Crustacean creature."
+ },
+ "anim/emoji/24091": {
+  "file_id": 24091,
+  "category": "emoji",
+  "type": "anim",
+  "name": "curly-hair-girl",
+  "description": "A girl with curly hair and bows. Cute portrait."
+ },
+ "anim/emoji/24092": {
+  "file_id": 24092,
+  "category": "emoji",
+  "type": "anim",
+  "name": "fried-egg",
+  "description": "A sunny-side-up fried egg. Breakfast food."
+ },
+ "anim/emoji/24093": {
+  "file_id": 24093,
+  "category": "emoji",
+  "type": "anim",
+  "name": "flag-girl",
+  "description": "A girl holding a checkered flag. Racing-themed character."
+ },
+ "anim/emoji/24094": {
+  "file_id": 24094,
+  "category": "emoji",
+  "type": "anim",
+  "name": "aviator-boy",
+  "description": "A boy in an aviator cap and goggles. Pilot character."
+ },
+ "anim/emoji/24095": {
+  "file_id": 24095,
+  "category": "emoji",
+  "type": "anim",
+  "name": "glitch-portrait",
+  "description": "A glitch-distorted portrait of a man. Digital art."
+ },
+ "anim/emoji/24096": {
+  "file_id": 24096,
+  "category": "emoji",
+  "type": "anim",
+  "name": "nosferatu",
+  "description": "A Nosferatu-style vampire figure. Creepy horror character."
+ },
+ "anim/emoji/24097": {
+  "file_id": 24097,
+  "category": "emoji",
+  "type": "anim",
+  "name": "people-group-2",
+  "description": "A group of people standing together. Crowd scene."
  }
 }
