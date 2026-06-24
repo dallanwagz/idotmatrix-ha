@@ -46,3 +46,14 @@ Set `type_anim=False` in `material_params` to pull the **image** (图片) librar
 `library/` holds the **751 decoded 32×32 GIFs** (`<category>/<file_id>.gif`); `index.csv`/`json`
 is the catalog (category, file_id, format, dims, label, source URL, local path). Re-pull/refresh
 anytime with `catalog.py` + `download.py`.
+
+## Image library (静态图片)
+
+`python images.py` pulls the **image** tab the same way → `library_images/<category>/<file_id>.png`
++ `manifest_images.json` + `index_images.csv/json`. **352 static 32×32 PNGs:**
+
+| category | daily | holiday | emoji | creative | business | total |
+|---|---|---|---|---|---|---|
+| images | 105 | 70 | 72 | 74 | 31 | **352** |
+
+So the full e-toys catalog is **1,103 assets** (751 animations + 352 images).
