@@ -79,6 +79,16 @@ unsuffixed names). **Both the 32×32 and 16×16 catalogs are fully captioned** (
 | animations | 220 | 172 | 169 | 238 | 43 | **842** |
 | images | 86 | 49 | 50 | 53 | 19 | **257** |
 
+
+**64×64 catalog — 560 assets** (verified `totalCount` == local). Note the app's quirk: 64×64 **images**
+are a single un-grouped `iDotMatrix` pool (stored under `library_images_64/all/`), while animations
+keep the 5 categories.
+
+| | daily | holiday | emoji | creative | business | all | total |
+|---|---|---|---|---|---|---|---|
+| animations | 122 | 99 | 116 | 105 | 34 | — | **476** |
+| images | — | — | — | — | — | 84 | **84** |
+
 ## Keeping it up to date — `sync.py` (size-flexible)
 
 ```bash
