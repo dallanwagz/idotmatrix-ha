@@ -104,4 +104,5 @@ don't already have, deobfuscating them in place. It rebuilds that size's indexes
 captions, and writes newly-fetched (un-captioned) assets to `new_assets<sfx>.json`.
 
 Verified complete: server `totalCount` == local for every size pulled
-(**32×32: 751 anim + 352 image; 16×16: 842 anim + 257 image; 0 missing**).
+(**32×32: 751 anim + 352 image; 16×16: 842 anim + 257 image; 64×64: 476 anim + 84 image; 0 missing**).
+**All three sizes are fully captioned** (name + description per asset; 2762 assets total).
