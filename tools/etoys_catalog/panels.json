@@ -1,0 +1,80 @@
+{
+  "_doc": "iDotMatrix panel + asset-library manifest for orchestrator ingestion. Human handoff: docs/PANEL-ORCHESTRATOR-HANDOFF.md. Protocol: docs/PROTOCOL.md.",
+  "panels": [
+    {
+      "name": "IDM-858931",
+      "mac": "6F:5D:FE:85:89:31",
+      "role": "primary",
+      "model": "iDotMatrix HXS-002",
+      "width": 32,
+      "height": 32,
+      "firmware": "TR2306R007",
+      "transport": "ble",
+      "gatt": {"write": "0000fa02-0000-1000-8000-00805f9b34fb", "notify": "0000fa03-0000-1000-8000-00805f9b34fb"},
+      "note": "macOS sees this as CoreBluetooth UUID 0A935535-7939-DD31-2CC3-72B639D9560B (per-host, non-portable). Use the MAC on Linux/HA/ESPHome."
+    },
+    {
+      "name": "IDM-D28F7F",
+      "mac": "1F:D6:5C:D2:8F:7F",
+      "role": "spare",
+      "model": "iDotMatrix HXS-002",
+      "width": 32,
+      "height": 32,
+      "firmware": "current (ships pre-updated)",
+      "transport": "ble",
+      "gatt": {"write": "0000fa02-0000-1000-8000-00805f9b34fb", "notify": "0000fa03-0000-1000-8000-00805f9b34fb"}
+    }
+  ],
+  "library": {
+    "root": "tools/etoys_catalog",
+    "use_for_these_panels": "32x32",
+    "sizes": {
+      "32": {"anim_dir": "library", "image_dir": "library_images", "index": "index.csv", "image_index": "index_images.csv", "captions": "captions.json", "anim": 751, "image": 352},
+      "16": {"anim_dir": "library_16", "image_dir": "library_images_16", "index": "index_16.csv", "image_index": "index_images_16.csv", "captions": "captions_16.json", "anim": 842, "image": 257, "note": "resize to 32x32 before pushing to these panels"},
+      "64": {"anim_dir": "library_64", "image_dir": "library_images_64", "index": "index_64.csv", "image_index": "index_images_64.csv", "captions": "captions_64.json", "anim": 476, "image": 84, "note": "64x64 images are one 'all' pool; resize to 32x32 before pushing to these panels"}
+    },
+    "categories": ["daily", "holiday", "emoji", "creative", "business"],
+    "index_columns": ["category", "file_id", "format", "width", "height", "category_name", "label", "file_path", "local", "name", "description"],
+    "total_assets": 2762,
+    "select_by": "grep name/description in the index CSV, take file_id, pass to send_to_panel.py"
+  },
+  "push": {
+    "script": "tools/etoys_catalog/send_to_panel.py",
+    "python": "~/.esphome-venv/bin/python",
+    "driver_dir": "/Users/dallan/repo/timebox/pinball",
+    "usage": "IDM_ADDR=<MAC> ~/.esphome-venv/bin/python send_to_panel.py <file_id|path>",
+    "env": {"IDM_ADDR": "panel MAC", "IDM_SLOT": "carousel slot 0-11 (default 0)", "IDM_DWELL": "dwell seconds (default 300)", "IDM_DRIVER_DIR": "path to timebox/pinball"}
+  },
+  "capabilities": {
+    "carousel_slots": 12,
+    "carousel_slots_note": "HARD firmware cap. image_index 0-11 play; 12=show-now(transient); 13=preview; 14-35 ACK but dropped. The app's '3 pages of 12=36' is app-side only.",
+    "dwell_seconds_presets": [5, 10, 30, 60, 300],
+    "long_story": "for >12 sequential scenes, store ONE long GIF in a count=1 slot (slot-setup '06 00 02 01 01 00'); device loops it in true frame order",
+    "slot_capacity_bytes_min": 1300000,
+    "fps_uploaded_gif_max": 20,
+    "fps_static_still": 3,
+    "fps_rhythm": 12,
+    "pixel_format": "RGB row-major, 3072 bytes for 32x32",
+    "inner_gatt_write_max_bytes": 256,
+    "modes": ["single_animation", "show_now", "carousel_12", "long_gif_story", "clock_8_styles", "diy_pixels", "rhythm_spectrum", "brightness"]
+  },
+  "commands": {
+    "slot_setup_12": "[17,0,2,1,12,0,1,2,3,4,5,6,7,8,9,10,11]  (cmd 2/1, wipes stored assets)",
+    "slot_setup_1": "06 00 02 01 01 00",
+    "enter_asset_view": "04 00 0a 01  (cmd 10/1)",
+    "store_asset": "ImageUpload(gif, DataType.GIF, image_index=slot 0-11, time_sign=dwell_seconds)",
+    "show_now": "ImageUpload(gif, DataType.GIF, image_index=12, time_sign=0)",
+    "clock": "cmd 6/1, byte[4]=style|0x80(date)|0x40(24h) then RGB; styles 0-7",
+    "diy_enter": "05 00 04 01 01",
+    "diy_pixel": "[0x0a,0,5,1,option,R,G,B,col,row]  (RGB, no ACK)",
+    "brightness": "cmd 4/0x80"
+  },
+  "warnings": [
+    "NEVER enable device password (cmd 5/2 enable=1) — it locks the device.",
+    "Reset brightness after any eco/dim — a low setting survives power-cycle and looks dead.",
+    "Slot-setup / material-wipe destroys stored carousel assets; only send when repainting all 12.",
+    "Keep the vendor app OFF these panels (single central; it also force-OTAs older-stock units).",
+    "Re-send the first frame after a fresh connect (it can be dropped).",
+    "Generated content: keep solid colours per 32x32 frame — the decoder silently skips gradient/colour-heavy frames. (Pre-made library assets are already panel-safe.)"
+  ]
+}
