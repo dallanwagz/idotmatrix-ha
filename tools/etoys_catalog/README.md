@@ -106,3 +106,15 @@ captions, and writes newly-fetched (un-captioned) assets to `new_assets<sfx>.jso
 Verified complete: server `totalCount` == local for every size pulled
 (**32×32: 751 anim + 352 image; 16×16: 842 anim + 257 image; 64×64: 476 anim + 84 image; 0 missing**).
 **All three sizes are fully captioned** (name + description per asset; 2762 assets total).
+
+## Send an asset to the panel — `send_to_panel.py`
+
+```bash
+# needs bleak + the timebox/pinball iDotMatrix driver:
+~/.esphome-venv/bin/python send_to_panel.py 16736                 # by file_id (any size)
+~/.esphome-venv/bin/python send_to_panel.py library_64/all/23648.png  # by path (PNGs auto-wrapped to GIF)
+```
+
+Resolves a bare `file_id` against the `index*.json` catalogs, then stores it to a `count=1`
+carousel slot over BLE and shows it (loops in frame order). Env overrides: `IDM_ADDR` (panel BLE
+address), `IDM_DRIVER_DIR` (path to `timebox/pinball`), `IDM_SLOT` (default 0), `IDM_DWELL` (seconds).
