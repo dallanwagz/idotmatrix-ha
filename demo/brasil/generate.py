@@ -104,16 +104,23 @@ def gen_ball():
     bands = [(0.00, CA), (1 / 3, MX), (2 / 3, US)]
     stars = [(0.10, 0.34), (0.44, 0.60), (0.78, 0.40), (0.30, 0.78), (0.62, 0.22)]
 
+    GOLD = (255, 210, 0)
+    COLS = [CA, MX, US]
+    gstars = [(0.07, 0.30), (0.40, 0.62), (0.73, 0.34), (0.24, 0.74), (0.90, 0.55)]
+    wstars = [(0.66, 0.20), (0.60, 0.32), (0.72, 0.26)]   # emblem stars on the blue blade
+
     def tex(u, v):                   # u=longitude 0..1, v=latitude 0..1 -> solid colour
-        col = WHITE
-        for ph, color in bands:      # three wavy colour panels wrapping the ball
-            c = 0.5 + 0.24 * math.sin(2 * math.pi * (u + ph))
-            if abs(v - c) < 0.115:
-                col = color
-        for su, sv in stars:         # gold stars riding the surface
-            du = min(abs(u - su), 1 - abs(u - su))
-            if du < 0.035 and abs(v - sv) < 0.055:
-                col = YELLOW
+        # swirl: latitude warps longitude so the three colour blades CURVE (the "onda" waves)
+        sw = (u + 0.17 * math.sin(2 * math.pi * v) + 0.10 * math.sin(4 * math.pi * v)) % 1.0
+        sector = int(sw * 3) % 3
+        frac = (sw * 3) % 1.0
+        col = COLS[sector] if 0.15 < frac < 0.85 else WHITE   # big colour panel, white seams
+        for su, sv in wstars:        # white emblem stars sit on the coloured blade
+            if min(abs(u - su), 1 - abs(u - su)) < 0.03 and abs(v - sv) < 0.05:
+                col = WHITE
+        for su, sv in gstars:        # gold star accents
+            if min(abs(u - su), 1 - abs(u - su)) < 0.03 and abs(v - sv) < 0.05:
+                col = GOLD
         return col
 
     n = 30
