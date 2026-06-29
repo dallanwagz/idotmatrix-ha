@@ -95,26 +95,45 @@ def gen_flag():
 
 
 def gen_ball():
-    frames, n = [], 18
+    """Big spinning adidas Trionda (FIFA WC 2026) — texture-mapped onto a rotating sphere.
+    White base + three host-nation waves (CA red / MX green / US blue) + gold stars. Solid colours."""
+    R, cx, cy = 14, 16, 15           # near-full-frame ball
+    BG = (0, 64, 32)                 # dark pitch so the ball pops
+    SHADOW = (0, 44, 22)
+    CA, MX, US = (214, 40, 40), (0, 158, 70), (0, 86, 200)
+    bands = [(0.00, CA), (1 / 3, MX), (2 / 3, US)]
+    stars = [(0.10, 0.34), (0.44, 0.60), (0.78, 0.40), (0.30, 0.78), (0.62, 0.22)]
+
+    def tex(u, v):                   # u=longitude 0..1, v=latitude 0..1 -> solid colour
+        col = WHITE
+        for ph, color in bands:      # three wavy colour panels wrapping the ball
+            c = 0.5 + 0.24 * math.sin(2 * math.pi * (u + ph))
+            if abs(v - c) < 0.115:
+                col = color
+        for su, sv in stars:         # gold stars riding the surface
+            du = min(abs(u - su), 1 - abs(u - su))
+            if du < 0.035 and abs(v - sv) < 0.055:
+                col = YELLOW
+        return col
+
+    n = 30
+    frames = []
     for f in range(n):
-        img = Image.new("RGB", (32, 32), GREEN)
-        d = ImageDraw.Draw(img)
-        d.rectangle([0, 26, 31, 31], fill=YELLOW)            # pitch line
-        t = f / n
-        by = int(4 + abs(math.sin(t * math.pi * 2)) * 14)    # bounce
-        bx = 16
-        d.ellipse([bx - 4, 25, bx + 4, 27], fill=(0, 110, 40))   # shadow
-        d.ellipse([bx - 6, by - 6, bx + 6, by + 6], fill=WHITE)  # ball
-        # black pentagon spots, rotating to fake spin
-        ang = t * math.tau
-        for k in range(5):
-            a = ang + k * math.tau / 5
-            sx = bx + int(round(math.cos(a) * 3.2))
-            sy = by + int(round(math.sin(a) * 3.2))
-            d.rectangle([sx - 1, sy - 1, sx + 1, sy + 1], fill=BLACK)
-        d.rectangle([bx - 1, by - 1, bx + 1, by + 1], fill=BLACK)
+        img = Image.new("RGB", (32, 32), BG)
+        ImageDraw.Draw(img).ellipse([cx - 11, cy + 12, cx + 11, cy + 15], fill=SHADOW)
+        px = img.load()
+        rot = f / n
+        for y in range(32):
+            for x in range(32):
+                dx, dy = (x + 0.5 - cx) / R, (y + 0.5 - cy) / R
+                r2 = dx * dx + dy * dy
+                if r2 <= 1.0:
+                    dz = math.sqrt(max(0.0, 1.0 - r2))
+                    u = (math.atan2(dx, dz) / math.tau + rot) % 1.0
+                    v = math.asin(max(-1.0, min(1.0, dy))) / math.pi + 0.5
+                    px[x, y] = tex(u, v)
         frames.append(img)
-    save_gif(frames, "ball.gif", 60)
+    save_gif(frames, "ball.gif", 55)
 
 
 def _text_mask(s, fnt):
