@@ -70,6 +70,10 @@ def main():
     print(f"connected {ADDR} — loading {n}-slot carousel", flush=True)
     L = d._link
     L.last_notify = b""
+    L.write(IDM.frame(2, 1, 12, *range(12)))         # full clear: wipe all 12 slots (kills leftovers)
+    time.sleep(1.0)
+    print("wipe ack:", L.last_notify.hex() or "(none)", flush=True)
+    L.last_notify = b""
     L.write(IDM.frame(2, 1, n, *range(n)))          # slot-setup, count=n
     time.sleep(1.0)
     print("setup ack:", L.last_notify.hex() or "(none)", flush=True)
