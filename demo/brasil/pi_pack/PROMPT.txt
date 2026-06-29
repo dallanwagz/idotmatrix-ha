@@ -1,0 +1,22 @@
+Push the Brazil futebol display to the two iDotMatrix panels using this pack (you control the panels
+over BLE from the Pi, already set up).
+
+PACK: this folder — idm_push.py (standalone bleak-only pusher) + GIFs (flag, flag_L, flag_R, ball,
+brasil, gol) + manifest.json. Requires python3 + bleak (already on the Pi).
+
+PANELS (address by MAC on the Pi/BlueZ): IDM-858931 = 6F:5D:FE:85:89:31 · IDM-D28F7F = 1F:D6:5C:D2:8F:7F. Both 32x32. One BLE central per panel at a time.
+
+DO THIS — load the rotating carousel (flag 10s -> ball 8s -> BRASIL 8s) on BOTH panels:
+  for MAC in 6F:5D:FE:85:89:31 1F:D6:5C:D2:8F:7F; do
+    IDM_ADDR=$MAC python3 idm_push.py flag.gif:10 ball.gif:8 brasil.gif:8
+  done
+idm_push.py wipes all 12 slots, loads slots 0..N-1, and starts the on-device cycle (autonomous,
+survives disconnect). Each arg is file:dwell_seconds; up to 12 items.
+
+OPTIONS:
+- One big flag spanning BOTH panels (static): IDM_ADDR=6F:5D:FE:85:89:31 python3 idm_push.py flag_L.gif:300 ; IDM_ADDR=1F:D6:5C:D2:8F:7F python3 idm_push.py flag_R.gif:300
+- GOL! celebration: push gol.gif:8 to both, then re-push the carousel.
+
+RULES: never enable the device password (it locks the panel); keep the vendor app off these panels;
+one central per panel. If a push reports NO_SPACE/ack timeout, retry once. Confirm success when each
+panel prints "carousel started — cycling autonomously".

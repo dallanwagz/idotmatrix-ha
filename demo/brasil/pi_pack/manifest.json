@@ -1,0 +1,31 @@
+{
+  "name": "brasil-futebol",
+  "target": "iDotMatrix HXS-002 32x32 RGB panels over BLE",
+  "pusher": "idm_push.py (standalone, bleak-only — no external driver)",
+  "requires": ["python3", "bleak"],
+  "panels": [
+    {"name": "IDM-858931", "mac": "6F:5D:FE:85:89:31"},
+    {"name": "IDM-D28F7F", "mac": "1F:D6:5C:D2:8F:7F"}
+  ],
+  "animations": {
+    "flag.gif":   "Brazil bandeira with twinkling stars — complete 32x32 (use this in the carousel)",
+    "flag_L.gif": "left half of a 64-wide bandeira (pair with flag_R for one flag spanning BOTH panels)",
+    "flag_R.gif": "right half of the 64-wide bandeira",
+    "ball.gif":   "bouncing soccer ball on the green pitch",
+    "brasil.gif": "'BRASIL' scrolling, yellow on blue",
+    "gol.gif":    "'GOL!' flash — for celebrations"
+  },
+  "recommended_carousel": ["flag.gif:10", "ball.gif:8", "brasil.gif:8"],
+  "commands": {
+    "carousel_both_panels": "for MAC in 6F:5D:FE:85:89:31 1F:D6:5C:D2:8F:7F; do IDM_ADDR=$MAC python3 idm_push.py flag.gif:10 ball.gif:8 brasil.gif:8; done",
+    "split_flag_across_panels": "IDM_ADDR=6F:5D:FE:85:89:31 python3 idm_push.py flag_L.gif:300 ; IDM_ADDR=1F:D6:5C:D2:8F:7F python3 idm_push.py flag_R.gif:300",
+    "gol_flash": "for MAC in 6F:5D:FE:85:89:31 1F:D6:5C:D2:8F:7F; do IDM_ADDR=$MAC python3 idm_push.py gol.gif:8; done"
+  },
+  "notes": [
+    "Pusher wipes all 12 slots, loads slots 0..N-1, then starts the on-device cycle. Up to 12 items.",
+    "dwell is per-item seconds: 'file.gif:SECONDS'.",
+    "One BLE central per panel at a time (single central).",
+    "On Pi/Linux (BlueZ) address by MAC (above). On macOS use the per-host CoreBluetooth UUID.",
+    "Never enable the device password (it locks the panel). Keep the vendor app off these panels."
+  ]
+}
