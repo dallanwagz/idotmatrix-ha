@@ -95,50 +95,36 @@ def gen_flag():
 
 
 def gen_ball():
-    """Big spinning adidas Trionda (FIFA WC 2026) — texture-mapped onto a rotating sphere.
-    White base + three host-nation waves (CA red / MX green / US blue) + gold stars. Solid colours."""
-    R, cx, cy = 14, 16, 15           # near-full-frame ball
-    BG = (0, 64, 32)                 # dark pitch so the ball pops
-    SHADOW = (0, 44, 22)
-    CA, MX, US = (214, 40, 40), (0, 158, 70), (0, 86, 200)
-    bands = [(0.00, CA), (1 / 3, MX), (2 / 3, US)]
-    stars = [(0.10, 0.34), (0.44, 0.60), (0.78, 0.40), (0.30, 0.78), (0.62, 0.22)]
-
-    GOLD = (255, 210, 0)
-    COLS = [CA, MX, US]
-    gstars = [(0.07, 0.30), (0.40, 0.62), (0.73, 0.34), (0.24, 0.74), (0.90, 0.55)]
-    wstars = [(0.66, 0.20), (0.60, 0.32), (0.72, 0.26)]   # emblem stars on the blue blade
-
-    def tex(u, v):                   # u=longitude 0..1, v=latitude 0..1 -> solid colour
-        # swirl: latitude warps longitude so the three colour blades CURVE (the "onda" waves)
-        sw = (u + 0.17 * math.sin(2 * math.pi * v) + 0.10 * math.sin(4 * math.pi * v)) % 1.0
-        sector = int(sw * 3) % 3
-        frac = (sw * 3) % 1.0
-        col = COLS[sector] if 0.15 < frac < 0.85 else WHITE   # big colour panel, white seams
-        for su, sv in wstars:        # white emblem stars sit on the coloured blade
-            if min(abs(u - su), 1 - abs(u - su)) < 0.03 and abs(v - sv) < 0.05:
-                col = WHITE
-        for su, sv in gstars:        # gold star accents
-            if min(abs(u - su), 1 - abs(u - su)) < 0.03 and abs(v - sv) < 0.05:
-                col = GOLD
-        return col
-
-    n = 30
+    """Spinning adidas Trionda (FIFA WC 2026) as a clean 2-D pinwheel — the design that actually
+    reads at 32px (modelled on the real ball, viewed via Sketchfab): a white sphere with three
+    curved colour waves (CA red / MX green / US blue) spiralling out + gold star accents."""
+    cx = cy = 16
+    R = 15
+    BG, SHADOW, RIM = (0, 64, 32), (0, 44, 22), (228, 228, 228)
+    RED, GREEN, BLUE, GOLD = (222, 40, 45), (0, 158, 70), (0, 92, 205), (255, 205, 0)
+    COLS = [RED, GREEN, BLUE]
+    n = 24
     frames = []
     for f in range(n):
         img = Image.new("RGB", (32, 32), BG)
-        ImageDraw.Draw(img).ellipse([cx - 11, cy + 12, cx + 11, cy + 15], fill=SHADOW)
-        px = img.load()
-        rot = f / n
-        for y in range(32):
-            for x in range(32):
-                dx, dy = (x + 0.5 - cx) / R, (y + 0.5 - cy) / R
-                r2 = dx * dx + dy * dy
-                if r2 <= 1.0:
-                    dz = math.sqrt(max(0.0, 1.0 - r2))
-                    u = (math.atan2(dx, dz) / math.tau + rot) % 1.0
-                    v = math.asin(max(-1.0, min(1.0, dy))) / math.pi + 0.5
-                    px[x, y] = tex(u, v)
+        d = ImageDraw.Draw(img)
+        d.ellipse([cx - 12, cy + 12, cx + 12, cy + 15], fill=SHADOW)   # ground shadow
+        d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=WHITE)        # white ball
+        rot = 2 * math.pi * f / n
+        for k in range(3):                                            # three curved colour waves
+            col = COLS[k]
+            rr = 2.0
+            while rr < R - 0.6:
+                ang = rot + k * 2 * math.pi / 3 + 0.17 * rr            # spiral = the "onda" curve
+                x, y = cx + rr * math.cos(ang), cy + rr * math.sin(ang)
+                w = max(0.9, 2.7 - 0.11 * rr)                          # taper to a comma tip
+                d.ellipse([x - w, y - w, x + w, y + w], fill=col)
+                rr += 0.5
+        for k in range(3):                                            # a gold star near each tip
+            ang = rot + k * 2 * math.pi / 3 + 0.17 * 12.5 + 0.25
+            x, y = cx + 12.5 * math.cos(ang), cy + 12.5 * math.sin(ang)
+            d.ellipse([x - 1, y - 1, x + 1, y + 1], fill=GOLD)
+        d.ellipse([cx - R, cy - R, cx + R, cy + R], outline=RIM)       # crisp rim
         frames.append(img)
     save_gif(frames, "ball.gif", 55)
 
