@@ -1,0 +1,11 @@
+Drive the two iDotMatrix panels' World Cup display via the Pi with this pack (self-contained:
+set_team.py + team GIFs; needs python3 + bleak, already on the Pi).
+
+Switch BOTH panels to whoever is playing:
+  python3 set_team.py brazil
+  python3 set_team.py usa
+
+Each team = its flag + a SHARED spinning ball (only the background colour changes per team) + its
+wordmark. On the Pi, panels are addressed by MAC automatically: IDM-858931=6F:5D:FE:85:89:31,
+IDM-D28F7F=1F:D6:5C:D2:8F:7F. One BLE central per panel; never enable the device password; keep the
+vendor app off. Add a team by dropping flag_<t>/ball_<t>/text_<t>.gif + a TEAMS entry in set_team.py.
