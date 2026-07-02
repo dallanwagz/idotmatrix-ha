@@ -95,14 +95,11 @@ def gen_flag():
 
 
 def gen_ball():
-    """Spinning adidas Trionda (FIFA WC 2026) as a clean 2-D pinwheel — the design that actually
-    reads at 32px (modelled on the real ball, viewed via Sketchfab): a white sphere with three
-    curved colour waves (CA red / MX green / US blue) spiralling out + gold star accents."""
+    """Spinning soccer ball — clean classic Telstar (white sphere + black pentagons). Reads
+    unmistakably as a ball at 32px; big, solid colours, smooth in-place spin."""
     cx = cy = 16
     R = 15
-    BG, SHADOW, RIM = (0, 64, 32), (0, 44, 22), (228, 228, 228)
-    RED, GREEN, BLUE, GOLD = (222, 40, 45), (0, 158, 70), (0, 92, 205), (255, 205, 0)
-    COLS = [RED, GREEN, BLUE]
+    BG, SHADOW, BLK, RIM = (0, 64, 32), (0, 44, 22), (20, 20, 24), (225, 225, 225)
     n = 24
     frames = []
     for f in range(n):
@@ -111,22 +108,19 @@ def gen_ball():
         d.ellipse([cx - 12, cy + 12, cx + 12, cy + 15], fill=SHADOW)   # ground shadow
         d.ellipse([cx - R, cy - R, cx + R, cy + R], fill=WHITE)        # white ball
         rot = 2 * math.pi * f / n
-        for k in range(3):                                            # three curved colour waves
-            col = COLS[k]
-            rr = 2.0
-            while rr < R - 0.6:
-                ang = rot + k * 2 * math.pi / 3 + 0.17 * rr            # spiral = the "onda" curve
-                x, y = cx + rr * math.cos(ang), cy + rr * math.sin(ang)
-                w = max(0.9, 2.7 - 0.11 * rr)                          # taper to a comma tip
-                d.ellipse([x - w, y - w, x + w, y + w], fill=col)
-                rr += 0.5
-        for k in range(3):                                            # a gold star near each tip
-            ang = rot + k * 2 * math.pi / 3 + 0.17 * 12.5 + 0.25
-            x, y = cx + 12.5 * math.cos(ang), cy + 12.5 * math.sin(ang)
-            d.ellipse([x - 1, y - 1, x + 1, y + 1], fill=GOLD)
+
+        def pent(pcx, pcy, rad, a0):
+            pts = [(pcx + rad * math.cos(a0 + i * 2 * math.pi / 5),
+                    pcy + rad * math.sin(a0 + i * 2 * math.pi / 5)) for i in range(5)]
+            d.polygon(pts, fill=BLK)
+
+        pent(cx, cy, 3.4, rot)                                         # centre pentagon
+        for k in range(5):                                            # ring of pentagons
+            a = rot + k * 2 * math.pi / 5
+            pent(cx + 9.2 * math.cos(a), cy + 9.2 * math.sin(a), 2.5, rot + a)
         d.ellipse([cx - R, cy - R, cx + R, cy + R], outline=RIM)       # crisp rim
         frames.append(img)
-    save_gif(frames, "ball.gif", 55)
+    save_gif(frames, "ball.gif", 60)
 
 
 def _text_mask(s, fnt):
