@@ -41,7 +41,20 @@ i.e. a **set-and-forget single animation** that loops untethered. Env: `IDM_ADDR
 
 ## 3. The asset library — 2,762 captioned assets
 
-> **Standalone asset repo:** the whole catalog (assets + indexes + captions + catalog tooling — `etoys_api.py`, `sync.py`, `send_to_panel.py`, `carousel_to_panel.py`, `build_montage.py`, `contact_sheets.py`, `panels.json`) is also published as its own **private** repo, **https://github.com/dallanwagz/idotmatrix-assets** (contents at root). Clone that directly for the orchestrator; it mirrors `tools/etoys_catalog/` here.
+> **Asset catalog = its own repo, mounted as a submodule.** The catalog (all 2,762 assets +
+> indexes + captions + catalog tooling) lives in a standalone **private** repo —
+> **https://github.com/dallanwagz/idotmatrix-assets** (contents at root) — and is mounted here at
+> `tools/etoys_catalog/` as a **git submodule**, so every `tools/etoys_catalog/…` path still resolves.
+>
+> - **Clone with the catalog:** `git clone --recurse-submodules https://github.com/dallanwagz/idotmatrix-ha.git`
+>   (or `git submodule update --init` after a plain clone). Or clone the catalog alone:
+>   `git clone https://github.com/dallanwagz/idotmatrix-assets.git`.
+> - **Private-repo access for the Pi/orchestrator:** it needs read auth to `idotmatrix-assets` —
+>   either a **read-only deploy key** (repo → Settings → Deploy keys; SSH URL
+>   `git@github.com:dallanwagz/idotmatrix-assets.git`), or a **fine-grained PAT** (Contents: read,
+>   scoped to that repo) over HTTPS.
+> - **Catalog updates** (e.g. `sync.py` pulling new assets, captioning) are committed in
+>   `idotmatrix-assets`; then bump the submodule pointer here in `idotmatrix-ha`.
 
 Every asset has a vision-generated **name** + **2–3 sentence description**, merged into the index
 CSVs. Located under `tools/etoys_catalog/`.
