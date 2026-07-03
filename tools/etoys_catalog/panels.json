@@ -161,5 +161,6 @@
     "shared_ball": "realistic rolling Trionda; only background colour changes per team",
     "addressing": "CoreBluetooth UUID on macOS, MAC on Linux/Pi (auto)",
     "add_team": "drop flag_<t>.gif + text_<t>.gif, gen_ball.py for ball_<t>.gif, add a TEAMS entry"
-  }
+  },
+  "catalog_repo": "https://github.com/dallanwagz/idotmatrix-assets (private) \u2014 standalone clone of tools/etoys_catalog: 2762 captioned assets + indexes/captions + catalog tooling"
 }

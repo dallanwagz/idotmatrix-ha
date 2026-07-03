@@ -41,6 +41,8 @@ i.e. a **set-and-forget single animation** that loops untethered. Env: `IDM_ADDR
 
 ## 3. The asset library — 2,762 captioned assets
 
+> **Standalone asset repo:** the whole catalog (assets + indexes + captions + catalog tooling — `etoys_api.py`, `sync.py`, `send_to_panel.py`, `carousel_to_panel.py`, `build_montage.py`, `contact_sheets.py`, `panels.json`) is also published as its own **private** repo, **https://github.com/dallanwagz/idotmatrix-assets** (contents at root). Clone that directly for the orchestrator; it mirrors `tools/etoys_catalog/` here.
+
 Every asset has a vision-generated **name** + **2–3 sentence description**, merged into the index
 CSVs. Located under `tools/etoys_catalog/`.
 
