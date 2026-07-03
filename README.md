@@ -12,6 +12,7 @@ app or cloud required.
 
 | Path | What |
 |---|---|
+| `pi-quickstart/` | **Beginner kit** — self-contained (`bleak`+`Pillow`) tools to get a Raspberry Pi driving one or two panels (32×32 and 64×64): scan → identify → build panel-safe GIFs → push live, incl. cross-panel animations. Start at [`pi-quickstart/README.md`](pi-quickstart/README.md); agent handoff in [`pi-quickstart/AGENT.md`](pi-quickstart/AGENT.md). |
 | `custom_components/idotmatrix/` | The Home Assistant integration (HACS-installable; Core-PR-shaped). `protocol.py` is a **pure, dependency-free, unit-tested** protocol module. |
 | `tools/idm_cli.py` | Standalone `bleak` CLI — scan/connect/drive the panel from any host. |
 | `tools/idm_daemon.py` + `idmctl.py` | Persistent-connection driver for interactive use. |
