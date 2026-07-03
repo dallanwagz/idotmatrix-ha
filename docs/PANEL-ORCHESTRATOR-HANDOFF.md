@@ -196,3 +196,25 @@ For a **12-slot carousel** or a **36-scene single-GIF story**, follow the `story
 
 `tools/etoys_catalog/panels.json` — panel list (MAC/size/role) + library summary + key constraints,
 for programmatic ingestion. See §1 / §3 for the human version.
+
+---
+
+## World Cup team display — `demo/worldcup/set_team.py`
+
+Switch BOTH panels to whoever's playing, one command (self-contained, bleak only):
+```bash
+cd demo/worldcup
+python3 set_team.py brazil     # both panels -> Brazil (green bg)
+python3 set_team.py usa        # both panels -> USA (navy bg)
+```
+Each team's carousel = **flag → shared rolling Trionda ball → wordmark**. The ball is one shared
+asset (realistic shaded/rolling adidas Trionda); **only its background colour changes per team**.
+`set_team.py` addresses panels by **CoreBluetooth UUID on macOS** and by **MAC on Linux/Pi**
+(auto-detected) — this is the reliable path (addressing by MAC *on macOS* scan-matches inconsistently
+and can leave one panel stale).
+
+- Assets + switcher are the `*.gif`/`.py` in `demo/worldcup/` (also bundled as `worldcup_pack.tar.gz`).
+- **Add a team:** drop `flag_<team>.gif` + `text_<team>.gif`, run `gen_ball.py` with the team's bg
+  colour for `ball_<team>.gif`, and add one `TEAMS` entry in `set_team.py`.
+- Panel identity: `IDM-858931` (uuid `0A935535-…560B` / mac `6F:5D:FE:85:89:31`),
+  `IDM-D28F7F` (uuid `D2B7C4A4-…65F3` / mac `1F:D6:5C:D2:8F:7F`).
