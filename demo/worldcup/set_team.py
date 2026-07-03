@@ -16,13 +16,18 @@ FA_WRITE="0000fa02-0000-1000-8000-00805f9b34fb"; FA_NOTIFY="0000fa03-0000-1000-8
 OUTER=4096; SAFE=244; GIF=1
 
 PANELS=[
-    {"name":"IDM-858931","uuid":"0A935535-7939-DD31-2CC3-72B639D9560B","mac":"6F:5D:FE:85:89:31"},
-    {"name":"IDM-D28F7F","uuid":"D2B7C4A4-4260-203B-6500-9AD27E2F65F3","mac":"1F:D6:5C:D2:8F:7F"},
+    {"name":"IDM-858931","uuid":"0A935535-7939-DD31-2CC3-72B639D9560B","mac":"6F:5D:FE:85:89:31","size":32},
+    {"name":"IDM-D28F7F","uuid":"D2B7C4A4-4260-203B-6500-9AD27E2F65F3","mac":"1F:D6:5C:D2:8F:7F","size":32},
+    # brother's 64x64 panel — fill in its mac/uuid, size=64 uses the *_64.gif assets automatically:
+    # {"name":"IDM-XXXXXX","mac":"AA:BB:CC:DD:EE:FF","size":64},
 ]
+# base asset names (no .gif); a panel of size N loads "<base>.gif" (32) or "<base>_<N>.gif" (else).
 TEAMS={
-    "brazil":[("flag_brazil.gif",10),("ball_brazil.gif",8),("text_brazil.gif",8)],
-    "usa":   [("flag_usa.gif",10),  ("ball_usa.gif",8),  ("text_usa.gif",8)],
+    "brazil":[("flag_brazil",10),("ball_brazil",8),("text_brazil",8)],
+    "usa":   [("flag_usa",10),  ("ball_usa",8),  ("text_usa",8)],
 }
+def _asset(base, size):
+    return os.path.join(HERE, base + ("" if size == 32 else f"_{size}") + ".gif")
 
 def frame(cmd,sub,*p):
     body=bytes(b&0xFF for b in p); t=4+len(body)
@@ -62,12 +67,13 @@ async def push(addr, items):
 async def main():
     team=(sys.argv[1].lower() if len(sys.argv)>1 else "")
     if team not in TEAMS: sys.exit(f"usage: set_team.py {'|'.join(TEAMS)}")
-    items=[(open(os.path.join(HERE,f),"rb").read(),d) for f,d in TEAMS[team]]
     key="uuid" if platform.system()=="Darwin" else "mac"
-    print(f"switching BOTH panels -> {team.upper()}", flush=True)
+    print(f"switching {len(PANELS)} panel(s) -> {team.upper()}", flush=True)
     for pan in PANELS:
+        size=pan.get("size",32)
+        items=[(open(_asset(base,size),"rb").read(),d) for base,d in TEAMS[team]]   # size-matched assets
         ok=await push(pan[key], items)
-        print(f"  {pan['name']}: {'OK' if ok else 'FAILED'}", flush=True)
+        print(f"  {pan['name']} ({size}x{size}): {'OK' if ok else 'FAILED'}", flush=True)
 
 if __name__=="__main__":
     asyncio.run(main())
