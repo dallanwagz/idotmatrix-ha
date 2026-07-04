@@ -44,6 +44,17 @@ upload**. Expect **~15–60 s** end to end (the BLE push of a ~90 KB GIF is the 
 client timeout (≥120 s). A good UX: speak an interim "working on it…" immediately, then speak
 `message` when the POST returns.
 
+## Library endpoints (saved assets — the chooser + save half)
+Same host/port as `/prompt`.
+- `GET  /library` → `{"names": [...]}` — list saved assets.
+- `POST /show`  `{"name": "surprise_1", "mode": "now|store"?, "dwell"?, "panel"?}` → push a saved
+  asset; bare `{}`/no name returns the list. `→ {"ok", "message"}`.
+- `POST /save`  `{"name": "gold_star"}` → promote the **last generated** GIF into the library.
+  `→ {"ok", "message", "name"}` (409 if nothing generated yet).
+
+Bot commands wired to these: **`/panel <desc>`** (generate; if `<desc>` is a saved name, shows it),
+**`/show <name>`** (chooser; bare `/show` lists), **`/save <name>`**, **`/list`**.
+
 ## Deployment topology
 ```
 ESP32 --WS/Opus--> voice-bridge (your piece; ASR) --POST /prompt--> core @ CT150:8090
