@@ -29,7 +29,8 @@ def frames_of(im):
     return fs, durs
 
 
-def report(path):
+def check(path):
+    """Return (ok, checks) where checks = [(label, passed), ...]. No printing — reusable by the API."""
     im = Image.open(path)
     fs, durs = frames_of(im)
     size = os.path.getsize(path)
@@ -47,7 +48,11 @@ def report(path):
         (f"<=256 colours/frame (max {maxc})", maxc <= 256),
         (f"frame duration >= {MIN_MS}ms (min {min(durs) if durs else 0}ms)", (min(durs) if durs else 0) >= MIN_MS),
     ]
-    ok = all(c[1] for c in checks)
+    return all(c[1] for c in checks), checks
+
+
+def report(path):
+    ok, checks = check(path)
     for label, passed in checks:
         print(f"  [{'PASS' if passed else 'FAIL'}] {label}")
     print(f"  == {'COMPLIANT' if ok else 'NOT compliant — run with --fix'} ==")

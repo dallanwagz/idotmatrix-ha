@@ -1,0 +1,17 @@
+# Run on the Pi:  sudo docker compose -f server/docker-compose.yml up -d --build
+services:
+  idm-panel-api:
+    build:
+      context: ..
+      dockerfile: server/Dockerfile
+    image: idm-panel-api
+    container_name: idm-panel-api
+    # host networking + the host DBus socket let bleak in the container drive the panel via BlueZ,
+    # and expose the API directly on the Pi's <ip>:8080
+    network_mode: host
+    volumes:
+      - /run/dbus:/run/dbus
+      - ../pi-quickstart/panels.local.json:/app/pi-quickstart/panels.local.json:ro
+    environment:
+      - IDM_PANEL=big
+    restart: unless-stopped
