@@ -37,7 +37,13 @@ PUSH_LOCK = threading.Lock()                                        # single BLE
 def _save_upload():
     f = request.files.get("gif")
     if not f:
-        return None, (jsonify(error="upload a GIF in multipart form field 'gif'"), 400)
+        stray = request.form.get("gif")                      # gif=filename sent WITHOUT the @
+        if stray:
+            hint = (f"looks like the '@' is missing — curl needs  -F gif=@{stray}  "
+                    "(the @ tells curl to upload the file's contents, not its name)")
+        else:
+            hint = "attach a GIF as a file, e.g.  curl -F gif=@yourfile.gif http://<host>:8080/push"
+        return None, (jsonify(error="no GIF file received", hint=hint), 400)
     fd, path = tempfile.mkstemp(suffix=".gif")
     os.close(fd)
     f.save(path)
