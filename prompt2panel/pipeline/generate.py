@@ -38,6 +38,11 @@ read best; pure black is "off".
 Keep the PROGRAM ITSELF COMPACT — well under ~120 lines so it fits comfortably in one response.
 Use loops and helper functions; render any words with `Canvas.text(str, colour)`; NEVER place text
 or shapes pixel-by-pixel. A rich request is fine, but the CODE must stay short and COMPLETE.
+STAY IN BOUNDS: everything must fit inside the 64x64 frame — nothing may run off the edges (no
+clipped text or sprites). Text at 64px is tiny: show at most ONE SHORT word at a time centred with
+`Canvas.text` (it auto-fits the width), or SCROLL a longer phrase horizontally across frames by
+moving its x each frame. NEVER draw a long phrase as static text — it WILL be clipped. If the user
+gives several phrases, cycle or scroll through them one at a time.
 Output ONLY the complete Python program in a single ```python code block."""
 
 
