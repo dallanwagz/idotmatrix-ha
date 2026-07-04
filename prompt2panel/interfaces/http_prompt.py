@@ -1,24 +1,29 @@
-"""HTTP interface: POST /prompt {text} -> generate+validate+push, return a short (spoken) status.
-This is what the voice / ESP32 buddy (and any future web UI) posts transcribed text to. Thin —
-all the work is in pipeline.core.
+"""HTTP interface: POST /prompt -> generate+validate+push, return a short (spoken) status.
+The voice-bridge (ESP32: Opus->ASR->text) and any web UI POST transcribed text here. Thin — all
+the work is in pipeline.core. See CONTRACT.md for the frozen request/response shape.
 
-    POST /prompt   json {"text": "...", "mode": "now|store", "dwell": 30, "panel": "big"}
-        -> {"ok": bool, "message": "...", "pushed": bool, "attempts": n}
+    POST /prompt   json {"prompt": "<text>", "source": "voice",
+                         "mode": "now|store"?, "dwell": 30?, "panel": "big"?}
+        200 -> {"ok": bool, "message": "<short spoken status>", "pushed": bool, "attempts": n}
+        400 -> {"ok": false, "message": "..."}   (no prompt)
+
+    The caller speaks `message` back to the user.
 """
-import sys
 import os
+import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from flask import Flask, jsonify, request           # noqa: E402
 from pipeline import Job, prompt_to_panel            # noqa: E402
 
 app = Flask(__name__)
+PORT = int(os.environ.get("P2P_PROMPT_PORT", "8090"))
 
 
 @app.post("/prompt")
 def prompt():
     data = request.get_json(force=True, silent=True) or {}
-    text = (data.get("text") or "").strip()
+    text = (data.get("prompt") or data.get("text") or "").strip()   # 'prompt' primary; 'text' alias
     if not text:
         return jsonify(ok=False, message="Give me something to make."), 400
     job = Job(prompt=text, source=data.get("source", "voice"),
@@ -34,4 +39,4 @@ def health():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8090)
+    app.run(host="0.0.0.0", port=PORT)
