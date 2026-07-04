@@ -39,9 +39,13 @@ Keep the PROGRAM ITSELF COMPACT — well under ~120 lines so it fits comfortably
 Use loops and helper functions; render any words with `Canvas.text(str, colour)`; NEVER place text
 or shapes pixel-by-pixel. A rich request is fine, but the CODE must stay short and COMPLETE.
 STAY IN BOUNDS: everything must fit inside the 64x64 frame — nothing may run off the edges (no
-clipped text or sprites). Text at 64px is tiny: show at most ONE SHORT word at a time centred with
-`Canvas.text` (it auto-fits the width), or SCROLL a longer phrase horizontally across frames by
-moving its x each frame. NEVER draw a long phrase as static text — it WILL be clipped. If the user
+clipped text or sprites).
+FILL THE FRAME: the background/scene must extend to ALL four edges (cover x and y from 0 to 63). Do
+NOT leave empty black bands or margins, and do NOT reserve a blank strip for text — unless black is
+a deliberate part of the design.
+TEXT at 64px is tiny: show at most ONE SHORT word centred with `Canvas.text` (it auto-fits the
+width), or SCROLL a longer phrase horizontally by moving its x each frame, drawn OVER the scene (not
+in a reserved blank band). NEVER draw a long phrase as static text — it WILL be clipped. If the user
 gives several phrases, cycle or scroll through them one at a time.
 Output ONLY the complete Python program in a single ```python code block."""
 
