@@ -5,6 +5,7 @@ import os
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = os.environ.get("P2P_MODEL", "claude-sonnet-5")          # Sonnet by default
 MAX_REPAIR = int(os.environ.get("P2P_MAX_REPAIR", "3"))
+MAX_TOKENS = int(os.environ.get("P2P_MAX_TOKENS", "16000"))    # generator programs can be long; don't truncate
 
 # The panel driver (the REST API container we already built). Brain talks to hands over HTTP.
 IDM_API_URL = os.environ.get("IDM_API_URL", "http://bt.local:8080")

@@ -34,7 +34,11 @@ SYSTEM = """You write a COMPLETE, self-contained Python program that renders one
   P2P_OUT (an absolute path). Read it: `import os; OUT = os.environ["P2P_OUT"]`.
 - keep the file UNDER 90 KB (fewer frames / fewer colours if needed), 20-60 frames, loop forever.
 Full colour, gradients and shading are welcome (this panel renders them). Bright saturated colours
-read best; pure black is "off". Output ONLY the Python program in a single ```python code block."""
+read best; pure black is "off".
+Keep the PROGRAM ITSELF COMPACT — well under ~120 lines so it fits comfortably in one response.
+Use loops and helper functions; render any words with `Canvas.text(str, colour)`; NEVER place text
+or shapes pixel-by-pixel. A rich request is fine, but the CODE must stay short and COMPLETE.
+Output ONLY the complete Python program in a single ```python code block."""
 
 
 def _extract_code(text):
@@ -77,24 +81,37 @@ def generate(prompt, max_repair=None):
                  f"SPEC:\n{spec}\n\nMake a 64x64 animated GIF of: {prompt}"}]
     last_err = None
     for attempt in range(1, max_repair + 1):
-        resp = client.messages.create(model=config.MODEL, max_tokens=4000,
+        resp = client.messages.create(model=config.MODEL, max_tokens=config.MAX_TOKENS,
                                       system=SYSTEM, messages=messages)
         text = "".join(b.text for b in resp.content if b.type == "text")
         code = _extract_code(text)
-        try:
-            gif = _run_generator(code)
-        except GenerationError as e:
-            last_err = str(e)
-            messages += [{"role": "assistant", "content": text},
-                         {"role": "user", "content": f"That failed to run: {last_err}\nFix and resend the full program."}]
-            continue
-        ok, checks = validate_gif.check(gif)
-        if ok:
-            return gif, code, attempt
-        fails = "; ".join(label for label, passed in checks if not passed)
-        last_err = f"spec failures: {fails}"
+
+        # Diagnose in the cheapest order: truncation -> syntax -> run -> spec.
+        problem = None
+        if resp.stop_reason == "max_tokens":
+            problem = ("your program was CUT OFF (too long for one response). Rewrite it MUCH more "
+                       "compactly — loops/helpers, Canvas.text() for words, fewer frames — and make "
+                       "sure it is COMPLETE.")
+        if problem is None:
+            try:
+                compile(code, "<generator>", "exec")
+            except SyntaxError as se:
+                problem = (f"the program has a syntax error: {se.msg} (line {se.lineno}). It may have "
+                           "been cut off — resend the COMPLETE, valid program, more compact if needed.")
+        if problem is None:
+            try:
+                gif = _run_generator(code)
+                ok, checks = validate_gif.check(gif)
+                if ok:
+                    return gif, code, attempt
+                problem = "the GIF rendered but failed the spec: " + \
+                          "; ".join(l for l, p in checks if not p) + ". Adjust size/frames/colours/loop."
+            except GenerationError as e:
+                problem = f"it failed to run: {e}"
+
+        last_err = problem
         messages += [{"role": "assistant", "content": text},
                      {"role": "user", "content": textwrap.dedent(f"""\
-                        The GIF rendered but failed the spec: {fails}.
-                        Fix the program (adjust size/frames/colours/loop) and resend the full program.""")}]
+                        {problem}
+                        Resend the FULL corrected program in one ```python block.""")}]
     raise GenerationError(f"could not produce a compliant GIF in {max_repair} tries ({last_err})")
