@@ -323,3 +323,24 @@ real panel (BLE HCI-snoop capture of the v2.1.2 Android app + direct Pi control)
   (render→GIF→push) already does exactly what the app does — no text command needed.
 - **Driver:** `pi-quickstart/panel_cmd.py` sends this catalog by name; `idm_push.py` handles
   images/GIFs. Reach the Pi at `bt.local` (WiFi). RE working tree: `re-idm64/` (gitignored).
+
+### RICH art works on the 64 — the "flat-16" rule does NOT apply (VERIFIED)
+Captured the app's "Preset Phrases" cloud assets off the wire and reconstructed the GIFs: they are
+**64×64, up to ~126 colours/frame, 60–92 frames, ~40 ms (25 fps), up to ~80 KB** — full-colour,
+gradient-shaded scenes. Re-pushed one through the **normal show-now path** (`idm_push --now`) and it
+rendered **full-colour and smooth**. So the 64's decoder handles rich content the 32×32-era flat-16
+rule forbade. Build rich assets with `save_gif(..., colors=256, dither=True)`. (Large uploads
+occasionally throw a transient GATT `Unlikely Error` mid-stream — `idm_push`/`phrase_push` now
+auto-retry with a fresh connection.)
+
+### Preset Phrases (cmd 6/2) — a SECOND display set, separate from the 12-slot carousel
+Reverse-engineered from a live app capture (`06 02` = the Phrase command):
+- The app uploads up to **6 GIFs to image indices 14–19** (`0x0e`–`0x13`) via the normal chunked
+  image transport (dataType byte `1`), then **activates them** with one frame:
+  **`0b 00 06 02 <count> <idx0>…<idxN>`** — captured `06 02 06 0e 0f 10 11 12 13` (6 images, 14–19).
+- Indices 14–19 are NOT carousel slots (0–11) or show-now (12); the phrase set is its own thing.
+- In the app: the ✓ checkmark only **saves** the preset locally; **tapping the saved tile is what
+  sends** it. The **title (8 char) and theme colour never go over BLE** — the theme colour is just
+  the `textColor`/`textBgColor` for any **Text-type** slot (baked into that slot's rasterized image,
+  `PresetPhraseActivity`), and it tints the app's list tile. No effect on image-only phrases.
+- **Driver:** `pi-quickstart/phrase_push.py --panel big a.gif … (≤6)` replicates this exactly.

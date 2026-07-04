@@ -82,15 +82,20 @@ class Canvas:
         self.img.paste(solid, (ox, oy), mask.point(lambda v: 255 if v > 110 else 0))
 
 
-def panel_safe(img, colors=MAX_COLORS):
-    """Quantize to <=`colors` flat colours with NO dithering — the decoder-safe form."""
-    return img.convert("RGB").quantize(colors=colors, dither=Image.Dither.NONE).convert("RGB")
+def panel_safe(img, colors=MAX_COLORS, dither=False):
+    """Quantize to <=`colors` colours. dither=False (flat) is safest on OLD firmware (32x32);
+    the newer 64x64 renders full colour + gradients fine (verified: 126 colours/frame, 90 frames),
+    so pass colors=256, dither=True for rich art on the 64."""
+    d = Image.Dither.FLOYDSTEINBERG if dither else Image.Dither.NONE
+    return img.convert("RGB").quantize(colors=colors, dither=d).convert("RGB")
 
 
-def save_gif(frames, path, ms=80, colors=MAX_COLORS, loop=0):
-    """Write a looping, panel-safe GIF. Clamps frame time to the 50 ms floor."""
+def save_gif(frames, path, ms=80, colors=MAX_COLORS, loop=0, dither=False):
+    """Write a looping GIF. Clamps frame time to the 50 ms floor (~20 fps).
+    Defaults are the conservative flat-16 form (safe on any panel in this family). For the
+    64x64, use colors=256, dither=True to keep full colour/shading — its decoder handles it."""
     ms = max(MIN_MS, int(ms))
-    safe = [panel_safe(f, colors) for f in frames]
+    safe = [panel_safe(f, colors, dither) for f in frames]
     safe[0].save(path, format="GIF", save_all=True, append_images=safe[1:],
                  duration=ms, loop=loop, disposal=2)
     im = Image.open(path)
