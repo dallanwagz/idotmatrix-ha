@@ -35,6 +35,11 @@ OUTER = 4096          # outer packet payload chunk
 SAFE = 244            # inner GATT write cap (panel silently drops larger)
 GIF = 1               # DataType.GIF
 SHOW_NOW = 12         # image_index 12 = live/transient display (not stored)
+# Newer-firmware panels (mfr sig 04050b, e.g. the 64) silently drop some write-without-response
+# chunks, failing the whole-GIF CRC and never ACKing. Set IDM_WRITE_RESPONSE=1 to write WITH
+# response (each chunk confirmed at the BLE layer) — slower but reliable on those panels.
+WRITE_RESPONSE = os.environ.get("IDM_WRITE_RESPONSE") == "1"
+WRITE_DELAY = float(os.environ.get("IDM_WRITE_DELAY", "0.02"))
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 
@@ -74,8 +79,9 @@ class Link:
 async def _upload(client, link, gif, slot, dwell):
     for pkt in outer_packets(gif, slot, dwell):
         for j in range(0, len(pkt), SAFE):
-            await client.write_gatt_char(FA_WRITE, pkt[j:j + SAFE], response=False)
-            await asyncio.sleep(0.02)
+            await client.write_gatt_char(FA_WRITE, pkt[j:j + SAFE], response=WRITE_RESPONSE)
+            if not WRITE_RESPONSE:
+                await asyncio.sleep(WRITE_DELAY)
         link.ev.clear()
         try:
             await asyncio.wait_for(link.ev.wait(), 8)
@@ -115,7 +121,12 @@ async def push(addr, items, live=False):
 
 
 def resolve_addr(name_or_none):
-    """--panel NAME -> MAC from panels.local.json; else IDM_ADDR env."""
+    """--panel NAME -> MAC from panels.local.json; else IDM_ADDR env.
+
+    A panel entry may set "write_response": true to force reliable write-with-response
+    (needed by newer-firmware panels like the 64). IDM_WRITE_RESPONSE=1 still overrides globally.
+    """
+    global WRITE_RESPONSE
     if name_or_none:
         cfg = os.path.join(HERE, "panels.local.json")
         if not os.path.exists(cfg):
@@ -123,6 +134,8 @@ def resolve_addr(name_or_none):
         panels = json.load(open(cfg)).get("panels", {})
         if name_or_none not in panels:
             sys.exit(f"panel '{name_or_none}' not in panels.local.json (have: {', '.join(panels)})")
+        if panels[name_or_none].get("write_response"):
+            WRITE_RESPONSE = True
         return panels[name_or_none]["mac"]
     addr = os.environ.get("IDM_ADDR")
     if not addr:

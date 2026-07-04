@@ -291,3 +291,35 @@ BLE drops over multi-minute transfers, not a device limit). Practical guidance a
 - Storage is **not** the bottleneck — BLE upload time/reliability and the device's playback decode
   are. The carousel is **12 slots** (≥1.3 MB measured into one), so a single animation can run
   **1–2 min of full-motion 32×32 GIF**, and the full 12-slot set loops untethered.
+
+## 64×64 (IDM-8F3C23, mfr sig `04050b`) — newer firmware, live-captured 2026-07-03/04
+
+Tyler's 64 runs newer firmware than the 32s (`04050b` vs `03040f`). Findings, all verified on the
+real panel (BLE HCI-snoop capture of the v2.1.2 Android app + direct Pi control):
+
+- **Extra GATT channel `ae00/ae01/ae02` is the OTA firmware updater — NOT control.** All control is
+  the same `fa02` write / `fa03` notify as the 32s. **Never write to `ae01`** (bricking risk). Static
+  decompile (`BleManager.UUID_OTA_*`) + on-device enumeration both confirm this.
+- **Bulk uploads need write-WITH-response.** The 64 silently drops `response=False` chunks → CRC
+  fails → no ACK ("ack timeout") past ~1 packet. `idm_push.py` honours per-panel
+  `"write_response": true`; `panel_cmd.py` reads the same flag. The 32s work fine without it.
+- **The 64 does NOT answer the device-info query** `04 00 01 80` (the 32s reply with a screenType
+  byte). Harmless for control; but it means the **vendor app v2.1.2 lists the 64 yet drives it
+  fine once you tap the connect radio button** — the app itself works, earlier "handshake
+  incompatibility" guess was WRONG.
+- **Control catalog verified live on the 64** (same bytes as the 32×32 catalog above — the protocol
+  is size-agnostic, only image payload dimensions change: 64×64 full frame = 64·64·3 = 12288 B):
+  | Feature | Captured bytes |
+  |---|---|
+  | Time sync (app sends on every connect) | `01 80 yy-2000 mo dd dow hh mm ss` |
+  | Scoreboard | `08 00 0A 80 <s1 LE16><s2 LE16>` (taps 1,2,3 → `0001/0002/0003`) |
+  | DIY enter/exit | `05 00 04 01 <mode>` (1=enter+clear, 0=quit) |
+  | DIY per-pixel | `0a 00 05 01 <opt> R G B col row` (grid taps 10,10 / 32,32 / 50,20 → `0a0a/2020/3214`) |
+  | Brightness | `05 00 04 80 <pct>` |
+  | Fullscreen colour | `07 00 02 02 R G B` |
+- **Text is not a separate protocol.** The app rasterizes text to a column bitmap and sends it via
+  the **image transport** (`dataType=3`, `imageIndex=12` show-now, CRC32-checked). Capture of "HI":
+  glyphs visible in the payload (H=`42 42 7e 42 42`, I=`3e 08 08 3e`). So the Pi's `scroll_text.py`
+  (render→GIF→push) already does exactly what the app does — no text command needed.
+- **Driver:** `pi-quickstart/panel_cmd.py` sends this catalog by name; `idm_push.py` handles
+  images/GIFs. Reach the Pi at `bt.local` (WiFi). RE working tree: `re-idm64/` (gitignored).
