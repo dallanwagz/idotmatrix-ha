@@ -10,12 +10,16 @@ rules — build with those and you're safe by default.
   panel's exact size. The upload is size-agnostic — same script, same protocol, just different pixels.
 - **RGB**, top-to-bottom, left-to-right.
 
-## The one rule that bites: keep frames FLAT-coloured
-- The panel's GIF decoder **silently skips frames that are too colour-heavy** — smooth gradients or
-  hundreds of colours make a frame simply not appear (the panel looks like it froze or stutters).
-- **Fix:** ≤ ~16 flat colours per frame, **no dithering**. Blocks/bands of solid colour, not
-  gradients. `assetlib.save_gif()` quantizes to 16 colours with dithering off for you.
-- Bright, saturated colours read best on the LEDs. Pure black = LED off (good for backgrounds).
+## Colour: flat-16 is a SAFE DEFAULT, not a hard limit on every panel
+- **Older firmware (the 32×32) silently skips colour-heavy frames** — smooth gradients or hundreds
+  of colours make a frame simply not appear (looks frozen/stuttery). For those, keep ≤ ~16 flat
+  colours per frame, **no dithering**. `assetlib.save_gif()` does this by default.
+- **The 64×64 (newer firmware, mfr sig `04050b`) has NO such limit — VERIFIED.** It renders
+  **full colour (126+ colours/frame), gradients, shading, and 90-frame animations** at ~20–25 fps.
+  For rich art on the 64, call `save_gif(frames, path, ms=60, colors=256, dither=True)`. (The app's
+  own "cloud" scenes are exactly this: detailed, shaded, ~80 KB animated GIFs — captured and replayed.)
+- Rule of thumb: **build flat-16 only if you need one asset to work on BOTH panel generations;**
+  otherwise the 64 can be cinematic. Bright saturated colours still pop best; pure black = LED off.
 
 ## Motion & timing
 - **Frame rate ceiling ≈ 20 fps** — minimum **50 ms/frame**. `save_gif` clamps to this.

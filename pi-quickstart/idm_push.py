@@ -25,9 +25,11 @@ import json
 import os
 import struct
 import sys
+import time
 import zlib
 
 from bleak import BleakClient
+from bleak.exc import BleakError
 
 FA_WRITE = "0000fa02-0000-1000-8000-00805f9b34fb"   # control/upload write
 FA_NOTIFY = "0000fa03-0000-1000-8000-00805f9b34fb"  # status/ACK notify
@@ -120,6 +122,24 @@ async def push(addr, items, live=False):
         return ok_all
 
 
+def run_with_retry(coro_factory, tries=3, delay=4.0):
+    """Run an async push, retrying on transient BLE faults (e.g. the panel's 'Unlikely Error'
+    during long multi-image uploads) with a fresh connection each attempt."""
+    for attempt in range(1, tries + 1):
+        try:
+            if asyncio.run(coro_factory()):
+                return True
+            reason = "upload returned FAILED"
+        except BleakError as e:
+            reason = f"BLE error: {e}"
+        if attempt < tries:
+            print(f"  attempt {attempt}/{tries} {reason} — retrying in {delay:.0f}s ...", flush=True)
+            time.sleep(delay)
+        else:
+            print(f"  attempt {attempt}/{tries} {reason} — giving up", flush=True)
+    return False
+
+
 def resolve_addr(name_or_none):
     """--panel NAME -> MAC from panels.local.json; else IDM_ADDR env.
 
@@ -164,7 +184,7 @@ def main():
         items.append((open(path, "rb").read(), dwell, os.path.basename(path)))
     mode = "live preview" if live else (f"{len(items)}-slot carousel" if len(items) > 1 else "single")
     print(f"connecting {addr} — {mode}", flush=True)
-    ok = asyncio.run(push(addr, items, live=live))
+    ok = run_with_retry(lambda: push(addr, items, live=live))
     print("done" if ok else "FAILED", flush=True)
     sys.exit(0 if ok else 2)
 
