@@ -6,7 +6,7 @@ import sys
 import time
 from dataclasses import dataclass, field
 
-from . import config, deliver, generate
+from . import config, deliver, generate, library
 
 sys.path.insert(0, config.PI_QUICKSTART)
 import validate_gif  # noqa: E402
@@ -52,6 +52,7 @@ def prompt_to_panel(job: Job) -> Result:
     os.makedirs(slot, exist_ok=True)
     gif_path = os.path.join(slot, "art.gif")
     shutil.move(gif, gif_path)
+    library.set_last(gif_path)                          # so `/save <name>` can promote it
     open(os.path.join(slot, "prompt.txt"), "w").write(job.prompt)
     open(os.path.join(slot, "gen.py"), "w").write(code)
     preview = os.path.join(slot, "preview.png")

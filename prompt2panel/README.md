@@ -32,6 +32,16 @@ python3 interfaces/http_prompt.py          # POST /prompt {"text":"a spinning re
 python3 interfaces/signal_bot.py           # text your Signal number a description
 ```
 
+## Bot commands (Signal/Telegram) — dev panel + chooser + save
+- **`/panel <description>`** — *generate* a new GIF and show it (the dev panel). If `<description>`
+  is a saved asset's name, it shows that instead.
+- **`/show <name>`** — *chooser*: push a saved asset. Bare `/show` (or `/list`) lists the library.
+- **`/save <name>`** — save the **last generated** GIF into the library. Workflow: `/panel …` →
+  "love it" → `/save brazil_2` → later `/show brazil_2`.
+
+Saved assets live under `P2P_WORK_DIR/library/<name>.gif` (see `pipeline/library.py`); the last
+generated GIF is tracked at `P2P_WORK_DIR/last.gif`.
+
 ## Status
 - **Core + Signal + HTTP interfaces: scaffolded.** Generation uses Sonnet to write generator code
   (spec-compliant by construction) with a validate→repair loop; delivery reuses the REST API.
