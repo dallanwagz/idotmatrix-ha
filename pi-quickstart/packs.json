@@ -6,6 +6,14 @@
       "brazil_deluxe/brd_flag_wave.gif", "usa_deluxe/usd_flag_wave.gif",
       "brazil_deluxe/brd_trophy_glint.gif", "usa_deluxe/usd_fireworks.gif" ] },
 
+    "brazil_gameday": { "mode": "carousel", "dwell": 8, "gifs": [
+      "brazil_gameday/brg_gooool.gif", "brazil_gameday/brg_flag_wave.gif",
+      "brazil_gameday/brg_bicycle_kick.gif", "brazil_gameday/brg_trophy.gif",
+      "brazil_gameday/brg_penta.gif", "brazil_gameday/brg_celebration.gif",
+      "brazil_gameday/brg_fireworks.gif", "brazil_gameday/brg_freekick_banana.gif",
+      "brazil_gameday/brg_samba.gif", "brazil_gameday/brg_vai_brasil.gif",
+      "brazil_gameday/brg_tifo.gif", "brazil_gameday/brg_spin_ball.gif" ] },
+
     "brazil_deluxe": { "mode": "carousel", "dwell": 8, "gifs": [
       "brazil_deluxe/brd_flag_wave.gif", "brazil_deluxe/brd_stadium_goal.gif",
       "brazil_deluxe/brd_freekick_banana.gif", "brazil_deluxe/brd_brasil_metal.gif",
