@@ -122,9 +122,13 @@ async def push(addr, items, live=False):
         return ok_all
 
 
-def run_with_retry(coro_factory, tries=3, delay=4.0):
-    """Run an async push, retrying on transient BLE faults (e.g. the panel's 'Unlikely Error'
-    during long multi-image uploads) with a fresh connection each attempt."""
+def run_with_retry(coro_factory, tries=None, delay=None):
+    """Run an async push, retrying on transient BLE faults (e.g. the panel's 'Unlikely Error')
+    with a fresh connection each attempt. Uses linear backoff (delay*attempt) so the link gets
+    progressively more time to settle — one quick burst of retries often isn't enough. Tunable via
+    IDM_RETRIES / IDM_RETRY_DELAY."""
+    tries = int(os.environ.get("IDM_RETRIES", "5")) if tries is None else tries
+    delay = float(os.environ.get("IDM_RETRY_DELAY", "4.0")) if delay is None else delay
     for attempt in range(1, tries + 1):
         try:
             if asyncio.run(coro_factory()):
@@ -133,8 +137,9 @@ def run_with_retry(coro_factory, tries=3, delay=4.0):
         except BleakError as e:
             reason = f"BLE error: {e}"
         if attempt < tries:
-            print(f"  attempt {attempt}/{tries} {reason} — retrying in {delay:.0f}s ...", flush=True)
-            time.sleep(delay)
+            wait = delay * attempt                        # 4, 8, 12, 16 ... s
+            print(f"  attempt {attempt}/{tries} {reason} — retrying in {wait:.0f}s ...", flush=True)
+            time.sleep(wait)
         else:
             print(f"  attempt {attempt}/{tries} {reason} — giving up", flush=True)
     return False
