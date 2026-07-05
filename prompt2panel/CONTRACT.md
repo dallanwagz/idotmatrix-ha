@@ -38,6 +38,33 @@ POST http://<bot-host>:8090/prompt        Content-Type: application/json
 **The bridge should just speak `message`.** It's written to be spoken (success, "couldn't build that
 one: …", or a push failure), so no formatting needed on your side.
 
+## Async / fast-ack (opt-in — for the voice UX)
+By default `/prompt` blocks ~15–60 s and returns the final result. To avoid dead air, a caller can
+opt into fast-ack: get an immediate spoken "on it", with the result delivered when it's ready.
+
+Trigger it by adding a `callback` URL (recommended) and/or `async: true`:
+```json
+{ "prompt": "a spinning red heart", "source": "voice",
+  "callback": "http://<bridge-host>:<port>/panel_done" }
+```
+Immediate response (`202`) — speak `message` right away:
+```json
+{ "ok": true, "async": true, "job": "3f9a1c2b", "message": "On it — making that now." }
+```
+When generation finishes, the server POSTs the final result to `callback` (speak this `message` too):
+```json
+{ "job": "3f9a1c2b", "ok": true, "message": "Done — it's on the panel (1 attempt).",
+  "pushed": true, "attempts": 1 }
+```
+If your bridge can't receive a callback, poll instead:
+```
+GET /status/<job>  ->  {"ok":true,"status":"running","message":"Still working on it…"}
+                       {"ok":true,"status":"done","message":"Done — …","pushed":true,"attempts":1}
+                       404 if the job is unknown
+```
+Jobs are in-memory and ephemeral (lost on a service restart) — fine for fire-and-speak voice.
+**Sync callers (no `callback`/`async`) are unchanged.**
+
 ## Timing (plan for it)
 One call runs: Sonnet writes a generator → sandboxed render → validate→repair (≤3) → **Bluetooth
 upload**. Expect **~15–60 s** end to end (the BLE push of a ~90 KB GIF is the long pole). Use a long

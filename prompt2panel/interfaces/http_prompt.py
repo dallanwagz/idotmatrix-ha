@@ -9,8 +9,12 @@ the work is in pipeline.core. See CONTRACT.md for the frozen request/response sh
 
     The caller speaks `message` back to the user.
 """
+import json
 import os
 import sys
+import threading
+import urllib.request
+import uuid
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from flask import Flask, jsonify, request           # noqa: E402
@@ -18,6 +22,33 @@ from pipeline import Job, library, prompt_to_panel  # noqa: E402
 
 app = Flask(__name__)
 PORT = int(os.environ.get("P2P_PROMPT_PORT", "8090"))
+
+# Fast-ack async jobs. In-memory + ephemeral (lost on restart) — fine for
+# fire-and-speak voice commands. ponytail: dict+lock, not a queue/DB; add
+# persistence only if a job must survive a restart (it needn't).
+_jobs: dict = {}
+_jobs_lock = threading.Lock()
+
+
+def _run_job(job_id: str, job, callback: str) -> None:
+    """Run the (slow) generation in the background, store the result, and — if a
+    callback URL was given — POST the result to it so the caller can speak it."""
+    try:
+        r = prompt_to_panel(job)
+        result = {"ok": r.ok, "message": r.message, "pushed": r.pushed, "attempts": r.attempts}
+    except Exception as e:  # never let a worker thread die silently
+        app.logger.exception("job %s failed", job_id)
+        result = {"ok": False, "message": f"Couldn't build that one: {e}", "pushed": False, "attempts": 0}
+    with _jobs_lock:
+        _jobs[job_id] = {"status": "done", "result": result}
+    if callback:
+        try:
+            body = json.dumps({"job": job_id, **result}).encode()
+            req = urllib.request.Request(callback, data=body,
+                                         headers={"content-type": "application/json"})
+            urllib.request.urlopen(req, timeout=15).read()
+        except Exception:
+            app.logger.exception("callback POST to %s failed for job %s", callback, job_id)
 
 
 @app.post("/prompt")
@@ -29,8 +60,33 @@ def prompt():
     job = Job(prompt=text, source=data.get("source", "voice"),
               panel=data.get("panel", "big"), mode=data.get("mode", "now"),
               dwell=int(data.get("dwell", 30)))
+
+    # Fast-ack (opt-in, backward compatible): if the caller sets async=true or
+    # passes a callback URL, return an interim "on it" immediately and run the
+    # 15-60s generation in the background. Sync callers are unchanged.
+    callback = (data.get("callback") or "").strip()
+    if data.get("async") or callback:
+        job_id = uuid.uuid4().hex[:8]
+        with _jobs_lock:
+            _jobs[job_id] = {"status": "running", "result": None}
+        threading.Thread(target=_run_job, args=(job_id, job, callback), daemon=True).start()
+        return jsonify({"ok": True, "async": True, "job": job_id,
+                        "message": "On it — making that now."}), 202
+
     r = prompt_to_panel(job)
     return jsonify(ok=r.ok, message=r.message, pushed=r.pushed, attempts=r.attempts)
+
+
+@app.get("/status/<job_id>")
+def status(job_id):
+    """Poll an async job — alternative to the callback for bridges that can't receive one."""
+    with _jobs_lock:
+        j = _jobs.get(job_id)
+    if not j:
+        return jsonify(ok=False, message="No such job."), 404
+    if j["status"] == "running":
+        return jsonify(ok=True, status="running", message="Still working on it…")
+    return jsonify({"ok": True, "status": "done", **j["result"]})
 
 
 @app.post("/save")
@@ -69,4 +125,4 @@ def health():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=PORT)
+    app.run(host="0.0.0.0", port=PORT, threaded=True)
