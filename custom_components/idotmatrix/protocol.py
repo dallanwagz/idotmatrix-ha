@@ -285,6 +285,39 @@ def enter_diy(mode: int) -> bytes:
     return frame(4, 1, mode)
 
 
+# ---------------------------------------------------------------------------
+# Device carousel / on-device asset storage (the device carousels 12 slots)
+# ---------------------------------------------------------------------------
+# The panel persistently stores 12 assets and cycles them autonomously. Store an asset as a
+# GIF (DataType.GIF) chunked upload with image_index = the SLOT NUMBER (0..11) and
+# time_sign = the per-asset dwell time in SECONDS. The carousel then cycles the stored
+# slots on its own (survives disconnect). RE'd from a live download-to-device.
+#   image_index semantics (byte[15]):  0..11 = a carousel storage slot
+#                                       12    = live / show-now (transient, ts forced 0)
+#                                       13    = preview / "currently showing" buffer
+#                                       14..35= ACKs but NOT a playable slot
+# The app's "3 pages of 12" are app-side sets; each push replaces the on-device 12.
+# Static images (DataType.IMAGE) at idx 12/13 only DISPLAY; storage needs DataType.GIF + a slot.
+CAROUSEL_SLOTS = 12
+
+
+def material_wipe() -> bytes:
+    """Clear a page of 12 carousel slots (0-11). CMD 2 / SUB 1.
+
+    (Agreement.getDeleteMaterial) Wire: ``[17,0,2,1, 12, 0,1,2,3,4,5,6,7,8,9,10,11]``.
+    Send before storing a page; uploads then fill slots 0..11 in arrival order.
+    """
+    return frame(2, 1, 12, *range(12))
+
+
+def enter_asset_view() -> bytes:
+    """Enter the device-material/carousel view (starts the on-device cycle). CMD 10 / SUB 1.
+
+    (PatternFragment, sent on the Device Material tab) Wire: ``04000a01``.
+    """
+    return frame(10, 1)
+
+
 def draw_pixel(r: int, g: int, b: int, x: int, y: int, option: int = 0) -> bytes:
     """Live graffiti single-pixel draw (no CRC, no ACK). CMD 5 / SUB 1.
 
@@ -294,6 +327,43 @@ def draw_pixel(r: int, g: int, b: int, x: int, y: int, option: int = 0) -> bytes
     (col=8,row=8).
     """
     return frame(5, 1, option, r, g, b, x, y)
+
+
+# ---------------------------------------------------------------------------
+# Rhythm / sound-reactive spectrum (plaintext, ~12 fps) — wire-captured & decoded
+# ---------------------------------------------------------------------------
+# Two parts: (1) select the device-side render pattern (sendMicCommand1, cmd 11/0x80),
+# (2) stream raw 21-byte energy frames. The encrypted/GIF "image rhythm" modes are NOT
+# here (AES-walled). The streamed frame is a CONSTANT 5-byte prefix + 16 band heights,
+# where the 16 are 8 bands mirrored left-right (right = reverse(left)) -> symmetric bars.
+RHYTHM_PREFIX = bytes((0x21, 0x00, 0x01, 0x02, 0x02))   # constant, observed on the wire
+
+
+def rhythm_select(mode: int = 0, sensitivity: int = 100) -> bytes:
+    """Select the device-side rhythm render pattern + mic sensitivity. CMD 11 / SUB 0x80.
+
+    (BleProtocolN.sendMicCommand1) Wire: ``[06,00,0b,80, mode+1, sensitivity]``. ``mode``
+    picks a built-in pattern (bars / lightbulb / tree / …); ``sensitivity`` 0-100.
+    """
+    return frame(11, 0x80, (mode + 1) & 0xFF, max(0, min(100, sensitivity)))
+
+
+def rhythm_stop() -> bytes:
+    """Stop the rhythm visualizer. CMD 0 / SUB 2. (sendStopMicRhythm) ``[06,00,00,02,00,00]``."""
+    return frame(0, 2, 0, 0)
+
+
+def rhythm_frame(bands8) -> bytes:
+    """Build one 21-byte rhythm spectrum frame from 8 band magnitudes (0..~31).
+
+    The device draws 16 columns = the 8 bands mirrored left-right (right = reverse(left)),
+    so the bars are symmetric. Sent RAW (no envelope/CRC) at ~12 fps. Hardware-captured
+    golden frame: ``2100010202 0a05040202040202 02020402020405 0a`` from 8 bands
+    ``[0a,05,04,02,02,04,02,02]``.
+    """
+    b = [max(0, min(255, int(x))) for x in bands8][:8]
+    b += [0] * (8 - len(b))
+    return RHYTHM_PREFIX + bytes(b + b[::-1])
 
 
 # ---------------------------------------------------------------------------
@@ -319,6 +389,7 @@ class DataType(IntEnum):
 
     IMAGE = 2   # ImageAgreement: byte[2]=2, byte[3]=0
     GIF = 1     # GifAgreement:   byte[2]=1, byte[3]=0
+    TEXT = 3    # TextAgreement:  byte[2]=3, byte[3]=0 (glyph-bitmap payload; device scrolls it)
     ANIM = 0    # DIY animation:  byte[2]=0, byte[3]=0
 
 

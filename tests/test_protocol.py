@@ -175,3 +175,49 @@ def test_parse_status_ack():
 
 def test_parse_status_short_frame():
     assert P.parse_status(b"\x01\x02").ack == P.Ack.UNKNOWN
+
+
+# --- carousel / on-device storage (merged forward from a divergent driver copy) ------
+# These three plus the rhythm/TEXT additions below were RE'd independently on a separate
+# copy of this module (wallboard/driver/idm_protocol.py in the sibling `idm` repo) before
+# being reconciled back in here. enter_asset_view + the single-slot form of this frame
+# family are proven working end-to-end on real hardware (idm repo's wallboard app).
+
+def test_material_wipe():
+    # [17,0, 2,1, 12, 0..11] -- wipe all 12 carousel slots
+    assert P.material_wipe() == bytes((17, 0, 2, 1, 12, *range(12)))
+
+
+def test_enter_asset_view_captured():
+    # Hardware-proven: this is the exact call wallboard/push.py makes after every
+    # successful carousel upload to start on-device playback.
+    assert h(P.enter_asset_view()) == "04000a01"
+
+
+def test_carousel_slots_constant():
+    assert P.CAROUSEL_SLOTS == 12
+
+
+# --- rhythm / spectrum (merged forward) -----------------------------------
+
+def test_rhythm_select():
+    # mode=0 -> byte value 1 (mode+1); sensitivity passthrough
+    assert P.rhythm_select(0, 100) == P.frame(11, 0x80, 1, 100)
+
+
+def test_rhythm_stop():
+    assert P.rhythm_stop() == P.frame(0, 2, 0, 0)
+
+
+def test_rhythm_frame_mirrors_bands_captured():
+    # Hardware-captured golden frame (8 bands, mirrored into 16 symmetric columns).
+    bands = [0x0A, 0x05, 0x04, 0x02, 0x02, 0x04, 0x02, 0x02]
+    got = P.rhythm_frame(bands)
+    assert got == P.RHYTHM_PREFIX + bytes(bands) + bytes(bands[::-1])
+    assert h(got) == "21000102020a05040202040202020204020204050a"
+
+
+# --- DataType.TEXT (merged forward) ---------------------------------------
+
+def test_datatype_text_member():
+    assert P.DataType.TEXT == 3
