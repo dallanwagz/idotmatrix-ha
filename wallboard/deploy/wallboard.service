@@ -5,10 +5,10 @@ Wants=bluetooth.target
 
 [Service]
 Type=simple
-User=claude
-WorkingDirectory=/home/claude/idotmatrix-ha/wallboard
+User=dallan
+WorkingDirectory=/home/dallan/idotmatrix-ha/wallboard
 Environment=WALLBOARD_PORT=8080
-ExecStart=/home/claude/idotmatrix-ha/wallboard/.venv/bin/python app.py
+ExecStart=/home/dallan/idotmatrix-ha/wallboard/.venv/bin/python app.py
 Restart=on-failure
 RestartSec=5
 
