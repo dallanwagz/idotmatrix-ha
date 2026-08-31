@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iDotMatrix Wallboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>iDotMatrix Wallboard</h1>
+    <div class="status-strip">
+      {% for name in panels %}
+        {% set s = state.get(name) %}
+        <div class="status-card">
+          <strong>{{ name }}</strong>
+          {% if s %}
+            <img src="{{ url_for('asset_file', relpath=s.local) }}" width="64" height="64" class="pixelated" alt="{{ s.name }}">
+            <div class="name">{{ s.name }}</div>
+            <div class="ts">{{ s.pushed_at }}</div>
+          {% else %}
+            <div class="ts">nothing pushed yet</div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+    {% if msg %}<div class="flash">{{ msg }}</div>{% endif %}
+  </header>
+  {% block content %}{% endblock %}
+</body>
+</html>

@@ -16,3 +16,8 @@ decompiled/
 captures/
 scratch/
 research/community/
+
+# wallboard runtime state (derived, per-deployment — not config)
+wallboard/state.json
+wallboard/schedule.log
+wallboard/.venv/

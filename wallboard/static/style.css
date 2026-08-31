@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: #0b0b12;
+  color: #eee;
+  font-family: -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+header { padding: 14px 18px; border-bottom: 1px solid #222; }
+h1 { font-size: 18px; margin: 0 0 10px; color: #dfe; letter-spacing: 0.5px; }
+.status-strip { display: flex; gap: 16px; }
+.status-card {
+  background: #14141d; border-radius: 10px; padding: 8px 12px;
+  display: flex; align-items: center; gap: 10px; font-size: 13px;
+}
+.status-card strong { white-space: nowrap; }
+.status-card .name { max-width: 140px; }
+.status-card .ts, .card .desc { color: #889; font-size: 11px; }
+.pixelated { image-rendering: pixelated; border-radius: 6px; }
+.flash { margin-top: 8px; padding: 6px 10px; background: #1d3a24; color: #9be3a8; border-radius: 6px; font-size: 13px; }
+.filters { display: flex; gap: 8px; padding: 14px 18px 0; }
+.filters input, .filters select, .filters button {
+  background: #14141d; color: #eee; border: 1px solid #333; border-radius: 6px; padding: 6px 10px;
+}
+.count { padding: 8px 18px; color: #667; font-size: 12px; }
+.grid {
+  display: grid; gap: 14px; padding: 0 18px 24px;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+.card { background: #14141d; border-radius: 10px; padding: 10px; text-align: center; }
+.card .name { font-weight: 600; margin-top: 6px; font-size: 13px; }
+.card .desc { margin: 4px 0 8px; height: 28px; overflow: hidden; }
+.push-row { display: flex; flex-direction: column; gap: 4px; }
+.push-row button {
+  background: #223; color: #eee; border: 1px solid #345; border-radius: 6px;
+  padding: 5px 6px; font-size: 12px; cursor: pointer;
+}
+.push-row button:hover { background: #335; }
