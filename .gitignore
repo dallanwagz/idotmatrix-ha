@@ -2,22 +2,5 @@
 venv*/
 __pycache__/
 *.pyc
+.pytest_cache/
 .DS_Store
-
-# Downloaded tool/APK binaries (reproducible)
-research/*.apk
-
-# RE working material — large and/or reproducible; kept locally, not committed.
-# APKs: re-download per docs/SECURITY-APK-COMPARISON.md (Play Store via adb pull; e-toys URL documented).
-apks/
-# Decompiled tree: regenerate with `jadx --no-debug-info -d decompiled/playstore apks/playstore/playstore-base.apk`
-decompiled/
-# Captures: bugreports/btsnoop contain device + personal data — never commit.
-captures/
-scratch/
-research/community/
-
-# wallboard runtime state (derived, per-deployment — not config)
-wallboard/state.json
-wallboard/schedule.log
-wallboard/.venv/

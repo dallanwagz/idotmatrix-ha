@@ -1,7 +1,0 @@
-{
-  "_doc": "Copy this to panels.local.json and fill in Tyler's two panels once test_panel.py has told you which MAC is which size. Then scripts can use --panel big / --panel small instead of a raw MAC. panels.local.json is gitignored (stays on your Pi).",
-  "panels": {
-    "small": { "mac": "AA:BB:CC:DD:EE:FF", "size": 32 },
-    "big":   { "mac": "11:22:33:44:55:66", "size": 64 }
-  }
-}

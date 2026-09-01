@@ -1,66 +1,58 @@
-# iDotMatrix — local control & Home Assistant integration
+# iDotMatrix — Home Assistant integration
 
 Cloud-free, app-free control of the **iDotMatrix HXS-002 / NL-XSD-32** 32×32 BLE LED
-panel — reverse-engineered from the vendor Android app and **validated on real
-hardware**. Drive it from any Python/Bluetooth host or from Home Assistant, no vendor
-app or cloud required.
+panel from Home Assistant — reverse-engineered from the vendor Android app and
+**validated on real hardware**. No vendor app or cloud required.
 
-> Reverse-engineered with the [`untether`](https://github.com/dallanwagz/untether)
-> methodology. Protocol details in [`docs/PROTOCOL.md`](docs/PROTOCOL.md).
+> This repo holds just the HA integration. The BLE protocol RE, standalone driver
+> library, the REST/CLI/daily-use control apps, the content-generation pipeline, and
+> the asset library all live in the companion repo,
+> [**`idm`**](https://github.com/dallanwagz/idm) — start there for anything beyond
+> Home Assistant, including the full protocol reference
+> ([`docs/PROTOCOL.md`](https://github.com/dallanwagz/idm/blob/main/docs/PROTOCOL.md))
+> and the RE methodology/security writeups.
 
 ## What's here
 
 | Path | What |
 |---|---|
-| `pi-quickstart/` | **Beginner kit** — self-contained (`bleak`+`Pillow`) tools to get a Raspberry Pi driving one or two panels (32×32 and 64×64): scan → identify → build panel-safe GIFs → push live, incl. cross-panel animations. Start at [`pi-quickstart/README.md`](pi-quickstart/README.md); agent handoff in [`pi-quickstart/AGENT.md`](pi-quickstart/AGENT.md). |
-| `custom_components/idotmatrix/` | The Home Assistant integration (HACS-installable; Core-PR-shaped). `protocol.py` is a **pure, dependency-free, unit-tested** protocol module. |
-| `tools/idm_cli.py` | Standalone `bleak` CLI — scan/connect/drive the panel from any host. |
-| `tools/idm_daemon.py` + `idmctl.py` | Persistent-connection driver for interactive use. |
-| `tools/idm_image.py` | Chunked image-upload experiment (see protocol notes). |
-| `tests/test_protocol.py` | 18 golden-frame tests, anchored to hardware captures. |
-| `docs/PROTOCOL.md` | Full BLE protocol spec + golden frames. |
-| `docs/SECURITY-APK-COMPARISON.md` | Play Store vs. e-toys.cn APK security analysis. |
-| `decompiled/`, `apks/`, `captures/`, `research/` | RE working material (gitignored binaries where large). |
+| `custom_components/idotmatrix/` | The HA integration (HACS-installable; Core-PR-shaped). `protocol.py` is a **pure, dependency-free, unit-tested** BLE protocol module — periodically synced from `idm`'s canonical copy at `driver/idm_protocol.py`, kept as its own vendored copy so the HACS install has no external repo dependency. |
+| `tests/test_protocol.py` | 30 golden-frame tests, anchored to hardware captures. |
+| `hacs.json` | HACS manifest. |
 
-## Quick start (any host with Bluetooth)
+## Quick start
+
+Install via HACS as a custom repository, then add the device through the UI (it's
+auto-discovered over Bluetooth as `IDM-*`). Requires a Bluetooth adapter or an
+ESPHome/Shelly Bluetooth proxy near the panel.
 
 ```bash
-python3 -m venv venv && ./venv/bin/pip install bleak
-./venv/bin/python tools/idm_cli.py scan                 # find your IDM-xxxxxx
-export IDM_ADDR=<address-from-scan>
-./venv/bin/python tools/idm_cli.py color 255 0 0        # fill red
-./venv/bin/python tools/idm_cli.py bright 50
-./venv/bin/python tools/idm_cli.py clock 0
-./venv/bin/python tools/idm_cli.py countdown 1 5 0      # start a 5:00 countdown
+python3 -m pytest tests/
 ```
-
-The panel accepts **one** BLE connection at a time — keep the vendor app disconnected
-while controlling it locally. It reverts to its idle animation when the link drops, so
-the HA integration holds a persistent connection.
 
 ## What works (validated on hardware)
 
 Power on/off, brightness, fullscreen RGB, clock (date + 24h flags), countdown,
-stopwatch, scoreboard, 180° flip, screen on/off, live DIY pixel drawing, and **full
-32×32 image upload** (RGB raster, chunked + CRC32). See the
-[command catalog](docs/PROTOCOL.md#command-catalog). The HA `idotmatrix.set_image`
-service uploads any image file (auto-resized to 32×32).
+stopwatch, scoreboard, 180° flip, screen on/off, live DIY pixel drawing, and a
+32×32 image upload (RGB raster, chunked + CRC32) via `idotmatrix.set_image`. The
+integration exposes a **light** (on/off + brightness + colour), a **Flip** switch,
+**Sync time** / **Reset** buttons, a **Clock face** select, and a generic
+`idotmatrix.send_command` service for everything else. See
+[`idm`'s protocol reference](https://github.com/dallanwagz/idm/blob/main/docs/PROTOCOL.md)
+for the full command catalog, including carousel/GIF storage and rhythm/spectrum modes
+this integration doesn't yet expose as HA entities.
 
-## Home Assistant
-
-Install via HACS as a custom repository, then add the device through the UI (it's
-auto-discovered over Bluetooth as `IDM-*`). Requires a Bluetooth adapter or an
-ESPHome/Shelly Bluetooth proxy near the panel. The integration exposes a **light**
-(on/off + brightness + colour), a **Flip** switch, **Sync time** / **Reset** buttons, a
-**Clock face** select, and a generic `idotmatrix.send_command` service for everything
-else.
+The panel accepts **one** BLE connection at a time — keep the vendor app (and any
+script from the `idm` repo) disconnected while this integration controls it; it holds
+a persistent connection and will fight anything else trying to connect at the same time.
 
 ## Security note
 
 The QR code on the box offers a "local server" APK from `api.e-toys.cn`. It's the same
 version as the Play Store build but **DEX-packed (Baidu Protect) and requests extra
 permissions** (self-install, read-phone-state, boot, get-tasks). **Use the Play Store
-build.** Full analysis: [`docs/SECURITY-APK-COMPARISON.md`](docs/SECURITY-APK-COMPARISON.md).
+build.** Full analysis:
+[`idm`'s `docs/SECURITY-APK-COMPARISON.md`](https://github.com/dallanwagz/idm/blob/main/docs/SECURITY-APK-COMPARISON.md).
 
 ## Credits
 

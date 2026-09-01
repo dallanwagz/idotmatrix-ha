@@ -1,4 +1,0 @@
-flask>=3.0
-gunicorn>=21.2
-bleak>=0.22
-pillow>=10.0

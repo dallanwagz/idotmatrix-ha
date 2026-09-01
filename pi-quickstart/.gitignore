@@ -1,5 +1,0 @@
-# Tyler's real panel MACs live here — local only, never committed
-panels.local.json
-# scratch assets the agent generates while iterating
-_test_*.gif
-*_preview.png
