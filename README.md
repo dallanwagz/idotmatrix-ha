@@ -7,16 +7,16 @@ panel from Home Assistant — reverse-engineered from the vendor Android app and
 > This repo holds just the HA integration. The BLE protocol RE, standalone driver
 > library, the REST/CLI/daily-use control apps, the content-generation pipeline, and
 > the asset library all live in the companion repo,
-> [**`idm`**](https://github.com/dallanwagz/idm) — start there for anything beyond
+> [**`ledpanels`**](https://github.com/dallanwagz/ledpanels) — start there for anything beyond
 > Home Assistant, including the full protocol reference
-> ([`docs/PROTOCOL.md`](https://github.com/dallanwagz/idm/blob/main/docs/PROTOCOL.md))
+> ([`docs/PROTOCOL.md`](https://github.com/dallanwagz/ledpanels/blob/main/docs/PROTOCOL.md))
 > and the RE methodology/security writeups.
 
 ## What's here
 
 | Path | What |
 |---|---|
-| `custom_components/idotmatrix/` | The HA integration (HACS-installable; Core-PR-shaped). `protocol.py` is a **pure, dependency-free, unit-tested** BLE protocol module — periodically synced from `idm`'s canonical copy at `driver/idm_protocol.py`, kept as its own vendored copy so the HACS install has no external repo dependency. |
+| `custom_components/idotmatrix/` | The HA integration (HACS-installable; Core-PR-shaped). `protocol.py` is a **pure, dependency-free, unit-tested** BLE protocol module — periodically synced from `ledpanels`'s canonical copy at `driver/idm_protocol.py`, kept as its own vendored copy so the HACS install has no external repo dependency. |
 | `tests/test_protocol.py` | 30 golden-frame tests, anchored to hardware captures. |
 | `hacs.json` | HACS manifest. |
 
@@ -38,12 +38,12 @@ stopwatch, scoreboard, 180° flip, screen on/off, live DIY pixel drawing, and a
 integration exposes a **light** (on/off + brightness + colour), a **Flip** switch,
 **Sync time** / **Reset** buttons, a **Clock face** select, and a generic
 `idotmatrix.send_command` service for everything else. See
-[`idm`'s protocol reference](https://github.com/dallanwagz/idm/blob/main/docs/PROTOCOL.md)
+[`ledpanels`'s protocol reference](https://github.com/dallanwagz/ledpanels/blob/main/docs/PROTOCOL.md)
 for the full command catalog, including carousel/GIF storage and rhythm/spectrum modes
 this integration doesn't yet expose as HA entities.
 
 The panel accepts **one** BLE connection at a time — keep the vendor app (and any
-script from the `idm` repo) disconnected while this integration controls it; it holds
+script from the `ledpanels` repo) disconnected while this integration controls it; it holds
 a persistent connection and will fight anything else trying to connect at the same time.
 
 ## Security note
@@ -52,7 +52,7 @@ The QR code on the box offers a "local server" APK from `api.e-toys.cn`. It's th
 version as the Play Store build but **DEX-packed (Baidu Protect) and requests extra
 permissions** (self-install, read-phone-state, boot, get-tasks). **Use the Play Store
 build.** Full analysis:
-[`idm`'s `docs/SECURITY-APK-COMPARISON.md`](https://github.com/dallanwagz/idm/blob/main/docs/SECURITY-APK-COMPARISON.md).
+[`ledpanels`'s `docs/SECURITY-APK-COMPARISON.md`](https://github.com/dallanwagz/ledpanels/blob/main/docs/SECURITY-APK-COMPARISON.md).
 
 ## Credits
 
